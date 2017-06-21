@@ -33,8 +33,10 @@ h1, h2, h3, h4, h5, h6, a{
   font-weight: bold;
 }
 
-a:hover{
+a:hover, input:hover, button:hover{
   text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .after-nav{
   margin-top: 95px;
@@ -202,8 +204,6 @@ footer .social-links a {
     line-height: 2.3;
     background-color: #3bb2f7;
     border-radius: 50px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     text-align: center;
 }
 
