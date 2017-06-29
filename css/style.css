@@ -32,7 +32,7 @@ header a {
 }
 
 h1, h2, h3, h4, h5, h6, a {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 a:hover, input:hover, button:hover {
@@ -55,6 +55,10 @@ a:hover, input:hover, button:hover {
   color: white;
 }
 
+.bg-blue {
+  background-color: #6fb3c6;
+  color: white;
+}
 .bg-white {
   background-color: white;
   color: black;
@@ -71,24 +75,51 @@ a:hover, input:hover, button:hover {
   color: #479946;
 }
 
+.bg-orange{
+  background-color: #ff8900;
+  color: white;
+}
+
 .bg-transparent {
   background-color: #e2e2e2;
 }
 
-.border {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 8px;
-  border: 1px solid #e2e2e2;
+.bg-white{
+  background-color: white;
+  color: black;
 }
 
-.btn {
-  margin-top: 5px;
+.bg-gray{
+  background-color: gray;
+  color: white;
+}
+
+.border {
+  /*text-transform: uppercase;
+  font-weight: bold;*/
+  padding: 2.7px 11px 2.7px 11px;
+  border: 1px solid;
+  border-color: inherit;
+}
+
+.btn{
   margin-bottom: 2px;
 }
 
+.input{
+  color: black;
+  border: 1px solid black;
+  font-size: 16px;
+  width: 300px;
+  line-height: 2;
+}
 .btn-blue {
   background-color: #3bb2f7;
+  color: white;
+}
+
+.btn-orange{
+  background-color: #ff8900;
   color: white;
 }
 
@@ -97,6 +128,10 @@ a:hover, input:hover, button:hover {
   padding-right: 12%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.d-inline{
+  display: inline;
 }
 
 .form-block input {
@@ -177,6 +212,10 @@ a:hover, input:hover, button:hover {
   padding-bottom: 22px;
 }
 
+.padding-top{
+  padding-top: 55px;
+}
+
 .pos-fixed {
   position: fixed;
   z-index: -1;
@@ -196,11 +235,17 @@ a:hover, input:hover, button:hover {
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: bolder;
 }
+
 .text-blue{
   color: #3bb2f7;
 }
+
+.text-darkblue{
+  color: #337ab7;
+}
+
 .text-large {
   font-weight: 900;
 }
@@ -214,7 +259,9 @@ a:hover, input:hover, button:hover {
   color: white;
 }
 
-
+.text-16{
+  font-size: 16px;
+}
 /*
 #helpSec a:hover{
   text-decoration: none;
@@ -228,23 +275,47 @@ a:hover, input:hover, button:hover {
   color: #e2e2e2;
 }*/
 
-footer .social-links a {
+.social-links a {
+  color: white;
   display: inline-block;
+}
+.social-links i{
   color: white;
   text-decoration: none;
   height: 50px;
   width: 50px;
-  font-size: 30px;
   line-height: 1.7;
-  background-color: grey;
+  border: 1px solid white;
   border-radius: 50px;
   text-align: center;
+  font-size: 30px;
 }
 
-footer a:hover, .btn:hover {
+.fa-facebook:hover{
+  background-color: #1d84bb;
+}
+.fa-instagram:hover{
+  background-color: #d23f4f;
+}
+.fa-linkedin:hover{
+  background-color: #1982ba;
+}
+.fa-twitter:hover{
+  background-color: #1da1f2;
+}
+.social-hover:hover{
+  background-color: white;
+  color: #6fb3c6;
+}
+
+.width-custom{
+  width: 600px;
+}
+
+footer .btn:hover {
   text-decoration: none;
   color: white;
-  background-color: #3bb2f7;
+  background-color: gray;
 }
 
 footer a, footer p {
@@ -252,6 +323,12 @@ footer a, footer p {
   font-size: 12px;
   font-weight: normal;
 }
+
+footer .btn{
+  margin-top: 5px;
+}
+
+
 
 #startCodeClub{
   font-size: 27px;
@@ -272,4 +349,11 @@ footer a, footer p {
   font-size: 18px;
   padding-top: 12px;
   padding-left: 50px;
+}
+
+#contact-email{
+  width: 570px;
+  margin: auto;
+  font-size: 14px;
+  line-height: 2.5;
 }
