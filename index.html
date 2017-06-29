@@ -8,24 +8,6 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-N2VMJ6R');
-  </script>
-  <!-- End Google Tag Manager -->
   <link rel="icon" href="../../favicon.ico">
 
   <title>Carousel Template for Bootstrap</title>
@@ -41,10 +23,6 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2VMJ6R"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <div class="navbar-wrapper">
     <nav class="navbar navbar-custom navbar-fixed-top">
       <header class="bg-gray">
@@ -67,11 +45,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <ul class="nav nav-pills">
-            <li class="active"><a>Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#getInvolved">Get Involved</a></li>
-            <li><a href="kcjfund.html">KCJ Fund</a></li>
-            <li><a href="#events">Events</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="kcjfund.html">Resources</a></li>
+            <li><a href="support.html">Support</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
@@ -116,11 +93,11 @@
         <h1 class="padding-bot text-orange text-center">What can we help you with?</h1>
         <div class="col-md-4 col-sm-4 text-center">
           <img class="img-circle" src="img/Icon_Play-01.png" alt="Game console picture" width="140" height="140">
-          <h4 class="text-blue text-uppercase">Register</h4>
+          <h4 class="text-blue text-uppercase">Educators</h4>
           <div id="register-description" class="margin-auto">
             <ul class="text-left">
-              <li>Sign up for a workshop</li>
-              <li>Enroll in teaching training</li>
+              <li>Apply to start a workshop</li>
+              <li>Teaching materials</li>
             </ul>
           </div>
           <a class="text-orange" href="#" role="button">
@@ -132,12 +109,9 @@
         <!-- /.col-lg-4 -->
         <div class="col-md-4 col-sm-4 text-center">
           <img class="img-circle" src="img/Icon_Learn-01.png" alt="Light bulb picture" width="140" height="140">
-          <h4 class="text-blue text-uppercase">Apply</h4>
-          <div id="apply-description" class="margin-auto">
-            <ul class="text-left">
-              <li>Bring a workshop to your community</li>
-              <li>Start your own teacher training</li>
-            </ul>
+          <h4 class="text-blue text-uppercase">Parents</h4>
+          <div class="margin-auto">
+            <p>Code, Create, Play Workshops across Canada</p>
           </div>
           <a class="text-orange" href="#" role="button">
             Learn more
@@ -148,8 +122,11 @@
         <!-- /.col-lg-4 -->
         <div class="col-md-4 col-sm-4 text-center">
           <img class="img-circle" src="img/Icon_CC-01.png" alt="Code club picture" width="140" height="140">
-          <h4 class="text-blue text-uppercase">Start a code club</h4>
-          <p>Help us inspire the next generation by running a Code Club in your local school, library, or community center.</p>
+          <h4 class="text-blue text-uppercase">Volunteers</h4>
+          <p>Get involved!
+            <br/>
+            Find volunteer opportunities
+            </p>
           <a class="text-orange" href="#" role="button">
             Learn more
             <br/>
@@ -251,10 +228,22 @@
     </div>
   </section>
 
+  <section>
+    <img class="img-responsive" src="img/Wesbite_Slider_Code_Club_Canada_EN-01.png"/>
+  </section>
+
+  <section id="startCodeClub" class="bg-green">
+    <div class="container padding">
+      <div class="text-center">
+        <a href="#" class="text-inherit">Ready to get coding? Start a <strong>Code Club</strong></a>
+      </div>
+    </div>
+  </section>
+
   <section id="partnersSponsors" class="bg-white">
     <div class="container">
-      <div class="row text-center">
-        <h1 class="text-center"> our partners & sponsors</h1>
+      <div class="row text-center padding-small">
+        <h1 class="text-center"> our sponsors</h1>
         <div class="col-xs-1 col-sm-1 col-md-1"></div>
         <div class="col-xs-3 col-sm-3 col-md-3">
           <a href="#">
@@ -299,7 +288,7 @@
       </div>
       <h4 class="text-center padding-small">
         <a class="text-orange" href="#" role="button">
-          Learn more
+          View more
           <br/>
           <span class="glyphicon glyphicon-plus"></span>
         </a>
@@ -310,10 +299,10 @@
   <footer class="bg-white">
     <img src="img/Blue_CodeSymbols-01.png" id="blueCodeSymbols" alt="Lights" />
     <section id="contact" class="bg-transparent padding">
-      <div class="container">
+      <div class="container-custom">
         <div class="row">
           <div class="col-md-2 col-sm-2 col-xs-6">
-            <h5 class="text-orange text-large text-uppercase">About</h5>
+            <h5 class="text-blue text-large text-uppercase">About</h5>
             <ul class="list-unstyled">
               <li><a href="#">How we work</a></li>
               <li><a href="#">Our Story</a></li>
@@ -324,7 +313,7 @@
             </ul>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6 padding-bot">
-            <h5 class="text-orange text-large text-uppercase">Get Involved</h5>
+            <h5 class="text-blue text-large text-uppercase">Get Involved</h5>
             <ul class="list-unstyled">
               <li><a href="#">KCJ Fund</a></li>
               <li><a href="#">Services</a></li>
@@ -334,7 +323,7 @@
             </ul>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6">
-            <h5 class="text-orange text-uppercase">Contact</h5>
+            <h5 class="text-blue text-uppercase">Contact</h5>
             <ul class="list-unstyled">
               <li><a href="contact.html">Contact us</a></li>
               <li><a href="contact.html#location">Location</a></li>
@@ -347,7 +336,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-6">
-            <h5 class="text-orange text-uppercase">Sign up</h5>
+            <h5 class="text-blue text-uppercase">Sign up</h5>
             <p>Join our Canadian newsletter to stay in the loop</p>
             <form action="" method="" class="form-block">
               <input type="email" />
@@ -358,6 +347,7 @@
       </div>
     </section>
     <section id="endfooter" class="bg-sky">
+      <p class="text-white">&copy;Kids Code Jeunesse | All Right Reserved</p>
     </section>
   </footer>
 

@@ -66,6 +66,11 @@ a:hover, input:hover, button:hover {
   width: 100%;
 }
 
+.bg-green{
+  background-color: #a9dfbc;
+  color: #479946;
+}
+
 .bg-transparent {
   background-color: #e2e2e2;
 }
@@ -85,6 +90,13 @@ a:hover, input:hover, button:hover {
 .btn-blue {
   background-color: #3bb2f7;
   color: white;
+}
+
+.container-custom{
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-block input {
@@ -186,9 +198,16 @@ a:hover, input:hover, button:hover {
 .text-bold {
   font-weight: bold;
 }
-
+.text-blue{
+  color: #3bb2f7;
+}
 .text-large {
   font-weight: 900;
+}
+
+.text-inherit{
+  color: inherit;
+  font: inherit;
 }
 
 .text-white {
@@ -202,14 +221,6 @@ a:hover, input:hover, button:hover {
   color: #3bb2f7;
 }*/
 
-#register-description {
-  width: 175px;
-}
-
-#apply-description {
-  width: 250px;
-}
-
 
 /*
 #empoweringSec a:hover{
@@ -221,11 +232,11 @@ footer .social-links a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  height: 36px;
-  width: 36px;
-  font-size: 1.6rem;
-  line-height: 2.3;
-  background-color: #3bb2f7;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  line-height: 1.7;
+  background-color: grey;
   border-radius: 50px;
   text-align: center;
 }
@@ -233,7 +244,7 @@ footer .social-links a {
 footer a:hover, .btn:hover {
   text-decoration: none;
   color: white;
-  background-color: rgb(13, 13, 13);
+  background-color: #3bb2f7;
 }
 
 footer a, footer p {
@@ -242,7 +253,23 @@ footer a, footer p {
   font-weight: normal;
 }
 
+#startCodeClub{
+  font-size: 27px;
+  font-weight: normal;
+}
+#register-description {
+  width: 170px;
+}
+
+#apply-description {
+  width: 250px;
+}
 #endfooter {
   width: 100%;
   height: 50px;
+}
+#endfooter p{
+  font-size: 18px;
+  padding-top: 12px;
+  padding-left: 50px;
 }
