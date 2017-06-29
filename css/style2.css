@@ -115,7 +115,9 @@
 .bg-lightblue {
   background-color: #CBE3EC;
 }
-
+.bg-linkedin {
+  background-color: #1982ba;
+}
 .bg-sky-blue {
   background-color: #83BFD2;
 }
@@ -183,4 +185,21 @@
 }
 .text-navy {
   color: #5e7079;
+}
+.text-thick {
+  font-weight: 900;
+}
+.border-top {
+  border-top: solid;
+  border-width: thin;
+}
+.border-left {
+  border-left: solid;
+  border-width: thin;
+}
+.text-black {
+  color: black;
+}
+.text-right {
+  text-align: right;
 }
