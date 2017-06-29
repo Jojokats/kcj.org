@@ -290,6 +290,12 @@ a:hover, input:hover, button:hover {
   text-align: center;
   font-size: 30px;
 }
+.social-links .custom-size{
+  height: 30px;
+  width: 30px;
+  line-height: 1.7;
+  font-size: 18px;
+}
 
 .fa-facebook:hover{
   background-color: #1d84bb;
@@ -327,8 +333,6 @@ footer a, footer p {
 footer .btn{
   margin-top: 5px;
 }
-
-
 
 #startCodeClub{
   font-size: 27px;
