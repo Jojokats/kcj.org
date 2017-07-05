@@ -223,3 +223,6 @@
 .width-social-links {
   max-width: 900px;
 }
+.no-dots {
+  list-style-type: none;
+}
