@@ -238,3 +238,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+.aboutCodeSymbols {
+   background-image: url("img/aboutCodeSymbols.png");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+}
