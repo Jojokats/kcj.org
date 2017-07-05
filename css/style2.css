@@ -245,22 +245,8 @@
   margin-right: auto;
 }
 .custome-bottom-img {
-  width: 60%;
-  height: 15%;
-  min-width: 300px;
-  min-height: 150px;
-}
-.custome-side-img {
-  margin-right: 5px;
-  float: left;
-  width: 15%;
-  height: 100%;
-  min-width: 100px;
-  min-height: 550px;
-}
-.t1 {
-  overflow: hidden;
-}
-.custom-margin {
-
+  width: 90%;
+  height: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
