@@ -33,8 +33,12 @@ h1, h2, h3, h4, h5, h6, a {
 
 a:hover, input:hover, button:hover {
   text-decoration: none;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  /*-webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;*/
+}
+
+strong{
+  font-weight: 900;
 }
 
 .after-nav {
@@ -74,6 +78,7 @@ a:hover, input:hover, button:hover {
 .bg-orange{
   background-color: #ff8900;
   color: white;
+  border-color: 1px solid white;
 }
 
 .bg-transparent {
@@ -93,9 +98,15 @@ a:hover, input:hover, button:hover {
 .border {
   /*text-transform: uppercase;
   font-weight: bold;*/
-  padding: 2.7px 11px 2.7px 11px;
+  /*padding: 2.7px 11px 2.7px 11px;*/
   border: 1px solid;
   border-color: inherit;
+}
+.border-padding{
+  padding: 2.7px 11px 2.7px 11px;
+}
+.border-white{
+  border-color: white;
 }
 
 .btn{
@@ -104,10 +115,10 @@ a:hover, input:hover, button:hover {
 
 .input{
   color: black;
-  border: 1px solid black;
-  font-size: 16px;
+  /*border: 1px solid;*/
+  /*font-size: 16px;*/
   width: 300px;
-  line-height: 2;
+  /*line-height: 2;*/
 }
 .btn-blue {
   background-color: #3bb2f7;
@@ -130,6 +141,15 @@ a:hover, input:hover, button:hover {
   display: inline;
 }
 
+.height-custom{
+  height: 200px;
+}
+
+.height-custom-425{
+  height: 425px;
+}
+
+
 .form-block input {
   display: block;
 }
@@ -146,6 +166,10 @@ a:hover, input:hover, button:hover {
 
 .margin-auto {
   margin: auto;
+}
+
+.margin-bot{
+  margin-bottom: 25px;
 }
 
 .navbar-custom {
@@ -223,6 +247,21 @@ a:hover, input:hover, button:hover {
   margin: auto;
 }
 
+.text-xl{
+  font-size: 36px;
+}
+.text-l{
+  font-size: 26px;
+}
+.text-m{
+  font-size: 18px;
+}
+.text-s{
+  font-size: 16px;
+}
+.text-xs{
+  font-size: 12px;
+}
 .text-blue {
   color: #3bb2f7;
 }
@@ -353,7 +392,7 @@ footer .btn{
 }
 
 #contact-email{
-  width: 570px;
+  width: 600px;
   margin: auto;
   font-size: 14px;
   line-height: 2.5;
