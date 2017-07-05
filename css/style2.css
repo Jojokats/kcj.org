@@ -124,9 +124,6 @@
 .text-white {
   color: white;
 }
-.padding-small {
-  padding: 1%;
-}
 .padding-medium {
   padding: 2%;
 }
@@ -141,6 +138,12 @@
 }
 .padding-top-large {
   padding-top: 3%;
+}
+.padding-bot-small {
+  padding-bottom: 3%;
+}
+.padding-bot-medium {
+  padding-bottom: 5%;
 }
 .padding-bot-large {
   padding-bottom: 15%;
@@ -202,4 +205,15 @@
 }
 .text-right {
   text-align: right;
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+.row-centered {
+    text-align:center;
+}
+.img-ourstory {
+  width: 78%;
+  height: 80%;
 }
