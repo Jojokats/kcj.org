@@ -223,3 +223,15 @@
 .width-social-links {
   max-width: 900px;
 }
+.no-dots {
+  list-style-type: none;
+}
+.ul-width-custom {
+  width: 135px;
+}
+.ul-custom{
+  line-height: 2.7;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
