@@ -27,6 +27,11 @@ header a {
   text-decoration: none;
 }
 
+header a:hover{
+  color: gray;
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6, a {
   font-weight: bolder;
 }
@@ -98,11 +103,12 @@ strong{
   color: black;
 }
 
-.bg-gray{
-  background-color: gray;
-  color: white;
+.bg-img{
+  background-image: url(../img/codesymbols.png);
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-size: contain;
 }
-
 .border {
   /*text-transform: uppercase;
   font-weight: bold;*/
@@ -249,6 +255,10 @@ strong{
 
 .padding-top{
   padding-top: 40px;
+}
+
+.padding-bot{
+  padding-bottom: 11.5%;
 }
 
 .pos-fixed {
