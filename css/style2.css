@@ -226,8 +226,11 @@
 .no-dots {
   list-style-type: none;
 }
-.ul-width-custom {
+.ul-width-custom1 {
   width: 135px;
+}
+.ul-width-custom2 {
+  width: 230px;
 }
 .ul-custom{
   line-height: 2.7;
