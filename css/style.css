@@ -33,8 +33,16 @@ h1, h2, h3, h4, h5, h6, a {
 
 a:hover, input:hover, button:hover {
   text-decoration: none;
+  color: #1f9edd;
   /*-webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;*/
+}
+a[class^="text-orange"]:hover{
+  color: #fb4c06;
+  text-decoration: none;
+}
+input[type^="email"]:hover{
+  color: black;
 }
 
 strong{
@@ -130,9 +138,16 @@ strong{
   color: white;
 }
 
+.btn-orange:hover{
+  background-color: white;
+  color: #ff8900;
+}
+.btn-orange-hover:hover{
+  background-color: #fca651;
+  color: white;
+}
 .container-custom{
-  padding-left: 12%;
-  padding-right: 12%;
+  width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -179,7 +194,7 @@ strong{
 }
 
 .navbar-custom .nav>li>a {
-  color: #3bb2f7;
+  color: #97e1f7;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -193,14 +208,14 @@ strong{
 }
 
 .navbar-custom .nav>.active>a {
-  color: #3bb2f7;
-  background-color: #e2e2e2;
+  color: #1f9edd;
+  background-color: transparent;
 }
 
 .navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus, .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
   text-decoration: none;
-  background-color: #e2e2e2;
-  color: #3bb2f7;
+  color: #1f9edd;
+  background-color: transparent;
 }
 
 .navbar-custom .navbar-brand {
@@ -213,7 +228,7 @@ strong{
 }
 
 .navbar-custom .icon-bar {
-  background-color: #3bb2f7;
+/*  background-color: #3bb2f7;*/
 }
 
 .padding {
@@ -234,7 +249,7 @@ strong{
 }
 
 .padding-top{
-  padding-top: 55px;
+  padding-top: 40px;
 }
 
 .pos-fixed {
@@ -265,13 +280,12 @@ strong{
 .text-blue {
   color: #3bb2f7;
 }
-
 .text-orange {
   color: #ff8900;
 }
 
 .text-bold {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .text-blue{
@@ -321,10 +335,17 @@ strong{
   height: 50px;
   width: 50px;
   line-height: 1.7;
-  border: 1px solid white;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
+  border: 1px solid white;
+}
+.social-links-m i{
+  height: 45px;
+  width: 45px;
+  line-height: 1.8;
+  font-size: 25px;
+  border: none;
 }
 .social-links .custom-size{
   height: 30px;
@@ -396,4 +417,12 @@ footer .btn{
   margin: auto;
   font-size: 14px;
   line-height: 2.5;
+}
+#contact-email a{
+  color: #85bfd3;
+  text-decoration: none;
+}
+#contact-email a:hover{
+  color: #4994a5;
+  text-decoration: none;
 }
