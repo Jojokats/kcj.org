@@ -152,6 +152,12 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.padding-left-small {
+  padding-left: 75px;
+}
+.padding-left-medium {
+  padding-left: 150px;
+}
 .font-large {
   font-size: 18px;
 }
@@ -238,9 +244,23 @@
   margin-left: auto;
   margin-right: auto;
 }
-.aboutCodeSymbols {
-   background-image: url("img/aboutCodeSymbols.png");
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
+.custome-bottom-img {
+  width: 60%;
+  height: 15%;
+  min-width: 300px;
+  min-height: 150px;
+}
+.custome-side-img {
+  margin-right: 5px;
+  float: left;
+  width: 15%;
+  height: 100%;
+  min-width: 100px;
+  min-height: 550px;
+}
+.t1 {
+  overflow: hidden;
+}
+.custom-margin {
+
 }
