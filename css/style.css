@@ -41,7 +41,7 @@ a[class^="text-orange"]:hover{
   color: #fb4c06;
   text-decoration: none;
 }
-input[type^="email"]:hover{
+input[type^="email"]:hover, input[type^="text"]:hover{
   color: black;
 }
 
