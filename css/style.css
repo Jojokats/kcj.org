@@ -370,6 +370,10 @@ strong{
 .fa-twitter:hover{
   background-color: #1da1f2;
 }
+
+.ul-custom{
+  width: 200px;
+}
 .social-hover:hover{
   background-color: white;
   color: #6fb3c6;
