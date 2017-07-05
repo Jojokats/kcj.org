@@ -63,6 +63,11 @@ strong{
   color: #463d3d;
 }
 
+.bg-darkgray{
+  background-color: gray;
+  color: white;
+}
+
 .bg-sky {
   background-color: #3bb2f7;
   color: white;
@@ -103,12 +108,6 @@ strong{
   color: black;
 }
 
-.bg-img{
-  background-image: url(../img/codesymbols.png);
-  background-repeat: no-repeat;
-  background-position-y: 100%;
-  background-size: contain;
-}
 .border {
   /*text-transform: uppercase;
   font-weight: bold;*/
@@ -255,10 +254,6 @@ strong{
 
 .padding-top{
   padding-top: 40px;
-}
-
-.padding-bot{
-  padding-bottom: 11.5%;
 }
 
 .pos-fixed {
