@@ -156,6 +156,9 @@ strong{
 .d-inline{
   display: inline;
 }
+.d-inline-grid{
+  display: inline-grid;
+}
 
 .height-custom{
   height: 200px;
