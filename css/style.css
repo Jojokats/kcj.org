@@ -118,7 +118,7 @@ strong{
 }
 
 .btn{
-  margin-bottom: 2px;
+  margin-bottom: 6px;
 }
 
 .input{
@@ -166,11 +166,6 @@ strong{
 
 .height-custom-425{
   height: 425px;
-}
-
-
-.form-block input {
-  display: block;
 }
 
 .line-H-40px {
@@ -273,7 +268,7 @@ strong{
   font-size: 26px;
 }
 .text-m{
-  font-size: 18px;
+  font-size: 19px;
 }
 .text-s{
   font-size: 16px;
@@ -393,15 +388,28 @@ footer a, footer p {
   color: black;
   font-size: 12px;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 footer .btn{
   margin-top: 5px;
 }
 
+footer input[type^="email"]{
+  width: 265px;
+  font-size: 17px;
+}
+
+.form-block{
+  display: block;
+}
+
 #startCodeClub{
   font-size: 27px;
   font-weight: normal;
+}
+#startCodeClub a:hover{
+  color: #357735;
 }
 #register-description {
   width: 170px;
