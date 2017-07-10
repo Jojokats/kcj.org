@@ -137,7 +137,10 @@ strong{
   background-color: #3bb2f7;
   color: white;
 }
-
+.btn-green{
+  background-color: #479946;
+  color: white;
+}
 .btn-orange{
   background-color: #ff8900;
   color: white;
@@ -248,6 +251,11 @@ strong{
   padding-bottom: 55px;
 }
 
+.padding-xl{
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
 .padding-bot {
   padding-bottom: 22px;
 }
@@ -287,13 +295,11 @@ strong{
 .text-orange {
   color: #ff8900;
 }
-
+.text-green{
+  color: #479946;
+}
 .text-bold {
   font-weight: 900;
-}
-
-.text-blue{
-  color: #3bb2f7;
 }
 
 .text-darkblue{
