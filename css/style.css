@@ -302,8 +302,14 @@ strong{
 .text-blue {
   color: #3bb2f7;
 }
+.text-blue-hover:hover{
+  color: #2e8bc2;
+}
 .text-orange {
   color: #ff8900;
+}
+.text-orange-hover:hover {
+  color: #c9730f;
 }
 .text-green{
   color: #479946;
