@@ -33,7 +33,12 @@ header a:hover{
 }
 
 h1, h2, h3, h4, h5, h6, a {
-  font-weight: bolder;
+  font-family: 'Roboto-black', sans-serif;
+  font-weight: bold;
+}
+
+h5{
+  font-size: 16px;
 }
 
 a:hover, input:hover, button:hover {
@@ -143,7 +148,7 @@ strong{
 }
 
 .btn-green:hover{
-  background-color: #337532;
+  background-color: #679b67;
   color: white;
 }
 .btn-orange{
@@ -156,7 +161,7 @@ strong{
   color: #ff8900;
 }
 .btn-orange-hover:hover{
-  background-color: #c9730f;
+  background-color: #f9a048;
   color: white;
 }
 .container-custom{
@@ -267,7 +272,7 @@ strong{
 }
 
 .padding-bot {
-  padding-bottom: 22px;
+  padding-bottom: 25px;
 }
 
 .padding-top{
@@ -404,6 +409,9 @@ strong{
 .width-custom{
   width: 600px;
 }
+.width-950{
+  max-width: 950px;
+}
 
 footer .btn:hover {
   text-decoration: none;
@@ -456,7 +464,7 @@ footer input[type^="email"]{
 }
 
 #contact-email{
-  max-width: 600px;
+  max-width: 670px;
   min-width: 250px;
   margin: auto;
   font-size: 14px;
