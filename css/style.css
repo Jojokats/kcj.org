@@ -141,6 +141,11 @@ strong{
   background-color: #479946;
   color: white;
 }
+
+.btn-green:hover{
+  background-color: #337532;
+  color: white;
+}
 .btn-orange{
   background-color: #ff8900;
   color: white;
@@ -151,7 +156,7 @@ strong{
   color: #ff8900;
 }
 .btn-orange-hover:hover{
-  background-color: #fca651;
+  background-color: #c9730f;
   color: white;
 }
 .container-custom{
