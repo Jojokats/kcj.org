@@ -209,6 +209,10 @@
   border-left: solid;
   border-width: thin;
 }
+.border-right {
+  border-right: solid;
+  border-width: thin;
+}
 .text-black {
   color: black;
 }
