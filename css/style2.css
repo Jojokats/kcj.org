@@ -124,6 +124,9 @@
 .text-white {
   color: white;
 }
+.text-thin {
+  font-weight: normal;
+}
 .padding-medium {
   padding: 25px;
 }
@@ -252,4 +255,36 @@
 }
 .custom-text-block {
   width: 60%;
+}
+.kcj-fund-maxwidth {
+  max-width: 900px;
+}
+.kcj-fund-custom-ul {
+  text-align: left;
+  max-width: 600px;
+  list-style-type: circle;
+}
+.kcj-fund-custom-Support-text {
+  text-transform: uppercase;
+  font-weight: 900;
+  max-width: 250px;
+}
+.kcj-fund-custom-box {
+  background-color: white;
+  text-align: center;
+  color: black;
+  width: 800px;
+  padding: 2%;
+}
+
+.kcj-fund-donate:hover {
+  color: white;
+  background-color: #73c9f4;
+}
+.page-header-font {
+  text-align: center;
+  text-transform: uppercase;
+}
+.text-arail-black {
+  font-family: "Arial Black";
 }
