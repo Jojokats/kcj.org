@@ -302,7 +302,7 @@ strong{
   font-size: 16px;
 }
 .text-xs{
-  font-size: 12px;
+  font-size: 14px;
 }
 .text-blue {
   color: #3bb2f7;
@@ -314,7 +314,7 @@ strong{
   color: #ff8900;
 }
 .text-orange-hover:hover {
-  color: #c9730f;
+  color: #f9a048;
 }
 .text-green{
   color: #479946;
