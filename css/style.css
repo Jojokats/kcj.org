@@ -264,7 +264,10 @@ strong{
 .navbar-custom .icon-bar {
   background-color: #1f9edd;
 }
-
+/*
+#notFound{
+  display: none;
+}*/
 .padding {
   padding: 35px;
 }
