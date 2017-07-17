@@ -150,7 +150,10 @@ strong{
   background-color: #52baf6;
   color: white;
 }
-
+.btn-darkblue{
+  background-color: #6fb3c6;
+  color: white;
+}
 .btn-green{
   background-color: #479946;
   color: white;
@@ -285,11 +288,21 @@ strong{
 .padding-bot {
   padding-bottom: 25px;
 }
+.padding-bot-s{
+  padding-bottom: 15px;
+}
 
 .padding-top{
   padding-top: 40px;
 }
+.padding-top-s{
+  padding-top: 15px;
+}
 
+.padding-x-s{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .pos-fixed {
   position: fixed;
   z-index: -1;
@@ -338,7 +351,7 @@ strong{
 }
 
 .text-darkblue{
-  color: #337ab7;
+  color: #6fb3c6;
 }
 
 .text-large {
@@ -420,8 +433,11 @@ strong{
   color: #6fb3c6;
 }
 
-.width-custom{
-  width: 600px;
+.width-600{
+  max-width: 600px;
+}
+.width-700{
+  max-width: 700px;
 }
 .width-950{
   max-width: 950px;
@@ -453,6 +469,16 @@ footer input[type^="email"]{
   display: block;
 }
 
+.form-control{
+  display: inline;
+  max-width: 150px;
+  color: #6fb3c6;
+  border-radius: 0;
+  padding: 0 5px 0 5px;
+}
+.font-inherit{
+  font-family: inherit;
+}
 #startCodeClub{
   font-size: 27px;
   font-weight: normal;
