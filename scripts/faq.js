@@ -1,12 +1,8 @@
   var g = {};
 $(document).ready(function() {
-  init();
-});
 
-function init() {
+
   g.titles = document.getElementsByClassName("panel-title");
-
-
   $(g.titles).click(function(e) {
     var target = e.target || e.srcElement;
     target = target.parentElement.parentElement;
@@ -24,5 +20,4 @@ function init() {
     }
   });
 
-
-}
+});
