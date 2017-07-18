@@ -6,13 +6,20 @@ document.addEventListener('DOMContentLoaded', init);
 function init(){
   g.list = document.getElementsByClassName('list')[0];
   g.province = document.getElementById('province');
+  g.province.addEventListener('change', filter);
+
   g.type = document.getElementById('type');
+  g.type.addEventListener('change', filter);
+
   g.month = document.getElementById('month');
+  g.month.addEventListener('change', filter);
+  
   g.notFound = document.getElementById('notFound');
   hide(g.notFound, true);
 
+/*
   g.filterBtn = document.getElementById('filterBtn');
-  g.filterBtn.addEventListener('click', filter);
+  g.filterBtn.addEventListener('click', filter);*/
 }
 
 /**
