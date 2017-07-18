@@ -323,3 +323,8 @@
 .custom-panel-text-title:hover {
   color: #2e8bc2;
 }
+.custom-dropdown {
+  margin: auto;
+  text-align: center;
+  width: 100px;
+}
