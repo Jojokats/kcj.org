@@ -284,9 +284,10 @@
   background-color: #73c9f4;
 }
 .custom-ul-faq {
+  color: #3bb2f7;
   font-size: large;
   line-height: 200%;
-  margin-left: 10%;
+  margin-left: 2%;
   list-style: square;
   list-style-position: inside;
 }

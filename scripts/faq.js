@@ -17,6 +17,9 @@ function init() {
       }
       target.className = "panel-title glyphicon glyphicon-triangle-top";
     } else if (target.className == "panel-title glyphicon glyphicon-triangle-top") {
+      for (var i = 0; i < g.titles.length; i++) {
+        g.titles[i].className = "panel-title glyphicon glyphicon-triangle-bottom";
+      }
       target.className = "panel-title glyphicon glyphicon-triangle-bottom";
     }
   });
