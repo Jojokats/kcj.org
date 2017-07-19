@@ -68,16 +68,14 @@
         to see if you’ve missed any important information!
       </p>
     </div>
-      <div class="dropdown custom-dropdown">
-         <input class="btn btn-blue text-uppercase padding-small kcj-fund-donate"
-          type="button" id="menu1" data-toggle="dropdown" value="filter">
-       </input>
-         <ul class="dropdown-menu text-center margin-auto" role="menu" aria-labelledby="menu1">
-           <li role="presentation"><a role="menuitem" tabindex="-1" href="#educators">educators</a></li>
-           <li role="presentation"><a role="menuitem" tabindex="-1" href="#parents">parents</a></li>
-           <li role="presentation"><a role="menuitem" tabindex="-1" href="#volunteers">volunteers</a></li>
-         </ul>
-       </div>
+    <div class="text-center margin-auto">
+       <select class="custom-select-sercvices" data-style="btn-danger" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+         <option value="#">filter</option>
+         <option value="#educators">In-class Software Curricula></option>
+         <option value="#parents">Workshop Projects</option>
+         <option value="#volunteers">Teacher Training Handouts</option>
+       </select>
+     </dov>
   </section>
 
   <section class="container padding-top-large">
