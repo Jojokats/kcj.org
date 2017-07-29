@@ -1,42 +1,43 @@
 'use strict';
 
 var g = {};
-document.addEventListener('DOMContentLoaded', init);
+$(init);
 
 function init(){
-  g.list = document.getElementsByClassName('list')[0];
-  g.province = document.getElementById('province');
-  g.province.addEventListener('change', filter);
+//  g.list = document.getElementsByClassName('list')[0];
+  //g.list = $('.list');
+//  console.log(g.list);
+  g.$listItems = $('.list-item');
 
-  g.type = document.getElementById('type');
-  g.type.addEventListener('change', filter);
+  g.$province = $('#province');
+  g.$province.on('change', filter);
 
-  g.month = document.getElementById('month');
-  g.month.addEventListener('change', filter);
-  
-  g.notFound = document.getElementById('notFound');
-  hide(g.notFound, true);
+  g.$type = $('#type');
+  g.$type.on('change', filter);
 
-/*
-  g.filterBtn = document.getElementById('filterBtn');
-  g.filterBtn.addEventListener('click', filter);*/
+  g.$month = $('#month');
+  g.$month.on('change', filter);
+
+  g.$notFound = $('#notFound');
+  hide(g.$notFound[0], true);
+
 }
 
 /**
  * Filter the base on the user selected on the workshop page
  */
 function filter(){
-  var provinceSelected = g.province.options[g.province.selectedIndex].value.toLowerCase().trim();
-  var typeSelected = g.type.options[g.type.selectedIndex].value.toLowerCase().trim();
-  var monthSelected = g.month.options[g.month.selectedIndex].value.toLowerCase().trim();
+  var provinceSelected = g.$province.children()[g.$province.prop('selectedIndex')].value.toLowerCase().trim();
+  var typeSelected = g.$type.children()[g.$type.prop('selectedIndex')].value.toLowerCase().trim();
+  var monthSelected = g.$month.children()[g.$month.prop('selectedIndex')].value.toLowerCase().trim();
 
-  var listItems = g.list.getElementsByClassName('list-item');
-  for(var i=0; i<listItems.length; i++){
-    var type = listItems[i].getElementsByClassName('type')[0];
-    var location = listItems[i].getElementsByClassName('location')[0];
-    var date = listItems[i].getElementsByClassName('date')[0];
-    if(type){
-      type = type.innerHTML.toLowerCase().trim();
+  for(var i=0; i<g.$listItems.length; i++){
+    var type = g.$listItems.eq(i).find('.type')[0];
+    var location = g.$listItems.eq(i).find('.location')[0];
+    var date = g.$listItems.eq(i).find('date')[0];
+
+    if(type && type.firstElementChild){
+      type = type.firstElementChild.className.toLowerCase().trim();
     } else {
       type = '';
     }
@@ -51,17 +52,15 @@ function filter(){
       date = '';
     }
 
-  //  console.log(location);
-
     if(type.indexOf(typeSelected) > -1  && location.indexOf(provinceSelected) > -1
         && date.indexOf(monthSelected) > -1){
-      hide(listItems[i], false);
+      hide(g.$listItems[i], false);
     } else {
-      hide(listItems[i], true);
+      hide(g.$listItems[i], true);
     }
   }
 
-  noItemFond(listItems);
+  noItemFond(g.$listItems);
 }
 
 function noItemFond(listItems){
@@ -74,7 +73,7 @@ function noItemFond(listItems){
   }
 
   if(isDisplay == false){
-    hide(g.notFound, false);
+    hide(g.$notFound[0], false);
   }
 }
 
