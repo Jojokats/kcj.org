@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+<!-- test -->
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,19 +10,16 @@
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
 
-  <title>Services - Kids Code Juenesse</title>
+  <title>FAQ - Kids Code Juenesse</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
-  <script src="scripts/design.js" type="text/javascript"></script>
 </head>
-
 <body>
   <div class="navbar-wrapper">
     <nav class="text-s navbar navbar-custom navbar-fixed-top">
@@ -48,80 +45,108 @@
           <ul class="nav nav-pills">
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="resources.html">Resources</a></li>
+            <li class="active"><a href="#">Resources</a></li>
             <li><a href="workshop.html">Workshops</a></li>
-            <li class="active"><a href="#">Support</a></li>
+            <li><a href="support.html">Support</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
-
-
   <section class="after-nav bg-sky-blue">
-    <h1 class="text-white text-center text-uppercase padding-big">support us!</h1>
+    <h1 class="text-center text-uppercase text-white padding-big">code, create, educate!</h1>
   </section>
-
-
-
-  <section>
-    <div class="container text-center padding-top-medium kcj-fund-maxwidth">
-      <h2 class="text-orange text-uppercase padding-small">kcj fund </h2>
-      <p class="padding-top-small">
-        By contributing to the Kids Code Jeunesse Fund, you make it possible for all Canadian
-        schools, teachers, community centres and parents bring computer programming to children.
+  <section class="container padding-top-large">
+    <h3 class="text-center text-uppercase text-blue"> Learning Resources &amp; Teaching Materials</h3>
+    <div class="row padding-top-small">
+      <p class="custom-resources-text">
+        We want to make sure every Canadian child is given the opportunity to learn computer
+        programming. To do so, we help teachers and educators bring code into the classroom
+        curriculum, into after-school programs, and into programs or Code Clubs at libraries and
+        community centres.
       </br>
-      </br>
-        As of 2016, we have we have lead instructors in <span class="text-thick">BC, Ontario</span>
-        and <span class="text-thick">Quebec</span>
+      Find below teaching material and learning resources we have made available for teachers
+      and educators to start inspiring kids with code!
       </p>
-    </br>
-    <h4 class="text-blue text-uppercase text-center">HELP A TEACHER, SCHOOL, PARENT OR COMMUNITY CENTRE COVER THE COST FOR:</h4>
-    <ul class="text-capitalize text-blue padding-top-small margin-auto kcj-fund-custom-ul">
-      <li><span class="text-black">A KCJ instructor to teach our 8 week curriculum in a school or community setting.</span></li>
-      <li><span class="text-black">A KCJ instructor to train teachers at our Teacher Training workshops.</span></li>
-      <li><span class="text-black">A child to attend Code Create &amp; Play workshops free of charge.</span></li>
-    </lu>
     </div>
   </section>
-
-  <section>
-    <div class="container after-nav">
-      <div class="row">
-        <div class="col-md-4 col-sm-4 text-center">
-          <img class="img-circle" src="img/Support-100-Student.png" alt="Game console picture" width="140" height="140">
-          <p class="kcj-fund-custom-Support-text margin-auto">
-            Give one student 8 instructor-led computerprogramming lessons.
-          </p>
-        </div>
-        <div class="col-md-4 col-sm-4 text-center">
-          <img class="img-circle" src="img/Support-700-Teachers-01.png" alt="Game console picture" width="140" height="140">
-          <p class="kcj-fund-custom-Support-text margin-auto">
-            Train a group of teachers with a Teacher Training Module
-          </p>
-        </div>
-        <div class="col-md-4 col-sm-4 text-center">
-          <img class="img-circle" src="img/Support-2500-class-01.png" alt="Game console picture" width="140" height="140">
-          <p class="kcj-fund-custom-Support-text margin-auto">
-            Give one student 8 instructor-led computerprogramming lessons.
-          </p>
-        </div>
+  <img class="custome-bottom-img" src="img/bottom.png">
+  <section class="container">
+    <div class="row margin-auto text-center padding-top-large">
+      <select class="custom-select-sercvices" data-style="btn-danger" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="#">filter</option>
+        <option value="#in-class">In-class Software Curricula></option>
+        <option value="#workshop">Workshop Projects</option>
+        <option value="#teacher-training">Teacher Training Handouts</option>
+      </select>
     </div>
-    <div class="text-center padding-top-large padding-bot-medium">
-      <input class="btn btn-blue text-uppercase padding-small kcj-fund-donate" type="submit" value="donate"/>
-    </div>
-  </section>
+    <div class="row padding-top-large">
+      <h3 class="text-orange text-center text-capitalize" id="in-class">In-class Software Curricula</h3>
 
-  <section class="bg-orange">
-    <div class="container padding-big">
-      <div class="row text-center kcj-fund-custom-box margin-auto">
-        <p class="text-cappitalize text-thick">Tax receipts are available for all donations $500+.<p>
-        <p class="text-thin">
-          Interested in sponsoring our events? Email us at:
-          <a href="mailto:kcjfund@kidscodejeunesse.org" class="text-blue">kcjfund@kidscodejeunesse.org</a>
-        </p>
+      <div class="row custom-row-resources padding-top-large padding-bot-medium border-bot">
+        <div class="col-md-6 col-sm-6">
+          <div class="custom-resources-box">
+          </div>
+          <p class="">
+            Scratch
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="custom-resources-box">
+          </div>
+          <p class="">
+            HTML
+          </p>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <div class="custom-resources-box">
+          </div>
+          <p class="">
+            Python
+          </p>
+        </div>
       </div>
+      <h3 class="text-orange text-center padding-top-large text-capitalize" id="workshop">
+        Workshop Projects</h3>
+      <div class="row custom-row-resources padding-top-large padding-bot-medium border-bot">
+
+        <div class="col-md-6 col-sm-6">
+          <div class="custom-resources-box">
+          </div>
+          <p class="">
+            Science Odyssey Project
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="custom-resources-box">
+          </div>
+          <p class="">
+            Hour of Code Project
+          </p>
+        </div>
+      </div>
+
+      <h3 class="text-orange text-center padding-top-large text-capitalize" id="teacher-training">
+        Teacher Training Handouts</h3>
+      <div class="row custom-row-resources padding-top-large padding-bot-small">
+
+        <div class="col-md-6 col-sm-6">
+          <div class="custom-resources-box">
+          </div>
+          <p class="">
+            Computational Thinking
+          </p>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="custom-resources-box">
+          </div>
+          <p class="">
+            Computer Programming
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -179,6 +204,9 @@
     </section>
   </footer>
 
-</body>
 
+
+
+
+</body>
 </html>

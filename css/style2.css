@@ -185,10 +185,7 @@
   width: 70%;
   height: 90%;
 }
-.test {
-  width: 90%;
-  height: 80%;
-}
+
 .img-center {
   margin:0 auto;
 }
@@ -284,9 +281,10 @@
   background-color: #73c9f4;
 }
 .custom-ul-faq {
+  color: #3bb2f7;
   font-size: large;
   line-height: 200%;
-  margin-left: 10%;
+  margin-left: 2%;
   list-style: square;
   list-style-position: inside;
 }
@@ -327,4 +325,44 @@
   margin: auto;
   text-align: center;
   width: 100px;
+}
+.custom-resources-text {
+  width: 72%;
+  margin: auto;
+  text-align: center;
+}
+.custom-select-sercvices {
+  border-color: #3bb2f7;
+  text-transform: capitalize;
+  font-size: large;
+  border-width: 2px;
+  width: 15%;
+}
+.custom-filter-btn-resources {
+  padding: 3px;
+  text-transform: capitalize;
+}
+.custom-filter-btn-resources:hover {
+  color: white;
+}
+.custom-resources-box {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+}
+.custom-row-resources {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+.padding-left-large {
+  padding-left: 10px;;
+}
+.border-bot {
+  border-bottom: solid;
+  border-width: thin;
 }
