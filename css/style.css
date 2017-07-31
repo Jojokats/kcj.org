@@ -64,7 +64,7 @@ strong{
 }
 
 .after-nav {
-  margin-top: 95px;
+  margin-top: 85px;
 }
 
 .bg-gray {
@@ -140,6 +140,7 @@ strong{
   /*border: 1px solid;*/
   /*font-size: 16px;*/
   width: 300px;
+  padding: 5px;
   /*line-height: 2;*/
 }
 .btn-blue {

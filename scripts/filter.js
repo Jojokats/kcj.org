@@ -34,7 +34,7 @@ function filter(){
   for(var i=0; i<g.$listItems.length; i++){
     var type = g.$listItems.eq(i).find('.type')[0];
     var location = g.$listItems.eq(i).find('.location')[0];
-    var date = g.$listItems.eq(i).find('date')[0];
+    var date = g.$listItems.eq(i).find('.date')[0];
 
     if(type && type.firstElementChild){
       type = type.firstElementChild.className.toLowerCase().trim();
@@ -55,27 +55,15 @@ function filter(){
     if(type.indexOf(typeSelected) > -1  && location.indexOf(provinceSelected) > -1
         && date.indexOf(monthSelected) > -1){
       hide(g.$listItems[i], false);
+      hide(g.$notFound[0], true);
     } else {
       hide(g.$listItems[i], true);
+      hide(g.$notFound[0], false);
     }
   }
 
-  noItemFond(g.$listItems);
 }
 
-function noItemFond(listItems){
-
-  var isDisplay = false;
-  for(var i=0; i<listItems.length; i++){
-    if(listItems[i].style.display === ''){
-      isDisplay = true;
-    }
-  }
-
-  if(isDisplay == false){
-    hide(g.$notFound[0], false);
-  }
-}
 
 function hide(element, hide){
   if(hide){
