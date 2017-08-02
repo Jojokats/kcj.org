@@ -31,6 +31,7 @@ function filter(){
   var typeSelected = g.$type.children()[g.$type.prop('selectedIndex')].value.toLowerCase().trim();
   var monthSelected = g.$month.children()[g.$month.prop('selectedIndex')].value.toLowerCase().trim();
 
+  var numItemsDisplay = g.$listItems.length;
   for(var i=0; i<g.$listItems.length; i++){
     var type = g.$listItems.eq(i).find('.type')[0];
     var location = g.$listItems.eq(i).find('.location')[0];
@@ -55,13 +56,16 @@ function filter(){
     if(type.indexOf(typeSelected) > -1  && location.indexOf(provinceSelected) > -1
         && date.indexOf(monthSelected) > -1){
       hide(g.$listItems[i], false);
-      hide(g.$notFound[0], true);
     } else {
       hide(g.$listItems[i], true);
-      hide(g.$notFound[0], false);
+      numItemsDisplay--;
     }
   }
-
+  if(numItemsDisplay === 0){
+    hide(g.$notFound[0], false);
+  } else {
+    hide(g.$notFound[0], true);
+  }
 }
 
 
