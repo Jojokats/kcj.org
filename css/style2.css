@@ -142,6 +142,12 @@
 .padding-top-large {
   padding-top: 30px;
 }
+.custom-padding-top-large {
+  padding-top: 65px;
+}
+.custom-padding-top-large2 {
+  padding-top: 100px;
+}
 .padding-bot-small {
   padding-bottom: 30px;
 }
