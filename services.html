@@ -71,10 +71,20 @@
   </section>
 
   <section id="coding_lessons">
-    <div class="padding"></div>
-    <h3 class="text-center text-uppercase bg-blue padding">school coding lessons</h3>
+    <div class="row margin-auto text-center form-group">
+      <label class="padding-x-s">Filter</label>
+      <select class="form-control" data-style="btn-danger" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+        <option value="#">All</option>
+        <option value="#school-coding">School Coding Lessons</option>
+        <option value="#workshop">Workshop &amp; Training</option>
+        <option value="#volunteer">Volunteer</option>
+        <option value="#code-club">Code Club</option>
+      </select>
+    </div>
   </section>
   <section>
+    <div class="padding" id="school-coding"></div>
+    <h3 class="text-center text-uppercase bg-blue padding">school coding lessons</h3>
     <div class="container container-custom padding-big">
       <div class="row">
         <div class="col-sm-5 col-xs-12 padding-big">
@@ -105,8 +115,9 @@
     </div>
   </section>
 
-  <section class="bg-orange">
-    <h3 class="text-center text-uppercase padding">WORKSHOPS &amp; TRAINING</h3>
+  <section id="workshop">
+    <div class="padding"></div>
+    <h3 class="text-center bg-orange text-uppercase padding">WORKSHOPS &amp; TRAINING</h3>
   </section>
   <section>
     <div class="container container-custom padding-top">
@@ -181,8 +192,9 @@
     </div>
   </section>
 
-  <section class="bg-green">
-    <h3 class="text-center text-uppercase padding">code club</h3>
+  <section id="code-club">
+    <div class="padding"></div>
+    <h3 class="text-center bg-green text-uppercase padding">code club</h3>
   </section>
   <section>
     <div class="container container-custom padding-big">
