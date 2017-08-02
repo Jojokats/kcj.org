@@ -124,6 +124,9 @@ strong{
   border: 1px solid;
   border-color: inherit;
 }
+.border-top{
+  border-top: 1px solid #c6c6c6;
+}
 .border-padding{
   padding: 2.7px 11px 2.7px 11px;
 }
@@ -297,7 +300,7 @@ strong{
 }
 
 .padding-top{
-  padding-top: 40px;
+  padding-top: 60px;
 }
 .padding-top-s{
   padding-top: 15px;
