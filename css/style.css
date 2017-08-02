@@ -336,6 +336,9 @@ strong{
 .text-xs{
   font-size: 14px;
 }
+.text-black{
+  color: black;
+}
 .text-blue {
   color: #3bb2f7;
 }
