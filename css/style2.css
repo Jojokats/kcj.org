@@ -236,6 +236,7 @@
 }
 .width-max {
   max-width: 800px;
+  max-height: auto;
 }
 .width-social-links {
   max-width: 900px;
@@ -381,4 +382,11 @@
 .img-third {
   margin: auto;
   width: 75%;
+}
+.custom-max-height {
+  height: 100px;
+  background-color: orange
+}
+.bg-t {
+  background-color: #3bb2f7;
 }
