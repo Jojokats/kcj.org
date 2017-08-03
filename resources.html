@@ -15,15 +15,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104071612-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
-<<<<<<< HEAD
   <script src="scripts/scroll.js" type="text/javascript"></script>
   <script src="scripts/jquery_cookie/jquery.cookie.js" type="text/javascript"></script>
   <script src="scripts/linkToForm.js" type="text/javascript"></script>
-=======
->>>>>>> 4fabbdc3d25292e5372303bbf75c0ac09cbb855d
 </head>
 <body>
   <div class="navbar-wrapper">
@@ -80,7 +87,7 @@
   <section class="container">
     <div class="row margin-auto text-center padding-top-large form-group">
       <label class="padding-x-s">Type</label>
-      <select class="form-control" data-style="btn-danger" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+      <select class="form-control">
         <option value="#">All</option>
         <option value="#in-class">In-class Software Curricula</option>
         <option value="#workshop">Workshop Projects</option>
@@ -88,41 +95,40 @@
       </select>
     </div>
     <div class="row padding-top-large">
-      <h3 class="text-orange text-center text-capitalize" id="in-class">Our 8 In-class Curricula</h3>
-
-      <div class="row custom-row-resources padding-top-large padding-bot-medium border-bot">
-        <div class="col-md-4 col-sm-4">
-          <img class="img img-responsive" src="img/resources/Card-Scratch-Projects.png" alt="scratch card"/>
-          <p class="">
+      <h3 class="text-orange text-center text-capitalize" id="in-class">In-class Software Curricula</h3>
+      <div class="row row-centered padding-top-large padding-bot-medium border-bot">
+        <div class="col-md-4 col-sm-4 col-centered">
+          <img class="img img-responsive img-third" src="img/resources/Card-Scratch-Projects.png" alt="scratch card"/>
+          <p class="text-center">
             Scratch
           </p>
         </div>
-        <div class="col-md-4 col-sm-4">
-          <img class="img img-responsive" src="img/resources/Card-HTML-Projects.png" alt="Html card"/>
-          <p class="">
+        <div class="col-md-4 col-sm-4 col-centered">
+          <img class="img img-responsive img-third" src="img/resources/Card-HTML-Projects.png" alt="Html card"/>
+          <p class="text-center">
             HTML
           </p>
         </div>
-        <div class="col-md-4 col-sm-4">
-          <img class="img img-responsive" src="img/resources/Card-Python-Projects.png" alt="Python card"/>
-          <p class="">
+        <div class="col-md-4 col-sm-4 col-centered">
+          <img class="img img-responsive img-third" src="img/resources/Card-Python-Projects.png" alt="Python card"/>
+          <p class="text-center">
             Python
           </p>
         </div>
       </div>
       <h3 class="text-orange text-center padding-top-large text-capitalize" id="workshop">
         Workshop Projects</h3>
-      <div class="row custom-row-resources padding-top-large padding-bot-medium border-bot">
-
-        <div class="col-md-4 col-sm-4 col-md-offset-2">
-          <img class="img img-responsive" src="img/resources/Card-1Hour-Workshop.png" alt="1 hour workshop card"/>
-          <p class="">
+      <div class="row row-centered padding-top-large padding-bot-medium border-bot">
+        <div class="col-md-4 col-sm-4 col-centered" >
+          <img class="img img-responsive img-third" src="img/resources/Card-1Hour-Workshop.png" alt="1 hour workshop card"/>
+          <p class="text-center">
             1 hour Workshop
           </p>
         </div>
-        <div class="col-md-4 col-sm-4">
-          <img class="img img-responsive" src="img/resources/Card-2Hour-Workshop.png" alt="2 hour workshop card"/>
-          <p class="">
+
+        <div class="col-md-4 col-sm-4 col-centered" >
+          <img class="img img-responsive img-third" src="img/resources/Card-2Hour-Workshop.png" alt="2 hour workshop card"/>
+          <p class="text-center">
             2 hours Workshop
           </p>
         </div>
@@ -130,18 +136,17 @@
 
       <h3 class="text-orange text-center padding-top-large text-capitalize" id="teacher-training">
         Teacher Training Handouts</h3>
-      <div class="row custom-row-resources padding-top-large padding-bot-small">
+      <div class="row row-centered padding-top-large padding-bot-small">
+        <div class="col-md-4 col-sm-4 col-centered">
+          <img class="img img-responsive img-third" src="img/resources/Card-CompThinking-TeacherTraining.png" alt="Computer Thinking Card"/>
 
-        <div class="col-md-4 col-sm-4 col-md-offset-2">
-          <img class="img img-responsive" src="img/resources/Card-CompThinking-TeacherTraining.png" alt="Computer Thinking Card"/>
-
-          <p class="">
+          <p class="text-center">
             Computational Thinking
           </p>
         </div>
-        <div class="col-md-4 col-sm-4">
-            <img class="img img-responsive" src="img/resources/Card-CompProgramming-TeacherTraining.png" alt="Computer Programming Card"/>
-          <p class="">
+        <div class="col-md-4 col-sm-4 col-centered">
+            <img class="img img-responsive img-third" src="img/resources/Card-CompProgramming-TeacherTraining.png" alt="Computer Programming Card"/>
+          <p class="text-center">
             Computer Programming
           </p>
         </div>

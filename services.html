@@ -18,6 +18,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
+  <script src="scripts/scroll.js"></script>
 </head>
 <body>
 
@@ -55,23 +56,53 @@
     </nav>
   </div>
 
-  <section class="after-nav bg-sky">
-    <h1 class="text-center text-uppercase padding-big">Let us help!</h1>
-  </section>
-  <section >
-    <div class="container container-custom padding-top text-center">
-      <h4 class="padding-small text-orange text-bold">There are many ways to bring code to your students!</h4>
-      <p>We want to make sure every Canadian child is given the opportunity to learn computer
-        pro-gramming. To do so, we help teachers bring code into the classroom curriculum, train teachers
-        and pre-service teachers, and hold workshops in community centres across the country.
+  <section class="after-nav">
+    <div class="" id="how_We_Work"></div>
+    <h1 class="text-center text-uppercase text-white bg-sky-blue padding-big">chekc out the services we offer!</h1>
+  <div class="container padding-top-large">
+    <h3 class="text-orange text-uppercase text-center">how we worl</h1>
+    <div class="row padding-top-small custom">
+      <h5 class="text-blue text-uppercase">kids</h5>
+      <p>
+        We introduce computational thinking and computer programming to students
+        and teachers in Canadian schools and in community centers. We use intuitive,
+        open source, free tools like Scratch and Trinket that work well in a classroom
+        setting. Our education materials are developed for children from 5 to 12 years
+        old to ensure that children assimilate learning from one stage to the next.
+      </p>
+      </br>
+    </div>
+    <div class="row padding-left-small">
+      <h5 class="text-blue text-uppercase">educators</h5>
+    <p>
+        We partner with teachers (K-12) who are interested in weaving code
+        into their language, arts, math and technology curriculum. We volunteer
+        in the classroom, direct teachers to proven educational resources
+        and train them in computational thinking, computer programming and
+        Internet/ Web to help them bring code into the classroom. We present
+        to educators, researchers and education students in universities from
+        around the world.
+      </div>
+    </p>
+    <div class="row padding-left-medium padding-bot-medium  ">
+      <h5 class="text-blue text-uppercase">parents &amp; community leaders</h5>
+    <p>
+        We engage with communities through our Code, Create, Play
+        workshops, where we allow children to explore code through art,
+        music, games and story-telling, as well as hands-on making with
+        Raspberry Pi, GoPiGo’s and other hardware. We hold our workshops
+        in libraries, community centers and other public spaces.
+        Our workshops are developed with a priority to engage girls.
       </p>
     </div>
+  </div>
   </section>
+
 
   <section class="padding-top-s" id="coding_lessons">
     <div class="row margin-auto text-center form-group">
-      <label class="padding-x-s">Filter</label>
-      <select class="form-control" data-style="btn-danger" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+      <label class="padding-x-s">Services</label>
+      <select class="form-control">
         <option value="#">All</option>
         <option value="#school-coding">School Coding Lessons</option>
         <option value="#workshop">Workshop &amp; Training</option>
@@ -82,7 +113,7 @@
   </section>
   <section>
     <div class="padding" id="school-coding"></div>
-    <h3 class="text-center text-uppercase bg-blue padding">school coding lessons</h3>
+    <h3 class="text-center text-white text-uppercase bg-sky-blue padding">school coding lessons</h3>
     <div class="container container-custom padding-big">
       <div class="row">
         <div class="col-sm-5 col-xs-12 padding-big">
@@ -112,10 +143,8 @@
       </div>
     </div>
   </section>
-
   <section id="workshop">
-    <div class="padding"></div>
-    <h3 class="text-center bg-orange text-uppercase padding">WORKSHOPS &amp; TRAINING</h3>
+    <h3 class="text-center bg-orange text-uppercase padding">WORKSHOPS</h3>
   </section>
   <section>
     <div class="container container-custom padding-top">
@@ -130,6 +159,21 @@
           </p>
           <p>We also bring our workshops to kids in libraries.</p>
           <br/>
+
+        </div>
+        <div class="col-sm-5 col-xs-12 padding-big">
+          <img class="img img-responsive margin-auto" src="img/Icon_Play-01.png" alt="light bulb icon"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="workshop">
+    <h3 class="text-center bg-t text-white text-uppercase padding">TEACHER TRAINING</h3>
+  </section>
+  <section>
+    <div class="container container-custom padding-top padding-bot">
+      <div class="row text-center">
+        <div class="margin-auto">
           <a target="_blank" href="http://kidscodejeunesse.org/wp-content/uploads/2017/01/Teacher_Training_EN_2017.pdf">
             <h5 class="text-uppercase text-center text-blue text-blue-hover padding-small">TEACHER TRAINING</h5>
           </a>
@@ -139,59 +183,13 @@
             them bring code into the classroom.
           </p>
         </div>
-        <div class="col-sm-5 col-xs-12 padding-big">
-          <img class="img img-responsive margin-auto" src="img/Icon_Play-01.png" alt="light bulb icon"/>
-        </div>
       </div>
     </div>
   </section>
 
-  <section id="volunteer">
-    <div class="padding"></div>
-    <h3 class="text-center text-uppercase bg-sky padding">VOLUNTEER</h3>
-  </section>
-  <section>
-    <div class="container container-custom padding-bot">
-      <div class="row text-center padding-top-s">
-        <h5 class="text-italic">Volunteers are at the heart of our mission to bring code into Canadian classrooms.</h5>
-        <h5 class="text-italic">Empowering kids and their educators is a very rewarding and enriching experience.</h5>
-      </div>
-      <div class="row padding-small">
-        <div class="col-sm-5 col-xs-12 text-center padding-xl">
-          <img class="img img-max img-responsive margin-auto padding-small" src="img/Icon-Teach-01.png" alt="light bulb icon"/>
-          <a class="btn btn-orange btn-orange-hover padding-small" href="test.html"><strong class="text-capitalize">Volunteer Opportunities</strong></a>
-        </div>
-        <div class="col-sm-7 col-xs-12 margin-auto">
-          <h5 class="text-uppercase text-center text-orange padding-small">EVENT AMBASSADOR</h5>
-          <p>Are you passionate about children learning to code? If you would
-            enjoy networking with community leaders at Meetups, tech
-            conferences, gaming conventions, university fairs and special
-            events then we would ask you to become a representative for
-            Kids Code Jeunesse and Code Club Canada.
-          </p>
-          <br/>
-          <h5 class="text-uppercase text-center text-orange padding-small">WORKSHOP MENTOR</h5>
-          <p>Do you enjoy the world of education and looking for ways to give
-            back to the community? Helping children to learn to code in the
-            classroom is an extremely rewarding experience, especially when
-            the “Aha, I get it!” moments occur – both from the children and the
-            teachers. We’re looking for volunteers to support our instructors in
-            the classrooms, at workshops, and at teacher training events.
-          </p>
-          <br/>
-          <h5 class="text-uppercase text-center text-orange padding-small">VOLUNTEER REMOTELY</h5>
-          <p>Do you have skills to share and prefer working from home?
-            We’d love your help with setting up events, fundraising, translation,
-            sharing social media campaigns, publishing in WordPress, review-ing
-            coding projects, testing volunteer training material and oh the list goes on.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <section id="code-club">
-    <div class="padding"></div>
     <h3 class="text-center bg-green text-uppercase padding">code club</h3>
   </section>
   <section>
