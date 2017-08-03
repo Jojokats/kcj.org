@@ -1,11 +1,8 @@
 $(function(){
-  var cookie = $.cookie('formCompleted');
-  //console.log(cookie);
-  /*
-  if(!cookie){
-    window.location.href = '../form.html';
-  }*/
+  var formCompleted = $.cookie('formCompleted');
 
-  var btn = $('#btnsumit');
-  console.log(btn);
+  if(!formCompleted && formCompleted != 'true'){
+    console.log('formCompleted: ' + formCompleted);
+    window.location.href = '../form.html';
+  }
 });
