@@ -12,6 +12,5 @@ $(function(){
 
 function scroll(e){
   var positionabout = $(this[this.selectedIndex].value).offset().top - 90;
-  console.log("positionabout: " + positionabout);
   $("html, body").animate({scrollTop:positionabout}, '500', 'swing');
 }
