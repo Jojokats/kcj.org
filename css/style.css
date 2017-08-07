@@ -551,11 +551,10 @@ footer input[type^="email"] {
 }
 
 
-/*
+
 #register-description {
-  max-width: 190px;
+  max-width: 220px;
 }
-*/
 
 .width-200 {
   max-width: 197px;
