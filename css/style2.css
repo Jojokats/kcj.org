@@ -387,6 +387,7 @@
   height: 100px;
   background-color: orange
 }
-.bg-t {
+.bg-custom-blue {
   background-color: #3bb2f7;
+  color: white;
 }
