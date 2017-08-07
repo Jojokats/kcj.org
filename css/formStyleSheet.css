@@ -1,8 +1,28 @@
-/* Form from saleforce start*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 
+#form1{
+  margin-top: 90px;
+}
+
+#dvFastForms .ff-section-header {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #3bb2f7;
+  font-size: 18px;
+  padding: 0px;
+}
+/*
 .ff-form {
-  /*background-color: #ffffff;*/
-  background-color: black;
+  background-color: #ffffff;
+  margin-top: 90px;
 }
 
 #dvFastForms .ff-page-header {
@@ -18,7 +38,7 @@
 }
 
 .ff-logo {
-  background-image: url(https://na35.salesforce.com/servlet/servlet.ImageServer?id=01541000002LP7zAAG&oid=00D41000002FVTLEA4);
+  background-image: url(img/Logo_KCJ-Color-2lines.png);
   width: 397px;
   height: 153px;
   margin: auto;
@@ -125,6 +145,4 @@
 #dvFastForms .ff-btn-submit:hover {
   background-color: #7dc6ee;
 }
-
-
-/* end form */
+*/
