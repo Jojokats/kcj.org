@@ -1,20 +1,13 @@
 var g = {};
 $(document).ready(function() {
-  g.email = document.getElementsByClassName("email_input")[0];
-  g.btn = document.getElementsByClassName("submit_email")[0];
-//valid
-console.log("1");
+  g.btn = document.getElementsByClassName("submit_email");
 $(g.btn).click(function(e) {
-  console.log("2");
   e.preventDefault();
-  validateEmail();
-  //$.cookie("newslleter_email", g.email.value, { expires: 1, path: '/' });
-  $.cookie("newslleter_email", g.email.value);
-  window.location.href = "contact.html";
-
+  g.email = this.parentElement.children[0]
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if($(g.email).val() !== '' && regex.test($(g.email).val())){
+    $.cookie("newslleter_email", g.email.value);
+    window.location.href = "contact.html#mc_embed_signup_scroll";
+  }
 });
 });
-
-function validateEmail() {
-
-}
