@@ -1,4 +1,3 @@
-
 window.CodeClubWorld = {};
 g = {};
 $(function() {
