@@ -21,16 +21,18 @@
   </script>
   <script src="../scripts/design.js" type="text/javascript"></script>
   <script src="../scripts/sponsors_hover.js" type="text/javascript"></script>
+  <script src="../scripts/jquery_cookie/jquery.cookie.js"></script>
+  <script src="../scripts/email_saver.js"></script>
 </head>
 
 <body>
   <div class="navbar-wrapper">
     <nav class="navbar navbar-custom navbar-fixed-top">
-      <header class="bg-gray">
+      <header id="language" class="bg-gray">
         <div class="container">
           <ul class="list-inline text-right text-xs">
             <li><a href="../index.html">EN</a></li> |
-            <li><a href="accueil.html">FR</a></li>
+            <li class="active"><a href="accueil.html">FR</a></li>
           </ul>
         </div>
       </header>
@@ -186,8 +188,8 @@
         <h2 class="text-uppercase text-white">Abonner à notre infolettre pour restez à l’affut</h2>
         <form class="padding-small" action="#" method="post">
           <div class="form-group">
-            <input class="input padding-s border border-white" type="email" name="email" placeholder="Addresse courielle">
-            <input class="btn btn-orange border border-white" type="submit" value="S’abonner">
+            <input class="input padding-s border border-white email_input" type="email" name="email" placeholder="Addresse courielle">
+            <input class="btn btn-orange border border-white submit_email" type="submit" value="S’abonner">
           </div>
         </form>
       </div>
@@ -339,8 +341,8 @@
             <h5 class="text-blue text-uppercase">S’inscrire</h5>
             <p>Join our Canadian newsletter to stay in the loop</p>
             <form action="" method="" class="form-block">
-              <input class="text-black" type="email" placeholder="Addresse courielle"/>
-              <input class="btn btn-blue" type="submit" value="S’abonner" />
+              <input class="text-black email_input" type="email" placeholder="Addresse courielle"/>
+              <input class="btn btn-blue submit_email" type="submit" value="S’abonner" />
             </form>
           </div>
         </div>
