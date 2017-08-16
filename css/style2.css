@@ -134,13 +134,16 @@
   padding: 30px;;
 }
 .padding-top-small {
-  padding-top: 20px;;
+  padding-top: 20px;
 }
 .padding-top-medium {
   padding-top: 25px;
 }
 .padding-top-large {
   padding-top: 30px;
+}
+.padding-top-xlarge {
+  padding-top: 50px;
 }
 .custom-padding-top-large {
   padding-top: 65px;
@@ -390,4 +393,12 @@
 .bg-custom-blue {
   background-color: #3bb2f7;
   color: white;
+}
+.map{
+  margin-top: 20px;
+  border: 12px solid #f3f4f7;
+}
+.map-s{
+  width: 100%;
+  height: 450px;
 }
