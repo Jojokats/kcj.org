@@ -521,7 +521,7 @@ footer .btn {
 }
 
 footer input[type^="email"] {
-  width: 265px;
+/*  width: 265px;*/
   font-size: 14px;
 }
 
@@ -577,7 +577,8 @@ footer input[type^="email"] {
 
 #contact-email {
   max-width: 670px;
-  min-width: 250px;
+/*  min-width: 250px;
+  */
   margin: auto;
   font-size: 14px;
   line-height: 2.5;
