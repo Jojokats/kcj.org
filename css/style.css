@@ -519,8 +519,11 @@ footer .btn {
   margin-top: 5px;
 }
 
+
 footer input[type^="email"] {
   max-width: 265px;
+  min-width: 130px;
+  width: 100%;
   font-size: 14px;
 }
 
