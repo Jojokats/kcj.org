@@ -19,6 +19,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
+  <script src="scripts/video.js" type="text/javascript"></script>
   <script src="scripts/design.js" type="text/javascript"></script>
   <script src="scripts/sponsors_hover.js" type="text/javascript"></script>
   <script src="scripts/jquery_cookie/jquery.cookie.js"></script>
@@ -60,7 +61,7 @@
     </nav>
   </div>
   <!-- Carousel -->
-  <section id="carousel" class="pos-fixed after-nav">
+  <!-- <section id="carousel" class="pos-fixed after-nav">
     <div class="container-fluid paddingtop-bottom">
       <div class="row ">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -76,7 +77,23 @@
             </div>
           </div>
         </div>
-        <!-- /.carousel -->
+      </div>
+    </div>
+  </section>
+   -->
+  <!-- /.carousel -->
+  <section id="video" class="pos-fixed after-nav">
+    <div class="homepage-hero-module">
+      <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay class="fillWidth">
+          <source src="video/Writing-Working.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="video/Writing-Working.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="video/Writing-Working.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+          <img src="PATH_TO_JPEG" alt="">
+        </div>
       </div>
     </div>
   </section>
