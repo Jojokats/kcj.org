@@ -521,7 +521,7 @@ footer .btn {
 }
 
 footer input[type^="email"] {
-/*  width: 265px;*/
+  max-width: 265px;
   font-size: 14px;
 }
 
