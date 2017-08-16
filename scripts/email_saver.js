@@ -1,6 +1,7 @@
 var g = {};
 $(document).ready(function() {
   g.btn = document.getElementsByClassName("submit_email");
+  g.lang = document.getElementById("language").getElementsByTagName("li");
 $(g.btn).click(function(e) {
   e.preventDefault();
   g.email = this.parentElement.children[0]
