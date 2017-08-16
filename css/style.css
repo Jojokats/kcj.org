@@ -543,6 +543,9 @@ footer input[type^="email"] {
   font-family: inherit;
 }
 
+#language .active{
+  text-decoration: underline;
+}
 #startCodeClub {
   font-size: 27px;
   font-weight: normal;
@@ -572,7 +575,7 @@ footer input[type^="email"] {
 }
 
 #endfooter p {
-  font-size: 18px;
+  font-size: 95%;
   padding-top: 12px;
   padding-left: 50px;
 }
