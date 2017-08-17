@@ -34,7 +34,7 @@ CodeClubWorld.makeMap = function() {
     headers     : { 'Authorization': 'Bearer ' + CodeClubWorld.api_token, 'Accept': 'application/vnd.codeclubworld.v'+CodeClubWorld.api_version }
   })
   /**
-  * once the ajax is done 
+  * once the ajax is done
   */
   .done( function(data) {
     var starting_point = {lat:  45.50884, lng: -73.58781};
@@ -105,7 +105,7 @@ CodeClubWorld.makeMap = function() {
           content.push('<p><span class="glyphicon glyphicon-remove"></span> Looking for volunteers</p>');
           if (club.venue.url) {
             content.push(
-              '<a class="d-block padding-xxs" href="' + club.venue.url + '">' +
+              '<a class="d-block padding-xxs" href="' + club.venue.url + '" target="_black">' +
                 club.venue.url +
               '</a>'
             );
