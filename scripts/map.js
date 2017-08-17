@@ -1,6 +1,8 @@
 window.CodeClubWorld = {};
 g = {};
 $(function() {
+  g.lang = document.getElementById("language").getElementsByClassName("active")[0].children[0].innerHTML;
+  g.path = g.lang == "EN" ? "img/" : "../img/"
   // TODO: add your API key
   CodeClubWorld.api_token = 'ROe90450b2a7fd5fefdaa57c51aead395927510b4ea7b133fe0f298747cc50d8aa';
 
@@ -38,7 +40,6 @@ CodeClubWorld.makeMap = function() {
         markers = [];
         g.makers = markers;
 
-
    g.more = clubs;
     if(CodeClubWorld.region){
       lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
@@ -73,7 +74,7 @@ CodeClubWorld.makeMap = function() {
       var latLng = new google.maps.LatLng(lat, lng);
           marker = new google.maps.Marker({
             position: latLng,
-            icon: 'img/marker.png'
+            icon: g.path + 'marker.png'
           });
       markers.push(marker);
 
@@ -86,7 +87,7 @@ CodeClubWorld.makeMap = function() {
       var latLng = {lat:  g.kidscode[i].lat, lng: g.kidscode[i].lng};
           marker = new google.maps.Marker({
             position: latLng,
-            icon: 'img/marker_blue.png',
+            icon: g.path + 'marker_blue.png',
           });
       markers.push(marker);
       g.makers.push(marker);
@@ -111,7 +112,7 @@ CodeClubWorld.makeMap = function() {
     // mcOptions "as is"
     var mcOptions = {
       gridSize: 30,
-      imagePath: 'img/m'
+      imagePath: g.path + 'm'
     };
    var markerCluster = new MarkerClusterer(map, markers, mcOptions);
 
