@@ -689,10 +689,10 @@ canvas {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes pulse-grow {
-  0%   {font-size: 35px}
-  25%  {font-size: 36px}
-  50%  {font-size: 37px}
-  100% {font-size: 38px}
+  0%   {color: #fff}
+  25%  {color: #2196F3}
+  50%  {color: #E91E63}
+  100% {color: #FF9800}
 }
 
 /* Standard syntax */
