@@ -1,6 +1,9 @@
 window.CodeClubWorld = {};
 g = {};
 $(function() {
+  g.lang = document.getElementById("language").getElementsByClassName("active")[0].children[0].innerHTML;
+  g.path = g.lang == "EN" ? "img/" : "../img/"
+  g.text = g.lang == "EN" ? "Contact" : "FRENCH"
   // TODO: add your API key
   CodeClubWorld.api_token = 'ROe90450b2a7fd5fefdaa57c51aead395927510b4ea7b133fe0f298747cc50d8aa';
 
@@ -21,9 +24,7 @@ $(function() {
 });
 
 CodeClubWorld.makeMap = function() {
-//  console.log("makeMap called");
   var el = document.getElementById('map');
-  //console.log(el);
   if (!el) return;
 
   $.ajax({
@@ -32,14 +33,15 @@ CodeClubWorld.makeMap = function() {
     contentType : 'application/json',
     headers     : { 'Authorization': 'Bearer ' + CodeClubWorld.api_token, 'Accept': 'application/vnd.codeclubworld.v'+CodeClubWorld.api_version }
   })
+  /**
+  * once the ajx is done getting
+  */
   .done( function(data) {
     var starting_point = {lat:  45.50884, lng: -73.58781};
     var clubs = data, lat, lng, dataZ, LatLng
         markers = [];
-        g.makers = markers;
+    g.makers = markers;
 
-
-   g.more = clubs;
     if(CodeClubWorld.region){
       lat = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lat"));
       lng = parseInt(CodeClubWorld.region.options[CodeClubWorld.region.selectedIndex].getAttribute("data-lng"));
@@ -50,7 +52,6 @@ CodeClubWorld.makeMap = function() {
       LatLng = new google.maps.LatLng(52.0, -95.5);
     }
 
-//    console.log(LatLng.toString());
     var map = new google.maps.Map(el, {
       center: LatLng,
       scrollwheel: false,
@@ -59,8 +60,6 @@ CodeClubWorld.makeMap = function() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-  //  console.log(LatLng.toString());
-//    console.log(data);
     $.each(clubs, function(i, club) {
       var address = club.venue.address;
       if (!address) return;
@@ -73,30 +72,73 @@ CodeClubWorld.makeMap = function() {
       var latLng = new google.maps.LatLng(lat, lng);
           marker = new google.maps.Marker({
             position: latLng,
-            icon: 'img/marker.png'
+            icon: g.path + 'marker.png'
           });
       markers.push(marker);
+      google.maps.event.addListener(marker, 'click', function() {
+        var infobox = g.infobox;
+        g.infobox.close();
+        var content = [];
+        if (club.name){
+          content.push('<h5 class="text-green text-uppercase">' + club.name  +'</h5>');
+        }
+
+        if (club.venue.address.city) {
+          content.push('<p>City: ' + club.venue.address.city + '</p>');
+        }
+
+        if (club.venue.address.country) {
+          content.push('<p>' + club.venue.address.country.name + '</p>');
+        }
+
+        if (club.looking_for_volunteer == true) {
+          content.push('<p><span class="glyphicon glyphicon-ok"></span> Looking for volunteers</p>');
+          if (club.venue.url) {
+            content.push(
+              '<a class="d-block padding-xxs" href="' + club.venue.url + '">' +
+                club.venue.url +
+              '</a>'
+            );
+          }
+          content.push('<a class="btn btn-border-green" href="https://www.codeclub.org.uk/start-a-club/volunteers">Volunteer</a>');
+        } else {
+          content.push('<p><span class="glyphicon glyphicon-remove"></span> Looking for volunteers</p>');
+          if (club.venue.url) {
+            content.push(
+              '<a class="d-block padding-xxs" href="' + club.venue.url + '">' +
+                club.venue.url +
+              '</a>'
+            );
+          }
+        }
+        content = content.join('');
+        infobox.setContent(content);
+        infobox.open(map, this);
+      });
 
     });//end of each
 
-    g.kidscode = [{lat: 50.454705, lng: -72.228515, contact:"1"}, {lat: 55.946738, lng: -114.284184, contact:"2"},
-                  {lat: 57.725272, lng:	-125.138676, contact:"3"},{lat: 51.615287, lng: -87.433593, contact:"4"}];
+    g.kidscode = [
+      {lat: 50.454705, lng: -72.228515, contact:{title:"1",content:"contact this person"}},
+      {lat: 55.946738, lng: -114.284184, contact:{title:"2",content:"contact this person"}},
+      {lat: 57.725272, lng:	-125.138676, contact:{title:"3",content:"contact this person"}},
+      {lat: 51.615287, lng: -87.433593, contact:{title:"4",content:"contact this person"}}];
     $.each(g.kidscode, function(i, club){
 
       var latLng = {lat:  g.kidscode[i].lat, lng: g.kidscode[i].lng};
           marker = new google.maps.Marker({
             position: latLng,
-            icon: 'img/marker_blue.png',
+            icon: g.path + 'marker_blue.png',
           });
       markers.push(marker);
       g.makers.push(marker);
       google.maps.event.addListener(marker, 'click', function() {
-        console.log("clicked");
         var infobox = g.infobox;
         g.infobox.close();
         var content = [];
         if (club.contact){
-          content.push('<h5 class="text-green text-uppercase">' + club.contact  +'</h5>');
+          content.push('<h5 class="text-blue text-uppercase">' + club.contact.title  +'</h5>');
+          content.push("<p class='text-capitalize'><span class='text-bold'>" + g.text +"  </span>" + club.contact.content + '</p>');
         }
         content = content.join('');
         infobox.setContent(content);
@@ -111,7 +153,7 @@ CodeClubWorld.makeMap = function() {
     // mcOptions "as is"
     var mcOptions = {
       gridSize: 30,
-      imagePath: 'img/m'
+      imagePath: g.path + 'm'
     };
    var markerCluster = new MarkerClusterer(map, markers, mcOptions);
 

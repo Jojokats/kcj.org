@@ -20,7 +20,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
-  <script   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbrUFrJ-3oSrUrI0YFQHwQR9Hv6qEnzys"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbrUFrJ-3oSrUrI0YFQHwQR9Hv6qEnzys"></script>
   <script src="scripts/markerclusterer/markerclusterer.js" type="text/javascript"></script>
   <script src="scripts/map.js" type="text/javascript"></script>
 
@@ -106,9 +106,9 @@
           <h2 class="text-uppercase border border-padding d-inline">Email</h2>
         </div>
         <div id="contact-email" class="bg-white">
-          <p class="padding text-bold">If you are a teacher or a community leader:<a href="mailto:educators@kidscodejeunesse.org"> educators@kidscodejeunesse.org</a><br>
-          If you are a parent: <a href="mailto:parents@kidscodejeunesse.org"> parents@kidscodejeunesse.org</a><br>
-          For all other inquiries: <a href="mailto:contact@kidscodejeunesse.org"> contact@kidscodejeunesse.org</a></p>
+          <p class="padding text-bold">If you are a teacher or a community leader:<a href="mailto:educators@kidscodejeunesse.org" target="_blank"> educators@kidscodejeunesse.org</a><br>
+          If you are a parent: <a href="mailto:parents@kidscodejeunesse.org" target="_blank"> parents@kidscodejeunesse.org</a><br>
+          For all other inquiries: <a href="mailto:contact@kidscodejeunesse.org" target="_blank"> contact@kidscodejeunesse.org</a></p>
         </div>
       </div>
       <div class="row">
@@ -139,7 +139,23 @@
         <div class="text-center text-bold width-600 margin-auto">
           <p class="text-16">Want to receive news from us on what’s coming up and what’s been happening with computer programming in Canada – for you and your children?</p>
         </div>
-
+        <!--
+        in order to override the error messages being created
+        asynchronously in line styling is used.
+        -->
+        <style>
+        #mc_embed_signup div.mce_inline_error {
+          background-color: white;
+          color: red;
+          margin: 0 0 1em 0;
+          padding: 5px 10px;
+          font-weight: bold;
+          z-index: 1;
+        }
+        #mc_embed_signup input.mce_inline_error {
+          border-color: initial;
+        }
+        </style>
       </div class="row">
           <p class="padding-top-m text-center">
             Get in touch with us at: <a href="mailto:info@codeclub.ca" class="text-blue" target="_blank">info@codeclub.ca </a>
