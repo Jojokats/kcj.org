@@ -34,7 +34,7 @@ CodeClubWorld.makeMap = function() {
     headers     : { 'Authorization': 'Bearer ' + CodeClubWorld.api_token, 'Accept': 'application/vnd.codeclubworld.v'+CodeClubWorld.api_version }
   })
   /**
-  * once the ajx is done getting
+  * once the ajax is done 
   */
   .done( function(data) {
     var starting_point = {lat:  45.50884, lng: -73.58781};
