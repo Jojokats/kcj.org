@@ -3,7 +3,7 @@ g = {};
 $(function() {
   g.lang = document.getElementById("language").getElementsByClassName("active")[0].children[0].innerHTML;
   g.path = g.lang == "EN" ? "img/" : "../img/"
-  g.text = g.lang == "EN" ? "Contact" : "FRENCH"
+  g.text = g.lang == "EN" ? "Email" : "Courriel"
   // TODO: add your API key
   CodeClubWorld.api_token = 'ROe90450b2a7fd5fefdaa57c51aead395927510b4ea7b133fe0f298747cc50d8aa';
 
@@ -72,7 +72,7 @@ CodeClubWorld.makeMap = function() {
       var latLng = new google.maps.LatLng(lat, lng);
           marker = new google.maps.Marker({
             position: latLng,
-            icon: g.path + 'marker.png'
+            icon: g.path + 'CC-Green-Point.png'
           });
       markers.push(marker);
       google.maps.event.addListener(marker, 'click', function() {
@@ -119,16 +119,16 @@ CodeClubWorld.makeMap = function() {
     });//end of each
 
     g.kidscode = [
-      {lat: 50.454705, lng: -72.228515, contact:{title:"1",content:"contact this person"}},
-      {lat: 55.946738, lng: -114.284184, contact:{title:"2",content:"contact this person"}},
-      {lat: 57.725272, lng:	-125.138676, contact:{title:"3",content:"contact this person"}},
-      {lat: 51.615287, lng: -87.433593, contact:{title:"4",content:"contact this person"}}];
+      {lat: 50.454705, lng: -72.228515, contact:{title:"Quebec",content:"quebec@kidscodejeunesse.org"}},
+      {lat: 55.946738, lng: -114.284184, contact:{title:"Alberta",content:"alberta@kidscodejeunesse.org"}},
+      {lat: 57.725272, lng:	-125.138676, contact:{title:"Briish Colombia",content:"bc@kidscodejeunesse.org"}},
+      {lat: 51.615287, lng: -87.433593, contact:{title:"Ontario",content:"ontario@kidscodejeunesse.org"}}];
     $.each(g.kidscode, function(i, club){
 
       var latLng = {lat:  g.kidscode[i].lat, lng: g.kidscode[i].lng};
           marker = new google.maps.Marker({
             position: latLng,
-            icon: g.path + 'marker_blue.png',
+            icon: g.path + 'KCJ-Orange-Point.png',
           });
       markers.push(marker);
       g.makers.push(marker);
@@ -137,8 +137,9 @@ CodeClubWorld.makeMap = function() {
         g.infobox.close();
         var content = [];
         if (club.contact){
-          content.push('<h5 class="text-blue text-uppercase">' + club.contact.title  +'</h5>');
-          content.push("<p class='text-capitalize'><span class='text-bold'>" + g.text +"  </span>" + club.contact.content + '</p>');
+          content.push('<h5 class="text-orange text-capitalize">' + club.contact.title  +'</h5>');
+          content.push("<span class='text-bold'>" + g.text +"  </span>" +
+          "<a href='mailto:"+ club.contact.content + "' class='text-capitalize text-blue' target='_blank'>"+ club.contact.content + '</a>');
         }
         content = content.join('');
         infobox.setContent(content);
