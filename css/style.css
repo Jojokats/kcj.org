@@ -48,6 +48,7 @@ h5 {
 a:hover, input:hover, button:hover {
   text-decoration: none;
   color: #1f9edd;
+
   /*-webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;*/
 }
@@ -609,15 +610,46 @@ footer input[type^="email"] {
   position: relative;
   overflow: hidden;
   display: block;
-  background-image: url(/assets/videos/mobile-poster-2e65012….jpg);
+  /*background-image: url(/assets/videos/mobile-poster-2e65012….jpg);*/
   background-size: cover;
   background-position: bottom;
   width: 100%;
-  height: 450px;
+  /*height: 450px;*/
   -webkit-transition: height 1s ease;
   transition: height 1s ease;
   max-width: 1500px;
   margin: 0 auto;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /*background: #000;*/
+    z-index: -1;
+}
+.fillWidth{
+  width: 100%;
+  height: auto;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 6, 6, 0.17);
+  background-image: url(style.css);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 #video .content{
   position: absolute;
@@ -625,20 +657,29 @@ footer input[type^="email"] {
   bottom: 0;
   right: 0;
   left: 0;
+  width: 500px;
+  height: 200px;
+  margin: auto;
   color: #fff;
   text-align: center;
-  padding: 175px 9%;
-  background: rgba(0,0,0,0.5);
+  /* padding: 175px 9%; */
+  /* background: rgba(0,0,0,0.5); */
   -webkit-transition: opacity 2s ease;
   transition: opacity 2s ease;
+  z-index: 10;
 }
+
+/*#fullVideo{
+  display: none;
+}*/
+/*
 .line-H-20{
   line-height: 20px;
 }
-/*#video .header {
+#video .header {
     width: 100%;
     max-width: 1500px;
-    /*padding: 3.7em;*/
+    /*padding: 3.7em;
     color: #fff;
     text-align: center;
     min-height: 190px;
@@ -674,7 +715,7 @@ footer input[type^="email"] {
 .video-container .filter {
     z-index: 100;
     position: absolute;
-    /*background: rgba(0, 0, 0, 0.4);*/
+    /*background: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 .video-container video {
@@ -684,7 +725,6 @@ footer input[type^="email"] {
 }
 .video-container video.fillWidth {
     width: 100%;
-
 }*/
 /*
 #fastform{
