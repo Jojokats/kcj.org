@@ -9,8 +9,8 @@ $(document).ready(function(){
         }
       },
        "color": {
+        // "value": ["#fff", "#fff", "#fff", "#fff", "#fff", "#fff"]
         "value": ["#9C27B0", "#2196F3", "#4CAF50", "#FFEB3B", "#FF9800", "#E91E63"]
-
       },
       "shape": {
         "type": "circle",
