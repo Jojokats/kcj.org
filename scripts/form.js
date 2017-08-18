@@ -11,6 +11,6 @@ $(function(){
 function btnOkHandler(btn){
   btn.addEventListener('click', function(){
     $.cookie('formCompleted', true, { expire: 365, path: '/'});
-    location.href = '../resources.html';
+    location = 'resources.html';
   });
 }
