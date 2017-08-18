@@ -72,7 +72,7 @@ CodeClubWorld.makeMap = function() {
       var latLng = new google.maps.LatLng(lat, lng);
           marker = new google.maps.Marker({
             position: latLng,
-            icon: g.path + 'CC-Green-Point.png'
+            icon: g.path + 'CC-Green-Point.svg'
           });
       markers.push(marker);
       google.maps.event.addListener(marker, 'click', function() {
@@ -128,7 +128,7 @@ CodeClubWorld.makeMap = function() {
       var latLng = {lat:  g.kidscode[i].lat, lng: g.kidscode[i].lng};
           marker = new google.maps.Marker({
             position: latLng,
-            icon: g.path + 'KCJ-Orange-Point.png',
+            icon: g.path + 'KCJ-Orange-Point.svg',
           });
       markers.push(marker);
       g.makers.push(marker);
