@@ -1,10 +1,11 @@
 
 var g = {};
 $(document).ready(function(){
+  mobileScreen();
+
   var playBtn = $('#playBtn');
   playBtn.on('click', playFullVideo);
   playBtn.on('click', removeVideoOverlay);
-  playBtn.on('click', scrollDown);
 
   g.fullVideo = document.getElementById('fullVideo');
   hide(g.fullVideo, true);
@@ -28,13 +29,26 @@ $(document).ready(function(){
     // animated top scrolling
     $('body, html').animate({scrollTop: pos}, 1000);
   });
+
+  $(window).on('resize', function() {
+    mobileScreen();
+  }).trigger('resize');
 });
+
+function mobileScreen(){
+  var screenWidth = $(window).width();
+  if (screenWidth < 800){
+    $('.mobile-hide').hide();
+  } else {
+    $('.mobile-hide').show();
+  }
+}
 
 function playFullVideo(){
   hide(g.fullVideo, false);
 
   var video = g.fullVideo.getElementsByTagName('video')[0];
-  console.log(video);
+  // console.log(video);
   video.play();
   video.muted = false;
 }
@@ -45,11 +59,6 @@ function removeVideoOverlay(){
     hide(overlays.get(i), true);
   }
 }
-
-function scrollDown(){
-
-}
-
 
 function hide(element, hide){
   if(hide){
