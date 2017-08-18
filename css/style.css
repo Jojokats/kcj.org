@@ -259,7 +259,7 @@ strong {
 }
 
 #navbar {
-  margin-top: 7px;
+  margin-top: 11px;
 }
 
 .navbar-custom .nav>.active>a {
@@ -335,6 +335,15 @@ strong {
   padding-right: 10px;
 }
 
+.padding-x-m {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.padding-y-l{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .pos-fixed {
   position: fixed;
   z-index: -1;
@@ -454,7 +463,7 @@ strong {
 
 .social-links-m i {
   height: 45px;
-  width: 45px;
+  max-width: 45px;
   line-height: 1.8;
   font-size: 25px;
   border: none;
@@ -462,7 +471,7 @@ strong {
 
 .social-links .custom-size {
   height: 30px;
-  width: 30px;
+  max-width: 30px;
   line-height: 1.7;
   font-size: 18px;
 }
