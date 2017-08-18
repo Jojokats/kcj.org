@@ -607,7 +607,7 @@ footer input[type^="email"] {
   height: 50px;
 }
 .learn-more {
-  top: 75%;
+  bottom: 2.5%;
   display: inline-block;
   font-size: 16px;
   left: 50%;
@@ -691,16 +691,20 @@ canvas {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes pulse-grow {
   0%   {color: #fff}
-  25%  {color: #2196F3}
-  50%  {color: #E91E63}
+  20%  {color: #9C27B0}
+  40%  {color: #2196F3}
+  60% {color: #4CAF50}
+  80% {color: #E91E63}
   100% {color: #FF9800}
 }
 
 /* Standard syntax */
 @keyframes pulse-grow {
     0%   {color: #fff}
-    25%  {color: #2196F3}
-    50%  {color: #E91E63}
+    20%  {color: #9C27B0}
+    40%  {color: #2196F3}
+    60% {color: #4CAF50}
+    80% {color: #E91E63}
     100% {color: #FF9800}
 }
 /*#9C27B0", "#2196F3", "#4CAF50", "#FFEB3B", "#FF9800", "#E91E63"*/
