@@ -431,10 +431,16 @@
   list-style: none;
 }
 .padding-top-custom {
-  padding-top: 100%;
+  background-color: red;
 }
 .fix {
   position: fixed;
+}
+.custom-pdf-container {
+  border: solid;
+  margin: auto;
+  width: 50%;
+  height: 500px;
 }
 
 
@@ -442,14 +448,12 @@
   padding-left: 1%;
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #f3f4f7;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
 .sidenav a {

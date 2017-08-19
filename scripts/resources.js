@@ -7,7 +7,7 @@ $(document).ready(function() {
   g.nav = document.getElementById("mySidenav");
   g.close = $("#close")[0];
 
-  $(g.scratch).on( "click", function() {
+  $(g.open).on( "click", function() {
     g.nav.style.width = "18%";
   });
   $(g.close).on( "click", function() {
