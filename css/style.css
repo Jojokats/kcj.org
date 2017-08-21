@@ -805,10 +805,11 @@ canvas {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.top-reverse{
   position: relative;
   top: -100%;
 }
-
 .min-h-250{
   min-height: 250px;
 }
