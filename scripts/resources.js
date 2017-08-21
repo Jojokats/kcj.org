@@ -54,6 +54,8 @@ function toggle_options(e) {
 }
 function show_pdfs(e, current, section, option) {
   g.current = g.pdfs.children[section].children[option];
+  g.section = section;
+  g.option = option;
   $(g.main).addClass('hidden');
   $(g.nav).removeClass('hidden');
   $(g.current).removeClass('hidden');
@@ -61,6 +63,6 @@ function show_pdfs(e, current, section, option) {
   $(g.options).on( "click", toggle_nav_options);
 }
 function toggle_nav_options(e) {
-
-
+  $(g.current).addClass('hidden');
+  g.test = e;
 }
