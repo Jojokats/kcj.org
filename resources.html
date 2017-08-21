@@ -90,38 +90,36 @@
   </section>
 
 
-  <div id="mySidenav" class="sidenav padding-top-custom">
+  <section id="nav_options" class="container hidden padding-top-s">
+    <div class="text-center" id="nav_options1">
+      <h5 class="text-orange text-capitalize">In-Class Software Curricula</h5>
+      <nav class="nav custom-ul-resources">
+        <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#scratch">Scratch</a></span>
+        <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#webdev">HTML</a></span>
+        <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#python">Python</a></span>
+      </nav>
+    </div>
+      <div class="hidden text-center" id="nav_options2">
+        <h5 class="text-orange text-capitalize">Workshop Projects</h5>
+        <nav class="nav custom-ul-resources">
+          <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#1_hour_Workshop">1 hour Workshop</a></span>
+          <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#2_hours_Workshop">2 hours Workshop</a></span>
+        </nav>
+      </div>
+      <div class="hidden tex-center" id="nav_options3">
+        <h5 class="text-orange text-capitalize">Teacher Training Handouts</h5>
+        <nav class="nav custom-ul-resources">
+          <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#Computational_Thinking">Computational Thinking</a></span>
+          <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#Computer_Programming">Computer Programming</a></span>
+        </nav>
+      </div>
+    </div>
+    <span id="back" class="glyphicon glyphicon-arrow-left text-orange"> Back</span>
+  </section>
+
+
+  <section class="container" id="main_menue">
     <div class="">
-      <span id="close" class="text-blue" style="font-size:30px;cursor:pointer">&xlArr;</span>
-      <h5 class="text-orange">In-Class</h5>
-      <ul class="text-blue custom-ul-resources">
-        <li>Scratch</li>
-        <li>HTML</li>
-        <li>Python</li>
-      </ul>
-    </div>
-
-    <div class="padding-top-small">
-      <h5 class="text-orange">Workshop</h5>
-      <ul class="text-blue custom-ul-resources">
-        <li>1 hour Workshop</li>
-        <li>2 hours Workshop</li>
-      </ul>
-    </div>
-
-    <div class="padding-top-small ">
-      <h5 class="text-orange">Teacher Training</h5>
-      <ul class="text-blue custom-ul-resources">
-        <li>Computational Thinking</li>
-        <li>Computer Programming</li>
-      </ul>
-    </div>
-  </div>
-
-  <span id="open" class="fix" style="font-size:30px;cursor:pointer">&rArr;</span>
-
-
-  <section class="container bg-white hidden">
     <div class="row margin-auto text-center padding-top-large form-group">
       <label class="padding-x-s">Type</label>
       <select class="form-control">
@@ -133,9 +131,10 @@
     </div>
     <div class="row padding-top-large">
       <div class="container-fluid">
-        <h3 class="text-orange text-center text-capitalize" id="in-class">In-class Software Curricula</h3>
-        <div class="row row-centered padding-top-large padding-bot-medium border-bot">
-          <div class="col-md-4 col-sm-4 col-centered">
+
+        <div class="row row-centered  padding-bot-medium border-bot" id="in-class">
+          <h3 class="text-orange text-center text-capitalize">In-class Software Curricula</h3>
+          <div class="col-md-4 col-sm-4 col-centered padding-top-large">
             <img id="scratch" class="img img-responsive img-third" src="img/resources/Card-Scratch-Projects.jpg" alt="scratch card"/>
             <p class="text-center">
               Scratch
@@ -154,36 +153,38 @@
             </p>
           </div>
         </div>
-        <h3 class="text-orange text-center padding-top-large text-capitalize" id="workshop">
-          Workshop Projects</h3>
-        <div class="row row-centered padding-top-large padding-bot-medium border-bot">
-          <div class="col-md-4 col-sm-4 col-centered" >
-            <img class="img img-responsive img-third" src="img/resources/Card-1Hour-Workshop.jpg" alt="1 hour workshop card"/>
+
+        <div class="row row-centered padding-bot-medium border-bot" id="workshop">
+          <h3 class="text-orange text-center padding-top-large text-capitalize">
+            Workshop Projects</h3>
+          <div class="col-md-4 col-sm-4 col-centered  padding-top-large " >
+            <img id="1_hour_workshop" class="img img-responsive img-third" src="img/resources/Card-1Hour-Workshop.jpg" alt="1 hour workshop card"/>
             <p class="text-center">
               1 hour Workshop
             </p>
           </div>
 
           <div class="col-md-4 col-sm-4 col-centered" >
-            <img class="img img-responsive img-third" src="img/resources/Card-2Hour-Workshop.jpg" alt="2 hour workshop card"/>
+            <img id="2_hour_workshop" class="img img-responsive img-third" src="img/resources/Card-2Hour-Workshop.jpg" alt="2 hour workshop card"/>
             <p class="text-center">
               2 hours Workshop
             </p>
           </div>
         </div>
 
-        <h3 class="text-orange text-center padding-top-large text-capitalize" id="teacher-training">
-          Teacher Training Handouts</h3>
-        <div class="row row-centered padding-top-large padding-bot-small">
-          <div class="col-md-4 col-sm-4 col-centered">
-            <img class="img img-responsive img-third" src="img/resources/Card-CompThinking-TeacherTraining.jpg" alt="Computer Thinking Card"/>
+
+        <div class="row row-centered padding-bot-small" id="teacher_training">
+          <h3 class="text-orange text-center padding-top-large text-capitalize">
+            Teacher Training Handouts</h3>
+          <div class="col-md-4 col-sm-4 col-centered padding-top-large">
+            <img id="computational_thinking" class="img img-responsive img-third" src="img/resources/Card-CompThinking-TeacherTraining.jpg" alt="Computer Thinking Card"/>
 
             <p class="text-center">
               Computational Thinking
             </p>
           </div>
           <div class="col-md-4 col-sm-4 col-centered">
-              <img class="img img-responsive img-third" src="img/resources/CompProgramming-Card.png" alt="Computer Programming Card"/>
+              <img id="computer_programming" class="img img-responsive img-third" src="img/resources/CompProgramming-Card.png" alt="Computer Programming Card"/>
             <p class="text-center">
               Computer Programming
             </p>
@@ -191,12 +192,51 @@
         </div>
       </div>
     </div>
+  </div>
   </section>
-  <section id="scratch_pdf" class="container">
-    <h1 class="text-center text-orange text-capitalize">scratch</h1>
-    <div class="row custom-pdf-container">
+  <!-- end of main items -->
+  <section id="pdfs">
+  <div id="batch_pdf1">
+    <div id="scratch_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">scratch</h1>
+      <div class="row custom-pdf-container"></div>
     </div>
-  </section>
+
+    <div id="html_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">HTML</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+
+    <div id="python_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">python</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+  </div>
+
+  <div id="batch_pdf2">
+    <div id="workshop1_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">1 hour Workshop</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+
+    <div id="workshop2_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">2 hour Workshop</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+  </div>
+
+  <div id="batch_pdf3">
+    <div id="computational_thinking_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">Computational Thinking</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+
+    <div id="computer_programming_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">Computer Programming</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+  </div>
+</section>
 
 
 
