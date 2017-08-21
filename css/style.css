@@ -211,7 +211,9 @@ strong {
 .d-inline-grid {
   display: inline-grid;
 }
-
+.d-table{
+  display: table;
+}
 .height-custom {
   height: 200px;
 }
@@ -327,6 +329,11 @@ strong {
   padding-top: 60px;
 }
 
+.padding-top-l {
+  padding-top: 95px;
+}
+
+
 .padding-top-s {
   padding-top: 15px;
 }
@@ -341,6 +348,10 @@ strong {
   padding-right: 30px;
 }
 
+.padding-y-m{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .padding-y-l{
   padding-top: 30px;
   padding-bottom: 30px;
@@ -756,6 +767,9 @@ canvas {
 
 #how_We_Work{
   background-image: url(../img/Photo-Services.jpg);
+}
+#workshop h5 {
+  line-height: 1.5;
 }
 #workshop-header{
   background-image: url(../img/Photo-Workshop.jpg);
