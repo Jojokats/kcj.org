@@ -446,3 +446,9 @@
 .white-space-nowrap {
   white-space: nowrap;
 }
+.bg-lightgray {
+  background-color: #f3f4f7;
+}
+.custom-resources-padding {
+  padding-bottom: 75px;
+}
