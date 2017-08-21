@@ -397,8 +397,9 @@
   width: 100%;
   height: 390px;
 }
-.ifram-box {
+.iframe-box {
   margin-top: 20px;
+  margin-bottom: 20px;
   border: 12px solid #f3f4f7;
 }
 #sidenav {
