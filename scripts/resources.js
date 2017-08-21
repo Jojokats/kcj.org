@@ -23,32 +23,47 @@ function toggle_options(e) {
   g.target = e.target.id
   //g.nav[0].children[0]
   switch (g.target) {
-    case "scratch":
+    case "intro":
         show_pdfs(e, this, 0, 0);
         break;
-    case "html":
+    case "scratch":
         show_pdfs(e, this, 0, 1);
         break;
-    case "python":
+    case "html":
         show_pdfs(e, this, 0, 2);
         break;
+    case "python":
+        show_pdfs(e, this, 0, 3);
+        break;
+    case "unplugged":
+        show_pdfs(e, this, 0, 4);
+        break;
+    case "activiies":
+        show_pdfs(e, this, 0, 5);
+        break;
+
     case "1_hour_workshop":
         show_pdfs(e, this, 1, 0);
         break;
     case "2_hour_workshop":
         show_pdfs(e, this, 1, 1);
         break;
+
     case "computational_thinking":
         show_pdfs(e, this, 2, 0);
         break;
     case "computer_programming":
         show_pdfs(e, this, 2, 1);
         break;
+    case "internet_web":
+        show_pdfs(e, this, 2, 2);
+        break;
 
       }
  $(g.back).on( "click", function() {
    $(g.main).removeClass('hidden');
    $(g.nav).addClass('hidden');
+   $(g.nav.children[g.section]).addClass('hidden');
    $(g.current).addClass('hidden');
   });
 }
@@ -58,11 +73,17 @@ function show_pdfs(e, current, section, option) {
   g.option = option;
   $(g.main).addClass('hidden');
   $(g.nav).removeClass('hidden');
+  $(g.nav.children[g.section]).removeClass('hidden');
   $(g.current).removeClass('hidden');
-  g.options = g.nav.children[section].children[1].getElementsByTagName('span');
+  g.options = g.nav.children[g.section].children[1].getElementsByTagName('span');
   $(g.options).on( "click", toggle_nav_options);
 }
 function toggle_nav_options(e) {
   $(g.current).addClass('hidden');
-  g.test = e;
+  $(g.nav.children[g.section]).addClass('hidden');
+  g.option = g.section == 0 ? $(this).index() - 1 : $(this).index();
+  console.log("g.option: " + g.option);
+  g.current = g.pdfs.children[g.section].children[g.option];
+  $(g.nav.children[g.section]).removeClass('hidden');
+  $(g.current).removeClass('hidden');
 }

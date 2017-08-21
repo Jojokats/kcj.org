@@ -90,13 +90,18 @@
   </section>
 
 
-  <section id="nav_options" class="container hidden padding-top-s">
-    <div class="text-center" id="nav_options1">
-      <h5 class="text-orange text-capitalize">In-Class Software Curricula</h5>
+  <section id="nav_options" class="container hidden padding-top">
+    <div class="text-center hidden" id="nav_options1">
+      <h4 class="text-orange text-capitalize">In-Class</h4>
+      <h5 class="text-orange text-capitalize">Primary</h5>
       <nav class="nav custom-ul-resources">
+        <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#scratch">intro</a></span>
         <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#scratch">Scratch</a></span>
         <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#webdev">HTML</a></span>
         <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#python">Python</a></span>
+        <h5 class="text-orange text-capitalize">yow</h5>
+        <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#webdev">unplugged</a></span>
+        <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#python">activiies</a></span>
       </nav>
     </div>
       <div class="hidden text-center" id="nav_options2">
@@ -106,20 +111,20 @@
           <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#2_hours_Workshop">2 hours Workshop</a></span>
         </nav>
       </div>
-      <div class="hidden tex-center" id="nav_options3">
-        <h5 class="text-orange text-capitalize">Teacher Training Handouts</h5>
+      <div class="hidden text-center" id="nav_options3">
+        <h5 class="text-orange  text-capitalize">Teacher Training Handouts</h5>
         <nav class="nav custom-ul-resources">
           <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#Computational_Thinking">Computational Thinking</a></span>
           <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#Computer_Programming">Computer Programming</a></span>
+          <span class="white-space-nowrap"><a class="custom-border-blue-disck text-blue" value="#Computer_Programming">Internet Web</a></span>
         </nav>
       </div>
-    </div>
     <span id="back" class="glyphicon glyphicon-arrow-left text-orange"> Back</span>
   </section>
 
 
-  <section class="container" id="main_menue">
-    <div class="">
+  <section id="main_menue">
+    <div class="container">
     <div class="row margin-auto text-center padding-top-large form-group">
       <label class="padding-x-s">Type</label>
       <select class="form-control">
@@ -131,9 +136,15 @@
     </div>
     <div class="row padding-top-large">
       <div class="container-fluid">
-
+        <h3 class="text-orange text-center text-capitalize">In-class Software Curricula</h3>
         <div class="row row-centered  padding-bot-medium border-bot" id="in-class">
-          <h3 class="text-orange text-center text-capitalize">In-class Software Curricula</h3>
+          <h3 class="text-blue text-center text-capitalize">elementary</h3>
+          <div class="col-md-4 col-sm-4 col-centered">
+            <img id="intro" class="img img-responsive img-third" src="img/resources/Card-Intro.jpg" alt="Python card"/>
+            <p class="text-center">
+              Intro
+            </p>
+          </div>
           <div class="col-md-4 col-sm-4 col-centered padding-top-large">
             <img id="scratch" class="img img-responsive img-third" src="img/resources/Card-Scratch-Projects.jpg" alt="scratch card"/>
             <p class="text-center">
@@ -152,6 +163,24 @@
               Python
             </p>
           </div>
+
+
+          <h3 class="text-blue text-center padding-top-large text-capitalize">
+            secondary</h3>
+          <div class="col-md-4 col-sm-4 col-centered  padding-top-large " >
+            <img id="unplugged" class="img img-responsive img-third" src="img/resources/Card-Unplugged.jpg" alt="1 hour workshop card"/>
+            <p class="text-center">
+              unplugged
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-centered" >
+            <img id="activiies" class="img img-responsive img-third" src="img/resources/Card-Activities.jpg" alt="2 hour workshop card"/>
+            <p class="text-center">
+              activiies
+            </p>
+          </div>
+        </div>
         </div>
 
         <div class="row row-centered padding-bot-medium border-bot" id="workshop">
@@ -189,14 +218,25 @@
               Computer Programming
             </p>
           </div>
+          <div class="col-md-4 col-sm-4 col-centered">
+              <img id="internet_web" class="img img-responsive img-third" src="img/resources/Card-Internet.jpg" alt="Computer Programming Card"/>
+            <p class="text-center">
+              Internet Web
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   </section>
   <!-- end of main items -->
-  <section id="pdfs">
-  <div id="batch_pdf1">
+  <section class="custom-resources-padding" id="pdfs">
+    <div id="batch_pdf1">
+      <div id="intro_pdf" class="container hidden">
+        <h1 class="text-center text-orange text-capitalize">intro</h1>
+        <div class="row custom-pdf-container"></div>
+      </div>
+
     <div id="scratch_pdf" class="container hidden">
       <h1 class="text-center text-orange text-capitalize">scratch</h1>
       <div class="row custom-pdf-container"></div>
@@ -209,6 +249,15 @@
 
     <div id="python_pdf" class="container hidden">
       <h1 class="text-center text-orange text-capitalize">python</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+
+    <div id="unplugged_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">unplugged</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+    <div id="activiies_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">activiies</h1>
       <div class="row custom-pdf-container"></div>
     </div>
   </div>
@@ -233,6 +282,10 @@
 
     <div id="computer_programming_pdf" class="container hidden">
       <h1 class="text-center text-orange text-capitalize">Computer Programming</h1>
+      <div class="row custom-pdf-container"></div>
+    </div>
+    <div id="computer_programming_pdf" class="container hidden">
+      <h1 class="text-center text-orange text-capitalize">Internet Web</h1>
       <div class="row custom-pdf-container"></div>
     </div>
   </div>
