@@ -68,6 +68,7 @@ function toggle_options(e) {
   });
 }
 function show_pdfs(e, current, section, option) {
+
   g.current = g.pdfs.children[section].children[option];
   g.section = section;
   g.option = option;
@@ -75,15 +76,17 @@ function show_pdfs(e, current, section, option) {
   $(g.nav).removeClass('hidden');
   $(g.nav.children[g.section]).removeClass('hidden');
   $(g.current).removeClass('hidden');
-  g.options = g.nav.children[g.section].children[1].getElementsByTagName('span');
+  g.options = g.nav.children[g.section].getElementsByClassName('white-space-nowrap');
   $(g.options).on( "click", toggle_nav_options);
 }
 function toggle_nav_options(e) {
+  g.this = this;
+  console.log("1  secion: " + g.section + " option: " + g.option);
   $(g.current).addClass('hidden');
   $(g.nav.children[g.section]).addClass('hidden');
-  g.option = g.section == 0 ? $(this).index() - 1 : $(this).index();
-  console.log("g.option: " + g.option);
+  g.option = -1 == g.this.className.indexOf('compinsate') ? $(this).index() : $(this).index() + 4;
   g.current = g.pdfs.children[g.section].children[g.option];
   $(g.nav.children[g.section]).removeClass('hidden');
   $(g.current).removeClass('hidden');
+  console.log("2 secion: " + g.section + " option: " + g.option);
 }

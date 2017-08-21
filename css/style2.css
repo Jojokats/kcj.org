@@ -452,3 +452,8 @@
 .custom-resources-padding {
   padding-bottom: 75px;
 }
+.custom-back-btn {
+  margin: auto;
+  padding: 0;
+  margin: 0;
+}
