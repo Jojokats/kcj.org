@@ -676,7 +676,14 @@ footer input[type^="email"] {
   width: 100%;
   height: auto;
 }
-
+.fillHeight{
+  height: 100%;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 canvas {
   display: block;
   vertical-align: bottom;
@@ -769,6 +776,9 @@ canvas {
   z-index: 2;
 }
 
+.top-0{
+  top: 0;
+}
 #about-header{
   background-image: url(../img/Photo-About.jpg);
   width: 100%;
