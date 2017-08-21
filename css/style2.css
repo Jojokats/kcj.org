@@ -263,7 +263,7 @@
 }
 .kcj-fund-custom-ul {
   text-align: left;
-  max-width: 600px;
+  max-width: 480px;
   list-style-type: circle;
 }
 .kcj-fund-custom-Support-text {
@@ -456,4 +456,7 @@
   margin: auto;
   padding: 0;
   margin: 0;
+}
+.cursor-pointer:hover {
+  cursor: pointer;
 }

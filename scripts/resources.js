@@ -19,6 +19,7 @@ $(document).ready(function() {
 });
 
 function toggle_options(e) {
+  $(window).scrollTop(0);
   g.e = e;
   g.target = e.target.id
   //g.nav[0].children[0]
