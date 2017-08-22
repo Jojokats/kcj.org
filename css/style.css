@@ -715,6 +715,10 @@ canvas {
   background-position: 50% 50%;
   z-index: 1;
 }
+#nav_options{
+  position: absolute;
+  display: list-item;
+}
 /*.custom-size{
   width: 100%;
   height: 180px;
