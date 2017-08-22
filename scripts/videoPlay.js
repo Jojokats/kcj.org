@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 function mobileScreen(){
   var screenWidth = $(window).width();
-  if (screenWidth < 800){
+  if (screenWidth < 1100){
     $('.mobile-hide').hide();
   } else {
     $('.mobile-hide').show();
