@@ -59,7 +59,7 @@ CodeClubWorld.makeMap = function() {
       zoom: 4,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-    g.icon_cc = {url:g.path + 'CC-Green-Point.svg', size: new google.maps.Size(32, 32)};
+    g.icon_cc = {url:g.path + 'CC-Green-Point.png'};
     //  g.icon_cc.setIcon(g.icon_cc);
     $.each(clubs, function(i, club) {
       var address = club.venue.address;
@@ -124,7 +124,7 @@ CodeClubWorld.makeMap = function() {
       {lat: 55.946738, lng: -114.284184, contact:{title:"Alberta",content:"alberta@kidscodejeunesse.org"}},
       {lat: 57.725272, lng:	-125.138676, contact:{title:"Briish Colombia",content:"bc@kidscodejeunesse.org"}},
       {lat: 51.615287, lng: -87.433593, contact:{title:"Ontario",content:"ontario@kidscodejeunesse.org"}}];
-      g.icon_kc = {url:g.path + 'KCJ-Orange-Point.svg', size: new google.maps.Size(32, 32)};
+      g.icon_kc = {url:g.path + 'KCJ-Orange-Point.png'};
     $.each(g.kidscode, function(i, club){
 
       var latLng = {lat:  g.kidscode[i].lat, lng: g.kidscode[i].lng};

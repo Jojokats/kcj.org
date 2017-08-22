@@ -141,6 +141,12 @@ strong {
 .border-white {
   border-color: white;
 }
+.border-blue{
+  border-color: #6fb3c6;
+}
+.border-radius{
+  border-radius: 10px;
+}
 
 .btn {
   margin-bottom: 6px;
@@ -237,6 +243,9 @@ strong {
   margin-top: 10px;
 }
 
+.margin-s{
+  margin: 5px;
+}
 .margin-auto {
   margin: auto;
 }
@@ -682,7 +691,7 @@ footer input[type^="email"] {
 .vcenter {
   /*vertical-align: middle;*/
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
   right: 0;
   max-width: 500px;
@@ -847,6 +856,9 @@ canvas {
 .top-reverse{
   position: relative;
   top: -100%;
+}
+.min-h-190{
+  min-height: 190px;
 }
 .min-h-250{
   min-height: 250px;
