@@ -583,6 +583,9 @@ footer input[type^="email"] {
 /*#newsLetter h2{
   font-size: 2em;
 }*/
+#newsLetter input[type^=email]{
+  border: 1px solid #6fb3c6;
+}
 #language .active{
   text-decoration: underline;
 }
@@ -664,7 +667,7 @@ footer input[type^="email"] {
   overflow: hidden;
   display: block;
   /*background-image: url(/assets/videos/mobile-poster-2e65012….jpg);*/
-  background-color: #73ccff;
+  background-color: rgb(255, 152, 0);;
   background-size: cover;
   background-position: bottom;
   width: 100%;
