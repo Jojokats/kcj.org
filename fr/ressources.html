@@ -7,31 +7,24 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="..éimg/favicon.ico">
 
-  <title>Ressources - Kids Code Juenesse</title>
+  <title>Appuyez-nous - Kids Code Jeunesse</title>
+  <link rel="icon" href="../img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="../css/style.css" rel="stylesheet">
   <link href="../css/style2.css" rel="stylesheet">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-104071612-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
   <script src="../scripts/scroll.js" type="text/javascript"></script>
   <script src="../scripts/jquery_cookie/jquery.cookie.js" type="text/javascript"></script>
-  <!-- <script src="../scripts/linkToForm.js" type="text/javascript"></script> -->
+<!--  <script src="scripts/linkToForm.js" type="text/javascript"></script> -->
+  <script src="../scripts/jquery_cookie/jquery.cookie.js"></script>
   <script src="../scripts/email_saver.js"></script>
+  <script src="../scripts/resources_path_check.js"></script>
+  <script src="../scripts/resources.js"></script>
 </head>
 <body>
   <div class="navbar-wrapper">
@@ -39,8 +32,8 @@
       <header id="language" class="bg-gray">
         <div class="container">
           <ul class="list-inline text-right text-xs">
-            <li><a href="../resources.html">EN</a></li> |
-            <li class="active"><a href="ateliers.html">FR</a></li>
+            <li><a href="../ressources.html">EN</a></li> |
+            <li class="active"><a class="#">FR</a></li>
           </ul>
         </div>
       </header>
@@ -57,8 +50,8 @@
         <div id="navbar" class="navbar-collapse collapse navbar-right">
           <ul class="nav nav-pills">
             <li><a href="a_propos.html">À PROPOS</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li class="active"><a href="ressources.html">RESSOURCES</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="active"><a href="#">RESSOURCES</a></li>
             <li><a href="ateliers.html">ATELIERS</a></li>
             <li><a href="support.html">SUPPORT</a></li>
             <li><a href="nous_joindre.html">NOUS JOINDRE</a></li>
@@ -68,124 +61,888 @@
     </nav>
   </div>
   <section class="after-nav bg-sky-blue">
-    <h1 class="text-center text-uppercase text-white padding-big">Coder, Créer, Éduquer!</h1>
+    <h1 class="text-center text-uppercase text-white padding-big">code, create, educate!</h1>
   </section>
-  <section class="container padding-top-large">
-    <h3 class="text-center text-uppercase text-blue">
-       Ci-dessous, vous retrouverez des ressources d’apprentissage et du matériel pédagogique que
-      nous avons conçus avec la supervision d’enseignants et de chercheurs du Canada.
-    </h3>
-    <div class="row padding-top-small">
-      <p class="custom-resources-text">
-        Nous souhaitons que tous les enfants du Canada aient l’occasion d’apprendre la programmation informatique.
-        Pour y parvenir, nous aidons les enseignants et les éducateurs à intégrer la programmation en classe et dans
-        des activités parascolaires ainsi qu’en organisant des programmes ou des clubs de code dans des bibliothèques
-        et des centres communautaires.
-      </br>
-      Voici des ressources d’apprentissage et du matériel pédagogique que nous mettons
-      à la disposition des enseignants et des éducateurs afin qu’ils puissent inspirer les enfants à l'aide du code!
-      </p>
+
+  <section id="nav_options" class="hidden container">
+    <div class="row">
+      <a id="back" class="btn btn-blue"><span class="glyphicon glyphicon-arrow-left"></span> Back</a>
     </div>
   </section>
-  <!-- <img class="custome-bottom-img" src="../img/bottom.png"> -->
-  <section class="container">
+  <section id="main_menue">
+    <section class="container padding-top-large bg-white">
+      <h3 class="text-center text-capitalize text-blue"> Find below teaching material and learning
+         resources that we have developed with the guidance of Canadian teachers and researchers.
+      </h3>
+      <div class="row padding-top-small">
+        <p class="custom-resources-text">
+          We want to make sure every Canadian child is given the opportunity to learn computer
+          programming. To do so, we help teachers and educators bring code into the classroom
+          curriculum, into after-school programs, and into programs or Code Clubs at libraries and
+          community centres.
+        </br>
+        Find below teaching material and learning resources we have made available for teachers
+        and educators to start inspiring kids with code!
+        </p>
+      </div>
+    </section>
+    <div class="container">
     <div class="row margin-auto text-center padding-top-large form-group">
       <label class="padding-x-s">Type</label>
       <select class="form-control">
-        <option value="#">Tous</option>
-        <option value="#in-class">Cours de huit leçons</option>
-        <option value="#workshop">Projets pour des événements spéciaux</option>
-        <option value="#teacher-training">Feuillets pour la formation aux enseignants</option>
+        <option value="#">All</option>
+        <option value="#in-class">In-class Software Curricula</option>
+        <option value="#workshop">Workshop Projects</option>
+        <option value="#teacher-training">Teacher Training Handouts</option>
       </select>
     </div>
     <div class="row padding-top-large">
       <div class="container-fluid">
-        <h3 class="text-orange text-center text-capitalize" id="in-class">Nous avons dejà donné des cours sur les plateformes suivantes à plus de 25 000 enfants canadiens</h3>
-        <div class="row row-centered padding-top-large padding-bot-medium border-bot">
+        <h3 class="text-orange text-center text-capitalize">In-class Software Curricula</h3>
+        <div class="row row-centered  padding-bot-medium border-bot" id="in-class">
+          <h3 class="text-blue text-center text-capitalize">elementary</h3>
           <div class="col-md-4 col-sm-4 col-centered">
-            <img class="img img-responsive img-third" src="../img/resources/Card-Scratch-Projects.jpg" alt="scratch card"/>
+            <img id="intro" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Intro.jpg" alt="Python card"/>
+            <p class="text-center">
+              Intro
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 col-centered padding-top-large">
+            <img id="scratch" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Scratch-Projects.jpg" alt="scratch card"/>
             <p class="text-center">
               Scratch
             </p>
           </div>
           <div class="col-md-4 col-sm-4 col-centered">
-            <img class="img img-responsive img-third" src="../img/resources/Card-HTML-Projects.jpg" alt="Html card"/>
+            <img id="html" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-HTML-Projects.jpg" alt="Html card"/>
             <p class="text-center">
               HTML
             </p>
           </div>
           <div class="col-md-4 col-sm-4 col-centered">
-            <img class="img img-responsive img-third" src="../img/resources/Card-Python-Projects.jpg" alt="Python card"/>
+            <img id="python" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Python-Projects.jpg" alt="Python card"/>
             <p class="text-center">
               Python
             </p>
           </div>
-        </div>
-        <h3 class="text-orange text-center padding-top-large text-capitalize" id="workshop">
-          Projets et Ateliers</h3>
-        <div class="row row-centered padding-top-large padding-bot-medium border-bot">
-          <div class="col-md-4 col-sm-4 col-centered" >
-            <img class="img img-responsive img-third" src="../img/resources/Card-1Hour-Workshop.jpg" alt="1 hour workshop card"/>
+
+
+          <h3 class="text-blue text-center padding-top-large text-capitalize">
+            secondary</h3>
+          <div class="col-md-4 col-sm-4 col-centered  padding-top-large " >
+            <img id="unplugged" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Unplugged.jpg" alt="1 hour workshop card"/>
             <p class="text-center">
-              Ateliers 1 heure
+              unplugged
             </p>
           </div>
 
           <div class="col-md-4 col-sm-4 col-centered" >
-            <img class="img img-responsive img-third" src="../img/resources/Card-2Hour-Workshop.jpg" alt="2 hour workshop card"/>
+            <img id="activiies" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Activities.jpg" alt="2 hour workshop card"/>
             <p class="text-center">
-              Ateliers 2 heures
+              activiies
+            </p>
+          </div>
+        </div>
+        </div>
+
+        <div class="row row-centered padding-bot-medium border-bot" id="workshop">
+          <h3 class="text-orange text-center padding-top-large text-capitalize">
+            Workshop Projects</h3>
+          <div class="col-md-4 col-sm-4 col-centered  padding-top-large " >
+            <img id="1_hour_workshop" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-1Hour-Workshop.jpg" alt="1 hour workshop card"/>
+            <p class="text-center">
+              1 hour Workshop
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-centered" >
+            <img id="2_hour_workshop" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-2Hour-Workshop.jpg" alt="2 hour workshop card"/>
+            <p class="text-center">
+              2 hours Workshop
             </p>
           </div>
         </div>
 
-        <h3 class="text-orange text-center padding-top-large text-capitalize" id="teacher-training">
-          Feuillets pour la formation aux enseignants</h3>
-        <div class="row row-centered padding-top-large padding-bot-small">
-          <div class="col-md-4 col-sm-4 col-centered">
-            <img class="img img-responsive img-third" src="../img/resources/Card-CompThinking-TeacherTraining.jpg" alt="Computer Thinking Card"/>
+
+        <div class="row row-centered padding-bot-small" id="teacher_training">
+          <h3 class="text-orange text-center padding-top-large text-capitalize">
+            Teacher Training Handouts</h3>
+          <div class="col-md-4 col-sm-4 col-centered padding-top-large">
+            <img id="computational_thinking" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-CompThinking-TeacherTraining.jpg" alt="Computer Thinking Card"/>
 
             <p class="text-center">
-              Pensée computationnelle
+              Computational Thinking
             </p>
           </div>
           <div class="col-md-4 col-sm-4 col-centered">
-              <img class="img img-responsive img-third" src="../img/resources/CompProgramming-Card.png" alt="Computer Programming Card"/>
+              <img id="computer_programming" class="img img-responsive cursor-pointer img-third" src="../img/resources/CompProgramming-Card.png" alt="Computer Programming Card"/>
             <p class="text-center">
-              Programmation informatique
+              Computer Programming
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4 col-centered">
+              <img id="internet_web" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Internet.jpg" alt="Computer Programming Card"/>
+            <p class="text-center">
+              Internet Web
             </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
+  <!-- end of main items -->
+
+
+
+  <section class="custom-resources-padding" id="pdfs">
+    <div id="batch_pdf1">
+      <div id="intro_pdf" class="container hidden">
+        <h2 class="text-center text-orange text-capitalize">intro</h2>
+        <ul class="list-group margin-custom-30">
+          <li class="list-group-item">
+            <div class="container-fixed">
+              <div class="row">
+                <div class="col-xs-8">
+                  <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Intro to Code for kids</h4>
+                  <p>
+                    needs info
+                  </p></a>
+                </div>
+                <div class="col-xs-4">
+                  <div class="read-more">
+                    <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                      <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+
+
+    <div id="scratch_pdf" class="container hidden">
+      <h2 class="text-center text-orange text-capitalize">Scratch</h2>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Scratch Course Summary</h4>
+                <p>We will develop a student’s ability to think computationally and actively participate in the
+                  digital world we live in.</p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Scratch Lesson Plans</h4>
+                <p>Students will be able to: Describe what code is, Find the Scratch website, Explore Scratch resources</p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="html_pdf" class="container hidden">
+      <h2 class="text-center text-orange text-capitalize">HTML</h2>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">HTMLCSS - Handout</h4>
+                <p>
+                  A HTML page contains many tags. Each tag has a start tag and an end tag. In some cases,
+                  you can tell the start tag that it should be an end tag at the same time. Tags can also be
+                  encapsulated within other tags.
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">HTMLCSS Lesson Plans</h4>
+                <p>
+                  The aim of this program is to provide the children with an understanding of how the
+                  Internet works, what a computer is, and how they can create their own content for the
+                  Internet.
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="python_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">python</h3>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 1</h4>
+                <p>
+                  Introduce the interface/layout of Python on Trinket
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 2</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 3</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 4</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 5</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 6</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 7</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Python Lesson 8</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="unplugged_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">unplugged</h3>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Introduction to HTML</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Algorithm Activity 1 Ping-Pong Rescue</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Algorithm Activity 2 Pizza Recipes</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Algorithm Activity 3 Scavenger Hunt</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Choose Your Own Adventure</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Introduction to CSS</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Unplugged User Stories</h4>
+                <p>
+                  discription needed
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a  class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="activiies_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">activities</h3>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Introduction to Visual Programming using Twine</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Real-World Modelling with Wireframes</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="batch_pdf2">
+    <div id="workshop1_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">1 hour Workshop</h3>
+
+    </div>
+
+    <div id="workshop2_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">2 hour Workshop</h3>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">About a Canadian Animal</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span>download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Drawing Logos</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="batch_pdf3">
+    <div id="computational_thinking_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">Computational Thinking</h3>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">TeacherTrainingCT_2017 </h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a    class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">TeacherTrainingCT_</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a   class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Computational Thinking - Slides</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="computer_programming_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">Computer Programming</h3>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a  class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">Computer Programming- Slides</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">TeacherTrainingCP_2017 </h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a   class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">TeacherTrainingCP_2017 </h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="computer_programming_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">Internet Web</h3>
+      <ul class="list-group margin-custom-30">
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href=""><h4 class="text-heavy">Teacher Training - Web</h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">TeacherTrainingWeb_2017 </h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="container-fixed">
+            <div class="row">
+              <div class="col-xs-8">
+                <a class="text-black custom-hover-text-green a-hover-off resources_link" href="" target="_blank"><h4 class="text-heavy">TeacherTrainingWeb_2017 </h4>
+                <p>
+                  needs discription
+                </p></a>
+              </div>
+              <div class="col-xs-4">
+                <div class="read-more">
+                  <a class="pull-right text-blue resources_link" href="" target="_blank">
+                    <span >download </span><span class="fa fa-arrow-circle-o-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
   <footer class="bg-white">
     <section class="bg-transparent padding">
       <div class="container width-950">
         <div class="row">
           <div class="col-md-3 col-sm-3 col-xs-6">
-            <h5 class="text-blue text-large text-uppercase">À propos</h5>
+            <h5 class="text-blue text-large text-uppercase">About</h5>
             <ul class="list-unstyled">
-              <li><a href="a_propos.html#how_We_Work">Notre Travail</a></li>
-              <li><a href="a_propos.html#our_story">Notre Histoire</a></li>
-              <li><a href="a_propos.html#our_team">Notre équipe</a></li>
-              <li><a href="partenaires.html">Nos commanditaires</a></li>
+              <li><a href="about.html#our_story">Our Story</a></li>
+              <li><a href="about.html#our_team">Our Team</a></li>
+              <li><a href="partners.html">Our Sponsors</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6 padding-bot">
-            <h5 class="text-blue text-large text-uppercase">S'impliquer</h5>
+            <h5 class="text-blue text-large text-uppercase">Get Involved</h5>
             <ul class="list-unstyled">
-              <li><a href="services.html#coding_lessons">Enseignants</a></li>
-              <li><a href="services.html#volunteer">Bénévoles</a></li>
-              <li><a href="ateliers.html#workshop">Événements</a></li>
-              <li><a href="support.html">Nous soutenir</a></li>
+              <li><a href="services.html#coding_lessons">Educators</a></li>
+              <li><a href="support.html#volunteer">Volunteers</a></li>
+              <li><a href="services.html#workshop">Parents</a></li>
+              <li><a href="workshop.html#workshop">Workshops</a></li>
+              <li><a href="support.html">Support us</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6">
-            <h5 class="text-blue text-uppercase">Nous Joindre</h5>
+            <h5 class="text-blue text-uppercase">Contact</h5>
             <ul class="list-unstyled">
-              <li><a href="nous_joindre.html">Nous Joindre</a></li>
+              <li><a href="contact.html">Contact us</a></li>
             </ul>
             <div class="social-links social-links-m d-inline">
               <a href="https://www.facebook.com/KidsCodeJeunesse" target="_blank"><i class="fa fa-facebook bg-darkgray"></i></a>
@@ -195,11 +952,11 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6">
-            <h5 class="text-blue text-uppercase">S’inscrire</h5>
-            <p>Abonnez-vous à notre infolettre afin de rester à l’affût des événements à l’échelle du Canada</p>
+            <h5 class="text-blue text-uppercase">Sign up</h5>
+            <p>Join our Canadian newsletter to stay in the loop</p>
             <form action="" method="" class="form-block">
-              <input class="text-black" type="email" placeholder="Addresse courielle"/>
-              <input class="btn btn-blue" type="submit" value="S’abonner" />
+              <input class="text-black email_input" type="email" placeholder="Email Address"/>
+              <input class="btn btn-blue submit_email" type="submit" value="SUBSCRIBE" />
             </form>
           </div>
         </div>
