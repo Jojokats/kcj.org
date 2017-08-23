@@ -457,3 +457,11 @@
 .cursor-pointer:hover {
   cursor: pointer;
 }
+.glyphicon-download {
+  font-size: 3em;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+.glyphicon-download:hover{
+  color: #ff8900;
+}
