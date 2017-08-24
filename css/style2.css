@@ -465,3 +465,9 @@
 .glyphicon-download:hover{
   color: #ff8900;
 }
+.custom-back-btn {
+  margin: auto;
+  margin-left: 18%;
+  margin-right: 82%;
+  margin-bottom: -10px;
+}

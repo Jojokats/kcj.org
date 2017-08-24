@@ -4,7 +4,6 @@ $(document).ready(function() {
   g.in_class = $("#in-class").find("img");
   g.workshop = ($("#workshop").find("img"));
   g.teacher_training = ($("#teacher_training").find("img"));
-  g.nav = $("#nav_options")[0];
   g.main = $("#main_menue")[0];
   g.back = $("#back")[0];
   g.pdfs = $("#pdfs")[0];
@@ -21,7 +20,6 @@ $(document).ready(function() {
 function toggle_options(e) {
   $(window).scrollTop(0);
   g.target = e.target.id
-  //g.nav[0].children[0]
   switch (g.target) {
     case "intro":
         show_pdfs(e, this, 0, 0);
@@ -60,13 +58,12 @@ function toggle_options(e) {
         break;
 
       }
- $(g.back).on( "click", function() {
-   $(window).scrollTop(0);
-   $(g.main).removeClass('hidden');
-   $(g.nav).addClass('hidden');
-   $(g.nav.children[g.section]).addClass('hidden');
-   $(g.current).addClass('hidden');
-  });
+   $(g.back).on( "click", function() {
+     $(window).scrollTop(0);
+     $(g.main).removeClass('hidden');
+     $(g.back).addClass('hidden');
+     $(g.current).addClass('hidden');
+    });
 }
 function show_pdfs(e, current, section, option) {
 console.log("hey");
@@ -74,7 +71,6 @@ console.log("hey");
   g.section = section;
   g.option = option;
   $(g.main).addClass('hidden');
-  $(g.nav).removeClass('hidden');
-  $(g.nav.children[g.section]).removeClass('hidden');
   $(g.current).removeClass('hidden');
+  $(g.back).removeClass('hidden');
 }
