@@ -462,11 +462,11 @@ strong {
 }*/
 
 
-/*
 #empoweringSec a:hover{
-  text-decoration: none;
-  color: #e2e2e2;
-}*/
+  text-decoration: underline;
+  font-weight: bold;
+  color: inherit;
+}
 
 .social-links a {
   color: white;
