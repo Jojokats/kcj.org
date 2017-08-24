@@ -5,7 +5,6 @@ $(document).ready(function() {
  if (window.navigator.platform.substring(0,3) === "Mac") {
       set_path();
   }
-
 });
 
 function set_path() {
