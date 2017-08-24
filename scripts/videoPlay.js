@@ -10,37 +10,34 @@ $(document).ready(function(){
   g.fullVideo = document.getElementById('fullVideo');
   hide(g.fullVideo, true);
 
+  $(window).on('resize', function() {
+    mobileScreen();
+  }).trigger('resize');
+
   $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
     var id = $(this).attr('href');
-
-    // target element
     var $id = $(id);
     if ($id.length === 0) {
         return;
     }
-
-    // prevent standard hash navigation (avoid blinking in IE)
     e.preventDefault();
 
-    // top position relative to the document
     var pos = $id.offset().top - 80;
-
-    // animated top scrolling
     $('body, html').animate({scrollTop: pos}, 1000);
   });
-
-  $(window).on('resize', function() {
-    mobileScreen();
-  }).trigger('resize');
 });
 
 function mobileScreen(){
   var screenWidth = $(window).width();
-  if (screenWidth < 1100){
-    $('.mobile-hide').hide();
+  var $mobile_hide = $('.mobile-hide');
+  var $playBtn = $('#playBtn');
+  if (screenWidth < 900){
+    $mobile_hide.hide();
+    $playBtn.addClass('pos-absolute');
   } else {
-    $('.mobile-hide').show();
+    $mobile_hide.show();
+    $playBtn.removeClass('pos-absolute');
   }
 }
 
