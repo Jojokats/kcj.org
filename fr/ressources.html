@@ -64,6 +64,11 @@
     <h1 class="text-center text-uppercase text-white padding-big">ressources</h1>
   </section>
 
+  <section class="containe custom-back-btn">
+    <div class="row">
+      <a id="back" class="btn hidden btn-blue"><span class="glyphicon glyphicon-arrow-left"></span> Back</a>
+    </div>
+  </section>
   <section id="main_menue">
     <section class="container padding-top-large bg-white">
       <h3 class="text-center text-capitalize text-blue">
@@ -74,9 +79,7 @@
           Nous souhaitons que tous les enfants du Canada aient l’occasion d’apprendre la programmation
           informatique. Pour y parvenir, nous aidons les enseignants et les éducateurs à intégrer
           le codage en classe et dans des activités parascolaires ainsi qu’en organisant
-          des programmes ou des Code Club dans des bibliothèques et des centres communautaires.
-        </p>
-        <p>
+          des programmes ou des Code Club dans des bibliothèques et des centres communautaires.<br><br>
           Voici des ressources d’apprentissage et du matériel pédagogique que nous mettons à la
           disposition des enseignants et des éducateurs afin qu’ils puissent éveiller l'intêret des enfants au codage.
         </p>
@@ -95,7 +98,7 @@
     <div class="row padding-top-large">
       <div class="container-fluid border-top">
         <h3 class="text-orange text-center text-capitalize">OUTILS D'ENSEIGNEMENT</h3>
-        <div class="row row-centered  padding-bot-medium" id="in-class">
+        <div class="row row-centered  padding-bot-medium border-bot" id="in-class">
           <h3 class="text-blue text-center text-capitalize">Primaire</h3>
           <div class="col-md-3 col-sm-12 col-centered">
             <img id="intro" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Intro.jpg" alt="Python card"/>
@@ -122,18 +125,17 @@
             </p>
           </div>
 
-
           <h3 class="text-blue text-center padding-top-large text-capitalize">
             Secondaire</h3>
           <div class="col-md-3 col-sm-12 col-centered  padding-top-large " >
-            <img id="unplugged" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Unplugged.jpg" alt="1 hour workshop card"/>
+            <img id="unplugged" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Unplugged-FR.jpg" alt="1 hour workshop card"/>
             <p class="text-center">
               Débranché
             </p>
           </div>
 
           <div class="col-md-3 col-sm-12 col-centered" >
-            <img id="activiies" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Activities.jpg" alt="2 hour workshop card"/>
+            <img id="activiies" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Activities-FR.jpg" alt="2 hour workshop card"/>
             <p class="text-center">
               Activités
             </p>
@@ -141,25 +143,25 @@
         </div>
         </div>
 
-        <div class="row row-centered padding-bot-medium border-top" id="workshop">
+        <div class="row row-centered padding-bot-medium border-bot" id="workshop">
           <h3 class="text-orange text-center padding-top-large text-capitalize">
             ATELIERS ET PROJETS</h3>
           <div class="col-md-3 col-sm-12 col-centered  padding-top-large " >
-            <img id="1_hour_workshop" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-1Hour-Workshop.jpg" alt="1 hour workshop card"/>
+            <img id="1_hour_workshop" class="img img-responsive cursor-pointer img-third" src="../img/resources/1Hour-Workshop-FR.jpg" alt="1 hour workshop card"/>
             <p class="text-center">
               Atelier d'une heure
             </p>
           </div>
 
           <div class="col-md-3 col-sm-12 col-centered" >
-            <img id="2_hour_workshop" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-2Hour-Workshop.jpg" alt="2 hour workshop card"/>
+            <img id="2_hour_workshop" class="img img-responsive cursor-pointer img-third" src="../img/resources/2Hour-Workshop-FR.jpg" alt="2 hour workshop card"/>
             <p class="text-center">
                 Atelier de deux heures
             </p>
           </div>
         </div>
 
-        <div class="row row-centered padding-bot-small border-top" id="teacher-training">
+        <div class="row row-centered padding-bot-small" id="teacher_training">
           <h3 class="text-orange text-center padding-top-large text-capitalize">
             DOCUMENTS POUR LES ENSEIGNANTS</h3>
           <div class="col-md-3 col-sm-12 col-centered padding-top-large">
@@ -168,7 +170,7 @@
             <p class="text-center">
               Pensée informatique
             </p>
-          </div> 
+          </div>
           <div class="col-md-3 col-sm-12 col-centered">
               <img id="computer_programming" class="img img-responsive cursor-pointer img-third" src="../img/resources/CompProgramming-Card.png" alt="Computer Programming Card"/>
             <p class="text-center">
@@ -188,15 +190,10 @@
   </section>
   <!-- end of main items -->
 
-
-
   <section class="custom-resources-padding" id="pdfs">
     <div id="batch_pdf1">
-      <div id="intro_pdf" class="container padding-top-large hidden">
-        <h2 class="text-center text-orange text-capitalize">
-          <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-            intro
-          </h2>
+      <div id="intro_pdf" class="container hidden">
+        <h2 class="text-center text-orange text-capitalize">intro</h2>
         <ul class="list-group margin-custom-30">
           <li class="list-group-item">
             <div class="container-fixed">
@@ -220,12 +217,8 @@
         </ul>
         </div>
 
-
-    <div id="scratch_pdf"  class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          Scratch
-        </h2>
+    <div id="scratch_pdf" class="container hidden">
+      <h2 class="text-center text-orange text-capitalize">Scratch</h2>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -237,7 +230,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Scratch_Course_Summary.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Scratch_Course_Summary.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -257,7 +250,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Scratch_Lesson_Plans.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Scratch_Lesson_Plans.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -268,11 +261,8 @@
       </ul>
     </div>
 
-    <div id="html_pdf"  class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          HTML
-        </h2>
+    <div id="html_pdf" class="container hidden">
+      <h2 class="text-center text-orange text-capitalize">HTML</h2>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -287,7 +277,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/HTML_CSS/HTMLCSS_Handout.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/HTML_CSS/HTMLCSS_Handout.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -309,7 +299,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/HTML_CSS/HTMLCSS_Lesson_Plans.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/HTML_CSS/HTMLCSS_Lesson_Plans.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -397,11 +387,8 @@
       </ul>
     </div>
 
-    <div id="python_pdf" class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          python
-        </h2>
+    <div id="python_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">python</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -414,7 +401,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson1.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson1.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -434,7 +421,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson2.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson2.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -454,7 +441,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson3.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson3.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -474,7 +461,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson4.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson4.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -494,7 +481,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson5.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson5.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -514,7 +501,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson6.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson6.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -534,7 +521,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson7.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson7.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -554,7 +541,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson8.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Primary/Python/KCJ_Python_Lesson8.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -565,11 +552,8 @@
       </ul>
     </div>
 
-    <div id="unplugged_pdf" class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          unplugged
-        </h2>
+    <div id="unplugged_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">unplugged</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -582,7 +566,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Introduction_to_HTML.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Introduction_to_HTML.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -602,7 +586,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Algorithm_Activity1_Ping_Pong_Rescue.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Algorithm_Activity1_Ping_Pong_Rescue.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -622,7 +606,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Algorithm_Activity2_Pizza_Recipes.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Algorithm_Activity2_Pizza_Recipes.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -642,7 +626,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Algorithm_Activity3_Scavenger_Hunt.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Algorithm_Activity3_Scavenger_Hunt.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -662,7 +646,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Choose_Your_Own_Adventure.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Choose_Your_Own_Adventure.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -682,7 +666,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Introduction_to_CSS.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_Introduction_to_CSS" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -702,7 +686,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a  class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_User_Stories.pdf" target="_blank">
+                  <a  class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Unplugged/Unplugged_User_Stories.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -713,11 +697,8 @@
       </ul>
     </div>
 
-    <div id="activiies_pdf" class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          activities
-        </h2>
+    <div id="activiies_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">activities</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -730,7 +711,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Introduction_to_Visual_Programming_using_Twine.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Introduction_to_Visual_Programming_using_Twine.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -750,7 +731,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Real_World_Modelling_with_Wireframes.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Real_World_Modelling_with_Wireframes.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -763,11 +744,8 @@
   </div>
 
   <div id="batch_pdf2">
-    <div id="workshop1_pdf" class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          1 hour Workshop
-        </h2>
+    <div id="workshop1_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">1 hour Workshop</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -780,7 +758,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Introduction_to_Visual_Programming_using_Twine.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Introduction_to_Visual_Programming_using_Twine.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -800,7 +778,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Real_World_Modelling_with_Wireframes.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/In-Classroom/EN/Secondary/Activities/Activity_Real_World_Modelling_with_Wireframes.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -811,10 +789,8 @@
       </ul>
     </div>
 
-    <div id="workshop2_pdf" class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          2 hour Workshop</h2>
+    <div id="workshop2_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">2 hour Workshop</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -827,7 +803,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/Workshop_Projects/EN/2-Hour/2_Hour_About_a_Canadian_Animal.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/Workshop_Projects/EN/2-Hour/2_Hour_About_a_Canadian_Animal.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -847,7 +823,7 @@
               </div>
               <div class="col-xs-4">
                 <div class="read-more">
-                  <a class="pull-right text-blue" href="../Resources_pdf/windows/Workshop_Projects/EN/2-Hour/2_Hour_Drawing_Logos.pdf" target="_blank">
+                  <a class="pull-right text-blue resources_link" href="../Resources_pdf/windows/Workshop_Projects/EN/2-Hour/2_Hour_Drawing_Logos.pdf" target="_blank">
                     <span class="glyphicon glyphicon-download icon"></span>
                   </a>
                 </div>
@@ -860,11 +836,8 @@
   </div>
 
   <div id="batch_pdf3">
-    <div id="computational_thinking_pdf"  class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          Computational Thinking
-        </h2>
+    <div id="computational_thinking_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">Computational Thinking</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -888,11 +861,8 @@
       </ul>
     </div>
 
-    <div id="computer_programming_pdf" class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          Computer Programming
-        </h2>
+    <div id="computer_programming_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">Computer Programming</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
@@ -915,11 +885,8 @@
         </li>
       </ul>
     </div>
-    <div id="computer_programming_pdf" class="container padding-top-large hidden">
-      <h2 class="text-center text-orange text-capitalize">
-        <a class="btn hidden btn-blue pull-left back"><span class="glyphicon glyphicon-arrow-left"></span>Back</a>
-          Internet Web
-        </h2>
+    <div id="computer_programming_pdf" class="container hidden">
+      <h3 class="text-center text-orange text-capitalize">Internet Web</h3>
       <ul class="list-group margin-custom-30">
         <li class="list-group-item">
           <div class="container-fixed">
