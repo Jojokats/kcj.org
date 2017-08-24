@@ -5,7 +5,7 @@ $(document).ready(function() {
   g.workshop = ($("#workshop").find("img"));
   g.teacher_training = ($("#teacher_training").find("img"));
   g.main = $("#main_menue")[0];
-  g.back = $("#back")[0];
+  g.back = $(".back");
   g.pdfs = $("#pdfs")[0];
   g.pdf1 = $("#batch_pdf1")[0];
   g.pdf2 = $("#batch_pdf2")[0];
@@ -61,7 +61,7 @@ function toggle_options(e) {
    $(g.back).on( "click", function() {
      $(window).scrollTop(0);
      $(g.main).removeClass('hidden');
-     $(g.back).addClass('hidden');
+     back_btn("hidden");
      $(g.current).addClass('hidden');
     });
 }
@@ -72,5 +72,20 @@ console.log("hey");
   g.option = option;
   $(g.main).addClass('hidden');
   $(g.current).removeClass('hidden');
-  $(g.back).removeClass('hidden');
+  back_btn("show");
+}
+function back_btn(hs) {
+
+  if (hs == "show") {
+    console.log("1: " + hs);
+    for (var i = 0; i < g.back.length; i++) {
+      $(g.back[i]).removeClass('hidden');
+    }
+  }
+  if (hs == "hidden") {
+    console.log("2: " + hs);
+    for (var i = 0; i < g.back.length; i++) {
+      $(g.back[i]).addClass('hidden');
+    }
+  }
 }
