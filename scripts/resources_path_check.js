@@ -8,16 +8,17 @@ $(document).ready(function() {
 });
 function set_path() {
   g.temp = [];
+  var reg = new RegExp('.windows.')
   for (var i = 0; i < g.links.length; i++) {
     g.temp[i] = g.links[i].href;
-    g.temp[i].replace("windows", "hiii");
+    g.temp[i].replace(reg, "hiii");
+    console.log(g.temp[i]);
   }
   for (var i = 0; i < g.links.length; i++) {
   //  g.links[i].href = "";
     $(g.links[i]).removeAttr("href");
-    console.log(g.links[i].href);
   }
   for (var i = 0; i < g.links.length; i++) {
-    g.links[i].href = g.temp[i]
+    //g.links[i].href = g.temp[i]
   }
 }
