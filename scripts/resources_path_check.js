@@ -1,17 +1,16 @@
 var g = {};
 $(document).ready(function() {
-  console.log(g.lang + " <====");
-  g.links = $('.resources_link');
-  g.mac = "mac";
+  g.links = document.getElementsByClassName('resources_link');
 
- if (window.navigator.platform.substring(0,3) == "Mac") {
-      set_path(g.mac);
+ if (window.navigator.platform.substring(0,3) === "Mac") {
+      set_path();
   }
 
 });
 
-function set_path (path) {
+function set_path() {
   for (var i = 0; i < g.links.length; i++) {
     g.links[i].href.replace("windows", "mac");
   }
+  console.log(g.links[0].href + " <=======");
 }
