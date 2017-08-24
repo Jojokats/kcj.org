@@ -45,9 +45,10 @@ function playFullVideo(){
   hide(g.fullVideo, false);
 
   var video = g.fullVideo.getElementsByTagName('video')[0];
-  // console.log(video);
   video.play();
   video.muted = false;
+
+  $('#video').css('max-height', '1500px');
 }
 
 function removeVideoOverlay(){
