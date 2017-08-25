@@ -73,7 +73,6 @@ function toggle_options(e) {
     });
 }
 function show_pdfs(e, current, section, option) {
-console.log("hey");
   g.current = g.pdfs.children[section].children[option];
   g.section = section;
   g.option = option;
@@ -82,15 +81,12 @@ console.log("hey");
   back_btn("show");
 }
 function back_btn(hs) {
-
   if (hs == "show") {
-    console.log("1: " + hs);
     for (var i = 0; i < g.back.length; i++) {
       $(g.back[i]).removeClass('hidden');
     }
   }
   if (hs == "hidden") {
-    console.log("2: " + hs);
     for (var i = 0; i < g.back.length; i++) {
       $(g.back[i]).addClass('hidden');
     }
