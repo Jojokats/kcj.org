@@ -6,7 +6,7 @@ $(document).ready(function() {
   */
   g.in_class = $("#in-class").find("img");
   g.workshop = ($("#workshop").find("img"));
-  g.teacher_training = ($("#teacher_training").find("img"));
+  g.teacher_training = ($("#teacher-training").find("img"));
 
   g.main = $("#main_menue")[0]; //this is the original menu the user first sees when resources is loaded
   g.back = $(".back"); //contains all the back buttons on the page.
