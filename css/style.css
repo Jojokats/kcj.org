@@ -897,3 +897,24 @@ canvas {
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+/* flexbox news */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content: space-around;
+  -webkit-align-items: baseline; /* Safari */
+  align-content:  space-around;
+}
+
+.news1 {
+  width: 50%;
+  height: auto;
+}
+
+/* .img-custom {
+  width: 200px;
+  height: auto;
+} */
