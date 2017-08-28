@@ -355,7 +355,8 @@
   padding-left: 10px;;
 }
 .border-bot {
-  border-bottom: solid;
+  border-bottom: 1px solid #c6c6c6;
+  
   border-width: thin;
 }
 .img-third {
