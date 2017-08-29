@@ -128,6 +128,9 @@
 .padding-large {
   padding: 30px;;
 }
+.padding-top-xs {
+  padding-top: 10px;
+}
 .padding-top-small {
   padding-top: 20px;
 }
@@ -356,7 +359,7 @@
 }
 .border-bot {
   border-bottom: 1px solid #c6c6c6;
-  
+
   border-width: thin;
 }
 .img-third {
@@ -468,4 +471,11 @@
   margin: auto;
   margin-left: 17%;
   margin-right: 83%;
+}
+.bg-news-img {
+  position: absolute;
+  display: cover;
+}
+.a {
+  position: relative;
 }
