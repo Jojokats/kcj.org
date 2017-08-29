@@ -198,8 +198,22 @@ strong {
   border-color: #5c6f79;
 }
 
+.btn-index:hover {
+  width: 90%;
+  padding: 10px;
+  background-color: #ff8900;
+  color: white;
+  border-color: white;
+}
 
+.col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
 
+.col {
+  display: table-cell; /* Make elements inside the container behave like table cells */
+}
 
 .btn-blue {
   background-color: #3bb2f7;
@@ -635,9 +649,9 @@ footer input[type^="email"] {
 
 
 
-/*#register-description {
-  max-width: 220px;
-}*/
+  #register-description {
+    height: 160px;
+  }
 
 .width-200 {
   max-width: 197px;
@@ -916,6 +930,9 @@ canvas {
   min-height: 250px;
 }
 .min-h-350{
+  min-height: 320px;
+}
+.min-h-450{
   min-height: 320px;
 }
 
