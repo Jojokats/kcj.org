@@ -1,13 +1,11 @@
 .flex-container {
-   display: flex;
-   flex-direction: row;
-   align-items:         center;
-   -webkit-justify-content: space-around; /* Safari */
-   justify-content: space-around;
-   -webkit-align-items: baseline; /* Safari */
-   align-content:         space-around;
-   -webkit-flex-grow: <number>; /* Safari */
-   flex-grow:         <number>;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
 }
 .flex-wrap {
   width: 50%;

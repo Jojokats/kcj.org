@@ -55,6 +55,16 @@ a:hover, input:hover, button:hover {
   transition: all .3s ease-in-out;*/
 }
 
+ button-orange:hover {
+  border-radius: 5px;
+  border-color: 1px solid white;
+  color: white;
+  background-color: #ff8900;
+
+  /*-webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;*/
+}
+
 a[class^="text-orange"]:hover {
   color: #fb4c06;
   text-decoration: none;
@@ -88,8 +98,12 @@ strong {
 }
 
 .bg-blue {
-  background-color: #6fb3c6;
+  background-color: #3bb2f7;
   color: white;
+}
+
+.bg-blue-grey {
+  background-color: #85bfd3;
 }
 
 .bg-white {
@@ -109,6 +123,12 @@ strong {
 }
 
 .bg-orange {
+  background-color: #ff8900;
+  color: white;
+  border-color: 1px solid white;
+}
+
+.bg-orange-newsletter {
   background-color: #ff8900;
   color: white;
   border-color: 1px solid white;
@@ -165,6 +185,34 @@ strong {
   min-width: 230px;
   padding: 5px;
   /*line-height: 2;*/
+}
+
+.btn-index {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+  background-color: white;
+  color: #5c6f79;
+  border-color: #5c6f79;
+}
+
+.btn-index:hover {
+  width: 90%;
+  padding: 10px;
+  background-color: #ff8900;
+  color: white;
+  border-color: white;
+}
+
+.col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+  display: table-cell; /* Make elements inside the container behave like table cells */
 }
 
 .btn-blue {
@@ -462,11 +510,11 @@ strong {
 }*/
 
 
-/*
 #empoweringSec a:hover{
-  text-decoration: none;
-  color: #e2e2e2;
-}*/
+  text-decoration: underline;
+  font-weight: bold;
+  color: inherit;
+}
 
 .social-links a {
   color: white;
@@ -600,10 +648,14 @@ footer input[type^="email"] {
 }
 
 
-
-/*#register-description {
-  max-width: 220px;
-}*/
+/* HEIGTH CONTROL OF THE INDEX INTRO BOXES */
+#register-description {
+    height: 160px;
+}
+/* TRANSPARENCY CONTROL */
+.transparent {
+  color: white;
+}
 
 .width-200 {
   max-width: 197px;
@@ -667,15 +719,11 @@ footer input[type^="email"] {
   position: relative;
   overflow: hidden;
   display: block;
-  /*background-image: url(/assets/videos/mobile-poster-2e65012….jpg);*/
-  background-color: rgb(255, 152, 0);;
-  background-size: cover;
-  background-position: bottom;
   width: 100%;
-  /*height: 950px;*/
+  max-height: 750px;
   -webkit-transition: height 1s ease;
   transition: height 1s ease;
-  max-width: 1500px;
+  background-color: orange;
 }
 .video-container {
     position: relative;
@@ -684,8 +732,6 @@ footer input[type^="email"] {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    /*background: #000;*/
-    /*z-index: -1;*/
 }
 .fillWidth{
   width: 100%;
@@ -739,12 +785,12 @@ canvas {
 .content{
   font-family: inherit;
   position: absolute;
-  top: 25%;
-  bottom: 0;
+  top: 30%;
   right: 0;
   left: 0;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 250px;
+  min-height: 120px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
@@ -791,6 +837,12 @@ canvas {
     100% {color: #FF9800}
 }
 /*#9C27B0", "#2196F3", "#4CAF50", "#FFEB3B", "#FF9800", "#E91E63"*/
+
+#playBtn{
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 #playBtn span{
   font-size: 50px;
   -webkit-animation-name: pulse-grow;
@@ -884,6 +936,9 @@ canvas {
 .min-h-350{
   min-height: 320px;
 }
+.min-h-450{
+  min-height: 320px;
+}
 
 /* centered columns styles */
 .row-centered {
@@ -896,4 +951,13 @@ canvas {
     text-align: center;
     /* inline-block space fix */
     margin-right:-4px;
+}
+
+/* NEWS CENTERING IMAGES */
+
+.l {
+  text-align: left; padding-top: 10px;
+}
+.r {
+  text-align: right; padding-top: 10px;
 }

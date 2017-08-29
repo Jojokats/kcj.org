@@ -1,4 +1,4 @@
-<!-- THIS IS A TEST C-->
+<!-- THIS IS A TEST AAA-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,13 +13,16 @@
   <link rel="icon" href="img/favicon.ico">
 
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous">
+
+    </script>
   <!-- <script src="scripts/videoScale.js" type="text/javascript"></script> -->
   <script src="scripts/design.js" type="text/javascript"></script>
   <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
@@ -44,7 +47,8 @@
       </header>
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -66,51 +70,47 @@
     </nav>
   </div>
 
-  <div class="learn-more text-white text-center video-overlay mobile-hide">
-    <a id="learn-more" href="#empoweringSec" class="text-white">
-      Learn more about us
-      <br>
-      <i class="glyphicon glyphicon-chevron-down"></i>
-    </a>
-  </div>
-  <div class="content video-overlay">
-    <div class="">
-      <h1 class="text-inherit text-xl mobile-hide">Inspiring and Empowering Canadian Children with Code</h1>
-      <p class="intro mobile-hide">Discover how and why we’re making sure every child has the opportunity to learn digital literacy!</p>
+  <section id="video" class="after-nav margin-auto">
+    <!-- particles.js container -->
+    <div id="particles-js" class="pos-absolute video-overlay"></div>
+    <div class="video-overlay">
+      <div class="video-container">
+        <video autoplay loop muted class="fillWidth">
+          <source src="video/TRAILER TRAILER.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="video/TRAILER TRAILER.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+      </div>
+    </div>
+    <div id="fullVideo" class="">
+      <div class="video-container">
+        <video controls class="fillWidth">
+          <source src="video/videoen.mp4" type="video/mp4" /> Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="video/videoen.webm" type="video/webm" /> Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+      </div>
+    </div>
+    <div class="content video-overlay">
+      <div class="mobile-hide">
+        <h1>Inspiring and Empowering Canadian Children with Code</h1>
+        <p class="text-s">DISCOVER HOW AND WHY WE’RE MAKING SURE EVERY CHILD HAS THE OPPORTUNITY TO LEARN DIGITAL SKILLS IN THEIR COMMUNITY!
+          <p>
+      </div>
       <a id="playBtn" href="#" class="text-white text-m">
         <span class="glyphicon glyphicon-play-circle"></span><br/>
         P L A Y
       </a>
     </div>
-  </div>
-  <section id="video" class="after-nav">
-    <!-- particles.js container -->
-    <div id="particles-js" class="pos-absolute video-overlay"></div>
-    <div class="homepage-hero-module video-overlay">
-      <div class="video-container">
-        <div class="filter"></div>
-        <video autoplay loop muted class="fillWidth">
-          <source src="video/TRAILER TRAILER.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          <source src="video/TRAILER TRAILER.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          <!-- <source src="video/Writing-Working.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          <source src="video/Writing-Working.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
-        </video>
-      </div>
-    </div>
-    <div id="fullVideo" class="homepage-hero-module">
-      <div class="video-container">
-        <div class="filter"></div>
-        <video controls class="fillWidth">
-          <source src="video/video.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          <source src="video/video.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-          <!-- <source src="video/Writing-Working.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
-        </video>
-      </div>
+    <div class="learn-more text-white text-center video-overlay mobile-hide">
+      <a id="learn-more" href="#helpSec" class="text-white">
+        LEARN MORE ABOUT US
+        <br>
+        <i class="glyphicon glyphicon-chevron-down"></i>
+      </a>
     </div>
   </section>
 
   <!-- One row for code club -->
-  <section id="empoweringSec" class="bg-orange">
+  <!-- <section id="empoweringSec" class="bg-orange">
     <div class="container padding">
       <div class="text-center">
         <h3>
@@ -120,7 +120,7 @@
         </h3>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Three columns of text -->
   <section id="helpSec" class="bg-blue padding">
     <div class="container max-w-900">
@@ -132,9 +132,23 @@
             <h4 class="text-orange text-uppercase text-bold">Educators</h4>
             <div id="register-description" class="margin-auto">
               <ul class="text-center list-unstyled text-bold">
-                <li><a href="teacherTraining.html" class="text-black">Request a teacher training workshop</a></li>
-                <li><a href="workshop.html" class="text-black">Join a teacher training workshop</a></li>
-                <li><a href="resources.html" class="text-black">Teaching materials</a></li>
+                <li>
+                  <form>
+                      <input class="btn btn-index Type="BUTTON" Value="REQUEST A TRAINING" Onclick="window.location.href='teacherTraining.html'">
+                  </form>
+                </li>
+                <li>
+                  <!-- <a href="workshop.html" class="text-black">Join a teacher training workshop</a> -->
+                  <form>
+                      <input class="btn btn-index Type="BUTTON" Value="JOIN A WORKSHOP" Onclick="window.location.href='workshop.html'">
+                  </form>
+                </li>
+                <li>
+                  <!-- <a href="resources.html" class="text-black">Teaching materials</a> -->
+                  <form>
+                      <input class="btn btn-index Type="BUTTON" Value="TEACHING MATERIALS" Onclick="window.location.href='resources.html'">
+                  </form>
+                </li>
               </ul>
             </div>
           </div>
@@ -144,10 +158,19 @@
           <div class="padding-y-l bg-white border-radius-l max-w-320 margin-auto min-h-350">
             <img class="img-circle" src="img/Icon_Play.gif" alt="Light bulb picture" width="140" height="140">
             <h4 class="text-orange text-uppercase text-bold">Parents</h4>
-            <div class="margin-auto">
+            <div id="register-description" class="margin-auto">
               <ul class="text-center list-unstyled text-bold">
-                <li><a href="workshop.html" class="text-black">Code, Create, Play Workshops</a></li>
-                <li><a href="childSchool.html" class="text-black">Bring us to your child’s school</a></li>
+                <li class="transparent">.</li>
+                <li>
+                  <form>
+                      <input class="btn btn-index Type="BUTTON" Value="KID'S WORKSHOP REGISTRATION" Onclick="window.location.href='workshop.html'">
+                  </form>
+                </li>
+                <li>
+                  <form>
+                      <input class="btn btn-index Type="BUTTON" Value="BRING KJC TO PRIMARY SCHOOL" Onclick="window.location.href='childSchool.html'">
+                  </form>
+                </li>
               </ul>
             </div>
           </div>
@@ -157,14 +180,20 @@
           <div class="padding-y-l bg-white border-radius-l max-w-320 margin-auto min-h-350">
             <img class="img-circle" src="img/Icon-Teach.gif" alt="Icon teach" width="140" height="140">
             <h4 class="text-orange text-uppercase text-bold">Volunteers</h4>
-            <div class="margin-auto width-200">
-              <p class="text-bold">
-                <a href="volunteer.html" class="text-black">
-                    Get involved!
-                  <br/>
-                  Find volunteer opportunities
-                </a>
-              </p>
+            <div id="register-description" class="margin-auto">
+              <ul class="text-center list-unstyled text-bold">
+                <li class="transparent">.</li>
+                <li>
+                  <form>
+                      <input class="btn btn-index Type="BUTTON" Value="WAYS TO VOLUNTEER" Onclick="window.location.href='volunteer.html'">
+                  </form>
+                </li>
+                <li>
+                  <form>
+                      <input class="btn btn-index Type="BUTTON" Value="VOLUNTEER OPPORTUNITIES" Onclick="window.location.href='volunteer.html'">
+                  </form>
+                </li>               
+              </ul>
             </div>
           </div>
         </div>
@@ -173,8 +202,8 @@
       <!-- /.row -->
     </div>
   </section>
-<!--
-  <section id="news" class="bg-blue padding-big">
+
+  <!-- <section id="news" class="bg-blue padding-big">
     <div class="container">
       <div id="newsImages" class="row">
         <h1 id="newsHeader" class="text-center padding-small">news</h1>
@@ -207,24 +236,40 @@
         </div>
       </div>
     </div>
-  </section>
--->
-  <section id="newsLetter" class="bg-white">
+  </section> -->
+
+  <!-- NEWSLETTER -->
+  <section id="newsLetter" class="bg-orange-newsletter">
     <div class="container padding">
       <div class="row text-center">
-        <h2 class="text-uppercase text-darkblue">Never miss a thing! <strong>Sign up</strong> for our newsletter</h2>
+        <h2 class="text-uppercase">Never miss a thing! <strong>Sign up</strong> for our newsletter</h2>
         <form class="padding-small" action="#" method="GET">
           <div class="form-group">
             <input class="input padding-s border border-white email_input" type="email" name="email" placeholder="Email Address">
-            <input class="btn btn-darkblue border border-white submit_email" type="submit" value="SUBSCRIBE">
+            <input class="btn btn-orange border border-white submit_email" type="submit" value="SUBSCRIBE">
           </div>
         </form>
       </div>
     </div>
   </section>
 
+  <!-- NEWS -->
+  <section id="news" class="bg-blue-grey padding-big">
+    <h1 id="newsHeader" class="text-center padding-small">news</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 r">
+          <img src="img/News2-sm.jpg"> <br />
+        </div>
+        <div class="col-md-6 col-small-12 l">
+          <img src="img/News1-sm.jpg"> <br />
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
-    <img class="img img-responsive" src="img/Wesbite_Slider_Code_Club_Canada_Shorter_EN.png" style="width: 100%"/>
+    <img class="img img-responsive" src="img/Wesbite_Slider_Code_Club_Canada_Shorter_EN.png" style="width: 100%" />
   </section>
 
   <section id="startCodeClub" class="bg-green">
@@ -314,17 +359,17 @@
               <li><a href="contact.html">Contact us</a></li>
             </ul>
             <div class="social-links social-links-m d-inline">
-              <a href="https://www.facebook.com/KidsCodeJeunesse" target="_blank"><i class="fa fa-facebook bg-darkgray"></i></a>
-              <a href="https://twitter.com/kidscoding" target="_blank"><i class="fa fa-instagram bg-darkgray"></i></a>
-              <a href="https://www.linkedin.com/company/kids-code-jeunesse" target="_blank"><i class="fa fa-linkedin bg-darkgray"></i></a>
               <a href="https://twitter.com/kidscoding" target="_blank"><i class="fa fa-twitter bg-darkgray"></i></a>
+              <a href="https://www.facebook.com/KidsCodeJeunesse" target="_blank"><i class="fa fa-facebook bg-darkgray"></i></a>
+              <a href="https://instagram.com/kidscodejeunesse" target="_blank"><i class="fa fa-instagram bg-darkgray"></i></a>
+              <a href="https://www.linkedin.com/company/kids-code-jeunesse" target="_blank"><i class="fa fa-linkedin bg-darkgray"></i></a>
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-6">
             <h5 class="text-blue text-uppercase">Sign up</h5>
             <p>Join our Canadian newsletter to stay in the loop</p>
             <form action="" method="" class="form-block">
-              <input class="text-black email_input" type="email" placeholder="Email Address"/>
+              <input class="text-black email_input" type="email" placeholder="Email Address" />
               <input class="btn btn-blue submit_email" type="submit" value="SUBSCRIBE" />
             </form>
           </div>
