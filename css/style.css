@@ -648,10 +648,14 @@ footer input[type^="email"] {
 }
 
 
-
-  #register-description {
+/* HEIGTH CONTROL OF THE INDEX INTRO BOXES */
+#register-description {
     height: 160px;
-  }
+}
+/* TRANSPARENCY CONTROL */
+.transparent {
+  color: white;
+}
 
 .width-200 {
   max-width: 197px;
