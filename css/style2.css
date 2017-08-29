@@ -476,6 +476,6 @@
   position: absolute;
   display: cover;
 }
-.a {
-  position: relative;
+.border-rounded-input {
+  border-radius: 5px;
 }
