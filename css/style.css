@@ -55,6 +55,16 @@ a:hover, input:hover, button:hover {
   transition: all .3s ease-in-out;*/
 }
 
+ button-orange:hover {
+  border-radius: 5px;
+  border-color: 1px solid white;
+  color: white;
+  background-color: #ff8900;
+
+  /*-webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;*/
+}
+
 a[class^="text-orange"]:hover {
   color: #fb4c06;
   text-decoration: none;
@@ -88,8 +98,12 @@ strong {
 }
 
 .bg-blue {
-  background-color: #6fb3c6;
+  background-color: #3bb2f7;
   color: white;
+}
+
+.bg-blue-grey {
+  background-color: #85bfd3;
 }
 
 .bg-white {
@@ -109,6 +123,12 @@ strong {
 }
 
 .bg-orange {
+  background-color: #ff8900;
+  color: white;
+  border-color: 1px solid white;
+}
+
+.bg-orange-newsletter {
   background-color: #ff8900;
   color: white;
   border-color: 1px solid white;
@@ -166,6 +186,20 @@ strong {
   padding: 5px;
   /*line-height: 2;*/
 }
+
+.btn-index {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+  background-color: white;
+  color: #5c6f79;
+  border-color: #5c6f79;
+}
+
+
+
 
 .btn-blue {
   background-color: #3bb2f7;
@@ -898,23 +932,11 @@ canvas {
     margin-right:-4px;
 }
 
-/* flexbox news */
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  -webkit-justify-content: space-around; /* Safari */
-  justify-content: space-around;
-  -webkit-align-items: baseline; /* Safari */
-  align-content:  space-around;
-}
+/* NEWS CENTERING IMAGES */
 
-.news1 {
-  width: 50%;
-  height: auto;
+.l {
+  text-align: left; padding-top: 10px;
 }
-
-/* .img-custom {
-  width: 200px;
-  height: auto;
-} */
+.r {
+  text-align: right; padding-top: 10px;
+}
