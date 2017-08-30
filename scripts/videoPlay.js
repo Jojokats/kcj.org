@@ -10,6 +10,9 @@ $(document).ready(function(){
   g.fullVideo = document.getElementById('fullVideo');
   hide(g.fullVideo, true);
 
+  g.video = g.fullVideo.getElementsByTagName('video')[0];
+  g.video.addEventListener('click', toggle);
+
   $(window).on('resize', function() {
     mobileScreen();
   }).trigger('resize');
@@ -65,3 +68,20 @@ function hide(element, hide){
     element.style.display = '';
   }
 }
+
+// // SELECTION
+// const video = document.querySelector('video');
+//
+// FUNCTIONS
+function toggle() {
+    g.video.paused ? g.video.play() : g.video.pause();
+}
+
+function restart() {
+    video.currentTime = 0;
+    video.play();
+}
+//
+// // EVENTS
+// video.addEventListener('click', toggle);
+// video.addEventListener('dblclick', restart);
