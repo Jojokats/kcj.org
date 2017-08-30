@@ -132,7 +132,7 @@
           <h2 class="text-orange text-uppercase border border-padding d-inline">Infolettre</h2>
         </div>
         <div class="text-center text-bold width-600 margin-auto">
-          <p class="text-16">Vous et vos enfants désirez en connaître plus sur les événements passés 
+          <p class="text-16">Vous et vos enfants désirez en connaître plus sur les événements passés
             et futurs concernant la programmation au Canada?
           </p>
         </div>
@@ -141,17 +141,32 @@
         asynchronously in line styling is used.
         -->
         <style>
-        #mc_embed_signup div.mce_inline_error {
-          background-color: white;
-          color: red;
-          margin: 0 0 1em 0;
-          padding: 5px 10px;
-          font-weight: bold;
-          z-index: 1;
-        }
-        #mc_embed_signup input.mce_inline_error {
-          border-color: initial;
-        }
+          #mc_embed_signup div.mce_inline_error {
+            background-color: white;
+            color: red;
+            margin: 0 0 1em 0;
+            padding: 5px 10px;
+            font-weight: bold;
+            z-index: 1;
+          }
+          #mc_embed_signup input.mce_inline_error {
+            border-color: initial;
+          }
+
+          #mc_embed_signup input[type^=text], #mc_embed_signup input[type^=email]{
+            font-family: inherit;
+            font-size: 16px;
+            padding: 7px 7px;
+            border: 1px solid gray;
+            border-radius: 5px;
+          }
+
+          #mc_embed_signup select{
+            font-size: 16px;
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 5px;
+          }
         </style>
       </div class="row">
           <!-- Begin MailChimp Signup Form -->
@@ -161,19 +176,19 @@
                 <div class="indicates-required"><span class="asterisk"></span></div>
                 <div class="mc-field-group padding-top-s">
                   <label for="mce-EMAIL font-normal">Email Address / Courriel  <span class="asterisk">*</span> </label>
-                  <input type="email" value="" name="EMAIL" class="required email email_input pull-right" id="mce-EMAIL">
+                  <input type="email" value="" name="EMAIL" class="required email email_input fillWidth" id="mce-EMAIL">
                 </div>
                 <div class="mc-field-group padding-top-s">
                   <label for="mce-FNAME">First Name / Prénom  <span class="asterisk">*</span></label>
-                  <input type="text" value="" name="FNAME" class="required pull-right" id="mce-FNAME">
+                  <input type="text" value="" name="FNAME" class="required fillWidth" id="mce-FNAME">
                 </div>
                 <div class="mc-field-group padding-top-s">
                   <label for="mce-LNAME">Last Name / Nom de famille  <span class="asterisk">*</span></label>
-                  <input type="text" value="" name="LNAME" class="required pull-right" id="mce-LNAME">
+                  <input type="text" value="" name="LNAME" class="required fillWidth" id="mce-LNAME">
                 </div>
                 <div class="mc-field-group padding-top-s">
                   <label for="mce-MMERGE4">Province  <span class="asterisk">*</span></label>
-                  <select name="MMERGE4" class="required pull-right" id="mce-MMERGE4">
+                  <select name="MMERGE4" class="required fillWidth" id="mce-MMERGE4">
                     <option value=""></option>
                     <option value="Alberta">Alberta</option>
                     <option value="British Columbia">British Columbia</option>
