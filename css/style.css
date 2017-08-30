@@ -192,7 +192,8 @@ strong {
   text-align: center;
   display: inline-block;
   width: 90%;
-  padding: 10px;
+  min-width: 230px;
+  padding: 5px 0px;
   background-color: white;
   color: #5c6f79;
   border-color: #5c6f79;
@@ -213,6 +214,11 @@ strong {
 
 .col {
   display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+.col-sm-4{
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .btn-blue {
@@ -408,6 +414,10 @@ strong {
   padding-right: 30px;
 }
 
+.padding-y-s{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .padding-y-m{
   padding-top: 20px;
   padding-bottom: 20px;
@@ -723,7 +733,7 @@ footer input[type^="email"] {
   max-height: 750px;
   -webkit-transition: height 1s ease;
   transition: height 1s ease;
-  background-color: orange;
+  background-color: #73ccff;
 }
 .video-container {
     position: relative;
@@ -735,7 +745,7 @@ footer input[type^="email"] {
 }
 .fillWidth{
   width: 100%;
-  height: auto;
+  /*height: auto;*/
 }
 .fillHeight{
   height: 100%;
@@ -785,7 +795,7 @@ canvas {
 .content{
   font-family: inherit;
   position: absolute;
-  top: 30%;
+  top: 35%;
   right: 0;
   left: 0;
   max-width: 600px;
