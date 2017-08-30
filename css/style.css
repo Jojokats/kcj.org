@@ -192,7 +192,8 @@ strong {
   text-align: center;
   display: inline-block;
   width: 90%;
-  padding: 10px;
+  min-width: 230px;
+  padding: 5px 0px;
   background-color: white;
   color: #5c6f79;
   border-color: #5c6f79;
@@ -213,6 +214,11 @@ strong {
 
 .col {
   display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+.col-sm-4{
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .btn-blue {
