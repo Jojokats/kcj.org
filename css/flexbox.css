@@ -6,6 +6,7 @@
   flex-flow: row wrap; 
   display: -webkit-box;
   display: flex;
+  box-shadow: 
 }
 .flex-wrap {
   width: 50%;

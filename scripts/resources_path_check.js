@@ -1,6 +1,7 @@
 var g = {};
 $(document).ready(function() {
   g.links = document.getElementsByClassName('resources_link');
+  g.a = document.getElementsByClassName('resources_link');
   /* only if the current station the user is using is a mac
   will this boolean be true */
  if (window.navigator.platform.substring(0,3).toLowerCase() === "mac") {
