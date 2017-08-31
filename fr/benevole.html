@@ -23,6 +23,8 @@
   <script src="../scripts/sponsors_hover.js" type="text/javascript"></script>
   <script src="../scripts/jquery_cookie/jquery.cookie.js"></script>
   <script src="../scripts/email_saver.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="../scripts/particles_white.js" type="text/javascript"></script>
 </head>
 <body>
   <div class="navbar-wrapper">
@@ -51,7 +53,7 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="ressources.html">RESSOURCES</a></li>
             <li><a href="ateliers.html">ATELIERS</a></li>
-            <li><a href="support.html">SUPPORT</a></li>
+            <li class="active"><a href="support.html">SOUTIEN</a></li>
             <li><a href="nous_joindre.html">NOUS JOINDRE</a></li>
           </ul>
         </div>
@@ -59,10 +61,16 @@
     </nav>
   </div>
 
-  <section class="after-nav bg-orange">
+  <!-- <section class="after-nav bg-orange">
     <h1 class="text-white text-center text-uppercase padding-big">Joignez-vous à notre équipe de bénévoles</h1>
+  </section> -->
+  <section id="how_We_Work" class="after-nav bg-img header-size">
+    <div class="myflex">
+      <h1 class="text-center text-uppercase text-white">bénévoles</h1>
+    </div>
+    <div id="particles-js" class="top-reverse"></div>
   </section>
-  <section class="container padding-top ifram-box">
+  <section class="container padding-top-s ifram-box">
     <iframe src="http://kidscodejeunesse.force.com/GW_Volunteers__VolunteersJobListingFS"
       frameborder=“0” scrolling = "false" class="custom-iframe-sizing"></iframe>
   </section>
