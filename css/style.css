@@ -66,7 +66,7 @@ a:hover, input:hover, button:hover {
 }
 
 a[class^="text-orange"]:hover {
-  color: #fb4c06;
+  color: #ff8900;
   text-decoration: none;
 }
 
@@ -476,7 +476,7 @@ strong {
 }
 
 .text-orange-hover:hover {
-  color: #f9a048;
+  color: #ff8900;
 }
 
 .text-green {
