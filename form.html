@@ -19,16 +19,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
   <!-- SALESFORCE -->
-  <script type="text/javascript" id="jsFastForms" src="https://fastforms.visualantidote.com/FormEngine/Scripts/Main.js?d=1hxjZnYWCzf-TIQhYCdcBo5gc3MmXUAwTjNnh7qe6UMZ1yStEut73-d5V1oz-Y4J"></script>
+  <!-- <script type="text/javascript" id="jsFastForms" src="https://fastforms.visualantidote.com/FormEngine/Scripts/Main.js?d=1hxjZnYWCzf-TIQhYCdcBo5gc3MmXUAwTjNnh7qe6UMZ1yStEut73-d5V1oz-Y4J"></script> -->
   <!-- COOKIE -->
   <script src="scripts/jquery_cookie/jquery.cookie.js" type="text/javascript"></script>
   <script src="scripts/form.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="scripts/particles_white.js" type="text/javascript"></script>
   <link href="css/formStyleSheet.css" rel="stylesheet" type="text/css">
+  <!-- LOADER.CSS -->
+  <link rel="stylesheet" href="css/loaders.min.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <!-- LOADER.JS -->
+  <script src="scripts/loader.js"></script>
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <div class="navbar-wrapper">
     <nav class="navbar navbar-custom navbar-fixed-top">
       <header id="language" class="bg-gray">
@@ -62,13 +68,36 @@
       </div>
     </nav>
   </div>
-  <!-- CONTENT -->
+  <!-- PARTICLES SECTION -->
   <section id="contact-header" class="after-nav bg-img header-size pos-absolute top-0">
     <div class="myflex">
-      <h1 class="text-center text-uppercase text-white">Download our educational materials!</h1>
+      <h1 class="text-center text-uppercase text-white">
+        Download our educational materials!
+      </h1>
     </div>
     <div id="particles-js" class="top-reverse"></div>
   </section>
-</body>
 
+  <!-- LOADER -->
+  <div class="myContainer">
+      <div class="loader">
+          <div class="loader-inner ball-scale-multiple">
+              <div id="orange"></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div> 
+      </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="contents">
+    <!-- SALESFORCE -->
+    <script type="text/javascript" id="jsFastForms"       src="https://fastforms.visualantidote.com/FormEngine/Scripts/Main.js?d=1hxjZnYWCzf-TIQhYCdcBo5gc3MmXUAwTjNnh7qe6UMZ1yStEut73-d5V1oz-Y4J">
+    </script>
+  </div>
+
+</body>
 </html>
+
+

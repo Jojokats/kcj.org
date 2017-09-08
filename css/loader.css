@@ -1,0 +1,23 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#myContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: deepskyblue;
+}
+
+.myContainer .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#orange {
+    background-color: orange;
+}
