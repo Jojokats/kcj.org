@@ -4,7 +4,8 @@ $(document).ready(function() {
   g.a = document.getElementsByClassName('resources_link');
   /* only if the current station the user is using is a mac
   will this boolean be true */
- if (window.navigator.platform.substring(0,3).toLowerCase() === "win") {
+ if (window.navigator.platform.substring(0,3).toLowerCase() === "mac") {
+   console.log("win")
       set_path();
   }
 });
@@ -18,7 +19,7 @@ function set_path() {
   g.temp = [];
   /* a tag was causing issues and was not allowing the (.replace()) function to switch
   *  the word windows to mac within the path there for the long way had to be taken. using
-  *  string manipulation is the desire result achived.
+  *  string manipulation the desire result achived.
   */
   for (var i = 0; i < g.links.length; i++) {
     g.temp[i] = g.links[i].href.substring(0 , g.links[i].href.indexOf('windows')) + "mac" +
