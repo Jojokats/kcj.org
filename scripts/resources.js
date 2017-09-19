@@ -57,6 +57,9 @@ function toggle_options(e) {
     case "2_hour_workshop":
         show_pdfs(e, this, 1, 0);//2-hour
         break;
+    case "vibot":
+        show_pdfs(e, this, 1, 1);//2-hour
+        break;
 
     case "computational_thinking":
         show_pdfs(e, this, 2, 0);//Computational Thinking
