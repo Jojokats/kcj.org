@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /wp-content/
+Disallow: /OLD-WEBSITE/
+Disallow: /parents/
