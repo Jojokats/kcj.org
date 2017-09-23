@@ -5,7 +5,7 @@ $(document).ready(function(){
   if($('#language .active').text() === 'EN'){
     g.videoId = '66cZxGiGlI4';
   } else {
-    g.videoId = 'qkqwN2qclXg';
+    g.videoId = 'nH2LFk1tF88';
   }
 
   var playBtn = $('#playBtn');
@@ -33,20 +33,21 @@ $(document).ready(function(){
 
 function onYouTubePlayerAPIReady() {
       g.player = new YT.Player('ytplayer', {
-      height: screen.height,
-      width: screen.width,
-      videoId: g.videoId,
-      playerVars: {
-          controls: 0,
-          autoplay: 0,
-          loop: 1,
-          playlist: g.videoId,
-          controls: 0,
-          showinfo: 0,
-          autohide: 1,
-          modestbranding: 0,
-          vq: 'hd1080'},
-  });
+        height: screen.height,
+        width: screen.width,
+        videoId: g.videoId,
+        playerVars: {
+            controls: 0,
+            autoplay: 0,
+            loop: 1,
+            controls: 0,
+            showinfo: 0,
+            autohide: 1,
+            modestbranding: 0,
+            vq: 'hd1080',
+            rel: 0
+          }
+      });
 }
 
 function mobileScreen(){
@@ -56,7 +57,7 @@ function mobileScreen(){
   if (screenWidth < 600){
     $mobile_hide.hide();
     $('.content').css('top', '20%');
-    $('.bg-empty').css('height', '50%');
+    $('.bg-empty').css('height', '40%');
     $playBtn.addClass('pos-absolute');
   } else {
     $mobile_hide.show();
@@ -84,9 +85,9 @@ function removeVideoOverlay(){
 
 function hide(element, hide){
   if(hide){
-    element.style.display = 'none';
+    element.style.visibility = 'hidden';
   } else {
-    element.style.display = '';
+    element.style.visibility = '';
   }
 }
 

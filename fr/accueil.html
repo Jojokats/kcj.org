@@ -22,6 +22,7 @@
   <!-- <script src="../scripts/design.js" type="text/javascript"></script> -->
   <!-- <script src="../scripts/design.js" type="text/javascript"></script> -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://www.youtube.com/player_api" type="text/javascript"></script>
   <script src="../scripts/videoPlay.js" type="text/javascript"></script>
   <script src="../scripts/particles.js" type="text/javascript"></script>
   <script src="../scripts/sponsors_hover.js" type="text/javascript"></script>
@@ -64,8 +65,38 @@
     </nav>
   </div>
 
+  <section class="bg-empty after-nav">
+    <div id="ytplayer" class="fillHeight fillWidth"></div>
+    <div id="particles-js" class="video-overlay"></div>
+    <div class="content video-overlay">
+      <div class="mobile-hide">
+        <h1>Inspirer et habiliter les enfants canadiens avec le code</h1>
+        <p class="text-s">DÉCOUVREZ COMMENT ET POURQUOI CHAQUE ENFANT DEVRAIT ÊTRE INITIÉ À L'ALPHABÉTISATION NUMÉRIQUE!
+        </p>
+      </div>
+      <a id="playBtn" href="#" class="text-white text-m">
+        <span class="glyphicon glyphicon-play-circle"></span><br/>
+        J O U E R
+      </a>
+    </div>
+    <div class="learn-more text-white text-center video-overlay mobile-hide">
+      <a id="learn-more" href="#helpSec" class="text-white">
+        EN SAVOIR PLUS
+        <br>
+        <i class="glyphicon glyphicon-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <div class="video-background video-overlay">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/qkqwN2qclXg?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"
+       frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+<!-- 
   <section id="video" class="after-nav margin-auto">
-    <!-- particles.js container -->
+    <!-- particles.js container --
     <div id="particles-js" class="pos-absolute video-overlay"></div>
     <div class="homepage-hero-module video-overlay">
       <div class="video-container after-nav">
@@ -106,16 +137,8 @@
         <i class="glyphicon glyphicon-chevron-down"></i>
       </a>
     </div>
-  </section>
-  <!-- One row for code club -->
-  <!-- <section id="empoweringSec" class="bg-orange">
-    <div class="container padding">
-      <div class="text-center">
-        <a href="services.html" class="text-uppercase text-white">
-          Notre but: développer des communautés ayant des compétences numériques au Canada</a>
-      </div>
-    </div>
   </section> -->
+
 <!-- NEW BUTTONS -->
 <!-- Three columns of text -->
 <section id="helpSec" class="bg-blue padding">
