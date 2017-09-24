@@ -43,7 +43,9 @@ function onYouTubePlayerAPIReady() {
             controls: 0,
             showinfo: 0,
             autohide: 1,
-            modestbranding: 0,
+            modestbranding: 1,
+            cc_load_policy: 0, // Hide closed captions
+            iv_load_policy: 3,  // Hide the Video Annotations
             vq: 'hd1080',
             rel: 0
           }
