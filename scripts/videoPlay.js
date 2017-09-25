@@ -5,7 +5,7 @@ $(document).ready(function(){
   if($('#language .active').text() === 'EN'){
     g.videoId = '66cZxGiGlI4';
   } else {
-    g.videoId = '66cZxGiGlI4';
+    g.videoId = 'n2gFzeVah5s';
   }
 
   var playBtn = $('#playBtn');
