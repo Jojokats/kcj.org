@@ -3,7 +3,7 @@ var g = {};
 $(document).ready(function(){
   mobileScreen();
   if($('#language .active').text() === 'EN'){
-    g.videoId = 'qkqwN2qclXg';
+    g.videoId = '66cZxGiGlI4';
   } else {
     g.videoId = 'n2gFzeVah5s';
   }
