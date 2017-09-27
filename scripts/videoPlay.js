@@ -3,9 +3,9 @@ var g = {};
 $(document).ready(function(){
   mobileScreen();
   if($('#language .active').text() === 'EN'){
-    g.videoId = '66cZxGiGlI4';
+    g.videoId = 'PAZ-5bvy7q4';
   } else {
-    g.videoId = 'n2gFzeVah5s';
+    g.videoId = 'cYCqIQLr6WY';
   }
 
   var playBtn = $('#playBtn');

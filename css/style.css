@@ -281,6 +281,11 @@ strong {
 .d-table{
   display: table;
 }
+
+.fullScreen {
+  width: 100vh;
+  height: 100vh;
+}
 .height-custom {
   height: 200px;
 }
