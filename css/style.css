@@ -1,8 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
+html{
+  width: 100%;
+  height: 100%;
+}
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -11,7 +16,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-}border-radius-l
+}
 
 header, footer {
   width: 100%;
@@ -112,9 +117,8 @@ strong {
 }
 
 .bg-empty {
-  background-color: black;
-  opacity: 0;
   width: 100%;
+  height: 40%;
 }
 
 .bg-green {
@@ -276,6 +280,11 @@ strong {
 }
 .d-table{
   display: table;
+}
+
+.fullScreen {
+  width: 100vh;
+  height: 100vh;
 }
 .height-custom {
   height: 200px;
@@ -711,9 +720,9 @@ footer input[type^="email"] {
   height: 50px;
 }
 .learn-more {
-  bottom: 2.5%;
   display: inline-block;
   font-size: 16px;
+  top: 85%;
   left: 50%;
   padding: 20px;
   position: absolute;
@@ -736,11 +745,11 @@ footer input[type^="email"] {
   background-color: #73ccff;
 }
 .video-container {
-    position: relative;
+    /*position: absolute;
     bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
+    left: 0%;*/
+    min-height: 100%;
+    min-width: 100%;
     overflow: hidden;
 }
 .fillWidth{
@@ -795,7 +804,7 @@ canvas {
 .content{
   font-family: inherit;
   position: absolute;
-  top: 35%;
+  top: 20%;
   right: 0;
   left: 0;
   max-width: 600px;
@@ -972,6 +981,47 @@ canvas {
   text-align: right; padding-top: 10px;
 }
 
+/*Forground video*/
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+#ytplayer{
+  z-index: 99;
+  display: none;
+}
 /* HISTORY */
 .flex-container {
   display: flex;
