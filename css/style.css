@@ -281,6 +281,11 @@ strong {
 .d-table{
   display: table;
 }
+
+.fullScreen {
+  width: 100vh;
+  height: 100vh;
+}
 .height-custom {
   height: 200px;
 }
@@ -1016,4 +1021,115 @@ canvas {
 #ytplayer{
   z-index: 99;
   display: none;
+}
+/* HISTORY */
+.flex-container {
+  display: flex;
+  flex: horizontal;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin: 10px 10px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  max-width: 400px;
+  background-color: rgba(218, 214, 214, 0.1);
+}
+
+.history-container ul {
+  position: relative;
+  list-style: none;
+  margin: 40px ;
+  padding:0;
+}
+.history-container ul:before {
+  content:'';
+  width: 0px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  border: 1px dashed orange;
+}
+
+.history-container ul li {
+  position: relative;
+  margin-left: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.history-container ul li > span {
+  content:'';
+  width: 0px;
+  top: 0;
+  left: -60px;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  border: 1px solid orange;
+}
+
+.history-container ul li > span:before, .history-container ul li > span:after {
+  content:'';
+  width: 15px;
+  height: 15px;
+  border: 2px solid orange;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.history-container ul li > span:before {
+ top: -5px;
+ left: -7px;
+ background-color: orange;
+}
+
+.history-container ul li > span:after {
+  top: 150px;
+  left: -7px;
+  background-color: orange;
+}
+
+.history-container ul li .time span {
+  position: absolute;
+}
+.history-container ul li .time span:first-child {
+  left: -180px;
+  top: -8px;
+  color: skyblue;
+}
+.final {
+  position: relative;
+  content:'';
+  /* background-color: skyblue; */
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  left: -109px;
+  border: 10px solid skyblue;;
+  border-radius: 50%;
+}
+
+.start {
+  position: relative;
+  content:'';
+  background-color: orange;
+  width: 40px;
+  height: 40px;
+  top: -40px;
+  left: -109px;
+  border: 10px solid orange;;
+  border-radius: 50%;
+}
+
+.padding-history {
+  padding-top: 100px;
+}
+.custom-margin-top {
+  margin-top: -12%;
 }
