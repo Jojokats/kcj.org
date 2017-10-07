@@ -1,26 +1,21 @@
 {
-          "intro": {
-            "header": "Intro",
-            "documents":{
-              "doc1": [
-                "Intro to code",
-                "An introduction to the basic concepts of computational thinking and code: algorithms, decomposition, logic and abstraction."
-              ]
-            }
-          },
-
-          "scratch": {
-            "documents":{
-              "header": "Scratch",
-              "doc1": [
-                "Scratch Course Summary",
-                "A summary of the Scratch Lesson Plans, including core competencies and lesson outlines."
-              ] ,
-              "doc2": [
-                "Scratch Lesson Plans",
-                "Students will learn how to describe what is code, how to navigate the Scratch website and how to utilize Scratch resources. They will develop computational thinking skills to actively participate in the digital world."
-              ]
-            }
-          }
-
+  "section1": {
+    "title": "in-class",
+    "subsection": ["primary", "secondary"],
+    "block": {
+      "primary": ["../img/resources/Card-Intro.jpg", "../img/resources/Card-Scratch-Projects.jpg", "../img/resources/Card-HTML-Projects.jpg",
+        "../img/resources/Card-Python-Projects.jpg"],
+      "secondary": ["../img/resources/Card-Unplugged.jpg", "../img/resources/Card-Activities.jpg"]
+    }
+  },
+  "section2": {
+    "title": "workshop projects",
+    "subsection": [""],
+    "block": ["../img/resources/Card-2Hour-Workshop.jpg", "../img/resources/Card-Vibot.png"]
+  },
+  "section3": {
+    "title": "teacher training handouts",
+    "subsection": [""],
+    "block": ["../img/resources/Card-CompThinking-TeacherTraining.jpg", "../img/resources/CompProgramming-Card.png", "../img/resources/Card-Internet.jpg"]
+  }
 }

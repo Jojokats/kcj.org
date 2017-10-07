@@ -38,6 +38,7 @@
   <script src="../scripts/resources_path_check.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="../scripts/particles_white.js" type="text/javascript"></script>
+  <script src="utils.js"></script>
   <script src="jtests.js"></script>
 </head>
 <body>
@@ -102,7 +103,7 @@
 
       </div>
     </section>
-    <div class="container">
+  <div class="container">
     <div class="row margin-auto text-center padding-top-large form-group">
       <label class="padding-x-s">Type</label>
       <select class="form-control">
@@ -112,108 +113,12 @@
         <option value="#teacher-training">Teacher Training Handouts</option>
       </select>
     </div>
-    <div class="row padding-top-large">
-      <div class="container-fluid border-top">
-        <h3 class="text-orange text-center">IN-CLASSROOM</h3>
-        <div class="row row-centered  padding-bot-medium" id="in-class" >
-          <h3 class="text-blue text-center">Primary</h3>
-          <div class="col-md-3 col-sm-12 col-centered">
-            <img id="inclass-primary-intro" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Intro.jpg" alt="Python card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Intro
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-12 col-centered padding-top-large">
-            <img id="scratch" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Scratch-Projects.jpg" alt="scratch card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Scratch
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-12 col-centered">
-            <img id="html" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-HTML-Projects.jpg" alt="Html card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              HTML
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-12 col-centered">
-            <img id="python" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Python-Projects.jpg" alt="Python card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Python
-            </p>
-          </div>
-
-
-          <h3 class="text-blue text-center padding-top-large text-capitalize">
-            secondary</h3>
-          <div class="col-md-3 col-sm-12 col-centered  padding-top-large " >
-            <img id="unplugged" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Unplugged.jpg" alt="1 hour workshop card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Unplugged
-            </p>
-          </div>
-
-          <div class="col-md-3 col-sm-12 col-centered" >
-            <img id="activiies" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Activities.jpg" alt="2 hour workshop card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Activities
-            </p>
-          </div>
-
-          <div class="col-md-3 col-sm-12 col-centered">
-            <img id="inclass-primary-intro" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Intro.jpg" alt="Python card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Intro
-            </p>
-          </div>
-
-        </div>
-        </div>
-
-        <div class="row row-centered padding-bot-medium border-top" id="workshop">
-          <h3 class="text-orange text-center padding-top-large text-capitalize">
-            WORKSHOP PROJECTS</h3>
-          <div class="col-md-3 col-sm-12 col-centered padding-top-large" >
-            <img id="2_hour_workshop" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-2Hour-Workshop.jpg" alt="2 hour workshop card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              2-hour Workshop
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-12 col-centered padding-top-large" >
-            <img id="vibot" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Vibot.png" alt="2 hour workshop card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Vibot
-            </p>
-          </div>
-        </div>
-
-
-        <div class="row row-centered padding-bot-small border-top" id="teacher-training">
-          <h3 class="text-orange text-center padding-top-large text-capitalize">
-            TEACHER TRAINING HANDOUTS</h3>
-          <div class="col-md-3 col-sm-12 col-centered padding-top-large">
-            <img id="computational_thinking" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-CompThinking-TeacherTraining.jpg" alt="Computer Thinking Card"/>
-
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Computational Thinking
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-12 col-centered">
-              <img id="computer_programming" class="img img-responsive cursor-pointer img-third" src="../img/resources/CompProgramming-Card.png" alt="Computer Programming Card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Computer Programming
-            </p>
-          </div>
-          <div class="col-md-3 col-sm-12 col-centered">
-              <img id="internet_web" class="img img-responsive cursor-pointer img-third" src="../img/resources/Card-Internet.jpg" alt="Computer Programming Card"/>
-            <p class="text-center" style="margin-top: 10px; text-transform: uppercase;">
-              Internet Web
-            </p>
-          </div>
-        </div>
+    <div class="row padding-top-large main-options">
       </div>
+
     </div>
-  </div>
   </section>
+
   <!-- end of main items -->
   <section id="content"></section>
 <!-- FOOTER -->
