@@ -1,16 +1,22 @@
-var g = [];
+var g = {
+    months: {
+        december: [],
+        november: [],
+        october: [],
+        september: [],
+        august: [],
+        july: [],
+        june: [],
+        may: [],
+        april: [],
+        march: [],
+        february: [],
+        january: []
+    }
+};
 
 $(document).ready(function() {
-
-    // var imgPath = 'img\/News_CC_Launch.jpg';
-    // var title = 'Kids Code Jeunesse launches Canadian chapter of International network, Code Club';
-    // var location = '';
-    // var date = '';
-    // var detail = 'cc_lauches.txt';
-
     readfile('news.json');
-    // $('.news').append(createNewSection(imgPath, title, location, date, detail));
-    
 });
 
 function readfile(url) {
@@ -23,59 +29,84 @@ function readfile(url) {
     });
 }
 
-function error( jqXHR, textStatus, errorThrown) {
+function error(jqXHR, textStatus, errorThrown) {
     console.log(textStatus);
 }
 
 function success(data, status, xhr) {
-    console.log(data);
     $.each(data, function(i, news) {
         var title = '', imgPath = '', 
             location = '', date = '',
             details = '', images = [];
-        // console.log(news);
-        if (news.title) 
-            title = news.title;
 
-        if (news.imageHeader) 
-            imgPath = news.imageHeader;
-
-        if (news.location)
-            location = news.location;
-        
-        if (news.date)
+        if (news.date) {
             date = news.date;
-        
-        if (news.details);
-            details = news.details;
 
-        console.log(i);
-        createNewSection(imgPath, title, location, date, details);
+            dateArr = splitDate(news.date);
+            
+            for(var key in g.months) {
+                if(key === dateArr['month'].toLowerCase().trim()) {
+                    if (news.title) 
+                        title = news.title;
+            
+                    if (news.imageHeader) 
+                        imgPath = news.imageHeader;
+            
+                    if (news.location)
+                        location = news.location;
+                    
+                    if (news.details);
+                        details = news.details;
+
+                    g.months[key].push(createNewRow(imgPath, title, location, date, details));
+                }
+            }
+        }
     });
+
+    displayNews();
 }
 
-function createNewSection(imgPath, title, location, date, details) {
-    var $lineBreak = $('<hr/>');
+function displayNews() {
+    for(var month in g.months) {
+        if(g.months[month].length !== 0) {            
+            var $month = $('<h3 class="text-black text-uppercase">' + month + '</h3>');
+            $('.news').append($month).append(g.months[month]);
+        }
+    }
+}
+
+function splitDate(date) {
+    var date = date.split('-');
+
+    var dateArr = [];
+    dateArr['day'] = date[0];
+    dateArr['month'] = date[1];
+    dateArr['year'] = date[2];
+
+    return dateArr;
+}
+
+function createNewRow(imgPath, title, location, date, details) {
+    var dateArr = splitDate(date);
+
+    // var $lineBreak = $('<hr/>');
 
     var $img = $('<img src="' + imgPath + '" class="img img-responsive" alt="">');        
-    var $imgDiv = $('<div class="col-sm-2"></div>').append($img); 
+    var $imgDiv = $('<div class="col-sm-2 padding-small"></div>').append($img); 
 
-    // console.log(encodeURIComponent(details));
     var $link = $('<a href="newsDetail.html?d=' + encodeURIComponent(details) + '"></a>' );
     var $title = $('<h4 class="text-blue">' + title + '</h4>');    
     $link.append($title);
-    // var infoDiv = ""
 
     var $location = $('<span>' + location + '</span>');
-    var $date = $('<span> - ' + date + '</span>');
+    var $date = $('<span> - ' + dateArr['month'] + ' ' + dateArr['year'] + '</span>');
 
     var $linkDiv = $('<div class="col-sm-10"></div>').append($link);
     $linkDiv.append($location).append($date);
 
-    var $newsDiv = $('.news');
-    $newsDiv.append($lineBreak);
-    $newsDiv.append($imgDiv);
-    $newsDiv.append($linkDiv);
+    var $row = $('<div class="row border-top padding-small"></div>');
+    $row.append($imgDiv).append($linkDiv);
 
-    return $newsDiv;
+    return $row;
 }
