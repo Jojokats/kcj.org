@@ -1,4 +1,5 @@
 var g = {
+    newsPath: 'news\/',
     months: {
         december: [],
         november: [],
@@ -16,7 +17,7 @@ var g = {
 };
 
 $(document).ready(function() {
-    readfile('news.json');
+    readfile(g.newsPath + 'news.json');
 });
 
 function readfile(url) {

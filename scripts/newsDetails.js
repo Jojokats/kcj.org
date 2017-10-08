@@ -3,7 +3,7 @@ var g = {};
 
 $(document).ready(function() {
     g.newsPath = 'news\/';
-    readFile('news.json', 'json', 'GET');    
+    readFile(g.newsPath + 'news.json', 'json', 'GET');    
 });
 
 function readFile(url, type, method) {
