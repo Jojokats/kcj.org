@@ -2,7 +2,7 @@
 var g = {};
 
 $(document).ready(function() {
-    g.newsPath = 'news\/';
+    g.newsPath = 'news/';
     readFile(g.newsPath + 'news.json', 'json', 'GET');    
 });
 
@@ -23,7 +23,7 @@ function error( jqXHR, textStatus, errorThrown) {
 function success(data, status, xhr) {
     // console.log(data);
     $.each(data, function(i, news) {
-        var title = '', date = '',
+        var title = '', date = '', imgHeader = '',
             details = '', images = [];
 
         if (news.details);
@@ -39,13 +39,16 @@ function success(data, status, xhr) {
             if (news.date)
                 date = news.date;
 
+            if (news.imageHeader)
+                imgHeader = news.imageHeader;
+
             if (news.images && news.images.length !== 0) 
                 images = news.images;
 
             console.log(images);
-            $.get(g.newsPath + d, function(line) {               
+            $.get(g.newsPath + d, function(line) {    
+                createImageHeader(imgHeader);           
                 createNewsSection(images, title, date, line);
-                // console.log(line);
             });
         }
     });
@@ -62,6 +65,10 @@ function getUrlVars() {
     return vars;
 }
 
+function createImageHeader(imgPath) {
+    var $img = $('<img class="img img-responsive max-h-200 margin-auto" src="' + imgPath + '" />');
+    $('#header').append($img);
+}
 function createNewsSection(images, title, date, body) {
     var date = date.split('-');
     var day = date[0];
@@ -71,7 +78,7 @@ function createNewsSection(images, title, date, body) {
     var $month = $('<h4 class="text-blue text-uppercase">' + month + '</h4>  ');
 
     // Create the date on the left side on the news
-    var $leftSide = $('<div class="col-sm-2 text-right"></div>'); 
+    var $leftSide = $('<div class="col-xs-2 text-right"></div>'); 
     $leftSide.append($day).append($month);             
 
     var $title = $('<h3 class="text-orange">' + title + '</h3>');
@@ -79,11 +86,12 @@ function createNewsSection(images, title, date, body) {
             // $body.append(body);
 
     // Create the news on the right side of the page
-    var $rightSide = $('<div class="col-sm-10 border-left border-lightBlue padding-left-xl"></div>');
+    var $rightSide = $('<div class="col-xs-10 border-left border-lightBlue padding-left-xl"></div>');
     $rightSide.append($title).append(body);
 
     var $imagesSlide = createImageSlide(images);
-    $("#newsInfo").append($imagesSlide).append($leftSide).append($rightSide);
+    $("#newsInfo").append($leftSide).append($rightSide);
+    $("#newsInfo").append($imagesSlide);
     slideImages();
 }
 
@@ -95,9 +103,11 @@ function createImageSlide(images) {
 
     for(var i=0; i<images.length; i++) {
         var img = $('<img class="img img-responsive" src="' + images[i] + '"/>');
-
+        var aTag = $('<a href="' + images[i] + '" data-toggle="lightbox" data-gallery="news-gallery" data-type="image">');
+        aTag .append(img);
+        
         var imgDiv = $('<div class="col-xs-4 padding-x-s"></div>');
-        imgDiv.append(img);
+        imgDiv.append(aTag);
 
         var item;        
         if(i === 0) {
@@ -114,7 +124,7 @@ function createImageSlide(images) {
     var rightArrow = $('<a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>');
    
    
-    var $carouselDiv = $('<div class="col-md-12 carousel slide multi-item-carousel padding-bot" id="theCarousel"></div>');
+    var $carouselDiv = $('<div class="col-xs-10 col-xs-offset-1 carousel slide multi-item-carousel padding" id="theCarousel"></div>');
     $carouselDiv.append(carouselInner).append(leftArrow).append(rightArrow);
 
     return $carouselDiv;
@@ -128,16 +138,25 @@ function slideImages() {
     // for every slide in carousel, copy the next slide's item in the slide.
     // Do the same for the next, next item.
     $('.multi-item-carousel .item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-        next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    if (next.next().length>0) {
-        next.next().children(':first-child').clone().appendTo($(this));
-    } else {
-        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-    }
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+        
+        if (next.next().length>0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        } else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+
+    // to desplay the popup image when click
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox({
+          alwaysShowClose: false,
+          showArrows: true
+        });
     });
 }

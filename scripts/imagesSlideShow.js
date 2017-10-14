@@ -19,4 +19,12 @@ $('.multi-item-carousel').carousel({
         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
   });
+
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({
+      alwaysShowClose: false,
+      showArrows: true
+    });
+  });
 });
