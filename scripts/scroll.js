@@ -11,6 +11,6 @@ $(function(){
 });
 
 function scroll(e){
-  var positionabout = $(this[this.selectedIndex].value).offset().top - 80;
+  var positionabout = $(this[this.selectedIndex].value).offset().top - 100;
   $("html, body").animate({scrollTop:positionabout}, '500', 'swing');
 }

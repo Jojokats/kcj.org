@@ -5,12 +5,12 @@
     g.option = $(".form-control")[0];
     g.topMenu = $("#main_menue")[0];
     g.count = 0;
-    setUpConnection('resources.json');
-    setUpConnection('inclass.json');
+    setUpConnection('../json/resourcesLayout.json');
+    setUpConnection('../json/documents.json');
     setContent();
   });
   function optionSelect(title) {
-    var option = $("<option></option>").attr("value", title).text(title);
+    var option = $("<option></option>").attr("value", "#" + title.replace(/ /g, '-')).text(title);
     $(g.option).append(option);
   }
   function showPdfs(e) {
@@ -92,7 +92,7 @@
       if (g.response.hasOwnProperty(key)) {
         var section = $("<div></div>").addClass('container-fluid border-top row-centered padding-bot-medium');
         var title = $("<h3></h3>").addClass('text-orange text-uppercase text-center padding-bot-small').text(g.response[key].title);
-        $(title).attr("id", g.response[key].title);
+        $(title).attr("id", g.response[key].title.replace(/ /g, '-'));
         optionSelect(g.response[key].title);
         if(g.response[key].subsection != "") {
           placeSubSections(key, title);
@@ -121,7 +121,6 @@
   }
   function placeBlocks(block, container, blockName) {
     for (var i = 0; i < block.length; i++) {
-      console.log(blockName[i]);
       var section = $("<div></div>").addClass('col-md-3 col-sm-12 col-centered');
       var image = $("<img>").addClass("img img-responsive cursor-pointer img-third");
       $(image).attr("src", block[i]);
