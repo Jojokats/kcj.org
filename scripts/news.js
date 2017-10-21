@@ -1,63 +1,18 @@
 var g = {
     newsPath: 'news/',
-    months: {
-        december: [],
-        november: [],
-        october: [],
-        september: [],
-        august: [],
-        july: [],
-        june: [],
-        may: [],
-        april: [],
-        march: [],
-        february: [],
-        january: []
-    }
+    years : []    
 };
 
 $(document).ready(function() {
-    orderMonths();
     readfile(g.newsPath + 'news.json');
 });
-
-/**
- * Order the g.months according to the current months.
- */
-function orderMonths() {
-    var date = new Date();
-    var currentMonth = date.getMonth();
-
-    var months = [];
-    var endMonths = [];
-    var startMonth = 1;
-    var monthName = getMonthName(currentMonth + startMonth); // getMonth() return 0-11
-    for(var month in g.months) {
-        if(month === monthName) {
-            months.push(month);
-            startMonth--;
-            monthName = getMonthName(currentMonth + startMonth);
-        } else {
-            endMonths.push(month);
-        }
-    }
-
-    endMonths.forEach(function(i) {
-        months.push(i);
-    });
-
-    g.months = {};
-    months.forEach(function(element) {
-        g.months[element] = [];
-    })
-}
 
 /**
  * Get the name of the month base of the month number
  * @param {int} monthNum 
  */
 function getMonthName(monthNum) {
-    if(!Number.isInteger(monthNum   )) {
+    if(!Number.isInteger(monthNum)) {
         return;
     }
 
@@ -104,35 +59,36 @@ function error(jqXHR, textStatus, errorThrown) {
     console.log(textStatus);
 }
 
-function success(data, status, xhr) {
-    $.each(data, function(i, news) {
-        var title = '', imgPath = '', 
-            location = '', date = '',
-            details = '', images = [];
+/**
+ * Compare between two date, the latest date is bigger than
+ * the ealier date.
+ * @param {String} first - first date
+ * @param {String} second - second date
+ */
+function compareDateDsc(first, second) {
+    var firstDate = new Date(first.date);
+    var secondDate = new Date(second.date);
 
+    return secondDate - firstDate;
+}
+
+function success(data, status, xhr) {
+    var allNews = data;
+
+    allNews.sort(compareDateDsc);
+
+    $.each(allNews, function(i, news) {
         if (news.date) {
             date = news.date;
-
             dateArr = splitDate(date);
-            
-            // createYear(dateArr['year']);
 
-            for(var key in g.months) {
-                if(key === dateArr['month'].toLowerCase().trim()) {
-                    if (news.title) 
-                        title = news.title;
+            var year = dateArr['year'];
             
-                    if (news.imageHeader) 
-                        imgPath = news.imageHeader;
-            
-                    if (news.location)
-                        location = news.location;
-                    
-                    if (news.details);
-                        details = news.details;
-
-                    g.months[key].push(createNewsRow(imgPath, title, location, date, details));
-                }
+            if(getIndexOfYears(year) === -1) {
+                g.years.push(createYearObj(year));
+                appendMonth(news, g.years[getIndexOfYears(year)].months);
+            } else {
+                appendMonth(news, g.years[getIndexOfYears(year)].months);
             }
         }
     });
@@ -141,23 +97,83 @@ function success(data, status, xhr) {
 }
 
 /**
- * Display the news under the month category
+ * Find the index of g.years object that match the year in the parameter
+ * @param {Int} year 
  */
-function displayNews() {
-    for(var month in g.months) {
-        if(g.months[month].length !== 0) {            
-            var $month = $('<h3 class="text-black text-uppercase">' + month + '</h3>');
-            $('.news').append($month).append(g.months[month]);
+function getIndexOfYears(year) {
+    console.log(year);
+    for(var i=0; i<g.years.length; i++) {
+        if(year === g.years[i].year) {
+            return i;
         }
     }
+    return -1;
+}
+
+/**
+ * Create a year object which has 12 months.
+ * @param {int} year 
+ */
+function createYearObj(year) {
+    var yearWrapper = {
+        year: year,
+        months : {
+            december: [],
+            november: [],
+            october: [],
+            september: [],
+            august: [],
+            july: [],
+            june: [],
+            may: [],
+            april: [],
+            march: [],
+            february: [],
+            january: []
+        }
+    }
+
+    return yearWrapper;
+}
+/**
+ * Display the news under the month category
+ */
+function appendMonth(news, months) {
+    console.log('appendMonth()');
+    var title = '', imgPath = '', 
+    location = '', date = '',
+    details = '', images = [];
+
+    if(news.date) {
+        date = news.date;
+        var dateArr = splitDate(date);
+        for(var month in months) {
+            if(month === dateArr['month'].toLowerCase().trim()) {
+                if (news.title) 
+                    title = news.title;
+        
+                if (news.imageHeader) 
+                    imgPath = news.imageHeader;
+        
+                if (news.location)
+                    location = news.location;
+                
+                if (news.details);
+                    details = news.details;
+    
+                months[month].push(createNewsRow(imgPath, title, location, date, details));
+            }
+        } 
+    }
+
 }
 
 /**
  * Get an associative array of the month string that has '-' has a separator
  * @param {String} date 
  */
-function splitDate(date) {
-    var date = date.split('-');
+function splitDate(dateStr) {
+    var date = dateStr.split('-');
 
     var dateArr = [];
     dateArr['day'] = date[0];
@@ -167,11 +183,41 @@ function splitDate(date) {
     return dateArr;
 }
 
+function displayNews() {
+    var $allNews = $('#allNews');
+    for(var key in g.years) {
+        var year = g.years[key].year;
+        var months = g.years[key].months;
 
-// function createYear(year) {
-//     var $year = $('<div class="row"><h1 class="text-orange">' + year +'</h1></div>');
-//     $('.year').append($year);
-// }
+        var $year = $('<div class="' + year + '"></div>');
+        $year.append(createYear(year)).append(createMonths(months));
+        
+        $allNews.append($year);
+    }
+}
+
+function createYear(year) {
+    var $year = $('<div class="row"><h1 class="text-orange">' + year +'</h1></div>');
+    return $year;
+}
+
+/**
+ * Create all months divs and push to the news class
+ * @param {Array} months 
+ */
+function createMonths(months) {
+    var $news = $('<div class="news"></div>');;
+
+    for(var month in months) {
+        if(months[month].length > 0) {
+            console.log(months[month].length);
+            var $month = $('<h3 class="text-black text-uppercase">' + month + '</h3>');
+            $news.append($month).append(months[month]);
+        }
+    }
+    return $news;
+}
+
 /**
  * Display the row of the news; image on the left, title on the right with date and
  * location under. Title is an '<a>' that link the newsDetail page which shows its detail.

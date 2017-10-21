@@ -65,10 +65,16 @@ function getUrlVars() {
     return vars;
 }
 
+/**
+ * Create the img on the top of the newsDetail page. This is the image header.
+ * To add Style this img, add the class to img tag below.
+ * @param {String} imgPath 
+ */
 function createImageHeader(imgPath) {
-    var $img = $('<img class="img img-responsive max-h-200 margin-auto" src="' + imgPath + '" />');
+    var $img = $('<img class="img img-responsive margin-auto" src="' + imgPath + '" />');
     $('#header').append($img);
 }
+
 function createNewsSection(images, title, date, body) {
     var date = date.split('-');
     var day = date[0];

@@ -32,5 +32,40 @@
             "img/News_AnnualReport_20162017.jpg"
         ],
         "details" : "kcj_annual_report.txt"
+    },
+    {
+        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
+        "location": "Montreal, QC",
+        "date" : "10-October-2018",
+        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "images" : [
+            "img/News_AnnualReport_20162017.jpg",
+            "img/News_AnnualReport_20162017.jpg"
+        ],
+        "details" : "kcj_annual_report.txt"
+    }
+    ,
+    {
+        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
+        "location": "Montreal, QC",
+        "date" : "10-August-2018",
+        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "images" : [
+            "img/News_AnnualReport_20162017.jpg",
+            "img/News_AnnualReport_20162017.jpg"
+        ],
+        "details" : "kcj_annual_report.txt"
+    }
+    ,
+    {
+        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
+        "location": "Montreal, QC",
+        "date" : "10-September-2018",
+        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "images" : [
+            "img/News_AnnualReport_20162017.jpg",
+            "img/News_AnnualReport_20162017.jpg"
+        ],
+        "details" : "kcj_annual_report.txt"
     }
 ]
