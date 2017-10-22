@@ -47,9 +47,12 @@
     $(col8).append(description);
     $(row).append(col8);
     //col 4
+    var pptxClass = doc.link.substring(doc.link.lastIndexOf('.') + 1) == "pptx" ? "resources_link" : "";
+    console.log(doc.link.substring(doc.link.lastIndexOf('.') + 1));
     var col4 = $("<div></div>").addClass('col-xs-4');
-    var link = $("<a></a>").addClass('pull-right text-blue resources_link');
+    var link = $("<a></a>").addClass('pull-right text-blue ' + pptxClass);
     var linkIcon = $("<span></span>").addClass('glyphicon glyphicon-download icon');
+
     $(link).attr("href", doc.link);
     $(link).append(linkIcon);
     $(col4).append(link);
