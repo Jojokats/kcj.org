@@ -1,0 +1,282 @@
+{
+  "block1": {
+    "title": "intro",
+    "documents":{
+      "doc1":{
+          "title": "Introduction au code",
+          "description": "Une introduction aux concepts de base de la pensée informatique et du code : algorithmes, décomposition, logique et abstraction",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/intro/Intro_to_Code_for_Kids_Overall.pptx"
+      }
+    }
+  },
+  "block2": {
+    "title": "scratch",
+    "documents":{
+      "doc1":{
+          "title": "Résumé du cours sur Scratch",
+          "description": "Un résumé des plans de leçons sur Scratch, comprenant les compétences de base et les grandes lignes des leçons",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Scratch/Scratch_Course_Summary.pdf"
+      },
+      "doc2":{
+          "title": "Plans de leçons sur Scratch",
+          "description": "Les élèves apprendront à décrire ce qu’est le code, à naviguer sur le site Web de Scratch et à utiliser les ressources de Scratch. Ils développeront leurs compétences en pensée informatique afin d’être des acteurs dans l’univers numérique.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Scratch/Scratch_Lesson_Plans.pdf"
+      }
+    }
+  },
+  "block3": {
+    "title": "html",
+    "documents":{
+      "doc1":{
+          "title": "Document HTML/CSS",
+          "description": "Une introduction aux marqueurs principaux HTML et CSS",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/HTML_CSS/HTMLCSS_Handout.pdf"
+      },
+      "doc2":{
+          "title": "Plans de leçons HTML/CSS",
+          "description": "Les élèves apprendront le fonctionnement d’Internet, ce qu’est un ordinateur et comment ils peuvent créer leur propre contenu pour l’Internet.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/HTML_CSS/HTMLCSS_Lesson_Plans.pdf"
+      }
+    }
+  },
+  "block4": {
+    "title": "python",
+    "documents":{
+      "doc1":{
+          "title": "Python Leçon 1",
+          "description": "Une introduction aux concepts de base du codage et du langage de programmation Python.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson1.pdf"
+      },
+      "doc2":{
+          "title": "Python Leçon 2",
+          "description": "Les élèves apprendront à connaître la tortue Python, ainsi que les fonctions, commentaires, erreurs et principales commandes de ce langage au moyen de la discussion et de la pratique.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson2.pdf"
+      },
+      "doc3":{
+          "title": "Python Leçon 3",
+          "description": "Les élèves apprendront à coder un flocon de neige de base en utilisant les boucles, les variables et les nombres entier au moyen de la discussion et de la pratique.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson3.pdf"
+      },
+      "doc4":{
+          "title": "Python Leçon 4",
+          "description": "Les élève feront des exercices de codage en créant des flocons de neige au moyen de différentes fonctions et variables.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson4.pdf"
+      },
+      "doc5":{
+          "title": "Python Leçon 5",
+          "description": "Les élèves apprendront en quoi consiste les conditions et l’entrée utilisateur au moyen de la discussion et de la pratique.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson5.pdf"
+      },
+      "doc6":{
+          "title": "Python Leçon 6",
+          "description": "Les élèves apprendront en quoi consiste les opérateurs et les listes au moyen de la discussion et de la pratique.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson6.pdf"
+      },
+      "doc7":{
+          "title": "Python Leçon 7",
+          "description": "Les élèves apprendront en quoi consiste les boucles « while »au moyen de la discussion et de la pratique.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson7.pdf"
+      },
+      "doc8":{
+          "title": "Python Leçon 8",
+          "description": "Les élèves intégreront la logique de jeu, les entrées utilisateurs, les boucles « while » et les nombres entiers aléatoires afin de créer leur propre jeu.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson8.pdf"
+      }
+    }
+  },
+  "block5": {
+    "title": "Activités débranchées",
+    "documents":{
+      "doc1":{
+          "title": "Introduction à HTML",
+          "description": "Les élèves apprendront les concepts de base HTML (Hyper Text Markup Language).",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Unplugged/Unplugged_Introduction_to_HTML.pdf"
+      },
+      "doc2":{
+          "title": "Algorithme  Activité 1 : À la rescousse de la balle de ping pong!",
+          "description": "En équipes de 2 ou 4, les élèves créeront un algorithme simple qui permettra à un membre de l’équipe ayant les yeux bandés de venir à la rescousse d’une balle de ping pong.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Unplugged/Unplugged_Algorithm_Activity1_Ping_Pong_Rescue.pdf"
+      },
+      "doc3":{
+          "title": "Algorithme  Activité 2 :  Recettes de pizza",
+          "description": "En premier lieu, les élèves participeront à un quiz interactif qui leur permettra de découvrir comment on peut utiliser la logique afin de concevoir des algorithmes complexes. Ensuite, ils démontreront leur compréhension de la logique en construisant leurs recettes de pizza préférées.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Unplugged/Unplugged_Algorithm_Activity2_Pizza_Recipes.pdf"
+      },
+      "doc4":{
+          "title": "Algorithme  Activité 3 : La chasse au trésor",
+          "description": "Les élèves continueront à mettre en application les  concepts d’algorithmes complexes en concevant une chasse au trésor et en y participant.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Unplugged/Unplugged_Algorithm_Activity3_Scavenger_Hunt.pdf"
+      },
+      "doc5":{
+          "title": "Choisissez votre aventure!",
+          "description": "Les élèves exploreront les différents types d’algorithme en concevant et développant leur propre scénario intitulé :  Choisissez votre aventure!",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Unplugged/Unplugged_Choose_Your_Own_Adventure.pdf"
+      },
+      "doc6":{
+          "title": "Introduction à CSS",
+          "description": "Les élèves apprendront les concepts de base de CSS (Cascading Style Sheet) et développeront leur compréhension des liens entre les balises HTML et les déclarations CSS.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Unplugged/Unplugged_Introduction_to_CSS.pdf"
+      },
+      "doc7":{
+          "title": "Scénarios utilisateurs débranchés",
+          "description": "Les élèves apprendront à identifier les fonctionnalités et éléments de systèmes complexes en construisant des scénarios utilisateurs.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Unplugged/Unplugged_User_Stories.pdf"
+      }
+    }
+  },
+  "block6": {
+    "title": "Activités",
+    "documents":{
+      "doc1":{
+          "title": "Introduction à la programmation avec Twine",
+          "description": "Les élèves commenceront à explorer la conception d’algorithmes au moyen d’un langage de programmation visuel appelé Twine.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Activities/Activity_Introduction_to_Visual_Programming_using_Twine.pdf"
+      },
+      "doc2":{
+          "title": "Modélisation avec des maquettes conceptuelles",
+          "description": "Les élèves vont modéliser un site Web ou une application mobile existant(e) en créant des maquettes conceptuelles.",
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Secondary/Activities/Activity_Real_World_Modelling_with_Wireframes.pdf"
+      }
+    }
+  },
+  "block7": {
+    "title": "Ateliers de deux heures",
+    "documents":{
+      "doc1":{
+          "title": "Choisir un animal du Canada",
+          "description": "Les élèves apprendront comment utiliser Scratch, qui est un langage de programmation visuelle, et feront un court projet sur un animal de leur choix qu’ils pourront présenter à leur famille et à leurs amis.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/2-Hour/2_Hour_About_a_Canadian_Animal.pdf"
+      },
+      "doc2":{
+          "title": "Dessiner des logos",
+          "description": "Lorsqu’ils auront complété leur introduction au dessin sur Scratch, les élèves devront inventer leur propre logo pour 2067 et commenceront un projet de dessin qu’ils pourront terminer pendant l’atelier ou à la maison.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/2-Hour/2_Hour_Drawing_Logos.pdf"
+      },
+      "doc3":{
+          "title": "Dans l’espace avec Scratch",
+          "description": "Les enfants apprendront​ ​comment travailler​ ​avec​ ​un​ ​langage​ ​de​ ​programmation​ ​bloc,​ ​Scratch,​ ​et​ ​créer​ ​un​ ​court projet​ ​à​ ​propos​ ​de​ ​l’espace​ ​qu’ils​ ​pourront​ ​partager​ ensuite​ ​avec​ ​les​ ​amis​ ​et la​ ​famille.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/2-Hour/ScienceLiteracy2017_09.pdf"
+      }
+    }
+  },
+  "block8": {
+    "title": "Projet de Vibot le robot",
+    "documents":{
+      "doc1":{
+          "title": "Scratch et Vibot perdent leur arrière-plan",
+          "description": "Les enfants apprendront à utiliser le dialogue, à changer l’arrière-plan et à analyser les situations au fur et à mesure.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Arrière-plan.pdf"
+      },
+      "doc2":{
+          "title": "Scratch et Vibot fuient les balles de neige",
+          "description": "Les étudiants vont créer un jeu dans lequel Scratch doit se sauver de Pingouin Coquin et de ses balles de neige. Ils devront trouver une façon pour que Scratch puisse faire des points.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Balles_de_neige.pdf"
+      },
+      "doc3":{
+          "title": "Scratch et Vibot vont au Carnaval de Québec",
+          "description": "Dans ce défi, Scratch et Vibot se rendront au Carnaval de Québec où ils trouveront plusieurs activités à faire. Les enfants devront ajouter les éléments essentiels à la réussite des activités.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Carnaval_de_Québec.pdf"
+      },
+      "doc4":{
+          "title": "Vibot et les chocolats",
+          "description": "Dans ce défi, Vibot partira à la chasse aux oeufs de Pâques! C’est aux enfants de déterminer comment se déroulera la scène et d’aider Vibot à trouver les chocolats dont il raffole tant.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Chocolats.pdf"
+      },
+      "doc5":{
+          "title": "Scratch et Vibot ont perdu leurs couleurs",
+          "description": "Les enfant aideront Scratch et Vibot à retrouver leurs couleurs en utilisant la commande «annuler les effets graphiques» aux scripts des deux lutins. Ils ajouteront aussi des commandes pour faire parler les lutins.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Couleurs.pdf"
+      },
+      "doc6":{
+          "title": "Vibot cueille un fruit",
+          "description": "Les enfants devront identifier tous les objets (lutins) qui vous seraient utiles pour illustrer cette situation et identifier les liens qui les unissent. Ils seront libres de choisir la forme qui leur convient.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Cueillir_un_fruit.pdf"
+      },
+      "doc7":{
+          "title": "Vibot et Scratch forment un groupe de musique",
+          "description": "Les enfants apprendront comment utiliser des instruments et les commandes de « son » dans Scratch.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Groupe_de_musique.pdf"
+      },
+      "doc8":{
+          "title": "Scratch, Vibot, et le jeu d’évasion",
+          "description": "Les enfants apprendront comment faire l’analyse de la situation, comprendre la situation, corriger le script et compléter le programme.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Jeu_d'évasion.pdf"
+      },
+      "doc9":{
+          "title": "Vibot et Scratch font de la plongée",
+          "description": "Les enfants reproduiront les dialogues et les déplacements tels qu’ils le sont indiqués.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_La_plongée.pdf"
+      },
+      "doc10":{
+          "title": "Scratch, Vibot et les saisons",
+          "description": "Les enfants représenteront chaque saison dans une animation avec un arrière-plan et une courte histoire appropriés.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Les_saisons.pdf"
+      },
+      "doc11":{
+          "title": "Vibot à Londres",
+          "description": "Dans ce défi, Vibot veut visiter Londres. Pour ce faire, les enfants devront l’aider à embarquer dans l’autobus et le faire avancer.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Londres.pdf"
+      },
+      "doc12":{
+          "title": "Scratch décrit Noël à Vibot",
+          "description": "Vibot et Scratch jouent dans la neige. Soudainement, un objet est tombé du ciel. Vibot pense que c’est un objet mais c’est plutôt le Père Noël. Scratch essaye de décrire Noël à Vibot. Dans ce défi, les enfants continueront l’histoire et le coderont dans Scratch.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Noël.pdf"
+      },
+      "doc13":{
+          "title": "Vibot et Scratch aident Petit Singe",
+          "description": "Les enfants apprendront comment utiliser les commandes de « mouvement » pour créer des mouvements naturels pour les lutins.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Petit_Singe.pdf"
+      },
+      "doc14":{
+          "title": "Vibot et Scratch se presentent",
+          "description": "Dans ce défi, les enfants corrigeront un bloc de texte qui s’est glissé dans les blocs de programmation Scratch.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Présentation.pdf"
+      },
+      "doc15":{
+          "title": "Vibot, Scratch et Gobo jouent au soccer",
+          "description": "Les enfants apprendront comment utiliser les blocs de « mouvement », de « dialogue », et de « répétition » pour que les lutins jouent au soccer.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Soccer.pdf"
+      },
+      "doc16":{
+          "title": "Vibot, Scratch et le sport national canadien",
+          "description": "Dans ce défi, Vibot, Scratch et leurs amis jouent au hockey sur table. Vous êtes l’équipe bleue et contrôlez Scratch (WASD), Pico (flèches) et Nano, le gardien de but (barre d’espace).",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Sport_national_canadien.pdf"
+      },
+      "doc17":{
+          "title": "Scratch prépare une surprise à Vibot",
+          "description": "Les enfants apprendront comment faire apparaître les lutins et comment utiliser les blocs « apparence » pour plusieurs lutins différents.",
+          "link":"../Resources_pdf/windows/Workshop_Projects/FR/Vibot_Robot/Vibot_Défi_Surprise.pdf"
+      }
+    }
+  },
+  "block9": {
+    "title": "La pensée informatique",
+    "documents":{
+      "doc1":{
+          "title": "La pensée informatique",
+          "description": "Une introduction à la pensée informatique au moyen de concepts, pratiques et perspectives",
+          "link":"../Resources_pdf/windows/For_Teachers/FR/Computational_Thinking/Teacher_Training_Computational_Thinking.pptx"
+      }
+    }
+  },
+  "block10": {
+    "title": "La programmation informatique",
+    "documents":{
+      "doc1":{
+          "title": "La programmation informatique",
+          "description": "Une introduction aux concepts et pratiques de la programmation informatique au moyen d’activités débranchées",
+          "link":"../Resources_pdf/windows/For_Teachers/FR/Computer_Programming/Teacher_Training_Computer_Programming.pptx"
+      }
+    }
+  },
+  "block11": {
+    "title": "internet-web",
+    "documents":{
+      "doc1":{
+          "title": "Internet/Web",
+          "description": "Une introduction à Internet et à HTML au moyen des concepts du Web, de l’anatomie d’une adresse Internet et de la citoyenneté numérique.",
+          "link":"../Resources_pdf/windows/For_Teachers/FR/Internet/Teacher_Training_Web.pptx"
+      }
+    }
+  }
+}

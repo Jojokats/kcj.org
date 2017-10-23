@@ -1,12 +1,19 @@
   g = {}
   $(function(){
+    g.lang = document.getElementById("language").getElementsByClassName("active")[0].children[0].innerHTML;
     g.main_options = $(".main-options")[0];
     g.body = $("#content")[0];
     g.option = $(".form-control")[0];
     g.topMenu = $("#main_menue")[0];
     g.count = 0;
-    setUpConnection('../json/resourcesLayout.json');
-    setUpConnection('../json/documents.json');
+    if(g.lang == "EN") {
+      setUpConnection('../json/resourcesLayout.json');
+      setUpConnection('../json/documents.json');
+    } else if (g.lang == "FR") {
+      setUpConnection('../json/resourcesLayout-fr.json');
+      setUpConnection('../json/documents-fr.json');
+    }
+
     setContent();
   });
   function optionSelect(title) {
@@ -15,6 +22,7 @@
   }
   function showPdfs(e) {
     g.a = this.id
+
     for (var key in g.inclass) {
       if(this.id == g.inclass[key].title) {
         $(g.main_options).addClass("hidden");
@@ -50,7 +58,7 @@
     var pptxClass = doc.link.substring(doc.link.lastIndexOf('.') + 1) == "pptx" ? "resources_link" : "";
     console.log(doc.link.substring(doc.link.lastIndexOf('.') + 1));
     var col4 = $("<div></div>").addClass('col-xs-4');
-    var link = $("<a></a>").addClass('pull-right text-blue ' + pptxClass);
+    var link = $("<a></a>").addClass('pull-right text-blue ' + pptxClass).attr("target", "_blank");;
     var linkIcon = $("<span></span>").addClass('glyphicon glyphicon-download icon');
 
     $(link).attr("href", doc.link);
@@ -117,7 +125,6 @@
     for (var i = 0; i < g.response[key].subsection.length; i++) {
       var subTitle = $("<h4></h4>").addClass('text-blue text-center padding-bot-small padding-top-small').text(g.response[key].subsection[i])
       $(subContainer).append(subTitle);
-
       placeBlocks(g.response[key].block[g.response[key].subsection[i]], subContainer, g.response[key].block.blockName);
     }
     $(title).append(subContainer);
