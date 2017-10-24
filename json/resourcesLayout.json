@@ -3,8 +3,7 @@
     "title": "in-class",
     "subsection": ["primary", "secondary"],
     "block": {
-      "primary": ["../img/resources/Card-Intro.jpg", "../img/resources/Card-Scratch-Projects.jpg", "../img/resources/Card-HTML-Projects.jpg",
-        "../img/resources/Card-Python-Projects.jpg"],
+      "primary": ["../img/resources/Card-Intro.jpg", "../img/resources/Card-Scratch-Projects.jpg", "../img/resources/Card-HTML-Projects.jpg","../img/resources/Card-Python-Projects.jpg"],
       "secondary": ["../img/resources/Card-Unplugged.jpg", "../img/resources/Card-Activities.jpg"],
       "blockName": ["intro", "scratch", "html", "python", "unplugged", "activities"]
     }

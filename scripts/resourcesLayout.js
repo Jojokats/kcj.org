@@ -1,11 +1,13 @@
   g = {}
   $(function(){
+    $(window).scrollTop(0);
     g.lang = document.getElementById("language").getElementsByClassName("active")[0].children[0].innerHTML;
     g.main_options = $(".main-options")[0];
     g.body = $("#content")[0];
     g.option = $(".form-control")[0];
     g.topMenu = $("#main_menue")[0];
     g.count = 0;
+    //determine if the site is in french or english
     if(g.lang == "EN") {
       setUpConnection('../json/resourcesLayout.json');
       setUpConnection('../json/documents.json');
@@ -13,26 +15,46 @@
       setUpConnection('../json/resourcesLayout-fr.json');
       setUpConnection('../json/documents-fr.json');
     }
-
     setContent();
   });
+  /**
+  * Creates a single options tag tiw the text being passed into
+  * the function.
+  */
   function optionSelect(title) {
     var option = $("<option></option>").attr("value", "#" + title.replace(/ /g, '-')).text(title);
     $(g.option).append(option);
   }
+  /**
+  * Hides the main menue as well as the text above.
+  * Will call setDocs function in order to diplay the correct
+  * documents the if stament will compare the id of the selected item
+  * to each title property within the documents.json file.
+  */
   function showPdfs(e) {
+    //will scroll the window to the top of the page.
+    $(window).scrollTop(0);
     for (var key in g.inclass) {
+      //compares the selected items id to the current title being iterated through.
       if(this.id == g.inclass[key].title) {
         $(g.main_options).addClass("hidden");
         $(g.topMenu).addClass("hidden");
-        setDocs(g.inclass[key].title, g.inclass[key].documents);
+        //if there is a subtitle it is assigned else an empty string is assigned.
+        var subTitle = g.inclass[key].subTitle ? g.inclass[key].subTitle : "";
+        //the title, an array of documents and the subtitle is passed into the setDocs function.
+        setDocs(g.inclass[key].title, g.inclass[key].documents, subTitle);
+        //the doc was found and a break is added to save processing.
         break;
       }
     }//end of for loop
+    //once the docs are set the path of power point docs must be adjusted.
     pathAdjust();
   }
-  function setDocs(header, arrayOfDocs) {
-  setDocHeader(header);
+  /**
+  *
+  */
+  function setDocs(header, arrayOfDocs, subTitle) {
+  setDocHeader(header, subTitle);
   var ul = $("<ul></ul>").addClass('list-group margin-custom-30');
     for (var key in arrayOfDocs) {
       var li = $("<li></li>").addClass('list-group-item');
@@ -64,18 +86,35 @@
     $(col4).append(link);
     $(row).append(col4);
   }
-  function setDocHeader(header) {
+  function setDocHeader(header, subTitle) {
     g.docContainer = $("<div></div>").addClass("container padding-top-large");
     var title = $("<h2></h2>").addClass('text-center text-orange text-capitalize').text(header);
     g.backButton = $("<a></a>").addClass("btn btn-blue pull-left back");
     var span = $("<span></span>").addClass("glyphicon glyphicon-arrow-left").text(' Back');
       $(g.backButton).append(span);
       $(title).append(g.backButton);
+      checkSubtitle(subTitle, title);
       $(g.docContainer).append(title);
       $(g.body).append(g.docContainer);
       $(g.backButton).on('click', backToMenue);
   }
+  function checkSubtitle(subTitle, title) {
+    if(subTitle != "") {
+
+      var start = subTitle[0].substring(0, subTitle[0].indexOf(subTitle[1]));
+      var end = subTitle[0].substring(subTitle[0].indexOf(subTitle[1]) + subTitle[1].length + 1);
+      var link = subTitle[1];
+
+      var a = $("<a></a>").addClass('text-blue').text(link).attr('href', subTitle[2]);
+      var sub = $("<h4></h4>").addClass('text-center text-capitalize text-black padding-bot').text(start);
+      $(sub).append(a);
+      var sub2 = $("<h4></h4>").addClass('text-center text-capitalize text-black padding-bot').text(end);
+      $(sub).append(sub2);
+      $(title).append(sub);
+    }
+  }
   function backToMenue() {
+    $(window).scrollTop(0);
     $(g.docContainer).remove();
     $(g.topMenu).removeClass("hidden");
     $(g.main_options).removeClass("hidden");
@@ -109,7 +148,6 @@
           $(g.main_options).append(section);
         } else {
           $(section).append(title);
-          g.x = g.response[key].block;
           placeBlocks(g.response[key].block, section, g.response[key].blockName);
           $(g.main_options).append(section);
         }
@@ -143,7 +181,7 @@
     g.links = $('.resources_link');
     /* only if the current station the user is using is a mac
     will this boolean be true */
-   if (window.navigator.platform.substring(0,3).toLowerCase() === "win") {
+   if (window.navigator.platform.substring(0,3).toLowerCase() === "mac") {
         set_path();
     }
   }

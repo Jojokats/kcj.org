@@ -161,6 +161,7 @@
   },
   "block8": {
     "title": "vibot",
+    "subTitle": ["Developed by Dr. Margarida Romero’s CoCreatic team. For more info: cocreatic.net", "cocreatic.net", "http://fr.cocreatic.net/"],
     "documents":{
       "doc1":{
           "title": "Scratch and Vibot lose their backdrop",
