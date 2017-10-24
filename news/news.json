@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Kids Code Jeunesse launches Canadian chapter of International network, Code Club",
+        "location": "Montreal, QC",
+        "date" : "17-September-2017",
+        "imageHeader": "img/News_CC_Launch.jpg",
+        "images" : [
+            "img/News_CC_Launch.jpg",
+            "img/News_AnnualReport_20162017.jpg",
+            "img/News_CC_Launch.jpg"
+        ],
+        "details" : "cc_launches.html"
+    },
+    {
+        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
+        "location": "Montreal, QC",
+        "date" : "10-September-2017",
+        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "images" : [
+            "img/News_AnnualReport_20162017.jpg",
+            "img/News_AnnualReport_20162017.jpg"
+        ],
+        "details" : "kcj_annual_report.txt"
+    },
+    {
+        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
+        "location": "Montreal, QC",
+        "date" : "10-August-2017",
+        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "images" : [
+            "img/News_AnnualReport_20162017.jpg",
+            "img/News_AnnualReport_20162017.jpg"
+        ],
+        "details" : "kcj_annual_report.txt"
+    }
+]
