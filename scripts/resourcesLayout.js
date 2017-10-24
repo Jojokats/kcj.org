@@ -76,7 +76,6 @@
     $(row).append(col8);
     //col 4
     var pptxClass = doc.link.substring(doc.link.lastIndexOf('.') + 1) == "pptx" ? "resources_link" : "";
-    console.log(doc.link.substring(doc.link.lastIndexOf('.') + 1));
     var col4 = $("<div></div>").addClass('col-xs-4');
     var link = $("<a></a>").addClass('pull-right text-blue ' + pptxClass).attr("target", "_blank");;
     var linkIcon = $("<span></span>").addClass('glyphicon glyphicon-download icon');
