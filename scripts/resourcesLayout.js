@@ -51,7 +51,8 @@
     pathAdjust();
   }
   /**
-  *
+  * Creates the list of docs, creating the tags and appending them
+  * acordingly.
   */
   function setDocs(header, arrayOfDocs, subTitle) {
   setDocHeader(header, subTitle);
@@ -66,6 +67,10 @@
     }
     $(g.docContainer).append(ul);
   }
+  /**
+  * Creates a single row outof the document property being passed in.
+  * the row is the container where the row will be appended onto.
+  */
   function makeRows(row, doc) {
     //col 8
     var col8 = $("<div></div>").addClass('col-xs-8');
