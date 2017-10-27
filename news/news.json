@@ -3,7 +3,7 @@
         "title": "Kids Code Jeunesse launches Canadian chapter of International network, Code Club",
         "location": "Montreal, QC",
         "date" : "17-September-2017",
-        "imageHeader": "img/News_CC_Launch.jpg",
+        "imageHeader": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "images" : [
             "img/news/Code Club Launch/1.JPG",
             "img/news/Code Club Launch/2.JPG",
@@ -19,34 +19,55 @@
     {
         "title": "Kids Code Jeunesse Annual Report: 2016-2017",
         "location": "Montreal, QC",
-        "date" : "August-2017",
-        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "date" : "15-August-2017",
+        "imageHeader": "img/news/Annual Report 2016-2017/KCJ_AnnualReport_20162017_News.png",
         "images" : [
-            "img/News_AnnualReport_20162017.jpg",
-            "img/News_AnnualReport_20162017.jpg"
+            
         ],
-        "details" : "kcj_annual_report.txt"
+        "details" : "kcj_annual_report.html"
+    },
+    {
+        "title": "Celebrating Code, Science, and Literature with Science Literacy Week",
+        "location": "Canada",
+        "date" : "18-September-2017",
+        "imageHeader": "img/news/Science Literacy Week 2017/SLW_Banner_Blog.png",
+        "images" : [
+            "img/news/Science Literacy Week 2017/SLW_1.jpg",
+            "img/news/Science Literacy Week 2017/SLW_3.jpg",
+            "img/news/Science Literacy Week 2017/SLW_4.jpg",
+            "img/news/Science Literacy Week 2017/SLW_5.jpg",
+            "img/news/Science Literacy Week 2017/SLW_6.jpg",
+            "img/news/Science Literacy Week 2017/SLW_8.jpg",
+            "img/news/Science Literacy Week 2017/SLW_9.jpg",
+            "img/news/Science Literacy Week 2017/SLW_10.jpg"
+        ],
+        "details" : "science_literacy_2017.html"
     },
     {
         "title": "Code Club Canada - Astro Pi makes its way to Canada for the first time!",
         "location": "Canada",
         "date" : "01-November-2017",
-        "imageHeader": "img/news/Astro_Pi_Mission_Zero_Hero_Banner.png",
+        "imageHeader": "img/news/Astro Pi 2017/Astro_Pi_Mission_Zero_Banner_Blog.png",
         "images" : [
            
         ],
         "details" : "astro_pi.html"
-    }
-    ,
+    },
     {
-        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
-        "location": "Montreal, QC",
-        "date" : "10-September-2018",
-        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "title": "KCJ & Code MTL - Teaching more than 3,000 kids in Montreal to code!",
+        "location": "Canada",
+        "date" : "18-September-2017",
+        "imageHeader": "img/news/Code MTL/KCJ_CodeMTL_Banner_Blog.png",
         "images" : [
-            "img/News_AnnualReport_20162017.jpg",
-            "img/News_AnnualReport_20162017.jpg"
+            "img/news/Science Literacy Week 2017/SLW_1.jpg",
+            "img/news/Science Literacy Week 2017/SLW_3.jpg",
+            "img/news/Science Literacy Week 2017/SLW_4.jpg",
+            "img/news/Science Literacy Week 2017/SLW_5.jpg",
+            "img/news/Science Literacy Week 2017/SLW_6.jpg",
+            "img/news/Science Literacy Week 2017/SLW_8.jpg",
+            "img/news/Science Literacy Week 2017/SLW_9.jpg",
+            "img/news/Science Literacy Week 2017/SLW_10.jpg"
         ],
-        "details" : "kcj_annual_report.txt"
-    }
+        "details" : "science_literacy_2017.html"
+    },
 ]
