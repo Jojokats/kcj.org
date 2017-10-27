@@ -18,13 +18,23 @@
     },
     {
         "title": "Kids Code Jeunesse Annual Report: 2016-2017",
-        "location": "Montreal, QC",
+        "location": "Canada",
         "date" : "15-August-2017",
         "imageHeader": "img/news/Annual Report 2016-2017/KCJ_AnnualReport_20162017_News.png",
         "images" : [
             
         ],
         "details" : "kcj_annual_report.html"
+    },
+    {
+        "title": "How and Why Kids Code Jeunesse is working to Teach the Teachers",
+        "location": "Canada",
+        "date" : "1-May-2017",
+        "imageHeader": "img/news/Teacher Training/Teacher_Training_News_EN.png",
+        "images" : [
+            
+        ],
+        "details" : "teacher_training.html"
     },
     {
         "title": "Celebrating Code, Science, and Literature with Science Literacy Week",
@@ -55,8 +65,8 @@
     },
     {
         "title": "KCJ & Code MTL - Teaching more than 3,000 kids in Montreal to code!",
-        "location": "Canada",
-        "date" : "18-September-2017",
+        "location": "Montreal, QC",
+        "date" : "12-September-2017",
         "imageHeader": "img/news/Code MTL/KCJ_CodeMTL_Banner_Blog.png",
         "images" : [
             "img/news/Science Literacy Week 2017/SLW_1.jpg",
@@ -68,6 +78,6 @@
             "img/news/Science Literacy Week 2017/SLW_9.jpg",
             "img/news/Science Literacy Week 2017/SLW_10.jpg"
         ],
-        "details" : "science_literacy_2017.html"
-    },
+        "details" : "code_mtl.html"
+    }
 ]
