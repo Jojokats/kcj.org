@@ -5,16 +5,21 @@
         "date" : "17-September-2017",
         "imageHeader": "img/News_CC_Launch.jpg",
         "images" : [
-            "img/News_CC_Launch.jpg",
-            "img/News_AnnualReport_20162017.jpg",
-            "img/News_CC_Launch.jpg"
+            "img/news/Code Club Launch/1.JPG",
+            "img/news/Code Club Launch/2.JPG",
+            "img/news/Code Club Launch/3.JPG",
+            "img/news/Code Club Launch/4.JPG",
+            "img/news/Code Club Launch/5.JPG",
+            "img/news/Code Club Launch/6.JPG",
+            "img/news/Code Club Launch/7.JPG"
+
         ],
         "details" : "cc_launches.html"
     },
     {
         "title": "Kids Code Jeunesse Annual Report: 2016-2017",
         "location": "Montreal, QC",
-        "date" : "10-September-2017",
+        "date" : "August-2017",
         "imageHeader": "img/News_AnnualReport_20162017.jpg",
         "images" : [
             "img/News_AnnualReport_20162017.jpg",
@@ -23,38 +28,14 @@
         "details" : "kcj_annual_report.txt"
     },
     {
-        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
-        "location": "Montreal, QC",
-        "date" : "10-October-2017",
-        "imageHeader": "img/News_AnnualReport_20162017.jpg",
+        "title": "Code Club Canada - Astro Pi makes its way to Canada for the first time!",
+        "location": "Canada",
+        "date" : "01-November-2017",
+        "imageHeader": "img/news/Astro_Pi_Mission_Zero_Hero_Banner.png",
         "images" : [
-            "img/News_AnnualReport_20162017.jpg",
-            "img/News_AnnualReport_20162017.jpg"
+           
         ],
-        "details" : "kcj_annual_report.txt"
-    },
-    {
-        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
-        "location": "Montreal, QC",
-        "date" : "10-October-2018",
-        "imageHeader": "img/News_AnnualReport_20162017.jpg",
-        "images" : [
-            "img/News_AnnualReport_20162017.jpg",
-            "img/News_AnnualReport_20162017.jpg"
-        ],
-        "details" : "kcj_annual_report.txt"
-    }
-    ,
-    {
-        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
-        "location": "Montreal, QC",
-        "date" : "10-August-2018",
-        "imageHeader": "img/News_AnnualReport_20162017.jpg",
-        "images" : [
-            "img/News_AnnualReport_20162017.jpg",
-            "img/News_AnnualReport_20162017.jpg"
-        ],
-        "details" : "kcj_annual_report.txt"
+        "details" : "astro_pi.html"
     }
     ,
     {
