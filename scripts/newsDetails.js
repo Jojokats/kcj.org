@@ -1,5 +1,6 @@
 
 var g = {
+    isEnglish: true,
     newsPath: 'news/',
     newsDir: 'news/',
     imgPath: ''
@@ -10,6 +11,7 @@ $(document).ready(function() {
         g.newsPath += 'news-en.json';
         g.newsDir += 'en/';
     } else {
+        g.isEnglish = false;
         g.imgPath = "../";
         g.newsPath = g.imgPath + 'news/news-fr.json';
         g.newsDir = g.imgPath + 'news/fr/';
@@ -94,14 +96,53 @@ function getUrlVars() {
  * @param {String} imgPath 
  */
 function createImageHeader(imgPath) {
-    var $img = $('<img class="img img-responsive margin-auto" src="' + imgPath + '" />');
+    var $img = $('<img class="img img-responsive margin-auto fillWidth" src="' + imgPath + '" />');
     $('#header').append($img);
+}
+
+/**
+ * Get the name of the month base of the month number
+ * @param {int} monthNum 
+ */
+function translateMonthToFrench(month) {
+    
+    switch(month) {
+        case 'january':
+            return 'janvier';
+        case 'february':
+            return 'février';
+        case 'march':
+            return 'mars';
+        case 'april':
+            return 'avril';
+        case 'may':
+            return 'mai';
+        case 'june':
+            return 'juin';
+        case 'july':
+            return 'juillet';
+        case 'august':
+            return 'août';
+        case 'september':
+            return 'septembre';
+        case 'october':
+            return 'octobre';
+        case 'november':
+            return 'novembre';
+        case 'december':
+            return 'decembre';
+    }
+    return 'Cant translate to french : ' + month;
 }
 
 function createNewsSection(images, title, date, body) {
     var date = date.split('-');
     var day = date[0];
-    var month = date[1].substr(0, 3);
+    var month = date[1].toLowerCase();
+    if(!g.isEnglish)
+        month = translateMonthToFrench(month);
+    else
+        month = month.substr(0, 3);
 
     var $day = $('<h1 class="text-blue text-bold">' + day + '</h1>');
     var $month = $('<h4 class="text-blue text-uppercase">' + month + '</h4>  ');

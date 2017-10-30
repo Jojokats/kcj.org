@@ -1,4 +1,5 @@
 var g = {
+    isEnglish: true,
     newsPath: 'news/',
     imgPath: '',
     years : []    
@@ -8,6 +9,7 @@ $(document).ready(function() {
     if($('#language .active').text() === 'EN'){
         g.newsPath += 'news-en.json';
       } else {
+        g.isEnglish = false;
         g.imgPath = '../';
         g.newsPath = g.imgPath + 'news/news-fr.json';
       }
@@ -18,38 +20,35 @@ $(document).ready(function() {
  * Get the name of the month base of the month number
  * @param {int} monthNum 
  */
-function getMonthName(monthNum) {
-    if(!Number.isInteger(monthNum)) {
-        return;
-    }
+function translateMonthToFrench(month) {
 
-    switch(monthNum) {
-        case 1:
-            return 'january';
-        case 2:
-            return 'february';
-        case 3:
-            return 'march';
-        case 4:
-            return 'april';
-        case 5:
-            return 'may';
-        case 6:
-            return 'june';
-        case 7:
-            return 'july';
-        case 8:
-            return 'august';
-        case 9:
-            return 'september';
-        case 10:
-            return 'october';
-        case 11:
-            return 'november';
-        case 12:
-            return 'december';
+    switch(month) {
+        case 'january':
+            return 'janvier';
+        case 'february':
+            return 'février';
+        case 'march':
+            return 'mars';
+        case 'april':
+            return 'avril';
+        case 'may':
+            return 'mai';
+        case 'june':
+            return 'juin';
+        case 'july':
+            return 'juillet';
+        case 'august':
+            return 'août';
+        case 'september':
+            return 'septembre';
+        case 'october':
+            return 'octobre';
+        case 'november':
+            return 'novembre';
+        case 'december':
+            return 'decembre';
     }
-    return '';
+    return 'Cant translate to french : ' + month;
 }
 
 function readfile(url) {
@@ -219,7 +218,12 @@ function createMonths(months) {
     for(var month in months) {
         if(months[month].length > 0) {
             console.log(months[month].length);
-            var $month = $('<h3 class="text-black text-uppercase">' + month + '</h3>');
+            console.log(month);
+            var monthStr = month;
+            if(!g.isEnglish)
+                monthStr = translateMonthToFrench(month);
+
+            var $month = $('<h3 class="text-black text-uppercase">' + monthStr + '</h3>');
             $news.append($month).append(months[month]);
         }
     }
@@ -238,6 +242,9 @@ function createMonths(months) {
  */
 function createNewsRow(imgPath, title, location, date, details) {
     var dateArr = splitDate(date);
+    var month = dateArr['month'].toLowerCase();
+    if(!g.isEnglish)
+        month = translateMonthToFrench(month);
 
     var $img = $('<img src="' + imgPath + '" class="img img-responsive" alt="">');        
     var $imgDiv = $('<div class="col-sm-2 padding-small"></div>').append($img); 
@@ -247,7 +254,7 @@ function createNewsRow(imgPath, title, location, date, details) {
     $link.append($title);
 
     var $location = $('<span>' + location + '</span>');
-    var $date = $('<span> - ' + dateArr['month'] + ' ' + dateArr['year'] + '</span>');
+    var $date = $('<span class="text-capitalize"> - ' + month + ' ' + dateArr['year'] + '</span>');
 
     var $linkDiv = $('<div class="col-sm-10"></div>').append($link);
     $linkDiv.append($location).append($date);
