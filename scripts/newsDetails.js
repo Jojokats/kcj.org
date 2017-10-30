@@ -1,9 +1,20 @@
 
-var g = {};
+var g = {
+    newsPath: 'news/',
+    newsDir: 'news/',
+    imgPath: ''
+};
 
 $(document).ready(function() {
-    g.newsPath = 'news/';
-    readFile(g.newsPath + 'news.json', 'json', 'GET');    
+    if($('#language .active').text() === 'EN'){
+        g.newsPath += 'news-en.json';
+        g.newsDir += 'en/';
+    } else {
+        g.imgPath = "../";
+        g.newsPath = g.imgPath + 'news/news-fr.json';
+        g.newsDir = g.imgPath + 'news/fr/';
+    }
+    readFile(g.newsPath, 'json', 'GET');    
 });
 
 function readFile(url, type, method) {
@@ -23,6 +34,7 @@ function error( jqXHR, textStatus, errorThrown) {
 function success(data, status, xhr) {
     // console.log(data);
     $.each(data, function(i, news) {
+        // console.log(news.images);
         var title = '', date = '', imgHeader = '',
             details = '', images = [];
 
@@ -30,9 +42,20 @@ function success(data, status, xhr) {
             details = news.details;
 
         var d = getUrlVars()['d'];
-        // console.log(details + " " + d);
+        // console.log(g.newsDir + d);
         if (d && d === details) {
-            // console.log("this is the right one");
+            
+            var $lang = $('#language a');
+            // console.log($('#language a'));
+            var enLink = $lang.get(0).getAttribute('href') + '?d=' + d;
+            var frLink = $lang.get(1).getAttribute('href') + '?d=' + d;
+
+            $lang.get(0).setAttribute('href', enLink);
+            $lang.get(1).setAttribute('href', frLink);
+            // enLink = enLink.attr('href');
+            // enLink += 'd=' + d;
+            // console.log(enLink);
+
             if (news.title) 
                 title = news.title;
             
@@ -40,17 +63,17 @@ function success(data, status, xhr) {
                 date = news.date;
 
             if (news.imageHeader)
-                imgHeader = news.imageHeader;
+                imgHeader = g.imgPath + news.imageHeader;
 
             if (news.images && news.images.length !== 0) 
                 images = news.images;
 
-            console.log(images);
-            $.get(g.newsPath + d, function(line) {    
+            // console.log("images " + images.length);
+            $.get(g.newsDir + d, function(line) {    
                 createImageHeader(imgHeader);           
                 createNewsSection(images, title, date, line);
             });
-        }
+        } 
     });
 }
 
@@ -108,8 +131,9 @@ function createImageSlide(images) {
     var carouselInner = $('<div class="carousel-inner"></div>');
 
     for(var i=0; i<images.length; i++) {
-        var img = $('<img class="img img-responsive" src="' + images[i] + '"/>');
-        var aTag = $('<a href="' + images[i] + '" data-toggle="lightbox" data-gallery="news-gallery" data-type="image">');
+        var image = g.imgPath + images[i];
+        var img = $('<img class="img img-responsive" src="' + image + '"/>');
+        var aTag = $('<a href="' + image + '" data-toggle="lightbox" data-gallery="news-gallery" data-type="image">');
         aTag .append(img);
         
         var imgDiv = $('<div class="col-xs-4 padding-x-s"></div>');

@@ -1,10 +1,17 @@
 var g = {
     newsPath: 'news/',
+    imgPath: '',
     years : []    
 };
 
 $(document).ready(function() {
-    readfile(g.newsPath + 'news.json');
+    if($('#language .active').text() === 'EN'){
+        g.newsPath += 'news-en.json';
+      } else {
+        g.imgPath = '../';
+        g.newsPath = g.imgPath + 'news/news-fr.json';
+      }
+    readfile(g.newsPath);
 });
 
 /**
@@ -153,7 +160,7 @@ function appendMonth(news, months) {
                     title = news.title;
         
                 if (news.imageHeader) 
-                    imgPath = news.imageHeader;
+                    imgPath = g.imgPath + news.imageHeader;
         
                 if (news.location)
                     location = news.location;
@@ -161,6 +168,7 @@ function appendMonth(news, months) {
                 if (news.details);
                     details = news.details;
     
+                console.log("imgPath : " + imgPath);
                 months[month].push(createNewsRow(imgPath, title, location, date, details));
             }
         } 
