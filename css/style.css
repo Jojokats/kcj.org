@@ -1178,7 +1178,7 @@ canvas {
 }
 .carousel-control.left {
   right: auto;
-  left: -10%;
+  left: -5%;
   background-image: none;
 }
 /* .carousel-control.left:hover, 
@@ -1188,7 +1188,7 @@ canvas {
   color: #333;
 } */
 .carousel-control.right {
-  right: -10%;
+  right: -5%;
   left: auto;
   background-image: none;
 }

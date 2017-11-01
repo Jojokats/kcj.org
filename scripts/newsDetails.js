@@ -155,11 +155,11 @@ function createNewsSection(images, title, date, body) {
     // var $body = $('<p class="padding-y-s">' + body + '</p>');
             // $body.append(body);
 
+    var $imagesSlide = createImageSlide(images);
     // Create the news on the right side of the page
-    var $rightSide = $('<div class="col-xs-10 border-left border-lightBlue padding-left-xl"></div>');
+    var $rightSide = $('<div class="col-xs-9 border-left border-lightBlue padding-left-xl"></div>');
     $rightSide.append($title).append(body);
 
-    var $imagesSlide = createImageSlide(images);
     $("#newsInfo").append($leftSide).append($rightSide);
     $("#newsInfo").append($imagesSlide);
     slideImages();
@@ -195,7 +195,7 @@ function createImageSlide(images) {
     var rightArrow = $('<a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>');
    
    
-    var $carouselDiv = $('<div class="col-xs-10 col-xs-offset-1 carousel slide multi-item-carousel padding" id="theCarousel"></div>');
+    var $carouselDiv = $('<div class="col-xs-9 col-xs-offset-3 carousel slide multi-item-carousel padding" id="theCarousel"></div>');
     $carouselDiv.append(carouselInner).append(leftArrow).append(rightArrow);
 
     return $carouselDiv;

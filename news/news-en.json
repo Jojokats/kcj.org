@@ -3,6 +3,7 @@
         "title": "Kids Code Jeunesse launches Canadian chapter of International network, Code Club",
         "location": "Montreal, QC",
         "date" : "17-September-2017",
+        "imageThumbnail": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "imageHeader": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "images" : [
             "img/news/Code Club Launch/1.JPG",
@@ -20,6 +21,7 @@
         "title": "Kids Code Jeunesse Annual Report: 2016-2017",
         "location": "Canada",
         "date" : "15-August-2017",
+        "imageThumbnail": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "imageHeader": "img/news/Annual Report 2016-2017/KCJ_AnnualReport_20162017_News.png",
         "images" : [
             
@@ -30,6 +32,7 @@
         "title": "How and Why Kids Code Jeunesse is working to Teach the Teachers",
         "location": "Canada",
         "date" : "1-May-2017",
+        "imageThumbnail": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "imageHeader": "img/news/Teacher Training/Teacher_Training_News_EN.png",
         "images" : [
             
@@ -40,6 +43,7 @@
         "title": "Celebrating Code, Science, and Literature with Science Literacy Week",
         "location": "Canada",
         "date" : "18-September-2017",
+        "imageThumbnail": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "imageHeader": "img/news/Science Literacy Week 2017/SLW_Banner_Blog.png",
         "images" : [
             "img/news/Science Literacy Week 2017/SLW_1.jpg",
@@ -57,6 +61,7 @@
         "title": "Code Club Canada - Astro Pi makes its way to Canada for the first time!",
         "location": "Canada",
         "date" : "01-November-2017",
+        "imageThumbnail": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "imageHeader": "img/news/Astro Pi 2017/Astro_Pi_Mission_Zero_Banner_Blog.png",
         "images" : [
            
@@ -67,6 +72,7 @@
         "title": "KCJ & Code MTL - Teaching more than 3,000 kids in Montreal to code!",
         "location": "Montreal, QC",
         "date" : "12-September-2017",
+        "imageThumbnail": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "imageHeader": "img/news/Code MTL/KCJ_CodeMTL_Banner_Blog.png",
         "images" : [
             "img/news/Science Literacy Week 2017/SLW_1.jpg",
