@@ -69,15 +69,19 @@
         "date" : "12-September-2017",
         "imageHeader": "img/news/Code MTL/KCJ_CodeMTL_Banner_Blog.png",
         "images" : [
-            "img/news/Science Literacy Week 2017/SLW_1.jpg",
-            "img/news/Science Literacy Week 2017/SLW_3.jpg",
-            "img/news/Science Literacy Week 2017/SLW_4.jpg",
-            "img/news/Science Literacy Week 2017/SLW_5.jpg",
-            "img/news/Science Literacy Week 2017/SLW_6.jpg",
-            "img/news/Science Literacy Week 2017/SLW_8.jpg",
-            "img/news/Science Literacy Week 2017/SLW_9.jpg",
-            "img/news/Science Literacy Week 2017/SLW_10.jpg"
+            
         ],
         "details" : "code_mtl.html"
+    },
+    {
+        "title": "Science Odyssey: A Full Week of STEM!",
+        "location": "Canada",
+        "date" : "12-May-2017",
+        "imageHeader": "img/news/Science Odyssey 2017/Science_Odyssey_News_EN.png",
+        "images" : [
+            
+        ],
+        "details" : "science_odyssey_2017.html"
     }
 ]
+
