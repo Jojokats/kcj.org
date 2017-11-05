@@ -80,7 +80,7 @@ function appendToNewsSec($imgBlock) {
  */
 function createImgBlock(imgPath, detail) {
   var alt = imgPath.substr(imgPath.lastIndexOf('/') + 1);
-  var $img = $('<img src="' + imgPath + '" alt="' + alt + '"class="img img-responsive margin-auto"/>');
+  var $img = $('<img src="' + imgPath + '" alt="' + alt + '"class="img img-responsive margin-auto border-radius"/>');
 
   var $link = $('<a href="newsDetail.html?d=' + detail+ '"></a>')
   $link.append($img);
