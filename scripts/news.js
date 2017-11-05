@@ -158,8 +158,8 @@ function appendMonth(news, months) {
                 if (news.title) 
                     title = news.title;
         
-                if (news.imageHeader) 
-                    imgPath = g.imgPath + news.imageHeader;
+                if (news.imageThumbnail) 
+                    imgPath = g.imgPath + news.imageThumbnail;
         
                 if (news.location)
                     location = news.location;
