@@ -327,7 +327,9 @@ strong {
 .max-h-200 {
   max-height: 450px;
 }
-
+.min-h-280 {
+  min-height: 280px;
+}
 .img-max {
   max-width: 250px;
   max-height: auto;
@@ -352,6 +354,9 @@ strong {
 
 .margin-bot {
   margin-bottom: 25px;
+}
+.margin-top-m {
+  margin-top: 10px;
 }
 
 .navbar-custom {
@@ -482,6 +487,12 @@ strong {
   margin: auto;
 }
 
+.pos-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .text-xxl {
   font-size: 6.25rem;
 }
