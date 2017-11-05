@@ -67,7 +67,7 @@ function appendToNewsSec($imgBlock) {
 }
 
 function createImgBlock(imgPath) {
-  var alt = imgPath.substr(imgPath.indexOf('/'));
+  var alt = imgPath.substr(imgPath.indexOf('/') + 1);
   var $img = $('<img src="' + imgPath + '" alt="' + alt + '"class="img img-responsive"/>');
 
   var $div = $('<div class="col-xs-6"></div>');
