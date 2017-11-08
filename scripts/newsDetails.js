@@ -141,8 +141,8 @@ function createNewsSection(images, title, date, body) {
     var month = date[1].toLowerCase();
     if(!g.isEnglish)
         month = translateMonthToFrench(month);
-    else
-        month = month.substr(0, 3);
+    
+    month = month.substr(0, 3);
 
     var $day = $('<h1 class="text-blue text-bold">' + day + '</h1>');
     var $month = $('<h4 class="text-blue text-uppercase">' + month + '</h4>  ');
