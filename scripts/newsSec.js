@@ -57,7 +57,7 @@ function success(data, status, xhr) {
             var imageThumbnail = news.imageThumbnail;
 
             if (imageThumbnail) {
-                appendToNewsSec(createImgBlock(g.imgPath + imageThumbnail, news.details));
+                appendToNewsSec(createImgBlock(g.imgPath + imageThumbnail, news.details, news.title));
             }
         }
     });
@@ -78,14 +78,17 @@ function appendToNewsSec($imgBlock) {
  * @param {String} imgPath 
  * @param {String} detail 
  */
-function createImgBlock(imgPath, detail) {
+function createImgBlock(imgPath, detail, title) {
   var alt = imgPath.substr(imgPath.lastIndexOf('/') + 1);
   var $img = $('<img src="' + imgPath + '" alt="' + alt + '"class="img img-responsive margin-auto border-radius"/>');
 
-  var $link = $('<a href="newsDetail.html?d=' + detail+ '"></a>')
-  $link.append($img);
+  var $riser = $('<div class="overlay"</div>');
+  $riser.append($('<div class="text">'+ title +'</div>'));
 
-  var $div = $('<div class="col-sm-6 padding-small"></div>');
+  var $link = $('<a href="newsDetail.html?d=' + detail+ '"></a>')
+  $link.append($img).append($riser);
+
+  var $div = $('<div class="col-sm-6 padding-small trigger"></div>');
   $div.append($link);
 
   return $div;
