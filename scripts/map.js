@@ -4,10 +4,9 @@ $(function() {
   g.lang = document.getElementById("language").getElementsByClassName("active")[0].children[0].innerHTML;
   g.path = g.lang == "EN" ? "img/" : "../img/"
   g.text = g.lang == "EN" ? "Email" : "Courriel"
-  // TODO: add your API key
+
   CodeClubWorld.api_token = 'ROe90450b2a7fd5fefdaa57c51aead395927510b4ea7b133fe0f298747cc50d8aa';
 
-  // TODO: add your Country Code here
   CodeClubWorld.country_code = 'CA';
 
   CodeClubWorld.api = 'https://api.codeclubworld.org';
@@ -148,12 +147,7 @@ CodeClubWorld.makeMap = function() {
         infobox.open(map, this);
       });
     });
-
-
     $('.counter').replaceWith(clubs.length);
-    // TODO: I've commented out the styles section to make
-    // this work in jsbin. Leave the styles section of the
-    // mcOptions "as is"
     var mcOptions = {
       gridSize: 30,
       imagePath: g.path + 'm'
