@@ -1,0 +1,24 @@
+{
+  "section1": {
+    "title": "OUTILS D'ENSEIGNEMENT",
+    "subsection": ["Primaire", "Secondaire"],
+    "block": {
+      "Primaire": ["../img/resources/Card-Intro.jpg", "../img/resources/Card-Scratch-Projects.jpg", "../img/resources/Card-HTML-Projects.jpg",
+        "../img/resources/Card-Python-Projects.jpg"],
+      "Secondaire": ["../img/resources/Card-Unplugged.jpg", "../img/resources/Card-Activities.jpg"],
+      "blockName": ["intro", "scratch", "html", "python", "Activités débranchées", "Activités"]
+    }
+  },
+  "section2": {
+    "title": "ATELIERS ET PROJETS",
+    "subsection": [""],
+    "block": ["../img/resources/Card-2Hour-Workshop.jpg", "../img/resources/Card-Vibot.png"],
+    "blockName": ["Ateliers de deux heures", "Projet de Vibot le robot"]
+  },
+  "section3": {
+    "title": "DOCUMENTS POUR LES ENSEIGNANTS",
+    "subsection": [""],
+    "block": ["../img/resources/Card-CompThinking-TeacherTraining.jpg", "../img/resources/CompProgramming-Card.png", "../img/resources/Card-Internet.jpg"],
+    "blockName": ["La-pensée-informatique", "La programmation informatique", "internet-web"]
+  }
+}

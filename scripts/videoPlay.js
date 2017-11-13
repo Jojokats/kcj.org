@@ -4,13 +4,18 @@ $(document).ready(function(){
   mobileScreen();
   if($('#language .active').text() === 'EN'){
     g.videoId = 'jvkoFwbfdg0';
+    g.lang = "English";
   } else {
     g.videoId = '4BsubAoO15I';
+    g.lang = "French";
   }
 
   var playBtn = $('#playBtn');
   playBtn.on('click', playFullVideo);
   playBtn.on('click', removeVideoOverlay);
+  playBtn.on('click', function() {
+    ga('send', 'event','video', 'play button clicked', g.lang + 'home page video played');
+  });
 
   $(window).on('resize', function() {
     mobileScreen();
