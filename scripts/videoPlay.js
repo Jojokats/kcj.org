@@ -33,6 +33,16 @@ $(document).ready(function(){
     var pos = $id.offset().top - 80;
     $('body, html').animate({scrollTop: pos}, 1000);
   });
+
+
+  var io = new IntersectionObserver(
+    entries => {
+      console.log(entries);
+    }
+  );
+
+  io.observe($('#newsSec').get(0));
+  io.observe($('#partnersSponsors').get(0));
 });
 
 
