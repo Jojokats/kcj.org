@@ -1,27 +1,4 @@
 var g = {
-<<<<<<< HEAD
-    newsPath: 'news\/',
-    months: {
-        december: [],
-        november: [],
-        october: [],
-        september: [],
-        august: [],
-        july: [],
-        june: [],
-        may: [],
-        april: [],
-        march: [],
-        february: [],
-        january: []
-    }
-};
-
-$(document).ready(function() {
-    readfile(g.newsPath + 'news.json');
-});
-
-=======
     isEnglish: true,
     newsPath: 'news/',
     imgPath: '',
@@ -74,7 +51,6 @@ function translateMonthToFrench(month) {
     return 'Cant translate to french : ' + month;
 }
 
->>>>>>> master
 function readfile(url) {
     $.ajax({
         dataType: "json",
@@ -110,27 +86,6 @@ function success(data, status, xhr) {
     $.each(allNews, function(i, news) {
         if (news.date) {
             date = news.date;
-<<<<<<< HEAD
-
-            dateArr = splitDate(news.date);
-            
-            for(var key in g.months) {
-                if(key === dateArr['month'].toLowerCase().trim()) {
-                    if (news.title) 
-                        title = news.title;
-            
-                    if (news.imageHeader) 
-                        imgPath = news.imageHeader;
-            
-                    if (news.location)
-                        location = news.location;
-                    
-                    if (news.details);
-                        details = news.details;
-
-                    g.months[key].push(createNewRow(imgPath, title, location, date, details));
-                }
-=======
             dateArr = splitDate(date);
 
             var year = dateArr['year'];
@@ -140,7 +95,6 @@ function success(data, status, xhr) {
                 appendMonth(news, g.years[getIndexOfYears(year)].months);
             } else {
                 appendMonth(news, g.years[getIndexOfYears(year)].months);
->>>>>>> master
             }
         }
     });
@@ -148,13 +102,6 @@ function success(data, status, xhr) {
     displayNews();
 }
 
-<<<<<<< HEAD
-function displayNews() {
-    for(var month in g.months) {
-        if(g.months[month].length !== 0) {            
-            var $month = $('<h3 class="text-black text-uppercase">' + month + '</h3>');
-            $('.news').append($month).append(g.months[month]);
-=======
 /**
  * Find the index of g.years object that match the year in the parameter
  * @param {Int} year 
@@ -164,7 +111,6 @@ function getIndexOfYears(year) {
     for(var i=0; i<g.years.length; i++) {
         if(year === g.years[i].year) {
             return i;
->>>>>>> master
         }
     }
     return -1;
@@ -229,17 +175,12 @@ function appendMonth(news, months) {
 
 }
 
-<<<<<<< HEAD
-function splitDate(date) {
-    var date = date.split('-');
-=======
 /**
  * Get an associative array of the month string that has '-' has a separator
  * @param {String} date 
  */
 function splitDate(dateStr) {
     var date = dateStr.split('-');
->>>>>>> master
 
     var dateArr = [];
     dateArr['day'] = date[0];
@@ -249,9 +190,6 @@ function splitDate(dateStr) {
     return dateArr;
 }
 
-<<<<<<< HEAD
-function createNewRow(imgPath, title, location, date, details) {
-=======
 function displayNews() {
     var $allNews = $('#allNews');
     for(var key in g.years) {
@@ -303,7 +241,6 @@ function createMonths(months) {
  * @param {String} details 
  */
 function createNewsRow(imgPath, title, location, date, details) {
->>>>>>> master
     var dateArr = splitDate(date);
     var month = dateArr['month'].toLowerCase();
     if(!g.isEnglish)
