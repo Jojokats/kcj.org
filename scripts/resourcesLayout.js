@@ -51,8 +51,8 @@
     pathAdjust();
   }
   /**
-  * Creates the ul container element where each document within
-  * the arrayOfDocs array.
+  * Creates the list of docs, creating the tags and appending them
+  * acordingly.
   */
   function setDocs(header, arrayOfDocs, subTitle) {
   setDocHeader(header, subTitle);
@@ -65,9 +65,12 @@
       $(li).append(row);
       $(ul).append(li);
     }
-    //appends the fully formed ul element onto the
     $(g.docContainer).append(ul);
   }
+  /**
+  * Creates a single row outof the document property being passed in.
+  * the row is the container where the row will be appended onto.
+  */
   function makeRows(row, doc) {
     //col 8
     var col8 = $("<div></div>").addClass('col-xs-8');
@@ -78,7 +81,6 @@
     $(row).append(col8);
     //col 4
     var pptxClass = doc.link.substring(doc.link.lastIndexOf('.') + 1) == "pptx" ? "resources_link" : "";
-    console.log(doc.link.substring(doc.link.lastIndexOf('.') + 1));
     var col4 = $("<div></div>").addClass('col-xs-4');
     var link = $("<a></a>").addClass('pull-right text-blue ' + pptxClass).attr("target", "_blank");;
     var linkIcon = $("<span></span>").addClass('glyphicon glyphicon-download icon');

@@ -1,0 +1,23 @@
+{
+  "section1": {
+    "title": "in-class",
+    "subsection": ["primary", "secondary"],
+    "block": {
+      "primary": ["../img/resources/Card-Intro.jpg", "../img/resources/Card-Scratch-Projects.jpg", "../img/resources/Card-HTML-Projects.jpg","../img/resources/Card-Python-Projects.jpg"],
+      "secondary": ["../img/resources/Card-Unplugged.jpg", "../img/resources/Card-Activities.jpg"],
+      "blockName": ["intro", "scratch", "html", "python", "unplugged", "activities"]
+    }
+  },
+  "section2": {
+    "title": "workshop projects",
+    "subsection": [""],
+    "block": ["../img/resources/Card-2Hour-Workshop.jpg", "../img/resources/Card-Vibot.png"],
+    "blockName": ["2-hour-workshop", "vibot"]
+  },
+  "section3": {
+    "title": "teacher training handouts",
+    "subsection": [""],
+    "block": ["../img/resources/Card-CompThinking-TeacherTraining.jpg", "../img/resources/CompProgramming-Card.png", "../img/resources/Card-Internet.jpg"],
+    "blockName": ["computational-thinking", "computer-programing", "internet-web"]
+  }
+}
