@@ -9,11 +9,11 @@
     g.count = 0;
     //determine if the site is in french or english
     if(g.lang == "EN") {
-      setUpConnection('../json/resourcesLayout.json');
-      setUpConnection('../json/documents.json');
+      setUpConnection('JSON/resourcesLayout.json');
+      setUpConnection('JSON/documents.json');
     } else if (g.lang == "FR") {
-      setUpConnection('../json/resourcesLayout-fr.json');
-      setUpConnection('../json/documents-fr.json');
+      setUpConnection('../JSON/resourcesLayout-fr.json');
+      setUpConnection('../JSON/documents-fr.json');
     }
     setContent();
   });
