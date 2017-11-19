@@ -1,8 +1,9 @@
 [
     {
-        "title": "Kids Code Jeunesse launches Canadian chapter of International network, Code Club",
-        "location": "Montreal, QC",
+        "title": "Kids Code Jeunesse débute un chapitre canadien sur le réseau international avec Code Club!",
+        "location": "Montréal, QC",
         "date" : "17-September-2017",
+        "imageThumbnail": "img/news/Code Club Launch/CCC_Launch_Thumbnail.png",
         "imageHeader": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
         "images" : [
             "img/news/Code Club Launch/1.JPG",
@@ -17,29 +18,32 @@
         "details" : "cc_launches.html"
     },
     {
-        "title": "Kids Code Jeunesse Annual Report: 2016-2017",
+        "title": "Rapport annuel de Kids Code Jeunesse: 2016-2017",
         "location": "Canada",
         "date" : "15-August-2017",
-        "imageHeader": "img/news/Annual Report 2016-2017/KCJ_AnnualReport_20162017_News.png",
+        "imageThumbnail": "img/news/Annual Report 2016-2017/KCJ_AnnualReport_20162017_Thumbnail_FR.png",
+        "imageHeader": "img/news/Annual Report 2016-2017/KCJ_AnnualReport_20162017_News_FR.png",
         "images" : [
             
         ],
         "details" : "kcj_annual_report.html"
     },
     {
-        "title": "How and Why Kids Code Jeunesse is working to Teach the Teachers",
+        "title": "Comment et pourquoi Kids Code Jeunesse travaille à enseigner aux enseignants",
         "location": "Canada",
         "date" : "1-May-2017",
-        "imageHeader": "img/news/Teacher Training/Teacher_Training_News_EN.png",
+        "imageThumbnail": "img/news/Teacher Training/Teacher_Training_Thumbnail_FR.png",
+        "imageHeader": "img/news/Teacher Training/Teacher_Training_News_FR.png",
         "images" : [
             
         ],
         "details" : "teacher_training.html"
     },
     {
-        "title": "Celebrating Code, Science, and Literature with Science Literacy Week",
+        "title": "Nous célébrons le code informatique, la science et la littérature avec la Semaine de la culture scientifique!",
         "location": "Canada",
         "date" : "18-September-2017",
+        "imageThumbnail": "img/news/Science Literacy Week 2017/SLW_17_Thumbnail.png",
         "imageHeader": "img/news/Science Literacy Week 2017/SLW_Banner_Blog.png",
         "images" : [
             "img/news/Science Literacy Week 2017/SLW_1.jpg",
@@ -54,9 +58,10 @@
         "details" : "science_literacy_2017.html"
     },
     {
-        "title": "Code Club Canada - Astro Pi makes its way to Canada for the first time!",
+        "title": "Code Club Canada - Astro Pi fait son entrée au Canada!",
         "location": "Canada",
         "date" : "01-November-2017",
+        "imageThumbnail": "img/news/Astro Pi 2017/AstroPi_Thumbnail.png",
         "imageHeader": "img/news/Astro Pi 2017/Astro_Pi_Mission_Zero_Banner_Blog.png",
         "images" : [
            
@@ -64,20 +69,24 @@
         "details" : "astro_pi.html"
     },
     {
-        "title": "KCJ & Code MTL - Teaching more than 3,000 kids in Montreal to code!",
-        "location": "Montreal, QC",
+        "title": "KCJ & Code MTL - Enseigner le codage à plus de 3,000 enfants de Montréal!",
+        "location": "Montréal, QC",
         "date" : "12-September-2017",
+        "imageThumbnail": "img/news/Code MTL/CodeMTL_Thumbnail.png",
         "imageHeader": "img/news/Code MTL/KCJ_CodeMTL_Banner_Blog.png",
         "images" : [
-            "img/news/Science Literacy Week 2017/SLW_1.jpg",
-            "img/news/Science Literacy Week 2017/SLW_3.jpg",
-            "img/news/Science Literacy Week 2017/SLW_4.jpg",
-            "img/news/Science Literacy Week 2017/SLW_5.jpg",
-            "img/news/Science Literacy Week 2017/SLW_6.jpg",
-            "img/news/Science Literacy Week 2017/SLW_8.jpg",
-            "img/news/Science Literacy Week 2017/SLW_9.jpg",
-            "img/news/Science Literacy Week 2017/SLW_10.jpg"
         ],
         "details" : "code_mtl.html"
+    },
+    {
+        "title": "Odyssée des sciences: Une semaine complète de STIM!",
+        "location": "Canada",
+        "date" : "12-May-2017",
+        "imageThumbnail": "img/news/Science Odyssey 2017/Science_Odyssey_Thumbnail_FR.png",
+        "imageHeader": "img/news/Science Odyssey 2017/Science_Odyssey_News_FR.png",
+        "images" : [
+            
+        ],
+        "details" : "science_odyssey_2017.html"
     }
 ]

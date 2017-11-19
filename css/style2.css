@@ -482,3 +482,8 @@
 .border-rounded-input {
   border-radius: 5px;
 }
+.raleway-font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
