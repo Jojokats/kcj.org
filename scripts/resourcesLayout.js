@@ -92,7 +92,9 @@ function setDocHeader(header, subTitle) {
   g.docContainer = $("<div></div>").addClass("container padding-top-large");
   var title = $("<h2></h2>").addClass('text-center text-orange text-capitalize').text(header);
   g.backButton = $("<a></a>").addClass("btn btn-blue pull-left back");
-  var span = $("<span></span>").addClass("glyphicon glyphicon-arrow-left").text(' Back');
+  var span = $("<span></span>").addClass("glyphicon glyphicon-arrow-left");
+  var backText = $("<span></span>").addClass("raleway-font").text(' Back');
+    $(span).append(backText);
     $(g.backButton).append(span);
     $(title).append(g.backButton);
     checkSubtitle(subTitle, title);
@@ -110,8 +112,8 @@ function checkSubtitle(subTitle, title) {
     var a = $("<a></a>").addClass('text-blue').text(link).attr('href', subTitle[2]);
     var sub = $("<h4></h4>").addClass('text-center text-capitalize text-black padding-bot').text(start);
     $(sub).append(a);
-    var sub2 = $("<h4></h4>").addClass('text-center text-capitalize text-black padding-bot').text(end);
-    $(sub).append(sub2);
+    // var sub2 = $("<h4></h4>").addClass('text-center text-capitalize text-black').text(end);
+    // $(sub).append(sub2);
     $(title).append(sub);
   }
 }
