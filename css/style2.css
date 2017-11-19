@@ -285,13 +285,11 @@
 }
 .custom-ul-faq {
   color: #3bb2f7;
-  font-size: medium;
+  font-size: large;
   line-height: 200%;
+  margin-left: 2%;
   list-style: square;
   list-style-position: inside;
-}
-.panel {
-  margin-left: 10%;
 }
 .no-bg {
   background: none;
@@ -483,4 +481,9 @@
 }
 .border-rounded-input {
   border-radius: 5px;
+}
+.raleway-font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
 }

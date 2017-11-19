@@ -1,7 +1,7 @@
 [
     {
         "title": "Kids Code Jeunesse débute un chapitre canadien sur le réseau international avec Code Club!",
-        "location": "Montreal, QC",
+        "location": "Montréal, QC",
         "date" : "17-September-2017",
         "imageThumbnail": "img/news/Code Club Launch/CCC_Launch_Thumbnail.png",
         "imageHeader": "img/news/Code Club Launch/CC_Launch_Banner_Blog.png",
@@ -67,6 +67,16 @@
            
         ],
         "details" : "astro_pi.html"
+    },
+    {
+        "title": "KCJ & Code MTL - Enseigner le codage à plus de 3,000 enfants de Montréal!",
+        "location": "Montréal, QC",
+        "date" : "12-September-2017",
+        "imageThumbnail": "img/news/Code MTL/CodeMTL_Thumbnail.png",
+        "imageHeader": "img/news/Code MTL/KCJ_CodeMTL_Banner_Blog.png",
+        "images" : [
+        ],
+        "details" : "code_mtl.html"
     },
     {
         "title": "Odyssée des sciences: Une semaine complète de STIM!",
