@@ -3,7 +3,8 @@ var g = {
     isEnglish: true,
     newsPath: 'news/',
     newsDir: 'news/',
-    imgPath: ''
+    imgPath: '',
+    url: "kidscodejeunesse.org/"
 };
 
 $(document).ready(function() {
@@ -15,10 +16,18 @@ $(document).ready(function() {
         g.imgPath = "../";
         g.newsPath = g.imgPath + 'news/news-fr.json';
         g.newsDir = g.imgPath + 'news/fr/';
+        g.url = "kidscodejeunesse.org/fr/";
     }
     readFile(g.newsPath, 'json', 'GET');    
 });
 
+/**
+ * Read the file from url and invoke the success or error function 
+ * when done or fail
+ * @param {String} url 
+ * @param {String} type 
+ * @param {String} method 
+ */
 function readFile(url, type, method) {
     $.ajax({
         dataType: type,
@@ -43,20 +52,19 @@ function success(data, status, xhr) {
         if (news.details);
             details = news.details;
 
+            
+        // $('meta[property="og:url"]').attr("content", details);
+
         var d = getUrlVars()['d'];
         // console.log(g.newsDir + d);
         if (d && d === details) {
             
             var $lang = $('#language a');
-            // console.log($('#language a'));
             var enLink = $lang.get(0).getAttribute('href') + '?d=' + d;
             var frLink = $lang.get(1).getAttribute('href') + '?d=' + d;
 
             $lang.get(0).setAttribute('href', enLink);
             $lang.get(1).setAttribute('href', frLink);
-            // enLink = enLink.attr('href');
-            // enLink += 'd=' + d;
-            // console.log(enLink);
 
             if (news.title) 
                 title = news.title;
@@ -70,15 +78,22 @@ function success(data, status, xhr) {
             if (news.images && news.images.length !== 0) 
                 images = news.images;
 
-            // console.log("images " + images.length);
             $.get(g.newsDir + d, function(line) {    
                 createImageHeader(imgHeader);           
                 createNewsSection(images, title, date, line);
+
+                $('meta[property="og:url"]').attr("content", g.url + "newsDetail.html?d=" + d);
+                $('meta[property="og:title"').attr("content", title);
+                $('meta[property="og:description"]').attr("content", line.substr(0, 100) + '...')
+                $('meta[property="og:image]').attr("content", g.url + "img/" + imgHeader);
             });
         } 
     });
 }
 
+/**
+ * Get the query string in the url
+ */
 function getUrlVars() {
     var vars = [], hash;
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
@@ -135,6 +150,14 @@ function translateMonthToFrench(month) {
     return 'Cant translate to french : ' + month;
 }
 
+/**
+ * Create a div that contains 2 sides. The left side has date, and the right
+ * has the title and its news detail.
+ * @param {*} images 
+ * @param {*} title 
+ * @param {*} date 
+ * @param {*} body 
+ */
 function createNewsSection(images, title, date, body) {
     var date = date.split('-');
     var day = date[0];
@@ -146,6 +169,13 @@ function createNewsSection(images, title, date, body) {
 
     var $day = $('<h1 class="text-blue text-bold">' + day + '</h1>');
     var $month = $('<h4 class="text-blue text-uppercase">' + month + '</h4>  ');
+    // var $fbBtn = $('<div class="fb-share-button" data-href=' 
+    //         + '"http://kidscodejeunesse.org/newsDetail.html?d=science_literacy_2017.html" '
+    //         + 'data-layout="button_count" data-size="small" data-mobile-iframe="true"> ' 
+    //         + ' <a class="social-links social-links-m" target="_blank" ' 
+    //         + ' href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkidscodejeunesse.org%2FnewsDetail.html%3Fd%3Dscience_literacy_2017.html&amp;src=sdkpreparse">'
+    //         +'<i class="fa fa-facebook bg-darkgray"></i></a></div>');
+    
 
     // Create the date on the left side on the news
     var $leftSide = $('<div class="col-xs-2 text-right"></div>'); 
@@ -165,6 +195,10 @@ function createNewsSection(images, title, date, body) {
     slideImages();
 }
 
+/**
+ * Create images carousel in the bottom
+ * @param {array} images 
+ */
 function createImageSlide(images) {
     if (!images || images.length === 0)
         return;
@@ -201,6 +235,9 @@ function createImageSlide(images) {
     return $carouselDiv;
 }
 
+/**
+ * Slide the images
+ */
 function slideImages() {
     $('.multi-item-carousel').carousel({
         interval: 3500

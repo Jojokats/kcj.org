@@ -7,6 +7,12 @@ $(function() {
   });
 });
 
+/**
+ * If hover, change src of the image to concatenate -Colour.png,
+ * else concatenate -Grey.png
+ * @param {String} img 
+ * @param {boolean} hovered 
+ */
 function hover(img, hovered) {
   var src = img.src.split('/');
   var sponsor = src[src.length - 1];

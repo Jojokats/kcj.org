@@ -10,6 +10,7 @@ $(document).ready(function(){
     g.lang = "French";
   }
 
+  // play the Youtube, hide the overlay, and notify google analytic
   var playBtn = $('#playBtn');
   playBtn.on('click', playFullVideo);
   playBtn.on('click', removeVideoOverlay);
@@ -17,10 +18,12 @@ $(document).ready(function(){
     ga('send', 'event','video', 'play button clicked', g.lang + 'home page video played');
   });
 
+  // call mobileScreen method when resize
   $(window).on('resize', function() {
     mobileScreen();
   }).trigger('resize');
 
+  // Scroll down
   $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
     var id = $(this).attr('href');
@@ -34,7 +37,7 @@ $(document).ready(function(){
     $('body, html').animate({scrollTop: pos}, 1000);
   });
 
-
+  // Add observer to load the image when in view
   var io = new IntersectionObserver(
     entries => {
       console.log(entries);
@@ -45,7 +48,9 @@ $(document).ready(function(){
   io.observe($('#partnersSponsors').get(0));
 });
 
-
+/**
+ * Play youtube background video
+ */
 function onYouTubePlayerAPIReady() {
       g.player = new YT.Player('ytplayer', {
         height: screen.height,
@@ -67,6 +72,9 @@ function onYouTubePlayerAPIReady() {
       });
 }
 
+/**
+ * hide overlay when the screen width is less 600
+ */
 function mobileScreen(){
   var screenWidth = $(window).width();
   var $mobile_hide = $('.mobile-hide');
@@ -84,6 +92,9 @@ function mobileScreen(){
   }
 }
 
+/**
+ * Play the background video
+ */
 function playFullVideo(){
   // $('.bg-empty').hide();
   $('#ytplayer').show();
@@ -93,6 +104,9 @@ function playFullVideo(){
 
 }
 
+/**
+ * Remove the overlay on the video (particals, title, description)
+ */
 function removeVideoOverlay(){
   var overlays = $('.video-overlay');
   for(var i = 0; i < overlays.length; i++){
@@ -100,6 +114,11 @@ function removeVideoOverlay(){
   }
 }
 
+/**
+ * Hide the html elemnt, if true hide, else show
+ * @param {HTMLElement} element 
+ * @param {boolean} hide 
+ */
 function hide(element, hide){
   if(hide){
     element.style.visibility = 'hidden';

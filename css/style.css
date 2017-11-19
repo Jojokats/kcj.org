@@ -1009,6 +1009,9 @@ canvas {
 .min-h-450{
   min-height: 320px;
 }
+.min-h-500{
+  min-height: 500px;
+}
 
 /* centered columns styles */
 .row-centered {
