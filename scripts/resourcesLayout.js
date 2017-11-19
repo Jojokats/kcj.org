@@ -140,50 +140,52 @@ function setVariables(response) {
   g.count++;
 }
 function setContent() {
-  for (var key in g.response) {
-    if (g.response.hasOwnProperty(key)) {
-      var section = $("<div></div>").addClass('container-fluid border-top row-centered padding-bot-medium');
-      var title = $("<h3></h3>").addClass('text-orange text-uppercase text-center padding-bot-small').text(g.response[key].title);
-      $(title).attr("id", g.response[key].title.replace(/ /g, '-'));
-      optionSelect(g.response[key].title);
-      if(g.response[key].subsection != "") {
-        placeSubSections(key, title);
-        $(section).append(title);
-        $(g.main_options).append(section);
-      } else {
-        $(section).append(title);
-        placeBlocks(g.response[key].block, section, g.response[key].blockName);
-        $(g.main_options).append(section);
+  var i = 0;
+  for(key in g.response) {
+    var section = $("<div></div>").addClass('container-fluid border-top row-centered padding-bot-medium');
+    var title = $("<h3></h3>").addClass('text-orange text-uppercase text-center padding-bot-small').text(g.response[key].title);
+    $(title).attr("id", g.response[key].title.replace(/ /g, '-'));
+    optionSelect(g.response[key].title);
+    console.log(g.response[key].title);
+
+    $(section).append(title);
+    var i = 0;
+    for(subKey in g.response[key].subsection) {
+      if (g.response[key].subsection[subKey].title != undefined) {
+        var subTitle = $("<h4></h4>").addClass('text-blue text-center text-uppercase padding-bot-small padding-top-small')
+          .text(g.response[key].subsection[subKey].title);
+        $(section).append(subTitle);
       }
-    }//end of if
-  }// end of for each
-  g.imgBlocks = $('.img');
-}
-function placeSubSections(key, title, index) {
-  g.k = key;
-  var subsection = g.response[key].subsection;
-  var subContainer = $("<div></div>").addClass('row row-centered');
-  for (var i = 0; i < g.response[key].subsection.length; i++) {
-    var subTitle = $("<h4></h4>").addClass('text-blue text-center padding-bot-small padding-top-small').text(g.response[key].subsection[i])
-    $(subContainer).append(subTitle);
-    console.log(g.response[key].block.blockName + "   " + i);
-    var titles = i == 0 ? g.response[key].block.blockName : [g.response[key].block.blockName[4], g.response[key].block.blockName[5]];
-    placeBlocks(g.response[key].block[g.response[key].subsection[i]], subContainer,
-       titles);
-  }
-  $(title).append(subContainer);
-}
-function placeBlocks(block, container, blockName) {
-  for (var i = 0; i < block.length; i++) {
-    var section = $("<div></div>").addClass('col-md-3 col-sm-12 col-centered');
-    var image = $("<img>").addClass("img img-responsive cursor-pointer img-third");
-    $(image).attr("src", block[i]);
-    $(image).attr("id", blockName[i]);
-    $(section).append(image);
-    $(container).append(section);
-    $(image).on('click', showPdfs);
+      placeBlocks(g.response[key].subsection[subKey], section);
+    }
+    $(g.main_options).append(section);
   }
 }
+function placeBlocks(block, container) {
+  var subTitle = $("<h4></h4>").addClass('text-blue text-center padding-bot-small padding-top-small').text()
+
+  for (var i = 0; i < block.images.length; i++) {
+     var section = $("<div></div>").addClass('col-md-3 col-sm-12 col-centered');
+     var image = $("<img>").addClass("img img-responsive cursor-pointer img-third");
+     $(image).attr("src", block.images[i]);
+     $(image).attr("id", block.blockName[i]);
+     $(section).append(image);
+     $(container).append(section);
+     $(image).on('click', showPdfs);
+  }
+}
+
+// function placeBlocks(block, container, blockName) {
+//   for (var i = 0; i < block.length; i++) {
+//     var section = $("<div></div>").addClass('col-md-3 col-sm-12 col-centered');
+//     var image = $("<img>").addClass("img img-responsive cursor-pointer img-third");
+//     $(image).attr("src", block[i]);
+//     $(image).attr("id", blockName[i]);
+//     $(section).append(image);
+//     $(container).append(section);
+//     $(image).on('click', showPdfs);
+//   }
+// }
 
 function pathAdjust() {
   g.links = $('.resources_link');
