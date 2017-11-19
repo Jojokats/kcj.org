@@ -15,42 +15,6 @@ $(function(){
     setUpConnection('../JSON/resourcesLayout-fr.json');
     setUpConnection('../JSON/documents-fr.json');
   }
-<<<<<<< HEAD
-  /**
-  * Creates the list of docs, creating the tags and appending them
-  * acordingly.
-  */
-  function setDocs(header, arrayOfDocs, subTitle) {
-  setDocHeader(header, subTitle);
-  var ul = $("<ul></ul>").addClass('list-group margin-custom-30');
-    for (var key in arrayOfDocs) {
-      var li = $("<li></li>").addClass('list-group-item');
-      var row = $("<div></div>").addClass('row');
-      //make col 8 and col 4
-      makeRows(row, arrayOfDocs[key]);
-      $(li).append(row);
-      $(ul).append(li);
-    }
-    $(g.docContainer).append(ul);
-  }
-  /**
-  * Creates a single row outof the document property being passed in.
-  * the row is the container where the row will be appended onto.
-  */
-  function makeRows(row, doc) {
-    //col 8
-    var col8 = $("<div></div>").addClass('col-xs-8');
-    var docTitle = $("<h4></h4>").addClass('text-heavy').text(doc.title);
-    var description = $("<p></p>").text(doc.description);
-    $(col8).append(docTitle);
-    $(col8).append(description);
-    $(row).append(col8);
-    //col 4
-    var pptxClass = doc.link.substring(doc.link.lastIndexOf('.') + 1) == "pptx" ? "resources_link" : "";
-    var col4 = $("<div></div>").addClass('col-xs-4');
-    var link = $("<a></a>").addClass('pull-right text-blue ' + pptxClass).attr("target", "_blank");;
-    var linkIcon = $("<span></span>").addClass('glyphicon glyphicon-download icon');
-=======
   setContent();
 });
 /**
@@ -118,7 +82,6 @@ function makeRows(row, doc) {
   var col4 = $("<div></div>").addClass('col-xs-4');
   var link = $("<a></a>").addClass('pull-right text-blue ' + pptxClass).attr("target", "_blank");;
   var linkIcon = $("<span></span>").addClass('glyphicon glyphicon-download icon');
->>>>>>> 33d22a072def283057b94f4f85501c9a223286f2
 
   $(link).attr("href", doc.link);
   $(link).append(linkIcon);
@@ -211,18 +174,6 @@ function placeBlocks(block, container) {
      $(image).on('click', showPdfs);
   }
 }
-
-// function placeBlocks(block, container, blockName) {
-//   for (var i = 0; i < block.length; i++) {
-//     var section = $("<div></div>").addClass('col-md-3 col-sm-12 col-centered');
-//     var image = $("<img>").addClass("img img-responsive cursor-pointer img-third");
-//     $(image).attr("src", block[i]);
-//     $(image).attr("id", blockName[i]);
-//     $(section).append(image);
-//     $(container).append(section);
-//     $(image).on('click', showPdfs);
-//   }
-// }
 
 function pathAdjust() {
   g.links = $('.resources_link');
