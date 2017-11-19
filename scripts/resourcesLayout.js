@@ -167,9 +167,11 @@ function placeBlocks(block, container) {
   for (var i = 0; i < block.images.length; i++) {
      var section = $("<div></div>").addClass('col-md-3 col-sm-12 col-centered');
      var image = $("<img>").addClass("img img-responsive cursor-pointer img-third");
+     var title = $("<span></span>").addClass("raleway-font text-center").text(block.blockName[i]);
      $(image).attr("src", block.images[i]);
      $(image).attr("id", block.blockName[i]);
      $(section).append(image);
+     $(section).append(title);
      $(container).append(section);
      $(image).on('click', showPdfs);
   }
