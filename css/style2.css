@@ -285,7 +285,6 @@
 }
 .custom-ul-faq {
   color: #3bb2f7;
-  font-size: large;
   line-height: 200%;
   margin-left: 2%;
   list-style: square;
@@ -308,7 +307,7 @@
    cursor: default;
 }
 .custom-panel-text-title {
-  font-weight: 900;
+  font-weight: normal;
   font-family: 'Raleway', sans-serif;
   line-height: 1.6;
   color: black;
