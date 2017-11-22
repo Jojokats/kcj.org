@@ -87,6 +87,9 @@ strong {
   margin-top: 70px;
 }
 
+.bg-cadetblue {
+  background-color: cadetblue;
+}
 .bg-gray {
   background-color: #e2e2e2;
   color: #463d3d;
