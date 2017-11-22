@@ -10,7 +10,7 @@
 
      "secondary": {
        "title": "Secondaire",
-       "images": ["../img/resources/Card-Unplugged.jpg", "../img/resources/Card-Activities.jpg"],
+       "images": ["../img/resources/Card-Unplugged-FR.jpg", "../img/resources/Card-Activities-FR.jpg"],
        "blockName": ["Activités débranchées", "Activités"]
      }
    }
@@ -19,7 +19,7 @@
     "title": "ATELIERS ET PROJETS",
     "subsection": {
       "worckshops": {
-        "images": ["../img/resources/Card-2Hour-Workshop.jpg", "../img/resources/Card-Vibot.png"],
+        "images": ["../img/resources/2Hour-Workshop-FR.jpg", "../img/resources/Card-Vibot.png"],
         "blockName": ["Ateliers de deux heures", "Projet de Vibot le robot"]
       }
     }
