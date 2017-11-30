@@ -126,7 +126,7 @@ strong {
 
 .bg-empty {
   width: 100%;
-  height: 525px;
+  height: 590px;
 }
 
 .bg-green {
@@ -220,7 +220,7 @@ strong {
 .btn-index:hover {
   width: 90%;
   padding: 10px;
-  background-color: #686561;
+  background-color: #85bfd3;
   color: white;
   border-color: white;
 }
