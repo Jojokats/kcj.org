@@ -18,7 +18,7 @@
           "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Scratch/Scratch_Course_Summary.pdf"
       },
       "doc2":{
-          "title": "Plans de leçons sur Scratch",
+          "title": "Scratch : projet “Tout sur moi” en 8 leçons",
           "description": "Les élèves apprendront à décrire ce qu’est le code, à naviguer sur le site Web de Scratch et à utiliser les ressources de Scratch. Ils développeront leurs compétences en pensée informatique afin d’être des acteurs dans l’univers numérique.",
           "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Scratch/Scratch_Lesson_Plans.pdf"
       }
@@ -45,42 +45,37 @@
       "doc1":{
           "title": "Python Leçon 1",
           "description": "Une introduction aux concepts de base du codage et du langage de programmation Python.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson1.pdf"
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/Python_Lesson_1_FR.pdf"
       },
       "doc2":{
           "title": "Python Leçon 2",
           "description": "Les élèves apprendront à connaître la tortue Python, ainsi que les fonctions, commentaires, erreurs et principales commandes de ce langage au moyen de la discussion et de la pratique.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson2.pdf"
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/Python_Lesson_2_FR.pdf"
       },
       "doc3":{
           "title": "Python Leçon 3",
           "description": "Les élèves apprendront à coder un flocon de neige de base en utilisant les boucles, les variables et les nombres entier au moyen de la discussion et de la pratique.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson3.pdf"
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/Python_Lesson_3_FR.pdf"
       },
       "doc4":{
           "title": "Python Leçon 4",
           "description": "Les élève feront des exercices de codage en créant des flocons de neige au moyen de différentes fonctions et variables.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson4.pdf"
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/Python_Lesson_4_FR.pdf"
       },
       "doc5":{
           "title": "Python Leçon 5",
           "description": "Les élèves apprendront en quoi consiste les conditions et l’entrée utilisateur au moyen de la discussion et de la pratique.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson5.pdf"
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/Python_Lesson_5_FR.pdf"
       },
       "doc6":{
           "title": "Python Leçon 6",
           "description": "Les élèves apprendront en quoi consiste les opérateurs et les listes au moyen de la discussion et de la pratique.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson6.pdf"
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/Python_Lesson_6_FR.pdf"
       },
       "doc7":{
           "title": "Python Leçon 7",
           "description": "Les élèves apprendront en quoi consiste les boucles « while »au moyen de la discussion et de la pratique.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson7.pdf"
-      },
-      "doc8":{
-          "title": "Python Leçon 8",
-          "description": "Les élèves intégreront la logique de jeu, les entrées utilisateurs, les boucles « while » et les nombres entiers aléatoires afin de créer leur propre jeu.",
-          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/KCJ_Python_Lesson8.pdf"
+          "link":"../Resources_pdf/windows/In-Classroom/FR/Primary/Python/Python_Lesson_7_FR.pdf"
       }
     }
   },
