@@ -534,6 +534,10 @@ strong {
   color: #3bb2f7;
 }
 
+.text-green {
+  color: #185b45;
+}
+
 .text-blue-hover:hover {
   color: #2e8bc2;
 }
