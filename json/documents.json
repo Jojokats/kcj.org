@@ -13,28 +13,13 @@
     "title": "scratch",
     "documents":{
       "doc1":{
-          "title": "Scratch Activity #1 (1 hour)",
-          "description": "Introduction to Scratch Animation and the basics of loops and sequences.",
-          "link":"../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Workshop_1_Lets_Move.pdf"
+          "title": "Scratch Course Summary",
+          "description": "A summary of the Scratch Lesson Plans, including core competencies and lesson outlines.",
+          "link":"../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Scratch_Course_Summary.pdf"
       },
       "doc2":{
-        "title": "Scratch Activity #2 (1 hour)",
-        "description": "Introduction to Scratch as a drawing tool and basics of loops, sequences and functions.",
-        "link":"../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Workshop_2_Lets_Draw.pdf"
-    },
-    "doc3":{
-        "title": "Scratch Activity #3 (1 hour)",
-        "description": "Introduction to videogame making and the basic of variables.",
-        "link":"../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Workshop_3_Lets_Play.pdf"
-    },
-    "doc4":{
-        "title": "Scratch Activity #4 (1 hour)",
-        "description": "Introduction to conditional logic by making a chatbot!",
-        "link":"../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Workshop_4_Lets_Talk.pdf"
-    },
-      "doc5":{
-          "title": "Scratch “All About Me” project in 8 lesson plans",
-          "description": "Students will learn the basics of Scratch and develop computational thinking skills across 8 one hour lessons in an “All About Me” project.",
+          "title": "Scratch Lesson Plans",
+          "description": "Students will learn how to describe what is code, how to navigate the Scratch website and how to utilize Scratch resources. They will develop computational thinking skills to actively participate in the digital world.",
           "link":"../Resources_pdf/windows/In-Classroom/EN/Primary/Scratch/Scratch_Lesson_Plans.pdf"
       }
     }
