@@ -1326,7 +1326,7 @@ canvas {
   .content {
     font-family: inherit;
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 0;
     left: 0;
     max-width: 600px;
@@ -1366,7 +1366,7 @@ canvas {
     z-index: 5;
   }
 }
-@media only screen and (min-width: 700px) and (max-width: 1000px) {
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
   .video {
     width: 100%;
     height: auto;
@@ -1380,7 +1380,7 @@ canvas {
   .content {
     font-family: inherit;
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: 0;
     left: 0;
     max-width: 600px;
