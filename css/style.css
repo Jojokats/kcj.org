@@ -412,6 +412,14 @@ strong {
   background-color: #f9a048;
   color: white;
 }
+
+#navbar .text-orange {
+  color: #f9a048;
+}
+
+#navbar .text-orange:hover, #navbar .text-orange .active {
+  color: #ff7b00;
+}
 /*
 #notFound{
   display: none;
