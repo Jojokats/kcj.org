@@ -384,7 +384,8 @@ strong {
   background-color: transparent;
 }
 
-.navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus, .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
+.navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus,
+ .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
   text-decoration: none;
   color: #1f9edd;
   background-color: transparent;
@@ -403,10 +404,17 @@ strong {
   background-color: #1f9edd;
 }
 
+#navbar .nav>.active>.btn-orange{
+  background-color: #f9a048;
+  color: white;
+  border: 1px solid white;
+}
+
 #navbar .btn-orange {
   background-color: white;
   color: #f9a048;
   border: 1px solid #f9a048;
+  padding: 7.5px 12.5px;
 }
 
 #navbar .btn-orange:hover {
@@ -415,13 +423,7 @@ strong {
   border: 1px solid white;
 }
 
-#navbar .text-orange {
-  color: #f9a048;
-}
 
-#navbar .text-orange:hover, #navbar .text-orange .active {
-  color: #ff7b00;
-}
 /*
 #notFound{
   display: none;
