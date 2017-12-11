@@ -404,13 +404,15 @@ strong {
 }
 
 #navbar .btn-orange {
-  color: white;
-  border: none;
+  background-color: white;
+  color: #f9a048;
+  border: 1px solid #f9a048;
 }
 
 #navbar .btn-orange:hover {
   background-color: #f9a048;
   color: white;
+  border: 1px solid white;
 }
 
 #navbar .text-orange {
