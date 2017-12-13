@@ -272,7 +272,7 @@ strong {
 }
 
 .btn-green {
-  background-color: #479946;
+  background-color: #339933;
   color: white;
 }
 
@@ -459,6 +459,10 @@ strong {
   padding-bottom: 25px;
 }
 
+.padding-bot-xs {
+  padding-bottom: 5px;
+}
+
 .padding-bot-s {
   padding-bottom: 15px;
 }
@@ -471,11 +475,22 @@ strong {
   padding-top: 60px;
 }
 
+.padding-top-xl {
+  padding-top: 130px;
+}
 .padding-top-l {
   padding-top: 95px;
 }
+
+.padding-top-l2 {
+  padding-top: 70px;
+}
 .padding-top-m {
   padding-top: 20px;
+}
+
+.padding-top-m2 {
+  padding-top: 60px;
 }
 
 .padding-top-s {
@@ -576,7 +591,7 @@ strong {
 }
 
 .text-darkblue {
-  color: #6fb3c6;
+  color: #86bfd3;
 }
 
 .text-large {
