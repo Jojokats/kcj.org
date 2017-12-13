@@ -79,6 +79,8 @@ function compareDateDsc(first, second) {
 }
 
 function success(data, status, xhr) {
+
+    
     var allNews = data;
 
     allNews.sort(compareDateDsc);

@@ -60,14 +60,11 @@ a:hover, input:hover, button:hover {
   transition: all .3s ease-in-out;*/
 }
 
- button-orange:hover {
+.button-orange:hover {
   border-radius: 5px;
   border-color: 1px solid white;
   color: white;
   background-color: #ff8900;
-
-  /*-webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;*/
 }
 
 a[class^="text-orange"]:hover {
@@ -387,7 +384,8 @@ strong {
   background-color: transparent;
 }
 
-.navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus, .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
+.navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus,
+ .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
   text-decoration: none;
   color: #1f9edd;
   background-color: transparent;
@@ -404,6 +402,25 @@ strong {
 
 .navbar-custom .icon-bar {
   background-color: #1f9edd;
+}
+
+#navbar .nav>.active>.btn-orange{
+  background-color: #f9a048;
+  color: white;
+  border: 1px solid white;
+}
+
+#navbar .btn-orange {
+  background-color: white;
+  color: #f9a048;
+  border: 1px solid #f9a048;
+  padding: 7.5px 12.5px;
+}
+
+#navbar .btn-orange:hover {
+  background-color: #f9a048;
+  color: white;
+  border: 1px solid white;
 }
 
 
