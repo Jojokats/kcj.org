@@ -281,6 +281,15 @@ strong {
   color: white;
 }
 
+.btn-orange-2 {
+  background-color: #ff8900;
+  color: white;
+}
+
+.btn-orange-2:hover {
+  background-color: #f99b3e;
+  color: white;
+}
 .btn-orange {
   background-color: #ff8900;
   color: white;
@@ -512,7 +521,7 @@ strong {
   padding-bottom: 10px;
 }
 .padding-y-m{
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 20px;
 }
 .padding-y-l{
