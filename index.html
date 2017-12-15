@@ -1,4 +1,4 @@
-<!-- Bry Change 2-->
+<!-- Bry Change for conflict-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="KidsCodeJeunesse">
 
-  <title>Insert Canadian Children with Code - Kids Code Jeunesse</title>
+  <title>Inspiring Canadian Children with Code - Kids Code Jeunesse</title>
 
   <link rel="icon" href="img/favicon.ico">
 
@@ -40,7 +40,8 @@
   <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://www.youtube.com/player_api" type="text/javascript"></script>
-  <script src="scripts/videoPlay.js" type="text/javascript"></script>
+  <!-- <script src="scripts/videoPlay.js" type="text/javascript"></script> -->
+  <script src="scripts/learn_more.js" type="text/javascript"></script>
   <script src="scripts/particles.js" type="text/javascript"></script>
   <script src="scripts/sponsors_hover.js" type="text/javascript"></script>
   <script src="scripts/jquery_cookie/jquery.cookie.js"></script>
@@ -48,7 +49,7 @@
   <script src="scripts/newsSec.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body class="bg-cadetblue">
   <div class="navbar-wrapper">
     <nav class="navbar navbar-custom navbar-fixed-top">
       <header id="language" class="bg-gray">
@@ -79,6 +80,7 @@
             <li><a href="support.html">Support</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a class="btn-orange" href="paypal.html">Donate</a></li>
           </ul>
         </div>
       </div>
@@ -91,15 +93,15 @@
     <div class="content video-overlay">
       <div class="mobile-hide">
         <h1>Inspiring and Empowering Canadian Children with Code</h1>
-        <p class="text-s">DISCOVER HOW AND WHY WE’RE MAKING SURE EVERY CHILD HAS THE OPPORTUNITY TO LEARN DIGITAL SKILLS IN THEIR COMMUNITY!
-          <p>
+        <!-- <p class="text-s">DISCOVER HOW AND WHY WE’RE MAKING SURE EVERY CHILD HAS THE OPPORTUNITY TO LEARN DIGITAL SKILLS IN THEIR COMMUNITY!
+          <p> -->
       </div>
-      <a id="playBtn" href="#" class="text-white text-m">
+      <!-- <a id="playBtn" href="#" class="text-white text-m">
         <span class="glyphicon glyphicon-play-circle"></span><br/>
         P L A Y
-      </a>
+      </a> -->
     </div>
-    <div class="learn-more text-white text-center video-overlay mobile-hide">
+    <div class="learn-more text-white text-center">
       <a id="learn-more" href="#helpSec" class="text-white">
         LEARN MORE ABOUT US
         <br>
@@ -108,18 +110,32 @@
     </div>
   </section>
 
-  <div class="video-background video-overlay">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/qkqwN2qclXg?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"
-       frameborder="0" allowfullscreen></iframe>
+  <div class="video-background">
+    <div class="col">
+      <!-- <iframe src="https://www.youtube.com/embed/qkqwN2qclXg?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"
+       frameborder="0" allowfullscreen></iframe> -->
+       <video autoplay loop muted class="video">
+        <source src="../video/TRAILER TRAILER.mp4" type="video/mp4">
+        <source src="../video/TRAILER TRAILER.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </div>
 
+  <!-- Mission-->
+
+  <section id="mission" class="bg-blue padding-small padding-top-m">
+    <!-- <div class="container container-custom"> -->
+      <div class="row">
+        <p class="text-center text-blue text-uppercase text-white text-s">
+          Kids Code Jeunesse is dedicated to building digital skills communities across Canada, inside and outside of the classroom.</p>
+        </div></div>
+  </section>
   <!-- Three columns of text -->
-  <section id="helpSec" class="bg-blue padding">
+  <section id="helpSec" class="bg-sky-blue padding">
     <div class="container max-w-900">
       <div class="row">
-        <h1 class="padding-bot text-white text-center">What can we help you with?</h1>
+        <!-- <h4 class="padding-bot text-white text-center">Kids Code Jeunesse is a Canadian not for profit that builds digital skills communities across the country. We work inside and outside of the classroom to empower kids, teachers, volunteers, and parents to be better thinkers and better creators with code. </h4> -->
         <div class="col-md-4 col-sm-4 padding-top-xs text-center">
           <div class="bg-white border-radius-l padding-y-l fillWidth max-w-320 margin-auto min-h-350">
             <img class="img-circle" src="img/Icon_Learn.gif" alt="Game console picture" width="140" height="140">
@@ -218,11 +234,11 @@
   </section>
 
   <!-- News -->
-  <section class="bg-blue1 padding-big">
+  <section class="bg-white padding-medium">
     <div class="container container-custom">
       <div id="newsImages" class="row">
         <a href="news.html">
-          <h1 id="newsHeader" class="text-center padding-small">news</h1>
+          <h1 id="newsHeader" class="text-center padding-small"><h1 class="text-blue text-center text-uppercase">news</h1></h1><br>
         </a>
       </div>
       <div id="newsSec" class="row">

@@ -1,69 +1,69 @@
 $(document).ready(function(){
-    particlesJS("particles-js", {
+  particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 400,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
-       "color": {
-        "value": ["#fff", "#fff", "#fff", "#fff", "#fff", "#fff"]
+      "color": {
+        "value": "#ffffff"
       },
       "shape": {
-        "type": "circle",
+        "type": "image",
         "stroke": {
-          "width": 0,
-          "color": "#000000"
+          "width": 3,
+          "color": "#fff"
         },
         "polygon": {
-          "nb_sides": 15
+          "nb_sides": 5
         },
         "image": {
-          "src": "img/github.svg",
+          "src": "http://www.dynamicdigital.us/wp-content/uploads/2013/02/starburst_white_300_drop_2.png",
           "width": 100,
           "height": 100
         }
       },
       "opacity": {
-        "value": 0.87,
+        "value": 0.7,
         "random": false,
         "anim": {
           "enable": false,
           "speed": 1,
-          "opacity_min": 0.15,
+          "opacity_min": 0.1,
           "sync": false
         }
       },
       "size": {
-        "value": 3,
-        "random": false,
+        "value": 5,
+        "random": true,
         "anim": {
-          "enable": true,
-          "speed": 2,
-          "size_min": 1.5,
+          "enable": false,
+          "speed": 20,
+          "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
-        "distance": 100,
-        "color": "#e0e0e0",
-        "opacity": 1,
-        "width": 1.2
+        "enable": false,
+        "distance": 50,
+        "color": "#ffffff",
+        "opacity": 0.6,
+        "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 5,
-        "direction": "none",
+        "speed": 3,
+        "direction": "bottom",
         "random": true,
         "straight": false,
         "out_mode": "out",
         "bounce": false,
         "attract": {
-          "enable": false,
-          "rotateX": 600,
+          "enable": true,
+          "rotateX": 300,
           "rotateY": 1200
         }
       }
@@ -73,31 +73,31 @@ $(document).ready(function(){
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "bubble"
+          "mode":  "bubble"
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "repulse"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 100,
+          "distance": 150,
           "line_linked": {
             "opacity": 1
           }
         },
         "bubble": {
-          "distance": 10,
-          "size": 5,
-          "duration": 5,
-          "opacity": 1,
-          "speed": 1
+          "distance": 100,
+          "size": 30,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
         },
         "repulse": {
           "distance": 200,
-          "duration": 0.4
+          "duration": 0.2
         },
         "push": {
           "particles_nb": 4

@@ -138,7 +138,7 @@
   padding-top: 20px;
 }
 .padding-top-medium {
-  padding-top: 25px;
+  padding-top: 40px;
 }
 .padding-top-large {
   padding-top: 30px;
@@ -265,11 +265,12 @@
 }
 .kcj-fund-custom-ul {
   text-align: left;
-  max-width: 480px;
+  max-width: 600px;
+  padding-left: 80px;
+  padding-bottom: 8px;
   list-style-type: circle;
 }
 .kcj-fund-custom-Support-text {
-  text-transform: uppercase;
   padding-top: 10px;
   max-width: 250px;
 }

@@ -60,14 +60,11 @@ a:hover, input:hover, button:hover {
   transition: all .3s ease-in-out;*/
 }
 
- button-orange:hover {
+.button-orange:hover {
   border-radius: 5px;
   border-color: 1px solid white;
   color: white;
   background-color: #ff8900;
-
-  /*-webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;*/
 }
 
 a[class^="text-orange"]:hover {
@@ -87,6 +84,9 @@ strong {
   margin-top: 70px;
 }
 
+.bg-cadetblue {
+  background-color: cadetblue;
+}
 .bg-gray {
   background-color: #e2e2e2;
   color: #463d3d;
@@ -114,6 +114,22 @@ strong {
 
 .bg-blue-grey {
   background-color: #85bfd3;
+  color: white;
+}
+
+.bg-white-skyblue {
+  background-color: white;
+  color: #85bfd3;
+}
+
+.bg-white-orange {
+  background-color: white;
+  color: #ff8900;
+}
+
+.bg-white-blue {
+  background-color: white;
+  color: #3bb2f7;
 }
 
 .bg-white {
@@ -123,7 +139,7 @@ strong {
 
 .bg-empty {
   width: 100%;
-  height: 40%;
+  height: 590px;
 }
 
 .bg-green {
@@ -217,7 +233,7 @@ strong {
 .btn-index:hover {
   width: 90%;
   padding: 10px;
-  background-color: #ff8900;
+  background-color: #85bfd3;
   color: white;
   border-color: white;
 }
@@ -272,7 +288,7 @@ strong {
 }
 
 .btn-green {
-  background-color: #479946;
+  background-color: #339933;
   color: white;
 }
 
@@ -281,6 +297,15 @@ strong {
   color: white;
 }
 
+.btn-orange-2 {
+  background-color: #ff8900;
+  color: white;
+}
+
+.btn-orange-2:hover {
+  background-color: #f99b3e;
+  color: white;
+}
 .btn-orange {
   background-color: #ff8900;
   color: white;
@@ -328,7 +353,7 @@ strong {
   max-height: 450px;
 }
 .min-h-280 {
-  min-height: 280px;
+  min-height: 265px;
 }
 .img-max {
   max-width: 250px;
@@ -384,7 +409,8 @@ strong {
   background-color: transparent;
 }
 
-.navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus, .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
+.navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus,
+ .navbar-custom .nav>.active>a:hover, .navbar-custom .nav>.active>a:focus, .navbar-custom .nav>.open>a {
   text-decoration: none;
   color: #1f9edd;
   background-color: transparent;
@@ -401,6 +427,25 @@ strong {
 
 .navbar-custom .icon-bar {
   background-color: #1f9edd;
+}
+
+#navbar .nav>.active>.btn-orange{
+  background-color: #f9a048;
+  color: white;
+  border: 1px solid white;
+}
+
+#navbar .btn-orange {
+  background-color: white;
+  color: #f9a048;
+  border: 1px solid #f9a048;
+  padding: 7.5px 12.5px;
+}
+
+#navbar .btn-orange:hover {
+  background-color: #f9a048;
+  color: white;
+  border: 1px solid white;
 }
 
 
@@ -439,18 +484,39 @@ strong {
   padding-bottom: 25px;
 }
 
+.padding-bot-xs {
+  padding-bottom: 5px;
+}
+
 .padding-bot-s {
   padding-bottom: 15px;
+}
+
+.padding-bot-m {
+  padding-bottom: 40px;
 }
 
 .padding-top {
   padding-top: 60px;
 }
 
+.padding-top-xl {
+  padding-top: 130px;
+}
 .padding-top-l {
   padding-top: 95px;
 }
 
+.padding-top-l2 {
+  padding-top: 70px;
+}
+.padding-top-m {
+  padding-top: 20px;
+}
+
+.padding-top-m2 {
+  padding-top: 60px;
+}
 
 .padding-top-s {
   padding-top: 15px;
@@ -471,7 +537,7 @@ strong {
   padding-bottom: 10px;
 }
 .padding-y-m{
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 20px;
 }
 .padding-y-l{
@@ -525,6 +591,10 @@ strong {
   color: #3bb2f7;
 }
 
+.text-green {
+  color: #185b45;
+}
+
 .text-blue-hover:hover {
   color: #2e8bc2;
 }
@@ -546,7 +616,7 @@ strong {
 }
 
 .text-darkblue {
-  color: #6fb3c6;
+  color: #86bfd3;
 }
 
 .text-large {
@@ -765,7 +835,9 @@ footer input[type^="email"] {
   height: 50px;
 }
 .learn-more {
-  display: inline-block;
+  position: relative;
+  top: -15%;
+  /* display: inline-block;
   font-size: 16px;
   top: 85%;
   left: 50%;
@@ -777,7 +849,7 @@ footer input[type^="email"] {
   -webkit-transition: color 0.2s ease-out;
   transition: color 0.2s ease-out;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 #video{
   position: relative;
@@ -789,6 +861,12 @@ footer input[type^="email"] {
   transition: height 1s ease;
   background-color: #73ccff;
 }
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
 .video-container {
     /*position: absolute;
     bottom: 0%;
@@ -849,7 +927,7 @@ canvas {
 .content{
   font-family: inherit;
   position: absolute;
-  top: 20%;
+  top: 36%;
   right: 0;
   left: 0;
   max-width: 600px;
@@ -1009,8 +1087,8 @@ canvas {
 .min-h-450{
   min-height: 320px;
 }
-.min-h-500{
-  min-height: 500px;
+.min-h-400{
+  min-height: 400px;
 }
 
 /* centered columns styles */
@@ -1035,11 +1113,11 @@ canvas {
   text-align: right; padding-top: 10px;
 }
 
-/*Forground video*/
+/*Background video*/
 .video-background {
   background: #000;
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
   z-index: -99;
 }
 .video-foreground,
@@ -1293,4 +1371,86 @@ canvas {
 
 .back {
   margin-top: 27px;
+}
+
+@media only screen and (max-width: 500px)  {
+  .video {
+    height: 400px;
+    width: auto;
+  }
+
+  .bg-empty {
+    width: 100%;
+    height: 300px;
+  }
+
+  .content {
+    font-family: inherit;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    max-height: 250px;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    z-index: 5;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  .bg-empty {
+    width: 100%;
+    height: 300px;
+  }
+
+  .content {
+    font-family: inherit;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    max-height: 250px;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    z-index: 5;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  .bg-empty {
+    width: 100%;
+    height: 350px;
+  }
+
+  .content {
+    font-family: inherit;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+    max-width: 600px;
+    max-height: 250px;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    z-index: 5;
+  }
 }
