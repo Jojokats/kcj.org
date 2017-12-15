@@ -21,9 +21,10 @@
   </script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="scripts/particles_white.js" type="text/javascript"></script>
-  <script src="scripts/filter.js" type="text/javascript"></script>
+  <!-- <script src="scripts/filter.js" type="text/javascript"></script> -->
   <script src="scripts/jquery_cookie/jquery.cookie.js"></script>
   <script src="scripts/email_saver.js"></script>
+  <script src="scripts/workshop.js"></script>
 </head>
 
 <body>
@@ -95,343 +96,75 @@
             <label for="type" class="d-inline">Type</label>
             <select id="type" class="form-control text-black">
               <option value="" selected>All</option>
-              <option value="Kids-Workshop">Kids Workshop</option>
-              <option value="Teacher-Training">Teacher Training</option>
+              <option value="kids workshop">Kids Workshop</option>
+              <option value="teacher training">Teacher Training</option>
             </select>
           </div>
           <div class="col-sm-4 padding-x-s form-group text-right">
             <label for="month" class="d-inline">Month</label>
             <select id="month" class="form-control text-black">
-              <option value="" selected>All</option>
-              <option value="january">January</option>
-              <option value="february">February</option>
-              <option value="march">March</option>
-              <option value="april">April</option>
-              <option value="may">May</option>
-              <option value="june">June</option>
-              <option value="july">July</option>
-              <option value="august">August</option>
-              <option value="september">September</option>
-              <option value="october">October</option>
-              <option value="november">November</option>
-              <option value="december">December</option>
+              <option value="0" selected>All</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
             </select>
           </div>
         </div>
-<br><br>
-
       </div>
-<!-- WORKSHOPS -->
+      <!-- WORKSHOPS -->
+      <!-- <div class="row border-top list-item">
+        <div class="col-xs-12 padding">
+          <div>
+            <h4 class="text-blue padding-bot-s font-inherit">Hour of Code - Waterloo</h4>
+            <h5 class="text-orange font-inherit">
+              Type:
+              <span class="text-black type">
+                <span class="kids-workshop"></span>Kids Workshop
+              </span>
+            </h5>
+            <h5 class="text-orange font-inherit">Workshop date:
+              <span class="text-black date"><span class="december">December 5, 2017
+              </span></h5>
+            <h5 class="text-orange font-inherit">
+              Location:
+              <span class="text-black location"> Waterloo, ON
+                <span class="on"></span>
+              </span>
+            </h5>
+          </div>
+          <div>
+            <p class="padding-top-s">
+              <i>“Hour of code started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.”
+              </i><br><br>
+              As part of this year's Hour of Code, Kids Code Jeunesse will be offering free 2-hour coding workshops across Canada! These workshops will invite children to create a simple game with the micro:bit, a fun, interactive, and hands-on pocket-sized, codeable computer that allows you to get creative with code! Explore the world of code and exercise your critical thinking, problem-solving and creativity with us!
+            <br><br>
+            Waterloo - Tuesday, December 5th, 6:30pm - 7:30pm<br><br>
+            
+            Waterloo Public Library - John M. Harper Branch<br>
+            500 Fischer-Hallman Rd N<br>
+            Waterloo, ON N2L 0B1
+            
+              </span></p>
+            <p class="padding-top-s text-blue">To register: 519-886-1310 ext. 310</p>              
+          </div>
+        </div>
+      </div> -->
+      <div id="workshop-item"></div>
 
-<!--Hour of Code Waterloo-->
-
-<a id="waterloo"></a>
-
-<div class="row border-top list-item">
-  <div class="col-xs-12 padding">
-    <h4 class="text-blue padding-bot-s font-inherit">Hour of Code - Waterloo</h4>
-    <h5 class="text-orange font-inherit">
-      Type:
-      <span class="text-black type">
-        <span class="kids-workshop"></span>Kids Workshop
-      </span>
-    </h5>
-    <h5 class="text-orange font-inherit">Workshop date:
-      <span class="text-black date"><span class="december">December 5, 2017
-      </span></h5>
-    <h5 class="text-orange font-inherit">
-      Location:
-      <span class="text-black location"> Waterloo, ON
-        <span class="on"></span>
-      </span>
-    </h5>
-    <p class="padding-top-s">
-      <i>“Hour of code started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.”
-      </i><br><br>
-      As part of this year's Hour of Code, Kids Code Jeunesse will be offering free 2-hour coding workshops across Canada! These workshops will invite children to create a simple game with the micro:bit, a fun, interactive, and hands-on pocket-sized, codeable computer that allows you to get creative with code! Explore the world of code and exercise your critical thinking, problem-solving and creativity with us!
-     <br><br>
-     Waterloo - Tuesday, December 5th, 6:30pm - 7:30pm<br><br>
-     
-     Waterloo Public Library - John M. Harper Branch<br>
-     500 Fischer-Hallman Rd N<br>
-     Waterloo, ON N2L 0B1
-     
-       </span></p>
-    <p class="padding-top-s text-blue">To register: 519-886-1310 ext. 310</p>
-       
-      </div>
-    </div>
-
-<!--Hour of Code Toronto - Ryerson -->
-
-<a id="toronto"></a>
-
-<div class="row border-top list-item">
-  <div class="col-xs-12 padding">
-    <h4 class="text-blue padding-bot-s font-inherit">Hour of Code - Toronto</h4>
-    <h5 class="text-orange font-inherit">
-      Type:
-      <span class="text-black type">
-        <span class="kids-workshop"></span>Kids Workshop
-      </span>
-    </h5>
-    <h5 class="text-orange font-inherit">Workshop date:
-      <span class="text-black date"><span class="december">December 8 & 9, 2017
-      </span></h5>
-    <h5 class="text-orange font-inherit">
-      Location:
-      <span class="text-black location"> Toronto, ON
-        <span class="on"></span>
-      </span>
-    </h5>
-    <p class="padding-top-s">
-      <i>“Hour of code started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.”
-      </i><br><br>
-      As part of this year's Hour of Code, Kids Code Jeunesse will be offering free 2-hour coding workshops across Canada! These workshops will invite children to create a simple game with the micro:bit, a fun, interactive, and hands-on pocket-sized, codeable computer that allows you to get creative with code! Explore the world of code and exercise your critical thinking, problem-solving and creativity with us!
-     <p class="padding-top-s">
-        Toronto - Friday, December 8th, 5:00pm - 7:00pm<br><br>
-         
-         Science Discovery Zone - Ryerson University<br>
-         159 Dalhousie St<br>
-         Toronto, Ontario M5B 2P7
-         
-        </span></p>
-         
-        </span></p>
-        <a class="btn btn-blue d-table margin-left" target="self" href="https://www.eventbrite.com/e/kcj-toronto-microbit-workshop-ages-9-to-12-bring-your-laptop-tickets-40588360880">
-          REGISTER
-        </a><br>
-
-        Toronto - Saturday, December 9th, 12:30pm - 2:30pm<br><br>
-     
-        Toronto Tool Library - St. Clair Branch<br>
-        830 St. Clair Ave West<br>
-        Toronto, ON M6C 1C1
-     
-       </span></p>
-     
-        </span></p>
-        <a class="btn btn-blue d-table margin-left" target="self" href="https://www.eventbrite.com/e/kcj-toronto-microbit-workshop-ages-9-to-12-bring-your-laptop-tickets-40189208003">
-          REGISTER
-        </a>
+      <div id="notFound" class="row border-top text-center">
+        <br><h4 class="text-blue padding-bot-s font-inherit">No results</h4>
       </div>
     </div>
-
-  <!--Hour of Code Quebec-->
-
-<a id="quebec"></a>
-
-<div class="row border-top list-item">
-  <div class="col-xs-12 padding">
-    <h4 class="text-blue padding-bot-s font-inherit">Hour of Code - Quebec City</h4>
-    <h5 class="text-orange font-inherit">
-      Type:
-      <span class="text-black type">
-        <span class="kids-workshop"></span>Kids Workshop
-      </span>
-    </h5>
-    <h5 class="text-orange font-inherit">Workshop date:
-      <span class="text-black date"><span class="december">December 9, 2017
-      </span></h5>
-    <h5 class="text-orange font-inherit">
-      Location:
-      <span class="text-black location"> Quebec City, QC
-        <span class="qc"></span>
-      </span>
-    </h5>
-    <p class="padding-top-s">
-      <i>“Hour of code started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.”
-      </i><br><br>
-      As part of this year's Hour of Code, Kids Code Jeunesse will be offering free 2-hour coding workshops across Canada! These workshops will invite children to create a simple game with the micro:bit, a fun, interactive, and hands-on pocket-sized, codeable computer that allows you to get creative with code! Explore the world of code and exercise your critical thinking, problem-solving and creativity with us!
-     <br><br>
-     Quebec City - Saturday, December 9th, 10:00am - 12:00pm<br><br>
-     
-     Bibliothèque Monique-Corriveau<br>
-     1100 Rte de l'Église<br>
-     Quebec City, QC G1V 3V9     
-       </span></p>
-    <p class="padding-top-s text-blue">To register: 418-641-6277</p>
-       
-      </div>
-    </div>
-
-<!--Hour of Code Montreal-->
-
-<a id="montreal"></a>
-
-<div class="row border-top list-item">
-  <div class="col-xs-12 padding">
-    <h4 class="text-blue padding-bot-s font-inherit">Hour of Code - Montreal</h4>
-    <h5 class="text-orange font-inherit">
-      Type:
-      <span class="text-black type">
-        <span class="kids-workshop"></span>Kids Workshop
-      </span>
-    </h5>
-    <h5 class="text-orange font-inherit">Workshop date:
-      <span class="text-black date"><span class="december">December 9, 2017
-      </span></h5>
-    <h5 class="text-orange font-inherit">
-      Location:
-      <span class="text-black location"> Montreal, QC
-        <span class="qc"></span>
-      </span>
-    </h5>
-    <p class="padding-top-s">
-      <i>“Hour of code started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.”
-      </i><br><br>
-      As part of this year's Hour of Code, Kids Code Jeunesse will be offering free 2-hour coding workshops across Canada! These workshops will invite children to create a simple game with the micro:bit, a fun, interactive, and hands-on pocket-sized, codeable computer that allows you to get creative with code! Explore the world of code and exercise your critical thinking, problem-solving and creativity with us!
-     <br><br>
-     Montreal - Saturday, December 9th, 10:00am - 12:00pm<br><br>
-     
-     Notman House<br>
-     51 Sherbrooke O. 3rd Floor<br>
-    Montreal, QC H2X 1X2
-     
-       </span></p>
-     
-      </span></p>
-      <a class="btn btn-blue d-table margin-left" target="self" href="https://www.eventbrite.com/e/kcj-montreal-microbit-workshop-ages-9-to-12-bring-your-laptop-tickets-39873989175">
-        REGISTER
-      </a><br>
-      </div>
-    </div>
-
-<!--Hour of Code Vancouver-->
-
-<a id="vancouver"></a>
-
-<div class="row border-top list-item">
-  <div class="col-xs-12 padding">
-    <h4 class="text-blue padding-bot-s font-inherit">Hour of Code - Vancouver</h4>
-    <h5 class="text-orange font-inherit">
-      Type:
-      <span class="text-black type">
-        <span class="kids-workshop"></span>Kids Workshop
-      </span>
-    </h5>
-    <h5 class="text-orange font-inherit">Workshop date:
-      <span class="text-black date"><span class="december">December 9, 2017
-      </span></h5>
-    <h5 class="text-orange font-inherit">
-      Location:
-      <span class="text-black location"> North Vancouver, BC
-        <span class="bc"></span>
-      </span>
-    </h5>
-    <p class="padding-top-s">
-      <i>“Hour of code started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.”
-      </i><br><br>
-      As part of this year's Hour of Code, Kids Code Jeunesse will be offering free 2-hour coding workshops across Canada! These workshops will invite children to create a simple game with the micro:bit, a fun, interactive, and hands-on pocket-sized, codeable computer that allows you to get creative with code!
-      <br><br>
-      Explore the world of code and exercise your critical thinking, problem-solving and creativity with us!
-      <br><br>
-      North Vancouver - Saturday, December 9th, 4:00pm - 6:00pm<br><br>
-      
-      Zen Maker Lab<br>
-      275 E 1st St<br>
-      North Vancouver, BC V7L 1B4
-      
-        </span></p>
-        <a class="btn btn-blue d-table margin-left" target="self" href="https://www.eventbrite.com/e/kcj-vancouver-microbit-workshop-ages-9-to-12-bring-your-laptop-tickets-39915979770">
-          REGISTER
-        </a><br>
-      </div>
-    </div>
-
-    <!--Hour of Code Edmonton-->
-
-    <a id="edmonton"></a>
-
-<div class="row border-top list-item">
-  <div class="col-xs-12 padding">
-    <h4 class="text-blue padding-bot-s font-inherit">Hour of Code - Edmonton</h4>
-    <h5 class="text-orange font-inherit">
-      Type:
-      <span class="text-black type">
-        <span class="kids-workshop"></span>Kids Workshop
-      </span>
-    </h5>
-    <h5 class="text-orange font-inherit">Workshop date:
-      <span class="text-black date"><span class="december">December 10, 2017
-      </span></h5>
-    <h5 class="text-orange font-inherit">
-      Location:
-      <span class="text-black location"> Edmonton, AB
-        <span class="ab"></span>
-      </span>
-    </h5>
-    <p class="padding-top-s">
-      <i>“Hour of code started as a one-hour introduction to computer science, designed to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science. It has since become a worldwide effort to celebrate computer science, starting with 1-hour coding activities but expanding to all sorts of community efforts.”
-      </i><br><br>
-      As part of this year's Hour of Code, Kids Code Jeunesse will be offering free 2-hour coding workshops across Canada! These workshops will invite children to create a simple game with the micro:bit, a fun, interactive, and hands-on pocket-sized, codeable computer that allows you to get creative with code! Explore the world of code and exercise your critical thinking, problem-solving and creativity with us!
-      <br><br>
-      Edmonton - Sunday, December 10th, 2:00pm - 4:00pm <br><br>
-      
-      South Edmonton Sejong Multicultural Centre<br>
-      2503 Ellwood Drive Southwest<br>
-      Edmonton, AB T6X 0P7
-        </span></p>
-        <p class="padding-top-s text-blue">Sold Out</p>
-      </div>
-    </div>
-
-    <!--Scratch-->
-
-<a id="montreal"></a>
-
-<div class="row border-top list-item">
-  <div class="col-xs-12 padding">
-    <h4 class="text-blue padding-bot-s font-inherit">Scratch Bootcamp</h4>
-    <h5 class="text-orange font-inherit">
-      Type:
-      <span class="text-black type">
-        <span class="kids-workshop"></span>Kids Workshop
-      </span>
-    </h5>
-    <h5 class="text-orange font-inherit">Workshop date:
-      <span class="text-black date"><span class="december">January 14th to March 4th, 2018
-      </span></h5>
-    <h5 class="text-orange font-inherit">
-      Location:
-      <span class="text-black location"> Montreal, QC
-        <span class="qc"></span>
-      </span>
-    </h5>
-    <p class="padding-top-s">
-      The Scratch Bootcamp is a 6-Part workshop where kids will learn to be creative, solve problems and code in a fun atmosphere. Kids will explore basic notions of Scratch and will learn how to conceptualize their game ideas, master the concepts of games programming and know how to develop a game with advanced components. 
-      <br><br>
-      The workshops are offered on Sundays at 1pm - 3pm from January 14th until March 4th 2018 at the Notman House.
-     <br>
-     <p class="padding-top-s text-green"><b>* Want to give this bootcamp as a gift? * </p></b>
-     Choose our $3 "gift packaging" option and you will receive a festive enveloppe with KCJ goodies and a personalized official ticket valid for all six workshops. A perfect gift for your child this holiday season!<br><br>
-
-     <i>Workshop dates: January 14, January 21, February 4, February 11, Feburary 25, March 4</i><br><br>
-
-     
-     
-     Notman House<br>
-     51 Sherbrooke O. 3rd Floor<br>
-    Montreal, QC H2X 1X2
-     
-       </span></p>
-     
-      </span></p>
-      <a class="btn btn-blue d-table margin-left" target="self" href="https://www.eventbrite.com/e/kcj-montreal-scratch-bootcamp-bring-your-laptop-age-8-12-eng-tickets-40664416364">
-        REGISTER
-      </a><br>
-      </div>
-    </div>
-
-
-    <div id="notFound" class="row border-top list-item text-center">
-      <br><h4 class="text-blue padding-bot-s font-inherit">No results</h4>
-    </div>
-  </div>
-
-</div>
-</div>
-</section>
+  </section>
 
     <!-- <section id="endfooter" class="bg-sky">
       <p class="text-white">&copy;Kids Code Jeunesse | All Right Reserved</p>
