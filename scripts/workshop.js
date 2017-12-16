@@ -1,28 +1,31 @@
 var g = {
-    path: "./",
-    file: "workshop/workshop_en.json",
+    path: "./workshop/",
+    file: "workshop_en.json",
     type: "Type",
     date: "Workshop date",
     location: "location",
-    dir: "workshop/en/",
-    locale: 'en-CA'
+    dir: "en/",
+    locale: 'en-ca',
+    provinceFile: 'provinces_en.json'
 };
 
 $(document).ready(function() {
     if($('#language .active').text() === 'FR') {
-        g.path = "../";
-        g.file = "workshop/workshop_fr.json";
+        g.path = "../workshop/";
+        g.file = "workshop_fr.json";
         g.type = "Type d'atelier",
         g.date = "Date",
         g.location = "Lieu"
-        g.dir = "workshop/fr/";
+        g.dir = "fr/";
         g.locale = 'fr-ca';
+        g.provinceFile = 'provinces_fr.json';
     } 
     readfile(g.path + g.file);
 
     g.$province = $('#province');
-    g.$province.on('change', filter);
-  
+    g.$province.on('change', filter);  
+    fillProvinces();
+
     g.$type = $('#type');
     g.$type.on('change', filter);
   
@@ -32,6 +35,23 @@ $(document).ready(function() {
     g.$notFound = $('#notFound');
 });
 
+/**
+ * Fill the drop-down list of the province with the province 
+ * json file of either English or French
+ */
+function fillProvinces() {
+    $.get(g.path + g.provinceFile, function(data) {
+        var options = g.$province.prop('options');
+        for(var key in data) {
+            options[options.length] = new Option(data[key], key);
+        }
+    });
+}
+
+/**
+ * When there is a change event, read the json file and update
+ * the view
+ */
 function filter() {
     readfile(g.path + g.file);
 }
@@ -51,11 +71,9 @@ function error(jqXHR, textStatus, errorThrown) {
 }
 
 function success(data, status, xhr) { 
-    // console.log(provinceSelected);
     var title, type, date, location, detail;   
 
     var $workshopItem = $('#workshop-item');
-    // console.log($workshopItem);
     var $workshop = $('<div id="workshop-item"></div>');
     var allWorkshop = data;
 
@@ -92,20 +110,24 @@ function success(data, status, xhr) {
                         var workshopSec = createWorkshopSec(title, type, date, location, line);
                         $workshop.append(workshopSec);
                         hide(g.$notFound[0], true);
-                        // g.$notFound.toggleClass('hidden');
                     } else {
                         hide(g.$notFound[0], false);
-                        // g.$notFound.toggleClass('hidden');
                     }
                 });  
             }      
         }
     });
 
-    console.log($workshop);  
     $workshopItem.replaceWith($workshop);
 }
 
+/**
+ * Check if the province, type and date match the filter.
+ * 
+ * @param {String} province 
+ * @param {String} type 
+ * @param {String} date 
+ */
 function isMatchFilter(province, type, date) {
     var provinceSelected = g.$province.children()[g.$province.prop('selectedIndex')].value.toUpperCase().trim();
     var typeSelected = g.$type.children()[g.$type.prop('selectedIndex')].value.toUpperCase().trim();
@@ -128,6 +150,15 @@ function isMatchFilter(province, type, date) {
     return true;
 }
 
+/**
+ * Create a row of a workshop
+ * 
+ * @param {*} title 
+ * @param {*} type 
+ * @param {*} date 
+ * @param {*} location 
+ * @param {*} detail 
+ */
 function createWorkshopSec(title, type, date, location, detail) {
     var $row = $('<div class="row border-top list-item"></div>');
     var $col = $('<div class="col-xs-12 padding"></div>');
@@ -139,6 +170,16 @@ function createWorkshopSec(title, type, date, location, detail) {
     return $row;
 }
 
+/**
+ * Create a div that contains the top part of each workshop. The top part 
+ * has titile, type, date and location. Type, Date and location are changing
+ * based on whether English or French.
+ * 
+ * @param {String} title 
+ * @param {String} type 
+ * @param {String} date 
+ * @param {String} location 
+ */
 function createWorkshopHead(title, type, date, location) {
     var $title = $('<h4 class="text-blue padding-bot-s font-inherit">' + title + '</h4>');
     var $type = $('<h5 class="text-orange font-inherit">' + g.type + ' : <span class="text-black">' + type + '</span></h5>');
@@ -153,6 +194,12 @@ function createWorkshopHead(title, type, date, location) {
     return $div;
 }
 
+/**
+ * Create a div that contains the details.
+ * 
+ * @param {String} details - the body of each workshop section. This is everything
+ *                      below location
+ */
 function createWorkshopDetail(details) {
     var $div = $('<div></div>');
     $div.append(details);
@@ -173,39 +220,11 @@ function compareDateAsc(first, second) {
 }
 
 /**
- * Get the name of the month base of the month number
- * @param {int} monthNum 
+ * Hide or unhide the element
+ * 
+ * @param {htmlElement} element 
+ * @param {Boolean} hide 
  */
-function translateMonthToFrench(month) {    
-    switch(month) {
-        case 'january':
-            return 'janvier';
-        case 'february':
-            return 'février';
-        case 'march':
-            return 'mars';
-        case 'april':
-            return 'avril';
-        case 'may':
-            return 'mai';
-        case 'june':
-            return 'juin';
-        case 'july':
-            return 'juillet';
-        case 'august':
-            return 'août';
-        case 'september':
-            return 'septembre';
-        case 'october':
-            return 'octobre';
-        case 'november':
-            return 'novembre';
-        case 'december':
-            return 'decembre';
-    }
-    return 'Cant translate to french : ' + month;
-}
-
 function hide(element, hide){
     if(hide){
       element.style.display = 'none';
