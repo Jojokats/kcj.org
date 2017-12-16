@@ -87,7 +87,7 @@ function success(data, status, xhr) {
 
     $.each(allWorkshop, function(i, workshop) {
         var currentDate = new Date();
-        if (workshop.date.from && currentDate <= new Date(workshop.date.from)) {
+        if (workshop.date.to && currentDate <= new Date(workshop.date.to)) {
             if(workshop.details) {
                 $.get(g.path + g.dir + workshop.details, function(line) {    
                     if(workshop.title)
