@@ -541,7 +541,7 @@
   background-color: white;
   color: #ff8900;
   border-color: #ff8900;
-  
+
   border-radius: 12px;
 }
 
@@ -552,7 +552,11 @@
   color: white;
   border-color: white;
 }
-
+.logo-img-index {
+  padding-top: 40px;
+  height: 25%;
+  width: 25%;
+}
 
 
 .flip-card {
