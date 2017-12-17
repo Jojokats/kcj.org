@@ -106,7 +106,7 @@ function success(data, status, xhr) {
                     if(workshop.location)
                         location = workshop.location.city + ', ' + workshop.location.province;
                         
-                    if(isMatchFilter(workshop.location.province, type, workshop.date.from)) {
+                    if(isMatchFilter(workshop.location.province, type, workshop.date)) {
                         var workshopSec = createWorkshopSec(title, type, date, location, line);
                         $workshop.append(workshopSec);
                         hide(g.$notFound[0], true);
@@ -136,7 +136,9 @@ function isMatchFilter(province, type, date) {
 
     province = province.toUpperCase().trim();
     type = type.toUpperCase().trim();
-    var month = new Date(date).getMonth() + 1;
+
+    var from = new Date(date.from).getMonth() + 1;
+    var to = new Date(date.to).getMonth() + 1;
 
     if (provinceSelected !== '' && provinceSelected !== province)
         return false;
@@ -144,7 +146,9 @@ function isMatchFilter(province, type, date) {
     if (typeSelected !== '' && typeSelected !== type)
         return false;
     
-    if (monthSelected !== 0 && monthSelected !== month)
+    // if the selected month not between date.from and date.to, and is not all,
+    // then it doesn't match
+    if (monthSelected !== 0 && (monthSelected < from || monthSelected > to))
         return false;
 
     return true;
