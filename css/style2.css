@@ -122,6 +122,9 @@
 .text-thin {
   font-weight: normal;
 }
+.margin-bottom-xl {
+  margin-bottom: 100px;
+}
 .padding-medium {
   padding: 25px;
 }
@@ -502,24 +505,108 @@
   margin-top: 50px;
 }
 
+.card-size {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 400px;
+}
+
 
 
 .card {
+  border-radius: 0 0 12px 12px ;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 40%;
-  border-radius: 5px;
 
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card-img {
-    border-radius: 5px 5px 0 0;
+    border-radius: 12px 12px 0 0;
+}
+.card-text-size {
+  height: 110px;
+  padding: 2%;
+}
+.card-btns-container {
+    bottom: 0;
+    width: 100%;
+}
+.btn-store {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+  min-width: 230px;
+  padding: 10px 0px;
+  background-color: white;
+  color: #ff8900;
+  border-color: #ff8900;
+
+  border-radius: 12px;
 }
 
-.card-container {
-    padding: 2px 16px;
+.btn-store:hover {
+  width: 90%;
+  padding: 10px;
+  background-color: #ff8900;
+  color: white;
+  border-color: white;
+}
+.logo-img-index {
+  padding-top: 40px;
+  height: 25%;
+  width: 25%;
+}
+
+
+.flip-card {
+  position: absolute;
+  left: 80%;
+  margin-top: 2%;
+  padding: 5px;
+}
+.flip-card:hover {
+  cursor: pointer;
+  color: #3bb2f7;
+}
+
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+	transform-style: preserve-3d;
+}
+	/*  UPDATED! flip the pane when hovered */
+	.flip-container:hover .back {
+		transform: rotateY(0deg);
+	}
+	.flip-container:hover .front {
+	    transform: rotateY(180deg);
+	}
+
+
+
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	transition: .95s;
+	transform-style: preserve-3d;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(-180deg);
 }
