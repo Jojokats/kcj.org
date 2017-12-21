@@ -89,6 +89,34 @@
             
         ],
         "details" : "science_odyssey_2017.html"
+    },
+    {
+        "title": "Kids Code Jeunesse welcomes a new Operations Director",
+        "location": "Canada",
+        "date" : "21-December-2017",
+        "imageThumbnail": "img/news/Team Announcements/Indra_Thumbnail.png",
+        "imageHeader": "img/news/Team Announcements/Indra_Banner_Blog_ENFR.png",
+        "images" : [
+            
+        ],
+        "details" : "indra_announcement.html"
+    },
+    {
+        "title": "Celebrating Hour of Code one micro:bit at a time.",
+        "location": "Montreal, Toronto, Vancouver, Edmonton, Quebec City and Waterloo",
+        "date" : "4-December-2017",
+        "imageThumbnail": "img/news/Hour of Code 2017/Hour_of_Code_Thumbnail.png",
+        "imageHeader": "img/news/Hour of Code 2017/Hour_of_Code_Banner_Blog.png",
+        "images" : [
+            "img/news/Hour of Code 2017/HoC_2017_Montreal_1.JPG",
+            "img/news/Hour of Code 2017/HoC_2017_Toronto_1.jpg",
+            "img/news/Hour of Code 2017/HoC_BC_1.png",
+            "img/news/Hour of Code 2017/HoC_MTL_10.JPG",
+            "img/news/Hour of Code 2017/HoC_MTL_2.JPG",
+            "img/news/Hour of Code 2017/HoC_MTL_2.png"            
+            
+        ],
+        "details" : "hour_of_code_2017.html"
     }
 ]
 
