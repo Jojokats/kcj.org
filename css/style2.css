@@ -504,6 +504,9 @@
 .margin-top-l {
   margin-top: 50px;
 }
+.kcj-fund-card {
+  min-height: 230px;
+}
 
 .card-size {
   margin-left: 20px;
