@@ -88,5 +88,16 @@
             
         ],
         "details" : "science_odyssey_2017.html"
+    },
+    {
+        "title": "Kids Code Jeunesse accueille une nouvelle directrice des opérations",
+        "location": "Canada",
+        "date" : "21-December-2017",
+        "imageThumbnail": "img/news/Team Announcements/Indra_Thumbnail.png",
+        "imageHeader": "img/news/Team Announcements/Indra_Banner_Blog_ENFR.png",
+        "images" : [
+            
+        ],
+        "details" : "indra_announcement.html"
     }
 ]
