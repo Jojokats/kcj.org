@@ -99,5 +99,21 @@
             
         ],
         "details" : "indra_announcement.html"
+    },
+    {
+        "title": "Célébrons une Heure de Code un micro:bit à la fois.",
+        "location": "Montréal, Toronto, Vancouver, Edmonton, Québec et Waterloo",
+        "date" : "04-December-2017",
+        "imageThumbnail": "img/news/Hour of Code 2017/Hour_of_Code_Thumbnail.png",
+        "imageHeader": "img/news/Hour of Code 2017/Hour_of_Code_Banner_Blog.png",
+        "images" : [
+            "img/news/Hour of Code 2017/HoC_2017_Montreal_1.JPG",
+            "img/news/Hour of Code 2017/HoC_2017_Toronto_1.jpg",
+            "img/news/Hour of Code 2017/HoC_BC_1.png",
+            "img/news/Hour of Code 2017/HoC_MTL_10.JPG",
+            "img/news/Hour of Code 2017/HoC_MTL_2.JPG",
+            "img/news/Hour of Code 2017/HoC_MTL_2.png" 
+        ],
+        "details" : "hour_of_code_2017.html"
     }
 ]
