@@ -91,20 +91,19 @@ function makeRows(row, doc) {
 function setDocHeader(header, subTitle) {
   g.docContainer = $("<div></div>").addClass("container padding-top-large");
   var title = $("<h2></h2>").addClass('text-center text-orange text-capitalize').text(header);
-  g.backButton = $("<a></a>").addClass("btn btn-blue pull-left back");
   var span = $("<span></span>").addClass("glyphicon glyphicon-arrow-left");
-  var backText = $("<span></span>").addClass("raleway-font").text(' Back');
-    $(span).append(backText);
-    $(g.backButton).append(span);
-    $(title).append(g.backButton);
-    checkSubtitle(subTitle, title);
-    $(g.docContainer).append(title);
-    $(g.body).append(g.docContainer);
-    $(g.backButton).on('click', backToMenue);
+  var backText = $("<span></span>").addClass("raleway-font").text('Back');
+  var button = $("<button></button>").addClass("pull-left btn btn-blue");
+  $(span).append(backText);
+  $(button).append(span);
+  $(title).append(button);
+  checkSubtitle(subTitle, title);
+  $(g.docContainer).append(title);
+  $(g.body).append(g.docContainer);
+  $(button).on('click', backToMenue);
 }
 function checkSubtitle(subTitle, title) {
   if(subTitle != "") {
-
     var start = subTitle[0].substring(0, subTitle[0].indexOf(subTitle[1]));
     var end = subTitle[0].substring(subTitle[0].indexOf(subTitle[1]) + subTitle[1].length + 1);
     var link = subTitle[1];
