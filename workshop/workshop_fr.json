@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Bootcamp de Scratch",
+        "type": "Atelier pour enfants",
+        "location": {
+            "city": "Waterloo",
+            "province": "ON"
+        },
+        "date" : {
+            "from": "14-Janaury-2018",
+            "to": "4-March-2018"
+        },
+        "details" : "scratch_bootcamp.html"
+    }, 
+    {
+        "title": "Une Heure de Code - Toronto",
+        "type": "Atelier pour enfants",
+        "location": {
+            "city": "Toronto",
+            "province": "ON"
+        },
+        "date" : {
+            "from": "8-December-2017",
+            "to": "9-December-2017"
+        },
+        "details" : "hour_of_code_toronto.html"
+    }, 
+    {
+        "title": "Hour of Code - Quecbec",
+        "type": "Atelier pour enfants",
+        "location": {
+            "city": "Quebec",
+            "province": "QC"
+        },
+        "date" : {
+            "from": "9-December-2017",
+            "to": "9-December-2017"
+        },
+        "details" : "hour_of_code_quecbec.html"
+    }
+]
