@@ -71,7 +71,7 @@ function error(jqXHR, textStatus, errorThrown) {
  * @param {String} first - first date
  * @param {String} second - second date
  */
-function compareDateDsc(first, second) {
+function compareDateAsc(first, second) {
     var firstDate = new Date(first.date);
     var secondDate = new Date(second.date);
 
@@ -83,7 +83,7 @@ function success(data, status, xhr) {
     
     var allNews = data;
 
-    allNews.sort(compareDateDsc);
+    allNews.sort(compareDateAsc);
 
     $.each(allNews, function(i, news) {
         if (news.date) {

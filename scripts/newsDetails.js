@@ -81,11 +81,6 @@ function success(data, status, xhr) {
             $.get(g.newsDir + d, function(line) {    
                 createImageHeader(imgHeader);           
                 createNewsSection(images, title, date, line);
-
-                $('meta[property="og:url"]').attr("content", g.url + "newsDetail.html?d=" + d);
-                $('meta[property="og:title"').attr("content", title);
-                $('meta[property="og:description"]').attr("content", line.substr(0, 100) + '...')
-                $('meta[property="og:image]').attr("content", g.url + "img/" + imgHeader);
             });
         } 
     });
