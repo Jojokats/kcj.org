@@ -24,6 +24,23 @@
   <script src="scripts/jquery_cookie/jquery.cookie.js"></script>
   <script src="scripts/email_saver.js"></script>
   <script src="scripts/sizing_adjusment.js"></script>
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1860770637330020');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+  <img height="1" width="1" src="https://www.facebook.com/tr?id=1860770637330020&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 <body>
   <div class="navbar-wrapper">
@@ -95,7 +112,7 @@
   <section class="padding-bot-xl" id="our_team"></section>
   <section>
       <h3 id="team" class="text-center text-white text-uppercase bg-sky-blue padding">Our Team</h3><br>
-    <div class="container container-custom padding">  
+    <div class="container container-custom padding">
     	<div class="row">
         <div class="col-sm-4 col-xs-6 text-center min-h-250">
           <img class="img img-responsive margin-auto" src="img/teams/Kate_Portrait.jpg" width="140" height="140"/>
