@@ -182,6 +182,10 @@
 .possition-relitve {
   position: relative;
 }
+.index-header-fontsize {
+  font-size: 65px;
+  font-weight: bold;
+}
 .possition-relitve-right {
     position: absolute;
     top: 55%;
@@ -223,12 +227,23 @@
 }
 .margin-top-half {
   position: absolute;
-  top: 45%;
+  top: 10%;
 }
 .margin-top-half-2 {
   position: absolute;
-  right: 2%;
-  top: 45%;
+  top: 25%;
+  right: 0;
+}
+.index-blurb-padding {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.padding-s {
+  padding: 2%;
+}
+.margin-top-half-3 {
+  position: absolute;
+  top: 25%;
 }
 .padding-sides-medium {
   padding-left: 25px;
@@ -494,35 +509,49 @@
 .d-inline {
   display: inline;
 }
-.index-li-inline-orange a {
+.index-pading-top-bot {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.custom-border-orange-disck {
   border: solid;
   border-color: #ff8900;
   color: #ff8900;
-  border-width: 2px;
-  padding: 7px;
+  border-width: thin;
+  padding: 10px;
+  margin-left: 1%;
   border-radius: 9px;
-  margin: 1%;
 }
-.index-li-inline-orange:hover a {
+.custom-border-orange-disck:hover {
+  border: solid;
+  text-decoration: none;
+  border-radius: 9px;
   background-color: #ff8900;
   color: white;
-  padding: 7px;
-  color: white;
+  padding: 10px;
+  margin: none;
 }
-.index-li-inline-blue a {
+.padding-right-s {
+  padding-right: 15px;
+}
+.custom-border-green-disck {
   border: solid;
-  border-color: #3bb2f7;
-  color: #3bb2f7;
-  border-width: 2px;
-  padding: 7px;
+  border-color: #339933;
+  color: #339933;
+  border-width: thin;
+  padding: 10px;
+  margin-left: 1%;
   border-radius: 9px;
-  margin: 1%;
 }
-.index-li-inline-blue:hover a {
-  background-color: #3bb2f7;
+.custom-border-green-disck:hover {
+  border: solid;
+  text-decoration: none;
+  border-radius: 9px;
+  background-color: #339933;
   color: white;
-  padding: 7px;
-  color: white;
+  padding: 10px;
+  margin: none;
 }
 .custom-border-blue-disck {
   padding: 10px;
