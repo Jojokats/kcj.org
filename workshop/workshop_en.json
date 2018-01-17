@@ -1,15 +1,41 @@
 [
-    // {
-    //     "title": "Scratch Bootcamp (French)",
-    //     "type": "Kids Workshop",
-    //     "location": {
-    //         "city": "Montreal",
-    //         "province": "QC"
-    //     },
-    //     "date" : {
-    //         "from": "14-Janaury-2018",
-    //         "to": "4-March-2018"
-    //     },
-    //     "details" : "scratch_bootcamp.html"
-    // }
+    {
+        "title": "Intro to Coding and Computational Thinking for Educators (EN + FR)",
+        "type": "Teacher Training",
+        "location": {
+            "city": "Montreal",
+            "province": "QC"
+        },
+        "date" : {
+            "from": "17-February-2018",
+            "to": ""
+        },
+        "details" : "kcj_lhl_pilot_mtl.html"
+    },
+    {
+        "title": "Intro to Coding and Computational Thinking for Educators",
+        "type": "Teacher Training",
+        "location": {
+            "city": "Toronto",
+            "province": "ON"
+        },
+        "date" : {
+            "from": "10-February-2018",
+            "to": ""
+        },
+        "details" : "kcj_lhl_pilot_to.html"
+    },
+    {
+        "title": "Intro to Coding and Computational Thinking for Educators",
+        "type": "Teacher Training",
+        "location": {
+            "city": "Vancouver",
+            "province": "BC"
+        },
+        "date" : {
+            "from": "24-February-2018",
+            "to": ""
+        },
+        "details" : "kcj_lhl_pilot_van.html"
+    }
 ]
