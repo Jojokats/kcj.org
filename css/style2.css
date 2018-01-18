@@ -532,6 +532,26 @@
   padding: 10px;
   margin: none;
 }
+
+.custom-border-green-disck {
+  border: solid;
+  border-color: #339933;
+  color: #339933;
+  border-width: thin;
+  padding: 10px;
+  margin-left: 1%;
+  border-radius: 9px;
+}
+
+.custom-border-green-disck:hover {
+  border: solid;
+  text-decoration: none;
+  border-radius: 9px;
+  background-color: #339933;
+  color: white;
+  padding: 10px;
+  margin: none;
+}
 .padding-right-s {
   padding-right: 15px;
 }
