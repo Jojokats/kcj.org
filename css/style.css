@@ -473,6 +473,9 @@ strong {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .collapse.in{
+  		display:block !important;
+	}
 }
 /*
 #notFound{
@@ -1505,3 +1508,4 @@ canvas {
   }
 }
 @media only screen and (min-width: 1200px) { .content {top: 33%;}}
+
