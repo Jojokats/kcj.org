@@ -456,7 +456,7 @@ strong {
   border: 1px solid white;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1100px) {
     .pull-left-100, .pull-right-100 {
       left: 0;
       right: 0;
