@@ -1390,8 +1390,8 @@ canvas {
   text-align: left;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -12%);
-  -ms-transform: translate(-50%, -12%);
+  transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
   text-shadow: 2px 2px black;
 }
 
