@@ -359,6 +359,14 @@ strong {
   max-width: 250px;
   max-height: auto;
 }
+.pull-left-100 {
+  position: relative;
+  left: -100px;
+}
+.pull-right-100 {
+  position: relative;
+  right: -100px;
+}
 
 .line-H-40px {
   line-height: 40px;
@@ -449,6 +457,11 @@ strong {
 }
 
 @media (max-width: 990px) {
+    .pull-left-100, .pull-right-100 {
+      left: 0;
+      right: 0;
+    }
+
     .navbar-header {
         float: none;
     }
