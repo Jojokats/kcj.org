@@ -495,7 +495,9 @@ strong {
 .padding-bot-m {
   padding-bottom: 40px;
 }
-
+.padding-bot-l {
+  padding-bottom: 60px;
+}
 .padding-top {
   padding-top: 60px;
 }

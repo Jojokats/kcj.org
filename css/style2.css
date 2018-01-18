@@ -136,6 +136,9 @@
 .padding-large {
   padding: 30px;;
 }
+.padding-xxl{
+  padding: 95px;
+}
 .padding-top-xs {
   padding-top: 10px;
 }
@@ -228,11 +231,12 @@
 .margin-top-half {
   position: absolute;
   top: 10%;
+  right: -50px;
 }
 .margin-top-half-2 {
   position: absolute;
   top: 25%;
-  right: 0;
+  right: -50px;
 }
 .index-blurb-padding {
   padding-left: 15%;
@@ -645,6 +649,27 @@
 .card-img {
     border-radius: 12px 12px 0 0;
 }
+
+
+
+
+.card-cancode {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card-cancode:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container-cancode {
+    padding: 2px 16px;
+}
+
+
+
+
+
 .card-text-size {
   height: 110px;
   padding: 2%;
