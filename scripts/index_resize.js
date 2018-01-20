@@ -1,23 +1,22 @@
-var g = {};
 $(document).ready(function() {
+  // Check if element is scrolled into view
+  function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
 
-  g.elements = $(".toggle-padding");
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
 
-  checkwindowSize();
-  $(window).resize(function(){
-    checkwindowSize();
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+  }
+  // If element is scrolled into view, fade it in
+  $(window).scroll(function() {
+
+    $('.scroll-animations .animated').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).removeClass("o-hide");
+        $(this).addClass('fadeInDown');
+      }
+    });
   });
 });
-function checkwindowSize (){
-  if($(window).width() < 950){
-    for (var i = 0; i < g.elements.length; i++) {
-      $(g.elements[i]).removeClass( "padding-top-l" );
-    }
-
-  } else if ($(window).width() > 950 ) {
-    for (var i = 0; i < g.elements.length; i++) {
-      $(g.elements[i]).addClass( "padding-top-l" );
-    }
-
-  }
-}
