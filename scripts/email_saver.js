@@ -4,6 +4,7 @@
 * out the form. The coocki is used for them not to input ther email once again.
 */
 $(document).ready(function() {
+
   var btn = $(".submit_email");
   var lang = document.getElementById("language").getElementsByClassName("active")[0].children[0].innerHTML;
   //on submit the email within the input field is checked if it has the correct format.

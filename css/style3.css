@@ -275,7 +275,17 @@ strong {
   background-color: #679b67;
   color: white;
 }
-
+#navbar .btn-orange {
+    background-color: white;
+    color: #f9a048;
+    border: 1px solid #f9a048;
+    padding: 7.5px 12.5px;
+}
+#navbar .btn-orange:hover {
+    background-color: #f9a048;
+    color: white;
+    border: 1px solid white;
+}
 .btn-orange {
   background-color: #ff8900;
   color: white;
