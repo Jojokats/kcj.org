@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $('.scroll-animations .animated').each(function() {
       if (isScrolledIntoView(this) === true) {
-        $(this).removeClass("o-hide");
+        $(this).removeClass("hidden");
         $(this).addClass('fadeInDown');
       }
     });
