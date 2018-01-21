@@ -1,5 +1,3 @@
 window.FF_OnAfterSave = function() {
-    $.cookie('formCompleted', true);
-
-    setTimeout(function(){ location = 'ressources.html'; }, 300);
+    $.cookie('formCompleted', true, { expires: 1000, path: '/' });
 }
