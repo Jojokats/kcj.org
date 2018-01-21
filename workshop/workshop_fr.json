@@ -1,15 +1,15 @@
 [
-    // {
-    //     "title": "Bootcamp de Scratch",
-    //     "type": "Atelier pour enfants",
-    //     "location": {
-    //         "city": "Montréal",
-    //         "province": "QC"
-    //     },
-    //     "date" : {
-    //         "from": "14-Janaury-2018",
-    //         "to": "4-March-2018"
-    //     },
-    //     "details" : "scratch_bootcamp.html"
-    // }
+    {
+        "title": "Introduction au codage et à la pensée informatique pour les éducateurs",
+        "type": "Formation des enseignants",
+        "location": {
+            "city": "Montréal",
+            "province": "QC"
+        },
+        "date" : {
+            "from": "17-February-2018",
+            "to": ""
+        },
+        "details" : "kcj_lhl_pilot_mtl.html"
+    }
 ]

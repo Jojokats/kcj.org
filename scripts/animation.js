@@ -20,7 +20,7 @@ function init() {
     sr.reveal('.fade-in', {
         duration: 2000,
         origin: 'bottom',
-        viewFactor: 0.2,
-        delay: 1000
+        viewFactor: 0.1,
+        delay: 700
     });
 }
