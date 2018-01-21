@@ -529,6 +529,8 @@
   text-decoration: none;
   border-radius: 9px;
   background-color: #ff8900;
+  border-color: white;
+  border-width: thin;
   color: white;
   padding: 10px;
   margin: none;
