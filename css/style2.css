@@ -215,6 +215,16 @@
   opacity: 0.0;
   filter: alpha(opacity=30);
 }
+.btn-border-green{
+  background-color: white;
+  color: #479946;
+  border: 3px solid #479946;
+  border-radius: 30px;
+}
+.btn-border-green:hover{
+  background-color: #479946;
+  color: white;
+}
 
 .index-submit-newsletter-btn {
   border: solid;
