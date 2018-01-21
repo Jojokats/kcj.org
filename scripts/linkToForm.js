@@ -1,6 +1,6 @@
 $(function(){
   var formCompleted = $.cookie('formCompleted');
-  // 
+  //
   // console.log(location.pathname);
   // // console.log(location.);
   // var src = location.href.split('/');

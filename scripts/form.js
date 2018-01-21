@@ -1,4 +1,3 @@
 window.FF_OnAfterSave = function() {
-    $.cookie('formCompleted', true);
-    location = 'resources.html';  
+    $.cookie('formCompleted', true, { expires: 1000, path: '/' });
 }

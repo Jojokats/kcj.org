@@ -359,6 +359,14 @@ strong {
   max-width: 250px;
   max-height: auto;
 }
+.pull-left-100 {
+  position: relative;
+  left: -100px;
+}
+.pull-right-100 {
+  position: relative;
+  right: -100px;
+}
 
 .line-H-40px {
   line-height: 40px;
@@ -448,7 +456,40 @@ strong {
   border: 1px solid white;
 }
 
+@media (max-width: 1100px) {
+    .pull-left-100, .pull-right-100 {
+      left: 0;
+      right: 0;
+    }
 
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}
 /*
 #notFound{
   display: none;
@@ -495,7 +536,9 @@ strong {
 .padding-bot-m {
   padding-bottom: 40px;
 }
-
+.padding-bot-l {
+  padding-bottom: 60px;
+}
 .padding-top {
   padding-top: 60px;
 }
@@ -927,7 +970,7 @@ canvas {
 .content{
   font-family: inherit;
   position: absolute;
-  top: 36%;
+  top: 28%;
   right: 0;
   left: 0;
   max-width: 600px;
@@ -1327,10 +1370,6 @@ canvas {
 .multi-item-carousel .carouse-control.right {
   background-image: none;
 }
-.trigger {
-  position: relative;
-  width: 50%;
-}
 
 .image {
   display: block;
@@ -1359,13 +1398,13 @@ canvas {
 .text {
   color: white;
   font-size: 16px;
-  width: 90%;
+  width: 85%;
   position: absolute;
   text-align: left;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
   text-shadow: 2px 2px black;
 }
 
@@ -1373,12 +1412,25 @@ canvas {
   margin-top: 27px;
 }
 
+.homepage-kcj-heart {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 @media only screen and (max-width: 500px)  {
+  .homepage-kcj-heart {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   .video {
     height: 400px;
     width: auto;
   }
 
+  .video-overlay h1 {
+    font-size: 28px;
+  }
   .bg-empty {
     width: 100%;
     height: 300px;
@@ -1401,9 +1453,19 @@ canvas {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 700px) {
+  .video-overlay h1 {
+    font-size: 30px;
+  }
+
+  .homepage-kcj-heart {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .video {
     width: 100%;
     height: auto;
+    margin-top: 80px;
   }
 
   .bg-empty {
@@ -1454,3 +1516,5 @@ canvas {
     z-index: 5;
   }
 }
+@media only screen and (min-width: 1200px) { .content {top: 33%;}}
+

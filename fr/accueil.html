@@ -38,6 +38,9 @@
   <script src="../scripts/jquery_cookie/jquery.cookie.js" type="text/javascript"></script>
   <script src="../scripts/email_saver.js" type="text/javascript"></script>
   <script src="../scripts/newsSec.js" type="text/javascript"></script>
+  
+ <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+ <script src="../scripts/animation.js" type="text/javascript"></script>
   <!-- Facebook Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -108,7 +111,7 @@
       <img class="margin-auto img img-responsive logo-img-index" style="" src="../img/Logo_KCJ_Heart_White_CMYK.svg" alt="SAP image"/>
     </div>
     <div class="learn-more margin-auto text-white text-center padding-top-s">
-      <a id="learn-more" href="#helpSec" class="text-white">
+      <a id="learn-more" href="#mission" class="text-white">
         EN SAVOIR PLUS
         <br>
         <i class="glyphicon glyphicon-chevron-down"></i>
@@ -127,164 +130,236 @@
       </video>
     </div>
   </div>
-<!--
-  <section id="video" class="after-nav margin-auto">
-    <! particles.js container
-    <div id="particles-js" class="pos-absolute video-overlay"></div>
-    <div class="homepage-hero-module video-overlay">
-      <div class="video-container after-nav">
-        <div class="filter"></div>
-        <video autoplay loop muted class="fillWidth">
-          <source src="../video/TRAILER TRAILER.mp4" type="video/mp4"/>
-          Your browser does not support the video tag. I suggest you upgrade your browser.
-          <source src="../video/TRAILER TRAILER.webm" type="video/webm"/>
-          Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-      </div>
-    </div>
-    <div id="fullVideo" class="homepage-hero-module">
-      <div class="video-container after-nav">
-        <div class="filter"></div>
-        <video controls class="fillWidth">
-          <source src="../video/videofr.mp4" type="video/mp4"/>
-          Your browser does not support the video tag. I suggest you upgrade your browser.
-          <source src="../video/videofr.webm" type="video/webm"/>
-          Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-      </div>
-    </div>
-    <div class="content video-overlay">
-      <div class="mobile-hide">
-        <h1 class="text-inherit text-xl">Inspirer et habiliter les enfants canadiens avec le code</h1>
-        <p class="text-s">DÉCOUVREZ COMMENT ET POURQUOI CHAQUE ENFANT DEVRAIT ÊTRE INITIÉ À L'ALPHABÉTISATION NUMÉRIQUE!</p>
-      </div>
-      <a id="playBtn" href="#" class="text-white text-m">
-        <span class="glyphicon glyphicon-play-circle text-xl"></span><br/>
-        J O U E R
-      </a>
-    </div>
-    <div class="learn-more text-white text-center video-overlay mobile-hide">
-      <a id="learn-more" href="#helpSec" class="text-white">
-        EN SAVOIR PLUS
-        <br>
-        <i class="glyphicon glyphicon-chevron-down"></i>
-      </a>
-    </div>
-  </section> -->
 
-    <!-- Mission-->
-
-
-
-          <section id="mission" class="bg-blue padding-small padding-top-m">
-            <!-- <div class="container container-custom"> -->
-              <div class="row">
-                <p class="text-center text-blue text-uppercase text-white text-xs">
-                  Au Canada, Kids Code Jeunesse est dévoué à développer des communautés ayant des compétences digitales, autant à l'intérieur qu'à l'extérieur de la classe.</p>
-                </div></div>
-          </section>
-
-
-          </div></div>
-
-<!-- NEW BUTTONS -->
-<!-- Three columns of text -->
-<section id="helpSec" class="bg-sky-blue padding">
-    <div class="container max-w-900">
+  <section id="mission" class="bg-blue padding-small padding-top-m">
+    <!-- <div class="container container-custom"> -->
       <div class="row">
-        <div class="col-md-4 col-sm-4 padding-top-xs text-center">
-          <div class="bg-white border-radius-l padding-y-l max-w-320 margin-auto min-h-350">
-            <img class="img-circle" src="../img/Icon_Learn.gif" alt="Game console picture" width="140" height="140">
-            <h4 class="text-orange text-uppercase text-bold">Enseignants</h4>
-            <div id="register-description" class="margin-auto">
-              <ul class="text-center list-unstyled text-bold">
-                <li>
-                  <form>
-                      <input class="btn btn-index" Type="BUTTON" Value="DEMANDER UNE FORMATION" Onclick="window.location.href='../teacherTraining.html'">
-                  </form>
-                </li>
-                <li>
-                  <form>
-                      <input class="btn btn-index" Type="BUTTON" Value="PARTICIPER À UNE FORMATION" Onclick="window.location.href='ateliers.html'">
-                  </form>
-                </li>
-                <li>
-                  <form>
-                      <input class="btn btn-index" Type="BUTTON" Value="MATÉRIEL PÉDAGOGIQUE" Onclick="window.location.href='ressources.html'">
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-md-4 col-sm-4 padding-top-xs text-center">
-          <div class="padding-y-l bg-white border-radius-l max-w-320 margin-auto min-h-350">
-            <img class="img-circle" src="../img/Icon_Play.gif" alt="Light bulb picture" width="140" height="140">
-            <h4 class="text-orange text-uppercase text-bold">Parents</h4>
-            <div id="register-description" class="margin-auto">
-              <ul class="text-center list-unstyled text-bold">
-                <li class="transparent">
-                  <form>
-                    <input class="btn btn-index" Type="BUTTON" Value="SERVICES" Onclick="window.location.href='services.html'">
-                </form>
-                </li>
-                <li>
-                  <form>
-                      <input class="btn btn-index" Type="BUTTON" Value="ATELIERS DE PROGRAMMATION" Onclick="window.location.href='ateliers.html'">
-                  </form>
-                </li>
-                <li>
-                  <form>
-                      <input class="btn btn-index" Type="BUTTON" Value="FAITES-NOUS CONNAÎTRE À UNE ÉCOLE" Onclick="window.location.href='enfants-ecole.html'">
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-lg-4 -->
-        <div class="col-md-4 col-sm-4 padding-top-xs text-center">
-          <div class="padding-y-l bg-white border-radius-l max-w-320 margin-auto min-h-350">
-            <img class="img-circle" src="../img/Icon-Teach.gif" alt="Icon teach" width="140" height="140">
-            <h4 class="text-orange text-uppercase text-bold">Bénévoles</h4>
-            <div id="register-description" class="margin-auto">
-              <ul class="text-center list-unstyled text-bold">
-                <li class="transparent">.</li>
-                <li>
-                  <form>
-                      <input class="btn btn-index" Type="BUTTON" Value="DEVENEZ BÉNÉVOLE" Onclick="window.location.href='support.html#volunteer'">
-                  </form>
-                </li>
-                <li>
-                  <form>
-                      <input class="btn btn-index" Type="BUTTON" Value="OPPORTUNITÉS DE BÉNÉVOLAT" Onclick="window.location.href='benevole.html'">
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-lg-4 -->
-      </div>
-      <!-- /.row -->
-    </div>
+        <p class="text-center text-blue text-uppercase text-white text-xs">
+          Au Canada, Kids Code Jeunesse est dévoué à développer des communautés ayant des compétences digitales, autant à l'intérieur qu'à l'extérieur de la classe.</p>
+        </div></div>
   </section>
 
-  <section id="newsLetter" class="bg-orange-newsletter">
-    <div class="container padding">
-      <div class="row text-center">
-        <h2 class="text-uppercase">Abonnez-vous à notre infolettre</h2>
-        <form class="padding-small" action="#" method="post">
-          <div class="form-group">
-            <input class="input padding-s border border-white email_input border-rounded-input" type="email" name="email" placeholder="Adresse courriel">
-            <input class="btn btn-orange border border-white submit_email" type="submit" value="S’abonner">
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
 
+  </div></div>
+
+
+  <section class="bg-white">
+    </br>
+        <section class="container padding-bot-l">
+        <div class="inverse-elements">
+          <div class="row">
+            <div class="animated-left col-md-6 margin-auto text-center">
+              <div class="pull-right inverse-elements">
+                  <img class="img img-responsive pull-left-100"  src="../img/Homepage_Picture_CustomizedExperiences_FR.png">
+              </div>
+            </div>
+            <div class="animated-right col-md-6 toggle-padding padding-top  margin-auto text-center">
+              <p class="padding-top-l pull-left-100 inverse-elements">
+                  Nous sommes experts dans l'élaboration de programmes d’apprentissage numériques personnalisés pour les festivals canadiens, les musées, les gouvernements et les entreprises qui cherchent à créer et dynamiser de nouveaux défis pour les enfants. Du ministère de l'Éducation de la Colombie-Britannique aux Journées de la culture au Québec, nous pouvons vous aider à offrir des expériences éducatives passionnantes et pertinentes.
+              </p>
+    
+              <div class="custom-ul-resources padding-top-s pull-left-100 inverse-elements">
+                <nav class="nav custom-ul-resources">
+                  <span class="white-space-nowrap">
+                    <a href="nous_joindre.html" class="custom-border-orange-disck text-uppercase">contactez-nous</a>
+                  </span>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- <div class="row index-blurb-padding padding-y-m">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="pull-left">
+                <img class="img img-responsive" src="../img/Homepage_Quote_start.svg" width="50" height="50"/>
+              <p class="padding-s text-center">
+                We tried out one event for the kids not really knowing what we were getting into,
+                whether it would be good or not. The kids had a great time, got a solid grasp of
+                computer programming, and the two Kids Code instructors were excellent in
+                engaging each child in the class that day.
+                <img class="pull-right" src="../img/Homepage_Quote_End.svg" width="50" height="50">
+              </p>
+            </div>
+            <h4 class="text-center">- Volunteer from AB</h4>
+          </div> -->
+        </section>
+        <img class="animated-left" src="../img/Homepage_Grey_Bar.svg">
+    
+    <section class="container padding-bot-l">
+    <div class="row">
+      <div class="animated-left col-md-6 margin-auto text-center">
+        <div class="pull-left">
+          <img class="img img-responsive pull-right-100" src="../img/Homepage_Picture_Educators_FR-01.png" />
+        </div>
+      </div>
+        <div class="animated-right col-md-6 toggle-padding padding-top-l margin-auto text-center">
+          <p class="padding-top pull-left-100">
+              Nous soutenons l'apprentissage de compétences numériques dans les classes partout au Canada en formant les enseignants, en développant du matériel didactique gratuit, en aidant les gouvernements à intégrer le code au programme scolaire, en offrant du matériel informatique et en encourageant les enseignants à créer des clubs de code gratuits. Nous travaillons également avec des chercheurs universitaires pour recueillir des données sur les enfants et les éducateurs qui apprennent à coder.
+          </p>
+    
+          <div class="custom-ul-resources padding-top-s pull-left-100">
+          <nav class="nav custom-ul-resources">
+            <span class="white-space-nowrap">
+              <a href="ateliers.html" class="custom-border-orange-disck text-uppercase">Assister à une formation</a>
+            </span>
+            <span class="white-space-nowrap">
+              <a href="ressources.html" class="custom-border-orange-disck text-uppercase">Matériel pédagogique</a>
+            </span>
+            <span class="white-space-nowrap">
+              <a href="http://codeclub.ca/fr/commencer.html" class="custom-border-orange-disck text-uppercase">Démarrer un Code Club</a>
+            </span>
+          </nav>
+        </div>
+        </div>
+      </div>
+      <div class="fade-in row index-blurb-padding padding-top-s">
+        <div class="col-md-10 col-md-offset-1">
+          <img class="pull-left" src="../img/Homepage_Quote_start.svg" width="50" height="50">
+        </br>
+          <p class="padding-s text-center">
+              Avant l'atelier, j'avais commandé deux livres sur Scratch pour la bibliothèque et je ne comprenais pas vraiment leurs contenu et je me demandais comment les élèves se débrouilleraient. Après les ateliers, c'était comme apprendre à lire pour la première fois. Je me sens à l’aise d’enseigner cette matière dans notre classe, merci!
+            <img class="pull-right" src="../img/Homepage_Quote_End.svg" width="50" height="50">
+          </p>
+        </div>
+      </div>
+      <h4 class="text-center fade-in"> - Professeur de C. B.</h4>
+    </section>
+    <img class="inverse-elements animated-left" src="../img/Homepage_Grey_Bar.svg">
+    
+    
+    
+    <section class="container padding-bot-l">
+    <div class="inverse-elements">
+      <div class="row">
+        <div class="animated-right col-md-6 margin-auto text-centee">
+          <!-- <img src="img/Homepage_Picture_Customized_Events-01.png" width="400" height="400">
+          <div class="pull-right">
+            <p class="text-blue text-uppercase margin-top-half-2 index-header-fontsize">Customized Experiences</p>
+          </div> -->
+            <div class="pull-right inverse-elements">
+              <img class="img img-responsive pull-left-100" src="../img/Homepage_Picture_Community_FR.png" />
+            </div>
+          </div>
+          <div class="animated-left col-md-6 toggle-padding padding-top-l margin-auto text-center">
+            <p class="padding-top pull-left-100 inverse-elements">
+                Nous créons des communautés de compétences numériques à travers le pays avec des ateliers, des festivals familiaux, des conférences et des Code Clubs. Vous pouvez nous aider à intégrer la programmation dans votre communauté en vous adressant à votre école primaire locale pour lui souligner l'importance d'apprendre à coder ou en créant un Code Club dans une école, une bibliothèque ou un centre communautaire.
+            </p>
+    
+            <div class="custom-ul-resources padding-top-s pull-left-100 inverse-elements">
+            <nav class="nav custom-ul-resources">
+              <span class="white-space-nowrap">
+                <a href="services.html" class="custom-border-orange-disck text-uppercase">Nos services</a>
+              </span>
+              <span class="white-space-nowrap">
+                <a href="ateliers.html" class="custom-border-orange-disck">EVENTS & WORKSHOPS</a>
+              </span>
+              <span class="white-space-nowrap">
+                <a href="http://codeclub.ca/fr/commencer.html" class="custom-border-orange-disck text-uppercase">Démarrer un Code Club</a>
+              </span>
+            </nav>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in row index-blurb-padding">
+        <div class="col-md-10 col-md-offset-1">
+          <img class="pull-left" src="../img/Homepage_Quote_start.svg" width="50" height="50">
+        </br>
+          <p class="padding-s text-center">
+              Nous avons essayé un événement pour les enfants sans savoir dans quoi nous nous embarquions, si ça allait être bien ou pas. Les enfants ont passé un bon moment, ils ont acquis une bonne connaissance de la programmation informatique et les deux instructeurs de Kids Code étaient vraiment bons pour intéragir avec chaque enfant de la classe ce jour-là.
+            <img class="pull-right" src="../img/Homepage_Quote_End.svg" width="50" height="50">
+          </p>
+        </div>
+      </div>
+      <h4 class="fade-in text-center">- Parent de QC</h4>
+    </section>
+    <img class="animated-left" src="../img/Homepage_Grey_Bar.svg">
+    
+    <section class="container padding-bot-l">
+      <div class="row">
+        <div class="animated-left col-md-6 margin-auto text-center">
+          <!-- <img src="img/Homepage_Picture_Customized_Events-01.png" width="400" height="400">
+          <div class="pull-right">
+            <p class="text-blue text-uppercase margin-top-half-2 index-header-fontsize">Customized Experiences</p>
+          </div> -->
+          <div class="pull-left">
+              <img class="img img-responsive pull-right-100" src="../img/Homepage_Picture_Volunteers_FR-01.png" />
+          </div>
+        </div>
+        <div class="animated-right col-md-6 padding-top-l toggle-padding margin-auto text-center pull-left-100">
+          <p class="padding-top">
+              Nous ne serions rien sans le soutien infaillible de nos bénévoles passionnés. Impliquez-vous en tant que mentor d'atelier, ambassadeur d'événement ou bénévole dans un Code Club pour nous aider à inspirer et aider des enfants à améliorer leurs compétences numériques à travers le pays. Nos bénévoles n'ont pas besoin d'être des programmeurs informatiques, nous avons aussi besoin d’artistes, de parents et d’enseignants de tous horizons, l'important est d’être passionné par l'avenir de nos enfants.
+          </p>
+    
+          <div class="custom-ul-resources padding-top-s">
+            <nav class="nav custom-ul-resources">
+              <span class="white-space-nowrap">
+                <a href="support.html#volunteer" class="custom-border-orange-disck text-uppercase">Devenez bénévole</a>
+              </span>
+              <span class="white-space-nowrap">
+                <a href="http://codeclub.ca/fr/commencer.html" class="custom-border-orange-disck text-uppercase">Créez un Code Club</a>
+              </span>
+            </nav>
+          </div>
+        </div>
+    
+      </div>
+      <!-- <div class="row index-blurb-padding padding-top-s">
+        <div class="col-md-10 col-md-offset-1">
+          <img class="pull-left" src="../img/Homepage_Quote_start.svg" width="50" height="50">
+        </br>
+          <p class="padding-s text-center">
+              Code Club est un réseau de clubs de programmation gratuits dirigés par des bénévoles pour les enfants dans le cadre de Kids Code Jeunesse. Les Code Clubs font partie de notre mission de construire des communautés de compétences numériques dans tous le pays. N'importe qui peut créer un Code Club, que vous soyez un éducateur, un parent, un leader communautaire ou un bénévole!
+            <img class="pull-right" src="../img/Homepage_Quote_End.svg" width="50" height="50">
+          </p>
+        </div>
+      </div>
+      <h4 class="text-center">- Volunteer from AB</h4> -->
+    </section>
+    <img class="inverse-elements animated-left" src="../img/Homepage_Grey_Bar.svg">
+    <section class="container padding-bot-l">
+      <div class="inverse-elements">
+        <div class="row">
+          <div class="animated-right col-md-6 margin-auto text-center">
+            <!-- <img src="img/Homepage_Picture_Customized_Events-01.png" width="400" height="400">
+            <div class="pull-right">
+              <p class="text-blue text-uppercase margin-top-half-2 index-header-fontsize">Customized Experiences</p>
+            </div> -->
+            <div class="pull-right inverse-elements">
+                <img class="img img-responsive pull-left-100" src="../img/Homepage_Picture_CodeClub-01.png" />
+            </div>
+          </div>
+          <div class="animated-left col-md-6 toggle-padding padding-top-l margin-auto text-center">
+            <p class="padding-top pull-left-100 inverse-elements">
+                Code Club est un réseau de clubs de programmation gratuits dirigés par des bénévoles pour les enfants dans le cadre de Kids Code Jeunesse. Les Code Clubs font partie de notre mission de construire des communautés de compétences numériques dans tous le pays. N'importe qui peut créer un Code Club, que vous soyez un éducateur, un parent, un leader communautaire ou un bénévole!
+            </p>
+    
+            <div class="custom-ul-resources padding-top-s inverse-elements pull-left-100">
+              <nav class="nav custom-ul-resources">
+                <span class="white-space-nowrap">
+                  <a href="http://codeclub.ca/fr/accueill.html" class="custom-border-green-disck text-uppercase">Plus d'infos</a>
+                </span>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in row index-blurb-padding">
+        <div class="col-md-10 col-md-offset-1">
+          <img class="pull-left" src="../img/Homepage_Quote_start.svg" width="50" height="50">
+        </br>
+          <p class="padding-s text-center">
+              Gérer un code club et voir les ampoules s’allumer lorsque les enfants ont du plaisir en programmant, ça c’est une activité très valorisante - cela te rappellera de la raison pour laquelle tu aimes coder!
+            <img class="pull-right" src="../img/Homepage_Quote_End.svg" width="50" height="50">
+          </p>
+        </div>
+        </div>
+      <h4 class="fade-in text-center">- Bénévole de AB</h4>
+    </section>
+    
+        <img class="animated-right" src="../img/Homepage_Grey_Bar.svg">
+    </section>
+           
   <!-- News -->
   <section class="bg-white padding-medium">
     <div class="container container-custom">
@@ -297,23 +372,36 @@
       </div>
     </div>
   </section>
+  <section class="bg-white padding-y-l">
+    <div class="index-newsletter padding">
+      <div class="container text-center">
+        <h2 class="text-uppercase text-white">Never miss a thing! <strong>Sign up</strong> for our newsletter</h2>
+        <form class="padding-small" action="#" method="GET">
+          <div class="form-group">
+            <input class="input  border border-white email_input border-rounded-input" type="email" name="email" placeholder="Email Address">
+            <input class="btn-trasparent submit_email" type="submit"><span class="text-white btn index-submit-newsletter-btn">SUBSCRIBE</span></input>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <!-- MAILS -->
   <!-- <section id="news" class="bg-blue-grey padding-big">
-      <h1 id="newsHeader" class="text-center padding-small">nouvelles</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 r">
-            <img src="../img/News2-sm.jpg"> <br />
-          </div>
-          <div class="col-md-6 col-small-12 l">
-            <img src="../img/News1-sm.jpg"> <br />
-          </div>
+    <h1 id="newsHeader" class="text-center padding-small">nouvelles</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 r">
+          <img src="../img/News2-sm.jpg"> <br />
+        </div>
+        <div class="col-md-6 col-small-12 l">
+          <img src="../img/News1-sm.jpg"> <br />
         </div>
       </div>
-    </section> -->
+    </div>
+  </section> -->
 
 <!-- NOUVELLES -->
-  <section>
+  <!-- <section>
     <a target="_blank" href="http://codeclub.ca/">
       <img class="img img-responsive" src="../img/Wesbite_Slider_Code_Club_Canada_Shorter_FR.png" width="100%"/>
     </a>
@@ -325,7 +413,7 @@
         <a href="http://codeclub.ca/startaclub.html" target="_blank" class="text-inherit">Prêt à coder? Démarrez un <strong>Code Club!</strong></a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="partnersSponsors" class="bg-white">
     <div class="container">

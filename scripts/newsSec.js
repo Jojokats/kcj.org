@@ -2,7 +2,7 @@ var g = {
     isEnglish: true,
     newsPath: 'news/',
     imgPath: '',
-    numImage: 4   
+    numImage: 6   
 };
 
 $(document).ready(function() {
@@ -88,7 +88,7 @@ function createImgBlock(imgPath, detail, title) {
   var $link = $('<a href="newsDetail.html?d=' + detail+ '"></a>')
   $link.append($img).append($riser);
 
-  var $div = $('<div class="col-xs-6 padding-small trigger"></div>');
+  var $div = $('<div class="col-xs-4 padding-small trigger"></div>');
   $div.append($link);
 
   return $div;
