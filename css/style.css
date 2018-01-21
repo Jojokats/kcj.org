@@ -306,6 +306,15 @@ strong {
   background-color: #f99b3e;
   color: white;
 }
+.btn-orange-3 {
+  background-color: #f8a73c;
+  color: white;
+}
+
+.btn-orange-3:hover {
+  background-color: white;
+  color: #f8a73c;
+}
 .btn-orange {
   background-color: #ff8900;
   color: white;
