@@ -189,6 +189,12 @@
   font-size: 65px;
   font-weight: bold;
 }
+@media (max-width: 1000px) {
+  .text-cancode {
+    font-size: 11px;
+
+  }
+}
 .possition-relitve-right {
     position: absolute;
     top: 55%;
