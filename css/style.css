@@ -591,6 +591,11 @@ strong {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.padding-y-xl{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .pos-fixed {
   position: fixed;
   z-index: -1;
@@ -1521,10 +1526,9 @@ canvas {
   }
 }
 @media only screen and (min-width: 1200px) { .content {top: 33%;}}
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 900px) {
   .pull-left-100, .pull-right-100 {
     left: 0;
     right: 0;
   }
-}  
-
+}

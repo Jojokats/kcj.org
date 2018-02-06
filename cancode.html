@@ -213,9 +213,11 @@
 
       </div>
     </section>
-    <section>
 
-  <a id="newsletter"></a>
+
+    <!-- FORM -->
+    <section>
+    <a id="newsletter"></a>
       <div class="container padding-medium">
         <div class="row">
           <div class="text-center text-orange padding">
@@ -228,9 +230,53 @@
           </div><br>
             <!-- Begin MailChimp Signup Form -->
           <div class="col-sm-6 col-sm-offset-3">
+            <!-- ***** -->
+            <!--
+              in order to override the error messages being created
+              asynchronously in line styling is used.
+              -->
+              <style>
+              #mc_embed_signup div.mce_inline_error {
+                background-color: white;
+                color: red;
+                margin: 0 0 1em 0;
+                padding: 5px 10px;
+                z-index: 1;
+              }
+              #mc_embed_signup input.mce_inline_error {
+                border-color: initial;
+              }
+
+              #mc_embed_signup input[type^=text], #mc_embed_signup input[type^=email]{
+                font-size: 16px;
+                padding: 7px 7px;
+                border: 1px solid gray;
+                border-radius: 5px;
+              }
+              label {
+                  display: inline-block;
+                  max-width: 100%;
+                  margin-bottom: 5px;
+                  font-weight: normal;
+              }
+              strong {
+                font-weight: normal;
+              }
+
+              #mc_embed_signup select{
+                font-size: 16px;
+                height: 40px;
+                border: 1px solid gray;
+                border-radius: 5px;
+              }
+              </style>
+
+            <!-- ***** -->
             <div id="mc_embed_signup">
-            <form action="https://kidscodejeunesse.us3.list-manage.com/subscribe/post?u=241060acea4044c96183ba02c&amp;id=2550e7f8df" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
+
+            <form action="https://kidscodejeunesse.us3.list-manage.com/subscribe/post?u=241060acea4044c96183ba02c&amp;id=2550e7f8df” method=“post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+            <div id="mc_embed_signup_scroll">
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group">
               <label for="mce-EMAIL">Email Address / Courriel  <span class="asterisk">*</span>
@@ -247,6 +293,27 @@
             </label>
               <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
             </div>
+
+            <div class="mc-field-group">
+          	<label for="mce-PROVINCE">Province <span class="asterisk">*</span></label>
+          	<select name="PROVINCE" class="required fillWidth" id="mce-PROVINCE">
+            	<option value=""></option>
+            	<option value="Québec">Québec</option>
+              <option value="Alberta">Alberta</option>
+              <option value="British Columbia">British Columbia</option>
+              <option value="Manitoba">Manitoba</option>
+              <option value="New Brunswick">New Brunswick</option>
+              <option value="Newfoundland">Newfoundland</option>
+              <option value="Northwest Territories">Northwest Territories</option>
+              <option value="Nova Scotia">Nova Scotia</option>
+              <option value="Nunavut">Nunavut</option>
+              <option value="Ontario">Ontario</option>
+              <option value="Prince Edward Island">Prince Edward Island</option>
+              <option value="Saskatchewan">Saskatchewan</option>
+              <option value="Yukon">Yukon</option>
+          	</select>
+          </div><br>
+
             <div class="mc-field-group input-group">
                 <strong>Send me news and events for parents and educators: </strong>
                 <ul><li><input type="checkbox" value="1" name="group[20577][1]" id="mce-group[20577]-20577-0"><label for="mce-group[20577]-20577-0">Yes / Oui</label></li>
@@ -269,11 +336,15 @@
                 </div>
                 </div>
             </form>
-            </div>
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-          </div>
-<!--End mc_embed_signup-->
-        </div>
+          </div><!-- /mc_embed_signup -->
+
+            <script type="text/javascript" src="/s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"/></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=‘EMAIL’;ftypes[0]=‘email’;fnames[1]=‘FNAME’;ftypes[1]=‘text’;fnames[2]=‘LNAME’;ftypes[2]=‘text’;fnames[3]=‘MMERGE3’;ftypes[3]=‘dropdown’;}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+
+      </div><!-- /col -->
+      <!--End mc_embed_signup-->
+    </div><!-- /row -->
+      </div><!-- /container -->
     </section>
 
     <footer class="bg-white">
